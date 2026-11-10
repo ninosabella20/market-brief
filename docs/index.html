@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Market Brief</title>
+<meta name="description" content="Twice-daily sector performance and top stories, refreshed 07:00 and 17:00 Madrid.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23146c43'/%3E%3Cpath d='M6 22l6-7 5 4 9-10' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-row">
+    <div class="brand">
+      <h1>Market Brief</h1>
+      <span id="stamp" class="stamp">Loading…</span>
+    </div>
+    <button id="theme" class="icon-btn" type="button" aria-label="Toggle light/dark mode" title="Theme"></button>
+  </div>
+  <nav class="wrap tabs" role="tablist">
+    <button role="tab" id="tab-perf" aria-controls="panel-perf" aria-selected="true">Sector performance</button>
+    <button role="tab" id="tab-stories" aria-controls="panel-stories" aria-selected="false">Top stories</button>
+  </nav>
+</header>
+
+<main class="wrap">
+  <div id="alerts"></div>
+
+  <section id="panel-perf" role="tabpanel" aria-labelledby="tab-perf">
+    <article id="recap" class="card recap"></article>
+    <div class="table-head">
+      <h2>S&amp;P 500 sectors</h2>
+      <span id="asof" class="muted small"></span>
+    </div>
+    <div class="table-wrap">
+      <table id="perf">
+        <thead><tr>
+          <th class="name">Sector <span class="pct-note">%</span></th><th>Day</th><th>Week</th><th>Month</th><th>YTD</th><th>1Y</th><th>5Y</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="muted small foot">Tap a row for why it moved. Price returns of SPDR sector ETFs (excl. dividends). Data: Yahoo Finance. Explanations: Gemini with Google Search.</p>
+  </section>
+
+  <section id="panel-stories" role="tabpanel" aria-labelledby="tab-stories" hidden>
+    <div id="chips" class="chips" role="toolbar" aria-label="Filter by sector"></div>
+    <div id="stories"></div>
+    <p class="muted small foot">Stories and company profiles: Gemini with Google Search. Price growth, consensus and analyst ratings: Yahoo Finance. Not investment advice.</p>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
