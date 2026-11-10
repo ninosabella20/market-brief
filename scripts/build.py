@@ -74,6 +74,7 @@ logging.getLogger("yfinance").setLevel(logging.CRITICAL)
 
 HTTP = requests.Session()
 HTTP.headers.update({"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9"})
+HTTP.mount("https://", requests.adapters.HTTPAdapter(pool_connections=20, pool_maxsize=20))
 
 
 def now_utc() -> dt.datetime:
@@ -266,6 +267,7 @@ class Gemini:
         self.last_429: dict[str, str] = {}
         self.ok: dict[str, int] = {}          # model -> successful calls
         self.exhausted = False
+        self.timeout = float(os.environ.get("GEMINI_TIMEOUT", "100"))
         self.deadline = time.time() + float(os.environ.get("GEMINI_BUDGET_SECONDS", "1500"))
         self.min_interval = min_interval
         self._last_call = 0.0
@@ -324,7 +326,7 @@ class Gemini:
         self.exhausted = True
         return False
 
-    def generate(self, prompt: str, grounded: bool = True) -> tuple[str, list[dict]]:
+    def generate(self, prompt: str, grounded: bool = False) -> tuple[str, list[dict]]:
         if self.exhausted:
             raise GeminiError("no usable Gemini model left this run: " +
                               "; ".join(f"{k}: {v[:90]}" for k, v in self.errors.items()))
@@ -345,7 +347,13 @@ class Gemini:
             attempts += 1
             try:
                 r = HTTP.post(f"{self.BASE}/models/{self.model}:generateContent",
-                              headers=self._headers(), json=body, timeout=150)
+                              headers=self._headers(), json=body, timeout=self.timeout)
+            except requests.Timeout:
+                # Free-tier models that hang are useless for this run; move on.
+                if self._next_model(f"no answer within {self.timeout:.0f}s"):
+                    attempts = 0
+                    continue
+                raise GeminiError("every model timed out")
             except requests.RequestException as e:
                 if attempts >= 3:
                     raise GeminiError(f"network error: {e}") from e
@@ -475,29 +483,32 @@ META_RE = re.compile(r"<meta\b[^>]*>", re.I)
 GENERIC_IMG = re.compile(r"default|placeholder|fallback|favicon|sprite|/logo[^/]*$|-logo\.", re.I)
 
 
-def _meta_image(page: str, base: str) -> str | None:
+def _meta(page: str, base: str) -> dict:
     found = {}
     for tag in META_RE.findall(page):
-        key = re.search(r'(?:property|name)\s*=\s*["\']([^"\']+)["\']', tag, re.I)
-        val = re.search(r'content\s*=\s*["\']([^"\']+)["\']', tag, re.I)
+        key = re.search(r'(?:property|name|itemprop)\s*=\s*["\']([^"\']+)["\']', tag, re.I)
+        val = re.search(r'content\s*=\s*["\']([^"\']*)["\']', tag, re.I)
         if key and val:
             found.setdefault(key.group(1).lower(), html.unescape(val.group(1)).strip())
+    img = None
     for k in ("og:image:secure_url", "og:image", "og:image:url", "twitter:image",
               "twitter:image:src"):
         if found.get(k):
-            img = urljoin(base, found[k])
+            u = urljoin(base, found[k])
             # skip publishers' generic fallback images; the company logo is better
-            if img.startswith("http") and not GENERIC_IMG.search(urlparse(img).path):
-                return img
-    return None
+            if u.startswith("http") and not GENERIC_IMG.search(urlparse(u).path):
+                img = u
+                break
+    desc = found.get("og:description") or found.get("description") or found.get("twitter:description")
+    return {"image": img, "description": (desc or "")[:600]}
 
 
 def fetch_page(url: str) -> dict:
-    """{'ok': True/False/None, 'final': url, 'image': og:image}. ok=None means
+    """{'ok': True/False/None, 'final', 'image': og:image, 'description'}. ok=None means
     "couldn't check" (bot wall / blocked network) — the link is kept."""
     if url in _page_cache:
         return _page_cache[url]
-    res = {"ok": None, "final": url, "image": None}
+    res = {"ok": None, "final": url, "image": None, "description": ""}
     try:
         r = HTTP.get(url, timeout=10, allow_redirects=True, stream=True,
                      headers={"Accept": "text/html,application/xhtml+xml"})
@@ -511,7 +522,7 @@ def fetch_page(url: str) -> dict:
                 body += part
                 if len(body) > 600_000 or b"</head>" in body.lower():
                     break
-            res["image"] = _meta_image(body.decode(r.encoding or "utf-8", "replace"), r.url)
+            res.update(_meta(body.decode(r.encoding or "utf-8", "replace"), r.url))
         r.close()
     except requests.exceptions.ProxyError:
         pass  # local sandbox proxy refused the host: unknown
@@ -789,26 +800,102 @@ def growth(s: pd.Series | None) -> dict:
 # --------------------------------------------------------------------------
 # Stories
 # --------------------------------------------------------------------------
-STORY_PROMPT = """Today is {today}. You are a sell-side equity research editor.
-Using Google Search, find the {n} most important VERIFIED news stories from the last 7 days
-(prefer the last 48 hours) for listed companies in the GICS sector "{sector}" (global, any
-exchange). Focus on: earnings and guidance, demand, pricing, M&A, regulation, technology,
-financing. Rank by importance to investors in the sector. No duplicates (one story per
-event), no generic market commentary, no stories about the sector ETF itself.
-Return fewer than {n} if fewer are genuinely relevant.
+# Yahoo news-search queries per sector, in addition to the ETF's top holdings.
+# Thematic queries pull in non-US companies too.
+SECTOR_QUERIES = {
+    "XLK": ["semiconductor stocks", "software earnings", "chipmaker", "tech acquisition"],
+    "XLC": ["media stocks", "telecom earnings", "streaming subscribers", "advertising revenue"],
+    "XLY": ["retail earnings", "automaker", "consumer discretionary stocks", "luxury goods"],
+    "XLP": ["consumer staples stocks", "food company earnings", "beverage maker", "grocery retailer"],
+    "XLF": ["bank earnings", "European banks", "insurer earnings", "bank merger"],
+    "XLV": ["pharma earnings", "FDA approval", "biotech acquisition", "medtech"],
+    "XLI": ["industrial stocks", "aerospace defense earnings", "railroad", "airline earnings"],
+    "XLB": ["mining stocks", "chemical maker earnings", "copper miner", "steel maker"],
+    "XLE": ["oil major earnings", "oil and gas stocks", "LNG deal", "refiner earnings"],
+    "XLU": ["utility stocks", "power demand data centers utility", "nuclear power deal", "electric utility earnings"],
+    "XLRE": ["REIT earnings", "real estate investment trust", "data center REIT", "commercial real estate"],
+}
+NEWS_MAX_AGE_DAYS = 4
+JUNK_TITLE = re.compile(r"\b(stocks? to (buy|watch|sell)|top \d+|\d+ (stocks|reasons)|should you buy|"
+                        r"is it time to|buy now|sector update|market (open|close|wrap)|premarket|"
+                        r"stock market today|dividend stocks|etfs? to|better buy|what to watch)\b", re.I)
 
-Return ONLY a JSON array (no prose, no markdown), each element:
+
+def etf_holdings(etf: str, n=10) -> list[str]:
+    try:
+        h = yf.Ticker(etf).funds_data.top_holdings
+        return [str(x) for x in list(h.index)[:n]]
+    except Exception as e:  # noqa: BLE001
+        log.warning("holdings %s: %s", etf, e)
+        return []
+
+
+def news_search(q: str, n=12) -> list[dict]:
+    for attempt in range(2):
+        try:
+            return yf.Search(q, news_count=n, max_results=0).news or []
+        except Exception as e:  # noqa: BLE001
+            log.debug("news %s: %s", q, e)
+            time.sleep(2)
+    return []
+
+
+def collect_news(queries: list[str], max_items=45, describe=True) -> list[dict]:
+    """Recent news from Yahoo Finance search: real links, publisher, time."""
+    from concurrent.futures import ThreadPoolExecutor
+    cutoff = time.time() - NEWS_MAX_AGE_DAYS * 86400
+    items, seen = [], set()
+    for q in queries:
+        for x in news_search(q):
+            title = (x.get("title") or "").strip()
+            link = x.get("link") or ""
+            ts = x.get("providerPublishTime") or 0
+            key = re.sub(r"\W+", "", title.lower())[:80]
+            if (not title or not link or ts < cutoff or key in seen
+                    or x.get("type", "STORY") not in ("STORY", "VIDEO")):
+                continue
+            seen.add(key)
+            thumb = None
+            for res in ((x.get("thumbnail") or {}).get("resolutions") or []):
+                if res.get("width", 0) >= 300:
+                    thumb = res.get("url")
+            items.append({"title": title, "url": link, "publisher": x.get("publisher") or "",
+                          "ts": ts, "tickers": x.get("relatedTickers") or [], "image": thumb,
+                          "junk": bool(JUNK_TITLE.search(title))})
+        time.sleep(0.25)
+    items.sort(key=lambda i: (i["junk"], -i["ts"]))
+    items = items[:max_items]
+    if describe:
+        with ThreadPoolExecutor(12) as ex:
+            pages = list(ex.map(lambda i: fetch_page(i["url"]), items))
+        for i, pg in zip(items, pages):
+            i["description"] = pg.get("description") or ""
+            i["image"] = i["image"] or pg.get("image")
+            i["url"] = pg.get("final") or i["url"]
+    return items
+
+
+STORY_PROMPT = """Today is {today}. You are a sell-side equity research editor.
+Below are recent news items (last {days} days) relevant to the GICS sector "{sector}".
+Pick the {n} most important stories for investors in this sector: company-specific, material
+events such as earnings and guidance, demand, pricing, M&A, regulation, technology, financing.
+Rank by importance. One story per event (merge duplicates), no generic market commentary,
+no "stocks to buy" lists, no stories about ETFs. Fewer than {n} is fine if fewer qualify.
+Companies may be listed anywhere in the world but must belong to this sector.
+
+NEWS ITEMS:
+{items}
+
+Return ONLY a JSON array (no prose, no markdown). Each element:
 {{
+ "id": <number of the news item used>,
  "headline": "concise factual headline",
- "company": "full legal-ish company name, e.g. 'UniCredit S.p.A.'",
- "ticker": "Yahoo Finance symbol of the primary listing incl. exchange suffix, e.g. AAPL, UCG.MI, 7203.T, SHEL.L, 0700.HK",
+ "company": "company name",
+ "ticker": "Yahoo Finance symbol of the primary listing incl. exchange suffix (e.g. AAPL, UCG.MI, 7203.T)",
  "country": "country of headquarters",
  "profile": "ONE sentence: what the company does, its size/rank in its industry, where it is from",
- "what_happened": "2-3 sentences with the key figures (revenue, EPS, %, deal value, guidance)",
- "why_it_matters": "1-2 sentences on why it matters to the sector and investors",
- "published": "YYYY-MM-DD publication date of the source article",
- "source": "publisher name, e.g. Reuters",
- "url": "direct URL of the source article (not a search page, not a homepage)"
+ "what_happened": "2-3 sentences with the key figures - use ONLY facts and numbers stated in the item",
+ "why_it_matters": "1-2 sentences on why it matters to the sector and investors"
 }}"""
 
 
@@ -817,65 +904,33 @@ def clean_story(raw: dict) -> dict | None:
         return None
     s = {k: (str(raw.get(k)).strip() if raw.get(k) is not None else "")
          for k in ("headline", "company", "ticker", "country", "profile", "what_happened",
-                   "why_it_matters", "published", "source", "url")}
+                   "why_it_matters")}
     if not s["headline"] or not s["company"]:
         return None
-    m = re.search(r"\d{4}-\d{2}-\d{2}", s["published"])
-    s["published"] = m.group(0) if m else ""
-    if s["published"]:
-        age = (now_utc().date() - dt.date.fromisoformat(s["published"])).days
-        if age > STORY_MAX_AGE_DAYS or age < -1:
-            return None
-    if s["url"] and not s["url"].startswith("http"):
-        s["url"] = ""
+    try:
+        s["id"] = int(str(raw.get("id")).strip("[] "))
+    except (TypeError, ValueError):
+        return None
     return s
 
 
-def _domain(u: str) -> str:
-    return urlparse(u).netloc.lower().removeprefix("www.")
-
-
-def fix_link(story: dict, chunks: list[dict]) -> None:
-    """Verify the article link; if it is dead/missing, use the best matching
-    Google Search grounding source instead."""
-    page = fetch_page(story["url"]) if story["url"] else {"ok": False}
-    if page["ok"] is not False:
-        story["url"] = page.get("final") or story["url"]
-        story["image"] = page.get("image")
-        story["link_verified"] = page["ok"] is True
-        return
-    want = _tokens(story["headline"] + " " + story["company"])
-    best, best_score = None, -1.0
-    src_dom = _domain(story["url"]) if story["url"] else (story.get("source") or "").lower()
-    for ch in chunks[:6]:
-        if out_of_time(120):
-            break
-        title = ch.get("title") or ""
-        score = 0.0
-        if src_dom and (src_dom in title.lower() or title.lower() in src_dom):
-            score += 2
-        resolved = fetch_page(ch["uri"])
-        if resolved["ok"] is False:
-            continue
-        final = resolved.get("final") or ch["uri"]
-        path_tokens = _tokens(urlparse(final).path.replace("-", " "))
-        score += len(want & path_tokens)
-        if score > best_score:
-            best, best_score = (final, resolved), score
-    if best and best_score > 0:
-        story["url"], story["image"] = best[0], best[1].get("image")
-        story["link_verified"] = best[1]["ok"] is True
-        if not story.get("source"):
-            story["source"] = _domain(best[0])
-    else:
-        story["link_verified"] = False
-
-
 def sector_stories(gem: Gemini, etf: str, sector: str, today: str) -> list[dict]:
-    prompt = STORY_PROMPT.format(today=today, n=STORIES_PER_SECTOR, sector=sector)
-    items, chunks = None, []
+    queries = etf_holdings(etf) + SECTOR_QUERIES.get(etf, [f"{sector} stocks"])
+    news = collect_news(queries)
+    log.info("%s: %d candidate news items", etf, len(news))
+    if len(news) < 3:
+        raise GeminiError("too few news items found")
+    lines = []
+    for i, n in enumerate(news, 1):
+        d = dt.datetime.fromtimestamp(n["ts"], dt.timezone.utc).strftime("%Y-%m-%d")
+        desc = f" | {n['description'][:350]}" if n.get("description") else ""
+        tick = f" | tickers: {','.join(n['tickers'][:5])}" if n["tickers"] else ""
+        lines.append(f"[{i}] {d} | {n['publisher']} | {n['title']}{tick}{desc}")
+    prompt = STORY_PROMPT.format(today=today, days=NEWS_MAX_AGE_DAYS, n=STORIES_PER_SECTOR,
+                                 sector=sector, items="\n".join(lines))
+    items = None
     for attempt in range(2):
-        text, chunks = gem.generate(prompt)
+        text, _ = gem.generate(prompt, grounded=False)
         try:
             items = parse_json(text)
             if isinstance(items, dict):
@@ -886,18 +941,20 @@ def sector_stories(gem: Gemini, etf: str, sector: str, today: str) -> list[dict]
             prompt += "\n\nIMPORTANT: your previous answer was not valid JSON. Output ONLY the JSON array."
     if items is None:
         raise GeminiError("could not parse stories JSON")
-    stories, seen = [], set()
+    stories, used = [], set()
     for raw in items:
         s = clean_story(raw)
-        if not s:
+        if not s or not (1 <= s["id"] <= len(news)) or s["id"] in used:
             continue
-        key = (s["url"] or s["headline"]).lower()
-        if key in seen:
-            continue
-        seen.add(key)
+        used.add(s["id"])
+        n = news[s.pop("id") - 1]
+        s.update(url=n["url"], source=n["publisher"], image=n.get("image"),
+                 published=dt.datetime.fromtimestamp(n["ts"], dt.timezone.utc).strftime("%Y-%m-%d"),
+                 related=n["tickers"], link_verified=True)
+        # The feed's related tickers are a better hint than the model's guess.
+        if not s["ticker"] and n["tickers"]:
+            s["ticker"] = n["tickers"][0]
         stories.append(s)
-    for s in stories[:STORIES_PER_SECTOR]:
-        fix_link(s, chunks)
     return stories[:STORIES_PER_SECTOR]
 
 
@@ -952,8 +1009,12 @@ returns in %) for the S&P 500 (SPY) and the 11 SPDR sector ETFs, {as_of}.
 
 {table}
 
-Using Google Search for today's and this week's market news, explain the moves.
-Use the numbers above exactly as given; do not invent other performance figures.
+Recent market headlines (newest first):
+{news}
+
+Explain the moves using the headlines above and general market knowledge. Use the numbers
+above exactly as given; do not invent other performance figures or events. If the headlines
+don't explain a move, say what the sector is exposed to (rates, oil, consumer demand...).
 Return ONLY a JSON object (no markdown):
 {{
  "recap": "3-4 sentence overall market recap: what drove the S&P 500 today and this week, leaders vs laggards, key macro (rates, Fed, data, oil, earnings)",
@@ -968,10 +1029,15 @@ def build_reasons(gem: Gemini, market: dict, today: str) -> dict:
         lines.append(f"{r['ticker']} | {r['name']} | {f('day')} | {f('week')} | {f('month')} | "
                      f"{f('ytd')} | {f('y1')} | {f('y5')}")
     m = now_utc().astimezone(MADRID)
+    queries = ["stock market today", "S&P 500", "Wall Street stocks", "Treasury yields Fed",
+               "oil prices"] + [f"{name} stocks" for _, name in SECTORS]
+    news = collect_news(queries, max_items=70, describe=False)
+    hl = "\n".join(f"- {dt.datetime.fromtimestamp(n['ts'], dt.timezone.utc):%a %H:%M} UTC | "
+                   f"{n['publisher']} | {n['title']}" for n in sorted(news, key=lambda n: -n["ts"]))
     prompt = REASON_PROMPT.format(today=today, time=f"{m:%H:%M}", as_of=market["as_of_label"],
-                                  table="\n".join(lines))
+                                  table="\n".join(lines), news=hl or "(none available)")
     for attempt in range(2):
-        text, _ = gem.generate(prompt)
+        text, _ = gem.generate(prompt, grounded=False)
         try:
             j = parse_json(text)
             reasons = {k.upper(): str(v).strip() for k, v in (j.get("reasons") or {}).items()}
