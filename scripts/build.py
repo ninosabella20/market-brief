@@ -254,6 +254,8 @@ class Gemini:
 
     def __init__(self, key: str, override: str | None, min_interval: float):
         self.key = key
+        self.available: list[str] = []
+        self.errors: dict[str, str] = {}
         self.min_interval = min_interval
         self._last_call = 0.0
         self.candidates = [override] if override else self._discover()
@@ -279,20 +281,28 @@ class Gemini:
                     break
         except Exception as e:  # noqa: BLE001
             log.warning("model list failed (%s); using defaults", e)
-        # Stable flash models look like "gemini-2.5-flash" / "gemini-3-flash":
-        # no -preview / -exp / -lite / date suffix.
-        stable = []
-        for n in names:
-            m = re.fullmatch(r"gemini-(\d+(?:\.\d+)?)-flash", n)
-            if m:
-                stable.append((float(m.group(1)), n))
-        ordered = [n for _, n in sorted(stable, reverse=True)]
-        for fallback in ("gemini-flash-latest", "gemini-2.5-flash"):
-            if fallback not in ordered and (not names or fallback in names):
-                ordered.append(fallback)
-        return ordered
+        self.available = names
+        bad = re.compile(r"image|tts|audio|live|embedding|thinking|vision|robotics|computer", re.I)
+
+        def ver(n):
+            m = re.match(r"gemini-(\d+(?:\.\d+)?)", n)
+            return float(m.group(1)) if m else 0.0
+
+        stable = [n for n in names if re.fullmatch(r"gemini-\d+(?:\.\d+)?-flash", n)]
+        preview = [n for n in names if re.fullmatch(r"gemini-\d+(?:\.\d+)?-flash-preview[\w.-]*", n)
+                   and not bad.search(n)]
+        lite = [n for n in names if re.fullmatch(r"gemini-\d+(?:\.\d+)?-flash-lite", n)]
+        ordered = sorted(stable, key=ver, reverse=True)
+        ordered += [n for n in ("gemini-flash-latest",) if not names or n in names]
+        ordered += sorted(preview, key=ver, reverse=True)
+        ordered += sorted(lite, key=ver, reverse=True)
+        ordered += [n for n in ("gemini-flash-lite-latest",) if n in names]
+        if not ordered:
+            ordered = ["gemini-flash-latest", "gemini-2.5-flash"]
+        return list(dict.fromkeys(ordered))
 
     def _next_model(self, why: str) -> bool:
+        self.errors[self.model] = why[:200]
         i = self.candidates.index(self.model)
         if i + 1 < len(self.candidates):
             log.warning("model %s unusable (%s); switching to %s", self.model, why,
@@ -337,9 +347,9 @@ class Gemini:
                 log.info("429 from Gemini, sleeping %.0fs", delay)
                 time.sleep(delay)
                 continue
-            if r.status_code in (404, 400) and ("not found" in msg.lower()
-                                                or "not supported" in msg.lower()):
-                if self._next_model(f"{r.status_code}"):
+            if r.status_code == 404 or (r.status_code in (400, 403) and re.search(
+                    r"model|not supported|not available|no longer", msg, re.I)):
+                if self._next_model(f"{r.status_code}: {msg[:160]}"):
                     attempts = 0
                     continue
             if r.status_code >= 500 and attempts < 5:
@@ -1030,6 +1040,9 @@ def main() -> int:
             notices.append("Stories not refreshed for: " + ", ".join(failed) +
                            " (showing previous stories where available).")
     out["model"] = gem.model if gem else (prev.get("model"))
+    if gem:  # small diagnostics block, handy when Google renames/retires models
+        out["gemini_debug"] = {"candidates": gem.candidates, "errors": gem.errors,
+                               "flash_models_listed": [n for n in gem.available if "flash" in n]}
 
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     tmp = DATA_PATH.with_suffix(".tmp")
