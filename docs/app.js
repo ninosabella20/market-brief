@@ -18,7 +18,7 @@
       else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
       else n.setAttribute(k, v === true ? "" : v);
     }
-    for (const k of kids.flat()) if (k != null && k !== false) n.append(k.nodeType ? k : String(k));
+    for (const k of kids.flat(Infinity)) if (k != null && k !== false) n.append(k.nodeType ? k : String(k));
     return n;
   }
   const store = {
@@ -151,7 +151,7 @@
     const box = el("div", { class: "pic" });
     const f = s.facts || {};
     const initials = () => {
-      box.className = "pic"; box.replaceChildren(el("span", { class: "initials", text: (s.company || "?").replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).slice(0, 2).map(w => w[0]).join("").toUpperCase() }));
+      box.className = "pic"; box.replaceChildren(el("span", { class: "initials", text: (s.company || "?").replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).filter(w => w && !/^(inc|corp|corporation|co|company|plc|ltd|limited|sa|spa|ag|nv|se|group|holdings?|the)$/i.test(w)).slice(0, 2).map(w => w[0]).join("").toUpperCase() }));
     };
     const logo = () => {
       if (!f.logo) return initials();
@@ -212,7 +212,7 @@
     const chips = $("#chips"); chips.replaceChildren();
     const chip = (k, label) => el("button", { class: "chip", type: "button", "aria-pressed": String(current === k),
       onclick: () => { current = k; store.set("sector", k); renderStories(d); } , text: label });
-    chips.append(chip("ALL", "All sectors"), keys.map(k => chip(k, secs[k].name)));
+    chips.append(chip("ALL", "All sectors"), ...keys.map(k => chip(k, secs[k].name)));
     const out = $("#stories"); out.replaceChildren();
     const show = current === "ALL" ? keys : [current];
     for (const k of show) {
