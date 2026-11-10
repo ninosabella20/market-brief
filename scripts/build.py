@@ -42,6 +42,13 @@ SLOTS = (7, 17)              # Madrid hours at which a refresh is due
 SLOT_GRACE_HOURS = 1         # also accept 08:xx / 18:xx if the slot was missed
 STORY_MAX_AGE_DAYS = 10      # drop stories older than this
 STORIES_PER_SECTOR = 5
+START = time.time()
+# Hard stop well before the workflow's 45-minute timeout so data.json is always written.
+DEADLINE = START + float(os.environ.get("BUILD_BUDGET_SECONDS", str(36 * 60)))
+
+
+def out_of_time(margin: float = 0) -> bool:
+    return time.time() + margin > DEADLINE
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/130.0 Safari/537.36")
 
@@ -255,7 +262,11 @@ class Gemini:
     def __init__(self, key: str, override: str | None, min_interval: float):
         self.key = key
         self.available: list[str] = []
-        self.errors: dict[str, str] = {}
+        self.errors: dict[str, str] = {}      # model -> why it was abandoned
+        self.last_429: dict[str, str] = {}
+        self.ok: dict[str, int] = {}          # model -> successful calls
+        self.exhausted = False
+        self.deadline = time.time() + float(os.environ.get("GEMINI_BUDGET_SECONDS", "1500"))
         self.min_interval = min_interval
         self._last_call = 0.0
         self.candidates = [override] if override else self._discover()
@@ -302,22 +313,31 @@ class Gemini:
         return list(dict.fromkeys(ordered))
 
     def _next_model(self, why: str) -> bool:
-        self.errors[self.model] = why[:200]
-        i = self.candidates.index(self.model)
-        if i + 1 < len(self.candidates):
-            log.warning("model %s unusable (%s); switching to %s", self.model, why,
-                        self.candidates[i + 1])
-            self.model = self.candidates[i + 1]
+        """Mark the current model unusable for the rest of this run and move on."""
+        self.errors[self.model] = why[:300]
+        log.warning("model %s unusable: %s", self.model, why[:300])
+        rest = [m for m in self.candidates if m not in self.errors]
+        if rest:
+            self.model = rest[0]
+            log.info("switching to %s", self.model)
             return True
+        self.exhausted = True
         return False
 
     def generate(self, prompt: str, grounded: bool = True) -> tuple[str, list[dict]]:
+        if self.exhausted:
+            raise GeminiError("no usable Gemini model left this run: " +
+                              "; ".join(f"{k}: {v[:90]}" for k, v in self.errors.items()))
+        if time.time() > self.deadline:
+            raise GeminiError("Gemini time budget for this run used up")
         body = {"contents": [{"role": "user", "parts": [{"text": prompt}]}],
                 "generationConfig": {"temperature": 0.2}}
         if grounded:
             body["tools"] = [{"google_search": {}}]
         attempts = 0
         while True:
+            if time.time() > self.deadline:
+                raise GeminiError("Gemini time budget for this run used up")
             wait = self.min_interval - (time.time() - self._last_call)
             if wait > 0:
                 time.sleep(wait)
@@ -325,37 +345,45 @@ class Gemini:
             attempts += 1
             try:
                 r = HTTP.post(f"{self.BASE}/models/{self.model}:generateContent",
-                              headers=self._headers(), json=body, timeout=180)
+                              headers=self._headers(), json=body, timeout=150)
             except requests.RequestException as e:
-                if attempts >= 4:
+                if attempts >= 3:
                     raise GeminiError(f"network error: {e}") from e
                 time.sleep(10 * attempts)
                 continue
             if r.status_code == 200:
+                self.ok[self.model] = self.ok.get(self.model, 0) + 1
                 return self._parse(r.json())
-            msg = r.text[:600]
+            full = r.text
             if r.status_code == 429:
-                daily = "PerDay" in msg or "per day" in msg.lower()
-                if "limit: 0" in msg or daily or attempts >= 5:
-                    if self._next_model("quota: " + ("free tier limit 0" if "limit: 0" in msg
-                                                     else "daily" if daily else "rate")):
+                quota = ",".join(sorted(set(re.findall(r'"quotaId":\s*"([^"]+)"', full))))
+                limit = ",".join(sorted(set(re.findall(r'"quotaValue":\s*"?(\d+)', full))))
+                m = re.search(r'"retryDelay":\s*"(\d+(?:\.\d+)?)s"', full)
+                delay = float(m.group(1)) if m else 30.0
+                daily = "PerDay" in full or "per day" in full.lower()
+                why = f"429 quota={quota or '?'} limit={limit or '?'} retry={delay:.0f}s"
+                self.last_429[self.model] = why
+                if daily or limit == "0" or "limit: 0" in full or delay > 65 or attempts >= 3:
+                    if self._next_model(why):
                         attempts = 0
                         continue
-                    raise GeminiError(f"rate limited (429): {msg}")
-                m = re.search(r'"retryDelay":\s*"(\d+(?:\.\d+)?)s"', msg)
-                delay = min(float(m.group(1)) + 2, 90) if m else 15 * attempts
-                log.info("429 from Gemini, sleeping %.0fs", delay)
-                time.sleep(delay)
+                    raise GeminiError("rate limited on every model: " + why)
+                log.info("429 on %s (%s), sleeping %.0fs", self.model, why, delay + 2)
+                time.sleep(delay + 2)
                 continue
             if r.status_code == 404 or (r.status_code in (400, 403) and re.search(
-                    r"model|not supported|not available|no longer", msg, re.I)):
-                if self._next_model(f"{r.status_code}: {msg[:160]}"):
+                    r"model|not supported|not available|no longer", full, re.I)):
+                if self._next_model(f"{r.status_code}: {full[:200]}"):
                     attempts = 0
                     continue
-            if r.status_code >= 500 and attempts < 5:
+                raise GeminiError(f"HTTP {r.status_code}: {full[:300]}")
+            if r.status_code >= 500 and attempts < 3:
                 time.sleep(10 * attempts)
                 continue
-            raise GeminiError(f"HTTP {r.status_code}: {msg}")
+            if r.status_code >= 500 and self._next_model(f"{r.status_code}: {full[:200]}"):
+                attempts = 0
+                continue
+            raise GeminiError(f"HTTP {r.status_code}: {full[:300]}")
 
     @staticmethod
     def _parse(j: dict) -> tuple[str, list[dict]]:
@@ -444,7 +472,7 @@ def fetch_page(url: str) -> dict:
         return _page_cache[url]
     res = {"ok": None, "final": url, "image": None}
     try:
-        r = HTTP.get(url, timeout=15, allow_redirects=True, stream=True,
+        r = HTTP.get(url, timeout=10, allow_redirects=True, stream=True,
                      headers={"Accept": "text/html,application/xhtml+xml"})
         res["final"] = r.url
         if r.status_code in (404, 410):
@@ -792,7 +820,9 @@ def fix_link(story: dict, chunks: list[dict]) -> None:
     want = _tokens(story["headline"] + " " + story["company"])
     best, best_score = None, -1.0
     src_dom = _domain(story["url"]) if story["url"] else (story.get("source") or "").lower()
-    for ch in chunks:
+    for ch in chunks[:6]:
+        if out_of_time(120):
+            break
         title = ch.get("title") or ""
         score = 0.0
         if src_dom and (src_dom in title.lower() or title.lower() in src_dom):
@@ -850,6 +880,8 @@ def enrich_stories(sectors: dict) -> None:
     resolved = {}
     for s in all_items:
         key = (s["company"], s.get("ticker"))
+        if key not in resolved and out_of_time(180):
+            resolved[key] = (None, [])
         if key not in resolved:
             resolved[key] = resolve_ticker(s["company"], s.get("ticker"), s.get("country"))
             time.sleep(0.3)
@@ -860,12 +892,12 @@ def enrich_stories(sectors: dict) -> None:
     facts_cache = {}
     for s in all_items:
         sym = s["symbol"]
-        if sym and sym not in facts_cache:
+        if sym and sym not in facts_cache and not out_of_time(90):
             facts_cache[sym] = company_facts(sym, s["_search"])
             time.sleep(0.4)
     # Yahoo sometimes rejects the first burst of quoteSummary calls; retry those
     # tickers once after a pause.
-    retry = [k for k, f in facts_cache.items() if f.get("partial")]
+    retry = [k for k, f in facts_cache.items() if f.get("partial")] if not out_of_time(240) else []
     if retry:
         log.info("retrying company facts for %s", ", ".join(retry))
         time.sleep(8)
@@ -1005,6 +1037,11 @@ def main() -> int:
                 if etf in prev_secs:
                     sectors_out[etf] = prev_secs[etf]
                 continue
+            if out_of_time(8 * 60):  # leave time for Yahoo enrichment + writing
+                failed.append(sector)
+                if etf in prev_secs:
+                    sectors_out[etf] = {**prev_secs[etf], "stale": True}
+                continue
             try:
                 log.info("stories: %s", sector)
                 items = sector_stories(gem, etf, sector, today)
@@ -1042,6 +1079,7 @@ def main() -> int:
     out["model"] = gem.model if gem else (prev.get("model"))
     if gem:  # small diagnostics block, handy when Google renames/retires models
         out["gemini_debug"] = {"candidates": gem.candidates, "errors": gem.errors,
+                               "ok_calls": gem.ok, "last_429": gem.last_429,
                                "flash_models_listed": [n for n in gem.available if "flash" in n]}
 
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
