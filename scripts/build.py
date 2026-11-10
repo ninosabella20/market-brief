@@ -1029,7 +1029,10 @@ def main() -> int:
         notices.append("Explanations skipped because prices failed.")
 
     if gem and not args.skip_stories:
-        want = set(args.sectors.upper().split(",")) if args.sectors else None
+        only = args.sectors or os.environ.get("STORY_SECTORS", "")
+        want = {x.strip() for x in only.upper().split(",") if x.strip()} or None
+        if want:
+            log.info("stories limited to %s", ", ".join(sorted(want)))
         prev_secs = (prev.get("stories") or {}).get("sectors") or {}
         sectors_out, fresh, failed = {}, {}, []
         for etf, sector in SECTORS:

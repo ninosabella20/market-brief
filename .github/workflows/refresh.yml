@@ -15,6 +15,10 @@ on:
         description: "Run even if it is not 07:00/17:00 in Madrid"
         type: boolean
         default: true
+      sectors:
+        description: "Only these sectors' stories, e.g. XLK,XLE (empty = all 11)"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -43,6 +47,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           GEMINI_MIN_INTERVAL: ${{ vars.GEMINI_MIN_INTERVAL || '12' }}
+          # Code pushes are smoke tests: 1 sector (2 Gemini calls) to save free quota.
+          STORY_SECTORS: ${{ github.event_name == 'push' && 'XLK' || inputs.sectors || '' }}
           FORCE_RUN: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.force) }}
         run: python scripts/build.py
 
