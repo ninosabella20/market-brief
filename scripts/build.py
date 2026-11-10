@@ -963,6 +963,7 @@ def main() -> int:
 
     # 2) Gemini parts
     key = os.environ.get("GEMINI_API_KEY", "").strip()
+    log.info("GEMINI_API_KEY %s", "present" if key else "MISSING (set the repo secret)")
     gem = None
     if not key:
         notices.append("GEMINI_API_KEY is not set; stories and explanations were not refreshed.")
