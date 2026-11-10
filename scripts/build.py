@@ -361,9 +361,15 @@ class Gemini:
                 m = re.search(r'"retryDelay":\s*"(\d+(?:\.\d+)?)s"', full)
                 delay = float(m.group(1)) if m else 30.0
                 daily = "PerDay" in full or "per day" in full.lower()
-                why = f"429 quota={quota or '?'} limit={limit or '?'} retry={delay:.0f}s"
+                try:
+                    gmsg = r.json()["error"].get("message", "")
+                except Exception:  # noqa: BLE001
+                    gmsg = full
+                why = (f"429 quota={quota or '?'} limit={limit or '?'} retry={delay:.0f}s "
+                       f"msg={' '.join(gmsg.split())[:260]}")
                 self.last_429[self.model] = why
-                if daily or limit == "0" or "limit: 0" in full or delay > 65 or attempts >= 3:
+                if (daily or limit == "0" or "limit: 0" in full or delay > 65 or not m
+                        or attempts >= 2):
                     if self._next_model(why):
                         attempts = 0
                         continue
@@ -384,6 +390,23 @@ class Gemini:
                 attempts = 0
                 continue
             raise GeminiError(f"HTTP {r.status_code}: {full[:300]}")
+
+    def probe(self) -> dict:
+        """Diagnostics when every model failed: one tiny call with and without
+        Google Search grounding on the preferred model."""
+        res = {}
+        for grounded in (False, True):
+            body = {"contents": [{"role": "user", "parts": [{"text": "Reply with the word OK."}]}]}
+            if grounded:
+                body["tools"] = [{"google_search": {}}]
+            try:
+                r = HTTP.post(f"{self.BASE}/models/{self.candidates[0]}:generateContent",
+                              headers=self._headers(), json=body, timeout=60)
+                res["grounded" if grounded else "plain"] = f"{r.status_code} {' '.join(r.text.split())[:500]}"
+            except Exception as e:  # noqa: BLE001
+                res["grounded" if grounded else "plain"] = f"error {e}"
+            time.sleep(5)
+        return res
 
     @staticmethod
     def _parse(j: dict) -> tuple[str, list[dict]]:
@@ -1083,6 +1106,7 @@ def main() -> int:
     if gem:  # small diagnostics block, handy when Google renames/retires models
         out["gemini_debug"] = {"candidates": gem.candidates, "errors": gem.errors,
                                "ok_calls": gem.ok, "last_429": gem.last_429,
+                               "probe": gem.probe() if not gem.ok else None,
                                "flash_models_listed": [n for n in gem.available if "flash" in n]}
 
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
