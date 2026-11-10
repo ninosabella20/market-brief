@@ -392,20 +392,24 @@ class Gemini:
             raise GeminiError(f"HTTP {r.status_code}: {full[:300]}")
 
     def probe(self) -> dict:
-        """Diagnostics when every model failed: one tiny call with and without
-        Google Search grounding on the preferred model."""
+        """Diagnostics when every model failed: tiny calls with/without Google
+        Search grounding, on the preferred model and on a lite model."""
         res = {}
-        for grounded in (False, True):
-            body = {"contents": [{"role": "user", "parts": [{"text": "Reply with the word OK."}]}]}
-            if grounded:
-                body["tools"] = [{"google_search": {}}]
-            try:
-                r = HTTP.post(f"{self.BASE}/models/{self.candidates[0]}:generateContent",
-                              headers=self._headers(), json=body, timeout=60)
-                res["grounded" if grounded else "plain"] = f"{r.status_code} {' '.join(r.text.split())[:500]}"
-            except Exception as e:  # noqa: BLE001
-                res["grounded" if grounded else "plain"] = f"error {e}"
-            time.sleep(5)
+        lite = next((m for m in self.candidates if "lite" in m), self.candidates[-1])
+        for model in dict.fromkeys([self.candidates[0], lite]):
+            for grounded in (False, True):
+                body = {"contents": [{"role": "user", "parts": [{"text": "Reply with the word OK."}]}]}
+                if grounded:
+                    body["tools"] = [{"google_search": {}}]
+                key = f"{model} {'grounded' if grounded else 'plain'}"
+                t = time.time()
+                try:
+                    r = HTTP.post(f"{self.BASE}/models/{model}:generateContent",
+                                  headers=self._headers(), json=body, timeout=200)
+                    res[key] = f"{r.status_code} in {time.time()-t:.0f}s: {' '.join(r.text.split())[:300]}"
+                except Exception as e:  # noqa: BLE001
+                    res[key] = f"error after {time.time()-t:.0f}s: {e}"
+                time.sleep(5)
         return res
 
     @staticmethod
