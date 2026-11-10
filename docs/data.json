@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-10T23:22:56Z",
+ "generated_at": "2026-11-10T23:35:42Z",
  "notices": [
-  "Market recap / 'why it moved' not refreshed (rate limited on every model: 429 quota=? limit=? retry=30s); showing the previous text.",
+  "Market recap / 'why it moved' not refreshed (rate limited on every model: 429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan a); showing the previous text.",
   "Stories not refreshed for: Information Technology (showing previous stories where available)."
  ],
  "model": "gemini-flash-lite-latest",
@@ -168,7 +168,7 @@
   "intraday": false,
   "as_of_label": "Close Tue 10 Nov 2026",
   "missing": [],
-  "updated_at": "2026-11-10T23:22:59Z"
+  "updated_at": "2026-11-10T23:35:45Z"
  },
  "recap": null,
  "reasons": {},
@@ -191,29 +191,33 @@
    "gemini-flash-lite-latest"
   ],
   "errors": {
-   "gemini-3.8-flash": "429 quota=? limit=? retry=30s",
-   "gemini-3.7-flash": "429 quota=? limit=? retry=30s",
-   "gemini-3.6-flash": "429 quota=? limit=? retry=30s",
-   "gemini-3.5-flash": "429 quota=? limit=? retry=30s",
+   "gemini-3.8-flash": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
+   "gemini-3.7-flash": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
+   "gemini-3.6-flash": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
+   "gemini-3.5-flash": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
    "gemini-2.5-flash": "404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a",
-   "gemini-flash-latest": "429 quota=? limit=? retry=30s",
-   "gemini-3-flash-preview": "429 quota=? limit=? retry=30s",
-   "gemini-3.5-flash-lite": "429 quota=? limit=? retry=30s",
-   "gemini-3.1-flash-lite": "429 quota=? limit=? retry=30s",
+   "gemini-flash-latest": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
+   "gemini-3-flash-preview": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
+   "gemini-3.5-flash-lite": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
+   "gemini-3.1-flash-lite": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
    "gemini-2.5-flash-lite": "404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "gemini-flash-lite-latest": "429 quota=? limit=? retry=30s"
+   "gemini-flash-lite-latest": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit."
   },
   "ok_calls": {},
   "last_429": {
-   "gemini-3.8-flash": "429 quota=? limit=? retry=30s",
-   "gemini-3.7-flash": "429 quota=? limit=? retry=30s",
-   "gemini-3.6-flash": "429 quota=? limit=? retry=30s",
-   "gemini-3.5-flash": "429 quota=? limit=? retry=30s",
-   "gemini-flash-latest": "429 quota=? limit=? retry=30s",
-   "gemini-3-flash-preview": "429 quota=? limit=? retry=30s",
-   "gemini-3.5-flash-lite": "429 quota=? limit=? retry=30s",
-   "gemini-3.1-flash-lite": "429 quota=? limit=? retry=30s",
-   "gemini-flash-lite-latest": "429 quota=? limit=? retry=30s"
+   "gemini-3.8-flash": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
+   "gemini-3.7-flash": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
+   "gemini-3.6-flash": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
+   "gemini-3.5-flash": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
+   "gemini-flash-latest": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
+   "gemini-3-flash-preview": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
+   "gemini-3.5-flash-lite": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
+   "gemini-3.1-flash-lite": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
+   "gemini-flash-lite-latest": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit."
+  },
+  "probe": {
+   "plain": "error HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)",
+   "grounded": "429 { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"status\": \"RESOURCE_EXHAUSTED\", \"details\": [ { \"@type\": \"type.googleapis.com/google.rpc.Help\", \"links\": [ { \"description\": \"Learn more about Gemini API quotas\", \"url\": \"https://aistudio.google.com/docs/rate-limits\" } ] } ] }"
   },
   "flash_models_listed": [
    "gemini-2.5-flash",
