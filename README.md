@@ -5,8 +5,9 @@ A free, self-updating market dashboard: sector performance for the 11 GICS secto
 - **Site:** static page in `docs/` (served by GitHub Pages), reads `docs/data.json`.
 - **Data:** `scripts/build.py`, run by GitHub Actions (`.github/workflows/refresh.yml`).
   - Prices, returns, company facts, consensus and analyst ratings: **Yahoo Finance via yfinance** (no key).
-  - Stories, company one-liners, market recap and "why it moved": **Google Gemini API free tier** with Google Search grounding.
-- **Cost:** €0. Public repo + GitHub Pages + Actions minutes (free and unlimited for public repos) + Gemini free tier. Each run makes about 12 Gemini calls (one per sector plus one for explanations), roughly 24 a day.
+  - News candidates: **Yahoo Finance news search** (no key): for each sector the ETF's top 10 holdings plus a few themed queries (e.g. "European banks"), last 4 days, with each article's description and picture.
+  - Story selection and writing, company one-liners, market recap and "why it moved": **Google Gemini API free tier**, *without* Google Search grounding (grounding isn't in the free tier for new keys). Gemini only picks from the real articles it is given, so every link is real.
+- **Cost:** €0. Public repo + GitHub Pages + Actions minutes (free and unlimited for public repos) + Gemini free tier. Each full run makes 12 Gemini calls (one per sector plus one for explanations), 24 a day.
 
 ## How it works
 
@@ -32,12 +33,14 @@ You'll get an email from GitHub only if a run fails completely (no numbers and n
 
 ## If Gemini changes
 
-**Model names change.** By default the script lists your available models (`GET /v1beta/models`) and picks the newest stable `gemini-<version>-flash` model (no `-preview`, `-exp` or `-lite`). If that model isn't on the free tier (429 with `limit: 0`) or is retired (404), it falls back automatically to the next one, then to `gemini-flash-latest`, then to `gemini-2.5-flash`.
+**Model names change.** By default the script lists your available models (`GET /v1beta/models`) and picks the newest stable `gemini-<version>-flash` model (no `-preview`, `-exp` or `-lite`). If that model is out of free quota (429), retired (404) or doesn't answer within 100 s (`GEMINI_TIMEOUT`), it is skipped for the rest of the run. The script then falls back to the next stable flash, `gemini-flash-latest`, the preview flash models, and finally the flash-lite models.
 To pin a model: repo **Settings → Secrets and variables → Actions → Variables → New variable**, name `GEMINI_MODEL`, value e.g. `gemini-2.5-flash`. Delete the variable to go back to auto-pick. The model used is shown when you hover over the "Updated…" stamp.
 
 **Free-tier limits shrink (429 errors in the log).** Increase the pause between calls with a repo variable `GEMINI_MIN_INTERVAL` (seconds, default 12; e.g. `30`), set in the same place as `GEMINI_MODEL`. Alternatively, reduce `STORIES_PER_SECTOR` in `build.py`. If the daily quota is the problem, drop one of the two refresh slots (`SLOTS = (7,)`) so stories refresh once a day.
 
-**Google Search grounding stops being free, or the tool name changes.** The request uses `"tools": [{"google_search": {}}]` in `Gemini.generate()`. Check the current name at https://ai.google.dev/gemini-api/docs/google-search. Without grounding the stories would be unreliable, so the right fix is the new tool name or a model that still supports it.
+**Stories look thin or off-topic for a sector.** Edit that sector's themed queries in `SECTOR_QUERIES` in `build.py`. Gemini can only choose from what those searches return.
+
+**Diagnosing Gemini problems without reading logs.** Each run writes a `gemini_debug` block into `docs/data.json`, showing the candidate models, which ones answered, and the exact reason any model was skipped (quota, retired, timed out).
 
 **Key expired or revoked.** Create a new one at https://aistudio.google.com/apikey, then run:
 ```bash
