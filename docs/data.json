@@ -1,10 +1,7 @@
 {
- "generated_at": "2026-11-10T23:40:12Z",
- "notices": [
-  "Market recap / 'why it moved' not refreshed (rate limited on every model: 429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan a); showing the previous text.",
-  "Stories not refreshed for: Information Technology (showing previous stories where available)."
- ],
- "model": "gemini-flash-lite-latest",
+ "generated_at": "2026-11-10T23:49:17Z",
+ "notices": [],
+ "model": "gemini-3.7-flash",
  "market": {
   "rows": [
    {
@@ -168,13 +165,425 @@
   "intraday": false,
   "as_of_label": "Close Tue 10 Nov 2026",
   "missing": [],
-  "updated_at": "2026-11-10T23:40:15Z"
+  "updated_at": "2026-11-10T23:49:22Z"
  },
- "recap": null,
- "reasons": {},
+ "recap": {
+  "text": "The S&P 500 declined 0.37% on Tuesday (and is down 0.59% for the week) as hotter-than-expected CPI inflation data sparked concerns over potential Federal Reserve rate hikes and drove Treasury yields sharply higher. Market sentiment was heavily weighed down by Information Technology, where a 5.5% plunge in Nvidia exacerbated pressure on high-multiple growth stocks. In contrast, value and defensive sectors outperformed, with Financials leading gains (+0.52%) on wider net interest margin expectations, while Energy (+0.44%) staged a late-session bounce despite crude oil sliding to multi-month lows on easing Middle East tensions.",
+  "updated_at": "2026-11-10T23:51:51Z"
+ },
+ "reasons": {
+  "updated_at": "2026-11-10T23:51:51Z",
+  "items": {
+   "SPY": "The S&P 500 fell 0.37% as hotter-than-expected CPI data reignited Fed rate-hike fears and pushed Treasury yields higher, compounding weakness in heavyweight tech shares.",
+   "XLK": "Technology dropped 1.15% (and is down 4.31% on the week) as soaring bond yields pressured high-valuation growth stocks and Nvidia tumbled 5.5% amid an analyst downgrade and a CEO scandal.",
+   "XLC": "Communication Services rose 0.37% to extend its weekly advance to 6.23%, buoyed by resilient digital advertising sentiment and positive earnings reports across media and ad-tech names.",
+   "XLY": "Consumer Discretionary ticked up 0.03%, holding ground despite higher bond yields as investors weighed recent solid jobs data against inflation pressures on consumer spending.",
+   "XLP": "Consumer Staples gained 0.15% as market participants rotated into defensive, non-cyclical dividend payers amidst broader equity volatility and inflation uncertainty.",
+   "XLF": "Financials led all sectors with a 0.52% gain, capitalizing on surging Treasury yields and elevated rate expectations that support bank lending margins.",
+   "XLV": "Health Care added 0.29%, continuing its strong monthly rally (+10.58%) as investors sought defensive, non-discretionary cash flows during a tech-led market pullback.",
+   "XLI": "Industrials slipped 0.09%, weighed down by broader macro concerns over stubborn inflation and the negative impact of higher borrowing costs on capital expenditure.",
+   "XLB": "Materials fell 0.17% amid pressure on base metal prices and broader commodity sensitivity to rising interest rates and inflation data.",
+   "XLE": "Energy rebounded 0.44% late in the day after a rough week (-6.70%), even as crude oil prices retreated toward two-month lows following signs of de-escalating U.S.-Iran tensions.",
+   "XLU": "Utilities dipped 0.14% as surging Treasury yields diminished the relative appeal of bond-proxy dividend yields, dampening recent momentum in power and nuclear plays.",
+   "XLRE": "Real Estate slipped 0.13% due to its heightened sensitivity to borrowing costs, as surging yields and hot CPI readings weighed on property financing expectations."
+  }
+ },
  "stories": {
-  "updated_at": null,
-  "sectors": {}
+  "updated_at": "2026-11-10T23:53:13Z",
+  "sectors": {
+   "XLK": {
+    "name": "Information Technology",
+    "updated_at": "2026-11-10T23:53:05Z",
+    "items": [
+     {
+      "headline": "Nvidia Shares Slump as Board Launches Probe into CEO Jensen Huang",
+      "company": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "country": "United States",
+      "profile": "NVIDIA Corporation is a leading US semiconductor company and the world's dominant designer of accelerated computing hardware and software for AI.",
+      "what_happened": "Nvidia shares dropped over 4% after the board opened an investigation into CEO Jensen Huang following an admitted relationship, deepening a selloff that erased an $1.84 trillion valuation lead. The decline allowed Microsoft to briefly overtake Nvidia as the world's second-most valuable company for the first time since June 2025.",
+      "why_it_matters": "Sudden leadership and governance risks at the semiconductor industry's primary AI bellwether create significant uncertainty for the entire tech sector and chip supply chain.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-briefly-overtakes-nvidia-jensen-230016006.html",
+      "source": "Benzinga Prediction Markets",
+      "image": "https://media.zenfs.com/en/benzinga_prediction_markets_613/9b8e0d0ef83355c61513aea529e86295.jpg",
+      "published": "2026-11-10",
+      "related": [
+       "MSFT",
+       "NVDA"
+      ],
+      "link_verified": true,
+      "symbol": "NVDA",
+      "growth": {
+       "w1": -18.29,
+       "y1": -15.15,
+       "y5": 473.31,
+       "as_of": "2026-11-10"
+      },
+      "facts": {
+       "name": "NVIDIA Corporation",
+       "currency": "USD",
+       "price": 168.89,
+       "market_cap": 4078186790912,
+       "country": "United States",
+       "industry": "Semiconductors",
+       "website": "https://www.nvidia.com",
+       "logo": "https://www.google.com/s2/favicons?domain=nvidia.com&sz=128",
+       "exchange": "NasdaqGS",
+       "partial": false,
+       "consensus": {
+        "rating": "Strong Buy",
+        "mean": 1.32,
+        "analysts": 57,
+        "target_mean": 325.78,
+        "upside": 92.9,
+        "breakdown": {
+         "buy": 58,
+         "hold": 3,
+         "sell": 1
+        }
+       },
+       "ratings_ticker": "NVDA",
+       "ratings": [
+        {
+         "firm": "Citigroup",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-11-10",
+         "target": 285.0
+        },
+        {
+         "firm": "Wells Fargo",
+         "grade": "Overweight",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-11-10",
+         "target": 300.0
+        },
+        {
+         "firm": "RBC Capital",
+         "grade": "Outperform",
+         "rating": "buy",
+         "action": "reit",
+         "date": "2026-11-09",
+         "target": 330.0
+        }
+       ]
+      }
+     },
+     {
+      "headline": "CoreWeave Tops Q3 Estimates and Reports $133 Billion Backlog",
+      "company": "CoreWeave, Inc.",
+      "ticker": "CRWV",
+      "country": "United States",
+      "profile": "CoreWeave is a specialized US cloud computing infrastructure provider focused on high-performance GPU compute for artificial intelligence workloads.",
+      "what_happened": "CoreWeave posted third-quarter financial results that beat Wall Street forecasts, reporting smaller-than-anticipated cash burn despite widening year-over-year net losses. The company revealed that its business backlog reached $133 billion, sending its shares up 2.6% in after-hours trading.",
+      "why_it_matters": "The massive order backlog demonstrates durable enterprise and hyperscaler commitment to dedicated AI cloud infrastructure despite broader tech market volatility.",
+      "url": "https://finance.yahoo.com/m/28396f88-12d6-3f4f-a7d2-23b92efb42b2/coreweave-meets-wall-street.html",
+      "source": "The Wall Street Journal",
+      "image": "https://media.zenfs.com/en/wsj.com/dc3b0f8b8a26f43d9e33a81a3851df52.jpg",
+      "published": "2026-11-10",
+      "related": [
+       "CRWV",
+       "NVDA",
+       "MSFT",
+       "OPAI.PVT"
+      ],
+      "link_verified": true,
+      "symbol": "CRWV",
+      "growth": {
+       "w1": -9.32,
+       "y1": -53.86,
+       "y5": null,
+       "as_of": "2026-11-10"
+      },
+      "facts": {
+       "name": "CoreWeave, Inc.",
+       "currency": "USD",
+       "price": 48.73,
+       "market_cap": 26876377088,
+       "country": "United States",
+       "industry": "Software - Infrastructure",
+       "website": "https://www.coreweave.com",
+       "logo": "https://www.google.com/s2/favicons?domain=coreweave.com&sz=128",
+       "exchange": "NasdaqGS",
+       "partial": false,
+       "consensus": {
+        "rating": "Buy",
+        "mean": 1.76,
+        "analysts": 38,
+        "target_mean": 131.53,
+        "upside": 169.9,
+        "breakdown": {
+         "buy": 32,
+         "hold": 7,
+         "sell": 3
+        }
+       },
+       "ratings_ticker": "CRWV",
+       "ratings": [
+        {
+         "firm": "Rosenblatt",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-11-09",
+         "target": 160.0
+        },
+        {
+         "firm": "Wells Fargo",
+         "grade": "Overweight",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-11-09",
+         "target": 115.0
+        },
+        {
+         "firm": "Citigroup",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-11-04",
+         "target": 128.0
+        }
+       ]
+      }
+     },
+     {
+      "headline": "AMD Jumps 13% on Google AI Chip Deal and Doubling Data Center Sales",
+      "company": "Advanced Micro Devices, Inc.",
+      "ticker": "AMD",
+      "country": "United States",
+      "profile": "Advanced Micro Devices is a major US semiconductor firm designing microprocessors, graphics processors, and AI accelerators for data centers and personal computing.",
+      "what_happened": "AMD stock jumped 13.3% after securing an AI chip supply agreement with Google and receiving a Wall Street analyst price target upgrade. The company's data center revenue nearly doubled year-over-year, driving a 25% outperformance relative to Nvidia over two trading sessions.",
+      "why_it_matters": "Hyperscaler adoption of AMD's silicon confirms that cloud providers are actively seeking secondary chip sources, loosening Nvidia's near-monopoly on data center accelerators.",
+      "url": "https://finance.yahoo.com/technology/articles/amd-gains-25-against-nvda-193008000.html",
+      "source": "Benzinga Prediction Markets",
+      "image": "https://media.zenfs.com/en/benzinga_prediction_markets_613/8e0f5d8dd4f23bc2e767683a8faff671.jpg",
+      "published": "2026-11-10",
+      "related": [
+       "AMD",
+       "NVDA",
+       "GOOGM"
+      ],
+      "link_verified": true,
+      "symbol": "AMD",
+      "growth": {
+       "w1": 6.47,
+       "y1": 111.17,
+       "y5": 268.35,
+       "as_of": "2026-11-10"
+      },
+      "facts": {
+       "name": "Advanced Micro Devices, Inc.",
+       "currency": "USD",
+       "price": 515.21,
+       "market_cap": 844989399040,
+       "country": "United States",
+       "industry": "Semiconductors",
+       "website": "https://www.amd.com",
+       "logo": "https://www.google.com/s2/favicons?domain=amd.com&sz=128",
+       "exchange": "NasdaqGS",
+       "partial": false,
+       "consensus": {
+        "rating": "Strong Buy",
+        "mean": 1.38,
+        "analysts": 48,
+        "target_mean": 657.49,
+        "upside": 27.6,
+        "breakdown": {
+         "buy": 45,
+         "hold": 8,
+         "sell": 0
+        }
+       },
+       "ratings_ticker": "AMD",
+       "ratings": [
+        {
+         "firm": "Oppenheimer",
+         "grade": "Outperform",
+         "rating": "buy",
+         "action": "up",
+         "date": "2026-11-09",
+         "target": 600.0
+        },
+        {
+         "firm": "UBS",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-11-04",
+         "target": 700.0
+        },
+        {
+         "firm": "JP Morgan",
+         "grade": "Neutral",
+         "rating": "hold",
+         "action": "main",
+         "date": "2026-11-04",
+         "target": 575.0
+        }
+       ]
+      }
+     },
+     {
+      "headline": "Rackspace Raises Full-Year Revenue Guidance on Strong Public Cloud Consumption",
+      "company": "Rackspace Technology, Inc.",
+      "ticker": "RXT",
+      "country": "United States",
+      "profile": "Rackspace Technology is a US-based multicloud IT services provider delivering cloud management, infrastructure, and application solutions.",
+      "what_happened": "Rackspace delivered third-quarter revenue of $609 million and lifted its full-year top-line guidance following stronger-than-expected Public Cloud usage. The company maintained its profit outlook while presenting an investment roadmap to expand AI computing capacity through 2027.",
+      "why_it_matters": "The guidance increase highlights healthy underlying enterprise cloud utilization and suggests hybrid cloud services are capturing growing spillover demand from enterprise AI initiatives.",
+      "url": "https://finance.yahoo.com/technology/articles/rackspace-technology-q3-earnings-call-191504783.html",
+      "source": "MarketBeat",
+      "image": "https://media.zenfs.com/en/marketbeat_955/74647176f11bf029bb1bcc923c168976.png_up.jpg",
+      "published": "2026-11-10",
+      "related": [
+       "RXT",
+       "PLTR"
+      ],
+      "link_verified": true,
+      "symbol": "RXT",
+      "growth": {
+       "w1": -0.19,
+       "y1": 122.41,
+       "y5": -81.34,
+       "as_of": "2026-11-10"
+      },
+      "facts": {
+       "name": "Rackspace Technology, Inc.",
+       "currency": "USD",
+       "price": 2.68,
+       "market_cap": 683059264,
+       "country": "United States",
+       "industry": "Software - Infrastructure",
+       "website": "https://www.rackspace.com",
+       "logo": "https://www.google.com/s2/favicons?domain=rackspace.com&sz=128",
+       "exchange": "NasdaqGS",
+       "partial": false,
+       "consensus": {
+        "rating": "Hold",
+        "mean": 3.0,
+        "analysts": 3,
+        "target_mean": 4.77,
+        "upside": 77.9,
+        "breakdown": {
+         "buy": 0,
+         "hold": 3,
+         "sell": 0
+        }
+       },
+       "ratings_ticker": "RXT",
+       "ratings": [
+        {
+         "firm": "RBC Capital",
+         "grade": "Sector Perform",
+         "rating": "hold",
+         "action": "main",
+         "date": "2026-06-17",
+         "target": 4.0
+        },
+        {
+         "firm": "BMO Capital",
+         "grade": "Market Perform",
+         "rating": "hold",
+         "action": "main",
+         "date": "2025-08-12",
+         "target": 1.4
+        },
+        {
+         "firm": "Raymond James",
+         "grade": "Market Perform",
+         "rating": "hold",
+         "action": "down",
+         "date": "2025-06-02",
+         "target": null
+        }
+       ]
+      }
+     },
+     {
+      "headline": "IREN Reports 182% Sequential Jump in AI Cloud Revenue to $200 Million",
+      "company": "IREN Limited",
+      "ticker": "IREN",
+      "country": "Australia",
+      "profile": "IREN Limited is a next-generation data center operator and AI cloud infrastructure provider originally established in Australia.",
+      "what_happened": "IREN reported that AI cloud revenue surged 182% quarter-over-quarter to $200 million in its fiscal first quarter of 2027. Despite JPMorgan initiating coverage with a Buy rating on the back of the results, the company's shares fell approximately 4% to around $21.",
+      "why_it_matters": "The triple-digit sequential growth demonstrates that specialized data center operators are successfully converting built-out high-performance computing capacity into immediate AI cloud revenues.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/iren-stock-falls-even-jpmorgan-224457686.html",
+      "source": "TipRanks",
+      "image": "https://media.zenfs.com/en/tipranks_452/baa1f23059391e8707983f1d4677db5a.png",
+      "published": "2026-11-10",
+      "related": [
+       "IREN",
+       "MSFT",
+       "MSF",
+       "4338",
+       "NVDA"
+      ],
+      "link_verified": true,
+      "symbol": "IREN",
+      "growth": {
+       "w1": -19.34,
+       "y1": -67.21,
+       "y5": null,
+       "as_of": "2026-11-10"
+      },
+      "facts": {
+       "name": "IREN Limited",
+       "currency": "USD",
+       "price": 19.73,
+       "market_cap": 8372570624,
+       "country": "Australia",
+       "industry": "Capital Markets",
+       "website": "https://iren.com",
+       "logo": "https://www.google.com/s2/favicons?domain=iren.com&sz=128",
+       "exchange": "NasdaqGS",
+       "partial": false,
+       "consensus": {
+        "rating": "Buy",
+        "mean": 1.6,
+        "analysts": 19,
+        "target_mean": 56.69,
+        "upside": 187.3,
+        "breakdown": {
+         "buy": 15,
+         "hold": 5,
+         "sell": 0
+        }
+       },
+       "ratings_ticker": "IREN",
+       "ratings": [
+        {
+         "firm": "JP Morgan",
+         "grade": "Overweight",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-11-09",
+         "target": 55.0
+        },
+        {
+         "firm": "Macquarie",
+         "grade": "Outperform",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-11-07",
+         "target": 55.0
+        },
+        {
+         "firm": "Jones Trading",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "up",
+         "date": "2026-11-07",
+         "target": 40.0
+        }
+       ]
+      }
+     }
+    ]
+   }
+  }
  },
  "gemini_debug": {
   "candidates": [
@@ -191,36 +600,13 @@
    "gemini-flash-lite-latest"
   ],
   "errors": {
-   "gemini-3.8-flash": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
-   "gemini-3.7-flash": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
-   "gemini-3.6-flash": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
-   "gemini-3.5-flash": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
-   "gemini-2.5-flash": "404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a",
-   "gemini-flash-latest": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
-   "gemini-3-flash-preview": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
-   "gemini-3.5-flash-lite": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
-   "gemini-3.1-flash-lite": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
-   "gemini-2.5-flash-lite": "404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest ",
-   "gemini-flash-lite-latest": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit."
+   "gemini-3.8-flash": "no answer within 100s"
   },
-  "ok_calls": {},
-  "last_429": {
-   "gemini-3.8-flash": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
-   "gemini-3.7-flash": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
-   "gemini-3.6-flash": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
-   "gemini-3.5-flash": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
-   "gemini-flash-latest": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
-   "gemini-3-flash-preview": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
-   "gemini-3.5-flash-lite": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
-   "gemini-3.1-flash-lite": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit.",
-   "gemini-flash-lite-latest": "429 quota=? limit=? retry=30s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit."
+  "ok_calls": {
+   "gemini-3.7-flash": 2
   },
-  "probe": {
-   "gemini-3.8-flash plain": "error after 200s: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=200)",
-   "gemini-3.8-flash grounded": "429 in 0s: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"status\": \"RESOURCE_EXHA",
-   "gemini-3.5-flash-lite plain": "200 in 2s: { \"candidates\": [ { \"content\": { \"parts\": [ { \"text\": \"OK\", \"thoughtSignature\": \"El8KXQFpFH0Ta1/qPGOIrWG2YdUI0Mc0p/vxAnhfDZrMYbZVG1Hfq1S3C4isrFWekR+FDAvGdevoN/XBfBz7RncOe3/DaUoZFpXuRurno+qQ/HucriWItbRZTTyHih+48Q==\" } ], \"role\": \"model\" }, \"finishReason\": \"STOP\", \"index\": 0 } ], \"usageMetadata\": { \"p",
-   "gemini-3.5-flash-lite grounded": "429 in 0s: { \"error\": { \"code\": 429, \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \", \"status\": \"RESOURCE_EXHA"
-  },
+  "last_429": {},
+  "probe": null,
   "flash_models_listed": [
    "gemini-2.5-flash",
    "gemini-2.5-flash-preview-tts",
