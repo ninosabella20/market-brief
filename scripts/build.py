@@ -1017,22 +1017,35 @@ def enrich_stories(sectors: dict) -> None:
 # AI research picks: Gemini chooses from real candidates with real numbers
 # --------------------------------------------------------------------------
 PICKS_PER_SECTOR = 3
-PICKS_PROMPT = """Today is {today}. You are an equity research analyst helping an individual investor
-choose companies to RESEARCH further (not to buy blindly). For each GICS sector below you get
-candidate companies with REAL data: price returns (1 week, 1 year), analyst consensus and number
-of analysts, average price target upside, forward P/E, market cap, and today's news if any.
+PICKS_PROMPT = """Today is {today}. You are a long-term, fundamentals-driven equity analyst helping an
+investor who NEVER trades short term. Their philosophy: buy shares of high-quality companies at good
+prices and hold them for a MINIMUM of 5 years, ideally 10+. No day trading, no medium-term trades.
 
-For EACH sector pick the {n} most interesting research targets. Aim for a useful mix of angles,
-not just the largest companies: a fresh news catalyst, strong momentum, an apparent valuation /
-price-target gap, or quality at a reasonable price. Use at least two DIFFERENT angles per
-sector (not three Catalysts). Only choose from the listed candidates.
-Each reason: ONE sentence (max 25 words) that cites at least one concrete number or news item
-from the data. Never invent numbers or events.
+For each GICS sector below you get candidate companies with REAL data: 5-year / 1-year / 1-week price
+return, return on equity (ROE), profit margin, revenue growth (yoy), debt/equity, free-cash-flow
+yield, dividend yield, trailing and forward P/E, distance from the 52-week high, analyst consensus,
+market cap, and today's news headline if any.
+
+For EACH sector pick exactly {n} LONG-TERM holdings to research. Favour:
+- durable quality: high/consistent ROE and margins, healthy balance sheet, real free cash flow,
+  a lasting competitive advantage (scale, brand, network, switching costs, regulated assets...)
+- a sensible price today: reasonable P/E vs. the company's quality/growth, or a good entry point
+  (e.g. well below its 52-week high) - but never a broken business just because it's cheap
+Avoid speculative, unprofitable or highly indebted names and pure momentum stories. Short-term
+news is only relevant if it makes the long-term entry price more attractive.
+Only choose from the listed candidates. Never invent numbers or facts.
+
+For each pick give:
+- "horizon": "5+ years" or "10+ years" (your intended minimum holding period; never shorter)
+- "angle": one of "Compounder", "Quality at a discount", "Dividend grower", "Long-term growth"
+- "reason": ONE or two sentences (max 40 words): the durable advantage AND why today's price is
+  reasonable, citing at least one concrete number from the data.
 
 {blocks}
 
-Return ONLY a JSON object (no markdown) mapping each sector ETF code to a list:
-{{"XLK": [{{"ticker": "...", "angle": "Catalyst|Momentum|Value|Quality", "reason": "..."}}, ...], ...}}"""
+Return ONLY a JSON object (no markdown) mapping each sector ETF code to a list of {n}:
+{{"XLK": [{{"ticker": "...", "horizon": "10+ years", "angle": "Compounder", "reason": "..."}}, ...], ...}}"""
+PICK_ANGLES = ("Compounder", "Quality at a discount", "Dividend grower", "Long-term growth")
 
 
 def quick_facts(sym: str) -> dict:
@@ -1043,12 +1056,24 @@ def quick_facts(sym: str) -> dict:
     i = _with_retry(get_info, tries=2, default={}) or {}
     price = i.get("currentPrice") or i.get("regularMarketPrice")
     tgt = i.get("targetMeanPrice")
+    hi = i.get("fiftyTwoWeekHigh")
+    mcap = i.get("marketCap")
+    fcf = i.get("freeCashflow")
     rec = (i.get("recommendationKey") or "none").lower()
+    pct_ = lambda v: num(v * 100, 1) if isinstance(v, (int, float)) else None  # noqa: E731
     return {
         "name": i.get("shortName") or i.get("longName") or sym,
         "currency": i.get("currency"),
-        "market_cap": i.get("marketCap"),
+        "market_cap": mcap,
         "fwd_pe": num(i.get("forwardPE"), 1),
+        "pe": num(i.get("trailingPE"), 1),
+        "roe": pct_(i.get("returnOnEquity")),
+        "margin": pct_(i.get("profitMargins")),
+        "rev_growth": pct_(i.get("revenueGrowth")),
+        "debt_eq": num(i.get("debtToEquity"), 0),
+        "fcf_yield": num(fcf / mcap * 100, 1) if fcf and mcap else None,
+        "div_yield": num(i.get("dividendYield"), 2),      # yfinance gives this in %
+        "off_high": num((price / hi - 1) * 100, 1) if price and hi else None,
         "consensus": REC_LABEL.get(rec, rec.replace("_", " ").title() or None),
         "analysts": i.get("numberOfAnalystOpinions"),
         "upside": num((tgt / price - 1) * 100, 1) if tgt and price else None,
@@ -1059,21 +1084,21 @@ def build_picks(gem: Gemini, story_secs: dict, today: str) -> dict:
     cands: dict[str, list[str]] = {}
     news: dict[str, str] = {}
     for etf, _ in SECTORS:
-        syms = list(etf_holdings(etf, 10))
+        syms = list(etf_holdings(etf, 15))
         for st in (story_secs.get(etf) or {}).get("items", []):
             if st.get("symbol"):
                 syms.append(st["symbol"])
                 news.setdefault(st["symbol"], st["headline"])
         cands[etf] = list(dict.fromkeys(syms))
     all_syms = sorted({x for v in cands.values() for x in v})
-    closes = fetch_closes(all_syms, period="13mo")
+    closes = fetch_closes(all_syms, period="6y")
     facts = {}
     for sym in all_syms:
         if out_of_time(150):
             break
         facts[sym] = quick_facts(sym)
         g = returns(closes[sym]) if sym in closes else {}
-        facts[sym].update(w1=g.get("week"), y1=g.get("y1"))
+        facts[sym].update(w1=g.get("week"), y1=g.get("y1"), y5=g.get("y5"))
         time.sleep(0.2)
 
     def f(v, suf="%"):
@@ -1087,9 +1112,12 @@ def build_picks(gem: Gemini, story_secs: dict, today: str) -> dict:
             if not x:
                 continue
             mc = (f"${x['market_cap'] / 1e9:.0f}B" if x.get("market_cap") else "n/a")
-            line = (f"- {sym} ({x['name']}): 1W {f(x['w1'])}, 1Y {f(x['y1'])}, consensus "
-                    f"{x['consensus'] or 'n/a'} ({x['analysts'] or 0} analysts), target upside "
-                    f"{f(x['upside'])}, fwd P/E {x['fwd_pe'] or 'n/a'}, mkt cap {mc}")
+            line = (f"- {sym} ({x['name']}): 5Y {f(x['y5'])}, 1Y {f(x['y1'])}, 1W {f(x['w1'])}, "
+                    f"ROE {f(x['roe'])}, margin {f(x['margin'])}, rev growth {f(x['rev_growth'])}, "
+                    f"debt/equity {x['debt_eq'] if x['debt_eq'] is not None else 'n/a'}, "
+                    f"FCF yield {f(x['fcf_yield'])}, div yield {f(x['div_yield'])}, "
+                    f"P/E {x['pe'] or 'n/a'} (fwd {x['fwd_pe'] or 'n/a'}), vs 52w high {f(x['off_high'])}, "
+                    f"consensus {x['consensus'] or 'n/a'} ({x['analysts'] or 0} analysts), mkt cap {mc}")
             if sym in news:
                 line += f", news today: {news[sym]}"
             lines.append(line)
@@ -1121,10 +1149,13 @@ def build_picks(gem: Gemini, story_secs: dict, today: str) -> dict:
                 continue   # only real candidates; numbers come from Yahoo, not the model
             seen.add(match)
             x = facts.get(match, {})
-            picks.append({"ticker": match, "name": x.get("name"), "angle": str(p.get("angle") or "").title()[:12],
-                          "reason": str(p["reason"]).strip(), "y1": x.get("y1"), "w1": x.get("w1"),
-                          "consensus": x.get("consensus"), "analysts": x.get("analysts"),
-                          "upside": x.get("upside")})
+            angle = str(p.get("angle") or "").strip()
+            angle = next((a for a in PICK_ANGLES if a.lower() == angle.lower()), angle.title()[:24])
+            horizon = "10+ years" if "10" in str(p.get("horizon") or "") else "5+ years"
+            picks.append({"ticker": match, "name": x.get("name"), "angle": angle, "horizon": horizon,
+                          "reason": str(p["reason"]).strip(),
+                          **{k: x.get(k) for k in ("y5", "y1", "roe", "margin", "fwd_pe", "pe",
+                                                   "div_yield", "off_high", "consensus", "analysts")}})
             if len(picks) >= PICKS_PER_SECTOR:
                 break
         if picks:

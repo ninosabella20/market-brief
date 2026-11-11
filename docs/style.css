@@ -167,3 +167,4 @@ tr.reason p.why { margin: 0; }
 .pick-why { font-size: 13.5px; }
 .pick-stats { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .pick-stats .pill { font-size: 12px; padding: 1px 7px; background: var(--surface); }
+.badge.hz { background: rgba(var(--up), .14); color: var(--up-ink); text-transform: none; letter-spacing: 0; }

@@ -100,21 +100,25 @@
   /* ---------- AI research picks (inside a tapped sector row) ---------- */
   function picksBlock(list) {
     if (!list || !list.length) return null;
+    const stat = (label, v, fmt) => v == null ? null : el("span", { class: "pill" }, el("b", { text: label }), fmt(v));
     return el("div", { class: "picks" },
-      el("div", { class: "picks-h" }, el("span", { class: "lbl", text: "AI research picks" }),
-        el("span", { class: "muted small", text: "ideas to research, not advice" })),
+      el("div", { class: "picks-h" }, el("span", { class: "lbl", text: "Long-term picks" }),
+        el("span", { class: "muted small", text: "quality at a good price · 5+ year holds · ideas to research, not advice" })),
       list.map(p => el("div", { class: "pick" },
         el("div", { class: "pick-top" },
           el("a", { class: "pick-tk", href: "https://finance.yahoo.com/quote/" + encodeURIComponent(p.ticker),
             target: "_blank", rel: "noopener noreferrer", text: p.ticker, onclick: e => e.stopPropagation() }),
           el("span", { class: "pick-nm", text: p.name || "" }),
+          el("span", { class: "badge hz", text: "Hold " + (p.horizon || "5+ years").replace("years", "yrs") }),
           p.angle ? el("span", { class: "badge angle", text: p.angle }) : null),
         el("div", { class: "pick-why", text: p.reason }),
         el("div", { class: "pick-stats" },
-          p.y1 != null ? el("span", { class: "pill " + cls(p.y1) }, el("b", { text: "1Y" }), pct(p.y1, 0)) : null,
-          p.consensus ? el("span", { class: "badge " + ratingClass(p.consensus), text: p.consensus }) : null,
-          p.analysts ? el("span", { class: "muted small", text: p.analysts + " analysts" }) : null,
-          p.upside != null ? el("span", { class: "muted small", text: "PT upside " + pct(p.upside, 0) }) : null))));
+          p.y5 != null ? el("span", { class: "pill " + cls(p.y5) }, el("b", { text: "5Y" }), pct(p.y5, 0)) : null,
+          stat("ROE", p.roe, v => v.toFixed(0) + "%"),
+          stat("P/E", p.fwd_pe || p.pe, v => v.toFixed(0)),
+          p.div_yield ? stat("Div", p.div_yield, v => v.toFixed(1) + "%") : null,
+          p.off_high != null && p.off_high < -5 ? stat("vs 52w high", p.off_high, v => pct(v, 0)) : null,
+          p.consensus ? el("span", { class: "badge " + ratingClass(p.consensus), text: p.consensus }) : null))));
   }
 
   /* ---------- performance tab ---------- */
