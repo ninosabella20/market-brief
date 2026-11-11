@@ -24,7 +24,7 @@ A free, self-updating market dashboard: sector performance for the 11 GICS secto
 | See why a run failed | Actions → click the red run → *Build docs/data.json* step log |
 | Change the schedule | edit `SLOTS` in `scripts/build.py` **and** the cron line in the workflow (cron is UTC) |
 | Run locally | `pip install -r requirements.txt`, `export GEMINI_API_KEY=...`, `python scripts/build.py --force`, then `python -m http.server -d docs 8000` and open http://localhost:8000 |
-| Refresh only some sectors | Actions → Run workflow → fill *sectors* (e.g. `XLK,XLE`). Code pushes automatically test only `XLK`. |
+| Refresh only some sectors | Actions → Run workflow → fill *sectors* (e.g. `XLK,XLE`). Code pushes automatically test only `XLK`, unless the commit message contains `[full]`. |
 | Quick local test of 2 sectors | `python scripts/build.py --force --sectors XLK,XLE` |
 
 GitHub disables scheduled workflows after 60 days with **no repository activity**. The twice-daily data commits count as activity, so this shouldn't happen. If it does (for example after a long string of failures), open Actions and click **Enable workflow**.
