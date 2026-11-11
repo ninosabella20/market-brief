@@ -1024,7 +1024,8 @@ of analysts, average price target upside, forward P/E, market cap, and today's n
 
 For EACH sector pick the {n} most interesting research targets. Aim for a useful mix of angles,
 not just the largest companies: a fresh news catalyst, strong momentum, an apparent valuation /
-price-target gap, or quality at a reasonable price. Only choose from the listed candidates.
+price-target gap, or quality at a reasonable price. Use at least two DIFFERENT angles per
+sector (not three Catalysts). Only choose from the listed candidates.
 Each reason: ONE sentence (max 25 words) that cites at least one concrete number or news item
 from the data. Never invent numbers or events.
 
