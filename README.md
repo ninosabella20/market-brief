@@ -22,7 +22,7 @@ A free, self-updating market dashboard: sector performance for the 11 GICS secto
 |---|---|
 | Refresh now | GitHub → **Actions** → *Refresh market brief* → **Run workflow** (any push that changes `scripts/`, `requirements.txt` or the workflow also triggers a run) |
 | See why a run failed | Actions → click the red run → *Build docs/data.json* step log |
-| Change the schedule (e.g. add 17:00: `SLOTS = (7, 17)` and cron hours `4,5,14,15`) | edit `SLOTS` / `LEAD_MINUTES` in `scripts/build.py` **and** the cron line in the workflow (cron is UTC; cover both UTC+1 and UTC+2) |
+| Change the schedule (don't use `[skip ci]` in that commit, or GitHub may not pick up the new times; e.g. add 17:00: `SLOTS = (7, 17)` and cron hours `4,5,14,15`) | edit `SLOTS` / `LEAD_MINUTES` in `scripts/build.py` **and** the cron line in the workflow (cron is UTC; cover both UTC+1 and UTC+2) |
 | Run locally | `pip install -r requirements.txt`, `export GEMINI_API_KEY=...`, `python scripts/build.py --force`, then `python -m http.server -d docs 8000` and open http://localhost:8000 |
 | Refresh only some sectors | Actions → Run workflow → fill *sectors* (e.g. `XLK,XLE`). Code pushes automatically test only `XLK`, unless the commit message contains `[full]`. |
 | Quick local test of 2 sectors | `python scripts/build.py --force --sectors XLK,XLE` |

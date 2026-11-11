@@ -5,6 +5,8 @@ on:
     # Data should be READY by 07:00 Madrid, so the build starts ~06:10.
     # Madrid is UTC+1 (winter) / UTC+2 (summer): these times cover both seasons,
     # :40 is a backup if GitHub drops a run, and build.py skips runs that aren't due.
+    # NOTE: never change this file in a commit marked [skip ci] - GitHub may then
+    # not register the new schedule.
     - cron: "10,40 4,5 * * *"
   # Code/workflow changes trigger an immediate run (data-only commits don't).
   push:
