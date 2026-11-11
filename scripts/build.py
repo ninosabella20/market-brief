@@ -10,7 +10,7 @@ Every part is independent: if one part fails, the last good copy of that part
 is kept from the previous docs/data.json and a notice is shown on the site.
 
 Usage:
-  python scripts/build.py            # only runs at 07:xx / 17:xx Europe/Madrid
+  python scripts/build.py            # only runs in the 06:00-08:00 Europe/Madrid window
   python scripts/build.py --force    # run now regardless of time
   python scripts/build.py --force --sectors XLK,XLE   # quick partial test
   python scripts/build.py --force --skip-stories      # numbers + reasons only
@@ -38,9 +38,9 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_PATH = ROOT / "docs" / "data.json"
 MADRID = ZoneInfo("Europe/Madrid")
 NEW_YORK = ZoneInfo("America/New_York")
-SLOTS = (7, 17)              # Madrid hours by which fresh data should be READY
-LEAD_MINUTES = 60            # a slot's window opens this long before it (06:00 / 16:00)
-WINDOW_MINUTES = 120         # ...and stays open this long (until 08:00 / 18:00) to catch late cron runs
+SLOTS = (7,)                 # Madrid hour(s) by which fresh data should be READY
+LEAD_MINUTES = 60            # a slot's window opens this long before it (06:00)
+WINDOW_MINUTES = 120         # ...and stays open this long (until 08:00) to catch late cron runs
 STORY_MAX_AGE_DAYS = 10      # drop stories older than this
 STORIES_PER_SECTOR = 5
 START = time.time()
