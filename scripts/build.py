@@ -268,7 +268,8 @@ class Gemini:
         self.last_429: dict[str, str] = {}
         self.ok: dict[str, int] = {}          # model -> successful calls
         self.exhausted = False
-        self.timeout = float(os.environ.get("GEMINI_TIMEOUT", "100"))
+        self.timeout = float(os.environ.get("GEMINI_TIMEOUT", "150"))
+        self.timeouts: dict[str, int] = {}
         self.deadline = time.time() + float(os.environ.get("GEMINI_BUDGET_SECONDS", "1500"))
         self.min_interval = min_interval
         self._last_call = 0.0
@@ -350,7 +351,12 @@ class Gemini:
                 r = HTTP.post(f"{self.BASE}/models/{self.model}:generateContent",
                               headers=self._headers(), json=body, timeout=self.timeout)
             except requests.Timeout:
-                # Free-tier models that hang are useless for this run; move on.
+                # A model that already answered this run gets one more try; one that
+                # never answered (or times out twice) is dropped for the run.
+                self.timeouts[self.model] = self.timeouts.get(self.model, 0) + 1
+                if self.ok.get(self.model) and self.timeouts[self.model] < 2:
+                    log.info("%s slow (timeout), retrying once", self.model)
+                    continue
                 if self._next_model(f"no answer within {self.timeout:.0f}s"):
                     attempts = 0
                     continue

@@ -33,7 +33,7 @@ You'll get an email from GitHub only if a run fails completely (no numbers and n
 
 ## If Gemini changes
 
-**Model names change.** By default the script lists your available models (`GET /v1beta/models`) and picks the newest stable `gemini-<version>-flash` model (no `-preview`, `-exp` or `-lite`). If that model is out of free quota (429), retired (404) or doesn't answer within 100 s (`GEMINI_TIMEOUT`), it is skipped for the rest of the run. The script then falls back to the next stable flash, `gemini-flash-latest`, the preview flash models, and finally the flash-lite models.
+**Model names change.** By default the script lists your available models (`GET /v1beta/models`) and picks the newest stable `gemini-<version>-flash` model (no `-preview`, `-exp` or `-lite`). If that model is out of free quota (429), retired (404) or doesn't answer within 150 s (`GEMINI_TIMEOUT`; a model that already answered gets one retry), it is skipped for the rest of the run. The script then falls back to the next stable flash, `gemini-flash-latest`, the preview flash models, and finally the flash-lite models.
 To pin a model: repo **Settings → Secrets and variables → Actions → Variables → New variable**, name `GEMINI_MODEL`, value e.g. `gemini-2.5-flash`. Delete the variable to go back to auto-pick. The model used is shown when you hover over the "Updated…" stamp.
 
 **Free-tier limits shrink (429 errors in the log).** Increase the pause between calls with a repo variable `GEMINI_MIN_INTERVAL` (seconds, default 12; e.g. `30`), set in the same place as `GEMINI_MODEL`. Alternatively, reduce `STORIES_PER_SECTOR` in `build.py`.
