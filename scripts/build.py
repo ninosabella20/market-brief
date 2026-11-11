@@ -38,8 +38,9 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_PATH = ROOT / "docs" / "data.json"
 MADRID = ZoneInfo("Europe/Madrid")
 NEW_YORK = ZoneInfo("America/New_York")
-SLOTS = (7, 17)              # Madrid hours at which a refresh is due
-SLOT_GRACE_HOURS = 1         # also accept 08:xx / 18:xx if the slot was missed
+SLOTS = (7, 17)              # Madrid hours by which fresh data should be READY
+LEAD_MINUTES = 60            # a slot's window opens this long before it (06:00 / 16:00)
+WINDOW_MINUTES = 120         # ...and stays open this long (until 08:00 / 18:00) to catch late cron runs
 STORY_MAX_AGE_DAYS = 10      # drop stories older than this
 STORIES_PER_SECTOR = 5
 START = time.time()
@@ -98,16 +99,16 @@ def num(x, nd=2):
 # Schedule gate
 # --------------------------------------------------------------------------
 def current_slot(prev: dict) -> tuple[bool, str]:
-    """Return (should_run, reason). Due if Madrid hour is a slot hour (or the
-    grace hour after it) and no successful build has happened since the slot."""
+    """Return (should_run, reason). A slot (e.g. 07:00) is due between 06:00 and
+    08:00 Madrid time, once: skip if a build already happened inside the window."""
     m = now_utc().astimezone(MADRID)
     for slot in SLOTS:
-        if slot <= m.hour <= slot + SLOT_GRACE_HOURS:
-            slot_start = m.replace(hour=slot, minute=0, second=0, microsecond=0)
+        start = m.replace(hour=slot, minute=0, second=0, microsecond=0) - dt.timedelta(minutes=LEAD_MINUTES)
+        if start <= m < start + dt.timedelta(minutes=WINDOW_MINUTES):
             last = prev.get("generated_at")
             if last:
                 last_t = dt.datetime.fromisoformat(last.replace("Z", "+00:00"))
-                if last_t >= slot_start:
+                if last_t >= start:
                     return False, f"slot {slot:02d}:00 already built at {last}"
             return True, f"slot {slot:02d}:00 due (Madrid time {m:%H:%M})"
     return False, f"Madrid time {m:%H:%M} is not a refresh slot"

@@ -11,7 +11,7 @@ A free, self-updating market dashboard: sector performance for the 11 GICS secto
 
 ## How it works
 
-1. Cron fires at 05:05, 06:05, 15:05 and 16:05 UTC. `build.py` only proceeds when it is 07:xx/08:xx or 17:xx/18:xx in Madrid **and** that slot hasn't been built yet. This handles summer/winter time and GitHub's occasionally late or dropped cron runs.
+1. The goal is fresh data **ready by 07:00 and 17:00 Madrid**. Cron fires at :10 and :40 past 04, 05, 14 and 15 UTC. `build.py` only proceeds inside the window 06:00–08:00 (or 16:00–18:00) Madrid **and** only if that slot hasn't been built yet. In practice the build starts around 06:10/16:10 and finishes 10–15 minutes later, plus GitHub's usual 5–30 minute start delay. This handles summer/winter time and late or dropped cron runs. The 16:10 build sees Wall Street about 40 minutes after the open, so afternoon numbers are an early-session snapshot.
 2. Each part (numbers, explanations, each sector's stories) refreshes independently. If one fails, the previous good copy is kept and the site shows a yellow "Last refresh was partial" notice.
 3. The site shows a "Data is over a day old" warning if numbers or stories haven't refreshed in 24 h.
 4. The workflow commits `docs/data.json`. Pages redeploys automatically within a minute or two.
@@ -22,7 +22,7 @@ A free, self-updating market dashboard: sector performance for the 11 GICS secto
 |---|---|
 | Refresh now | GitHub → **Actions** → *Refresh market brief* → **Run workflow** (any push that changes `scripts/`, `requirements.txt` or the workflow also triggers a run) |
 | See why a run failed | Actions → click the red run → *Build docs/data.json* step log |
-| Change the schedule | edit `SLOTS` in `scripts/build.py` **and** the cron line in the workflow (cron is UTC) |
+| Change the schedule | edit `SLOTS` / `LEAD_MINUTES` in `scripts/build.py` **and** the cron line in the workflow (cron is UTC; cover both UTC+1 and UTC+2) |
 | Run locally | `pip install -r requirements.txt`, `export GEMINI_API_KEY=...`, `python scripts/build.py --force`, then `python -m http.server -d docs 8000` and open http://localhost:8000 |
 | Refresh only some sectors | Actions → Run workflow → fill *sectors* (e.g. `XLK,XLE`). Code pushes automatically test only `XLK`, unless the commit message contains `[full]`. |
 | Quick local test of 2 sectors | `python scripts/build.py --force --sectors XLK,XLE` |

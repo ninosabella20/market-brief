@@ -2,9 +2,10 @@ name: Refresh market brief
 
 on:
   schedule:
-    # Madrid is UTC+1 (winter) / UTC+2 (summer). These four times cover 07:05 and
-    # 17:05 Madrid in both seasons; build.py skips the runs that are not due.
-    - cron: "5 5,6,15,16 * * *"
+    # Data should be READY by 07:00 and 17:00 Madrid, so builds start ~06:10 / 16:10.
+    # Madrid is UTC+1 (winter) / UTC+2 (summer): these times cover both seasons,
+    # :40 is a backup if GitHub drops a run, and build.py skips runs that aren't due.
+    - cron: "10,40 4,5,14,15 * * *"
   # Code/workflow changes trigger an immediate run (data-only commits don't).
   push:
     branches: [main]
