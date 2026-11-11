@@ -7,7 +7,7 @@ A free, self-updating market dashboard: sector performance for the 11 GICS secto
   - Prices, returns, company facts, consensus and analyst ratings: **Yahoo Finance via yfinance** (no key).
   - News candidates: **Yahoo Finance news search** (no key): for each sector the ETF's top 10 holdings plus a few themed queries (e.g. "European banks"), last 4 days, with each article's description and picture.
   - Story selection and writing, company one-liners, market recap and "why it moved": **Google Gemini API free tier**, *without* Google Search grounding (grounding isn't in the free tier for new keys). Gemini only picks from the real articles it is given, so every link is real.
-- **Cost:** €0. Public repo + GitHub Pages + Actions minutes (free and unlimited for public repos) + Gemini free tier. Each run makes 12 Gemini calls (one per sector plus one for explanations), once a day.
+- **Cost:** €0. Public repo + GitHub Pages + Actions minutes (free and unlimited for public repos) + Gemini free tier. Each run makes 12 Gemini calls (one per sector plus one for explanations), once a day. The free tier allows **20 requests per day per model** (measured Nov 2026; resets at midnight Pacific), so a daily run fits within one model, and other models act as a backup.
 
 ## How it works
 
