@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  const DAY_MS = 24 * 3600 * 1000;
+  const DAY_MS = 26 * 3600 * 1000; // daily refresh + slack for late GitHub runs
   const SHORT = { SPY: "S&P 500", XLK: "Tech", XLC: "Comm.", XLY: "Discr.", XLP: "Staples",
     XLF: "Financials", XLV: "Health", XLI: "Industr.", XLB: "Materials", XLE: "Energy",
     XLU: "Utilities", XLRE: "Real Est." };
