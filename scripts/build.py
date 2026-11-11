@@ -177,7 +177,7 @@ def _stooq(ticker: str) -> pd.Series | None:
         return None
 
 
-def fetch_closes(tickers: list[str]) -> dict[str, pd.Series]:
+def fetch_closes(tickers: list[str], period: str = "6y") -> dict[str, pd.Series]:
     """Daily (split-adjusted, dividend-excluded) closes for ~6 years."""
     tickers = list(dict.fromkeys(tickers))
     out: dict[str, pd.Series] = {}
@@ -186,7 +186,7 @@ def fetch_closes(tickers: list[str]) -> dict[str, pd.Series]:
         if not missing:
             break
         try:
-            df = yf.download(missing, period="6y", interval="1d", auto_adjust=False,
+            df = yf.download(missing, period=period, interval="1d", auto_adjust=False,
                              group_by="ticker", threads=False, progress=False)
             out.update(_closes_from_download(df, missing))
         except Exception as e:  # noqa: BLE001
@@ -828,13 +828,18 @@ JUNK_TITLE = re.compile(r"\b(stocks? to (buy|watch|sell)|top \d+|\d+ (stocks|rea
                         r"stock market today|dividend stocks|etfs? to|better buy|what to watch)\b", re.I)
 
 
+_holdings_cache: dict[str, list[str]] = {}
+
+
 def etf_holdings(etf: str, n=10) -> list[str]:
-    try:
-        h = yf.Ticker(etf).funds_data.top_holdings
-        return [str(x) for x in list(h.index)[:n]]
-    except Exception as e:  # noqa: BLE001
-        log.warning("holdings %s: %s", etf, e)
-        return []
+    if etf not in _holdings_cache:
+        try:
+            h = yf.Ticker(etf).funds_data.top_holdings
+            _holdings_cache[etf] = [str(x) for x in list(h.index)]
+        except Exception as e:  # noqa: BLE001
+            log.warning("holdings %s: %s", etf, e)
+            return []
+    return _holdings_cache[etf][:n]
 
 
 def news_search(q: str, n=12) -> list[dict]:
@@ -1009,6 +1014,126 @@ def enrich_stories(sectors: dict) -> None:
 
 
 # --------------------------------------------------------------------------
+# AI research picks: Gemini chooses from real candidates with real numbers
+# --------------------------------------------------------------------------
+PICKS_PER_SECTOR = 3
+PICKS_PROMPT = """Today is {today}. You are an equity research analyst helping an individual investor
+choose companies to RESEARCH further (not to buy blindly). For each GICS sector below you get
+candidate companies with REAL data: price returns (1 week, 1 year), analyst consensus and number
+of analysts, average price target upside, forward P/E, market cap, and today's news if any.
+
+For EACH sector pick the {n} most interesting research targets. Aim for a useful mix of angles,
+not just the largest companies: a fresh news catalyst, strong momentum, an apparent valuation /
+price-target gap, or quality at a reasonable price. Only choose from the listed candidates.
+Each reason: ONE sentence (max 25 words) that cites at least one concrete number or news item
+from the data. Never invent numbers or events.
+
+{blocks}
+
+Return ONLY a JSON object (no markdown) mapping each sector ETF code to a list:
+{{"XLK": [{{"ticker": "...", "angle": "Catalyst|Momentum|Value|Quality", "reason": "..."}}, ...], ...}}"""
+
+
+def quick_facts(sym: str) -> dict:
+    def get_info():
+        i = yf.Ticker(sym).info or {}
+        return i if (i.get("longName") or i.get("shortName")) else None
+
+    i = _with_retry(get_info, tries=2, default={}) or {}
+    price = i.get("currentPrice") or i.get("regularMarketPrice")
+    tgt = i.get("targetMeanPrice")
+    rec = (i.get("recommendationKey") or "none").lower()
+    return {
+        "name": i.get("shortName") or i.get("longName") or sym,
+        "currency": i.get("currency"),
+        "market_cap": i.get("marketCap"),
+        "fwd_pe": num(i.get("forwardPE"), 1),
+        "consensus": REC_LABEL.get(rec, rec.replace("_", " ").title() or None),
+        "analysts": i.get("numberOfAnalystOpinions"),
+        "upside": num((tgt / price - 1) * 100, 1) if tgt and price else None,
+    }
+
+
+def build_picks(gem: Gemini, story_secs: dict, today: str) -> dict:
+    cands: dict[str, list[str]] = {}
+    news: dict[str, str] = {}
+    for etf, _ in SECTORS:
+        syms = list(etf_holdings(etf, 10))
+        for st in (story_secs.get(etf) or {}).get("items", []):
+            if st.get("symbol"):
+                syms.append(st["symbol"])
+                news.setdefault(st["symbol"], st["headline"])
+        cands[etf] = list(dict.fromkeys(syms))
+    all_syms = sorted({x for v in cands.values() for x in v})
+    closes = fetch_closes(all_syms, period="13mo")
+    facts = {}
+    for sym in all_syms:
+        if out_of_time(150):
+            break
+        facts[sym] = quick_facts(sym)
+        g = returns(closes[sym]) if sym in closes else {}
+        facts[sym].update(w1=g.get("week"), y1=g.get("y1"))
+        time.sleep(0.2)
+
+    def f(v, suf="%"):
+        return "n/a" if v is None else (f"{v:+.1f}{suf}" if suf == "%" else f"{v}{suf}")
+
+    blocks = []
+    for etf, sector in SECTORS:
+        lines = [f"## {etf} - {sector}"]
+        for sym in cands[etf]:
+            x = facts.get(sym)
+            if not x:
+                continue
+            mc = (f"${x['market_cap'] / 1e9:.0f}B" if x.get("market_cap") else "n/a")
+            line = (f"- {sym} ({x['name']}): 1W {f(x['w1'])}, 1Y {f(x['y1'])}, consensus "
+                    f"{x['consensus'] or 'n/a'} ({x['analysts'] or 0} analysts), target upside "
+                    f"{f(x['upside'])}, fwd P/E {x['fwd_pe'] or 'n/a'}, mkt cap {mc}")
+            if sym in news:
+                line += f", news today: {news[sym]}"
+            lines.append(line)
+        blocks.append("\n".join(lines))
+    prompt = PICKS_PROMPT.format(today=today, n=PICKS_PER_SECTOR, blocks="\n\n".join(blocks))
+    j = None
+    for attempt in range(2):
+        text, _ = gem.generate(prompt)
+        try:
+            j = parse_json(text)
+            if isinstance(j, dict):
+                break
+            raise ValueError("not an object")
+        except (ValueError, json.JSONDecodeError) as e:
+            log.warning("picks parse failed (%s)", e)
+            prompt += "\n\nIMPORTANT: output ONLY the JSON object."
+            j = None
+    if j is None:
+        raise GeminiError("could not parse picks JSON")
+    out = {}
+    for etf, _ in SECTORS:
+        picks, seen = [], set()
+        for p in (j.get(etf) or j.get(etf.lower()) or []):
+            if not isinstance(p, dict):
+                continue
+            sym = str(p.get("ticker") or "").strip().upper()
+            match = next((c for c in cands[etf] if c.upper() == sym), None)
+            if not match or match in seen or not p.get("reason"):
+                continue   # only real candidates; numbers come from Yahoo, not the model
+            seen.add(match)
+            x = facts.get(match, {})
+            picks.append({"ticker": match, "name": x.get("name"), "angle": str(p.get("angle") or "").title()[:12],
+                          "reason": str(p["reason"]).strip(), "y1": x.get("y1"), "w1": x.get("w1"),
+                          "consensus": x.get("consensus"), "analysts": x.get("analysts"),
+                          "upside": x.get("upside")})
+            if len(picks) >= PICKS_PER_SECTOR:
+                break
+        if picks:
+            out[etf] = picks
+    if len(out) < 6:
+        raise GeminiError(f"picks returned for only {len(out)} sectors")
+    return out
+
+
+# --------------------------------------------------------------------------
 # Reasons + recap
 # --------------------------------------------------------------------------
 REASON_PROMPT = """Today is {today} (Madrid time {time}). Below is REAL performance data (price
@@ -1087,7 +1212,8 @@ def main() -> int:
     notices: list[str] = []
     out = {"generated_at": iso(t0), "notices": notices, "model": None,
            "market": prev.get("market"), "recap": prev.get("recap"),
-           "reasons": prev.get("reasons") or {}, "stories": prev.get("stories") or {}}
+           "reasons": prev.get("reasons") or {}, "stories": prev.get("stories") or {},
+           "picks": prev.get("picks") or {}}
 
     # 1) Numbers
     market = None
@@ -1140,7 +1266,7 @@ def main() -> int:
                 if etf in prev_secs:
                     sectors_out[etf] = prev_secs[etf]
                 continue
-            if out_of_time(8 * 60):  # leave time for Yahoo enrichment + writing
+            if out_of_time(12 * 60):  # leave time for Yahoo enrichment, picks + writing
                 failed.append(sector)
                 if etf in prev_secs:
                     sectors_out[etf] = {**prev_secs[etf], "stale": True}
@@ -1179,6 +1305,14 @@ def main() -> int:
         if failed:
             notices.append("Stories not refreshed for: " + ", ".join(failed) +
                            " (showing previous stories where available).")
+    if gem and not os.environ.get("SKIP_PICKS"):
+        try:
+            picks = build_picks(gem, (out.get("stories") or {}).get("sectors") or {}, today)
+            out["picks"] = {"updated_at": iso(now_utc()), "items": picks}
+            log.info("picks ok for %d sectors", len(picks))
+        except Exception as e:  # noqa: BLE001
+            log.exception("picks failed")
+            notices.append(f"AI research picks not refreshed ({str(e)[:120]}); showing previous picks.")
     out["model"] = gem.model if gem else (prev.get("model"))
     if gem:  # small diagnostics block, handy when Google renames/retires models
         out["gemini_debug"] = {"candidates": gem.candidates, "errors": gem.errors,

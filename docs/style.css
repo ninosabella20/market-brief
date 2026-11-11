@@ -152,3 +152,18 @@ tr.reason td { white-space: normal; text-align: left; background: var(--surface-
 }
 .pct-note { display: none; }
 @media (max-width: 560px) { .pct-note { display: inline; font-weight: 400; } }
+
+/* AI research picks inside an expanded sector row */
+tr.reason p.why { margin: 0; }
+.picks { margin-top: 12px; border-top: 1px dashed var(--border); padding-top: 10px; display: grid; gap: 10px; }
+.picks-h { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.picks-h .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); font-weight: 700; }
+.pick { display: grid; gap: 3px; }
+.pick-top { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.pick-tk { font-weight: 800; color: var(--accent); text-decoration: none; }
+.pick-tk:hover { text-decoration: underline; }
+.pick-nm { color: var(--muted); font-size: 13px; }
+.badge.angle { background: var(--surface); color: var(--text); border: 1px solid var(--border); font-weight: 600; text-transform: none; letter-spacing: 0; }
+.pick-why { font-size: 13.5px; }
+.pick-stats { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.pick-stats .pill { font-size: 12px; padding: 1px 7px; background: var(--surface); }

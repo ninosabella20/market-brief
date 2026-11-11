@@ -97,6 +97,26 @@
   const mq = window.matchMedia("(max-width: 560px)");
   let lastData = null;
 
+  /* ---------- AI research picks (inside a tapped sector row) ---------- */
+  function picksBlock(list) {
+    if (!list || !list.length) return null;
+    return el("div", { class: "picks" },
+      el("div", { class: "picks-h" }, el("span", { class: "lbl", text: "AI research picks" }),
+        el("span", { class: "muted small", text: "ideas to research, not advice" })),
+      list.map(p => el("div", { class: "pick" },
+        el("div", { class: "pick-top" },
+          el("a", { class: "pick-tk", href: "https://finance.yahoo.com/quote/" + encodeURIComponent(p.ticker),
+            target: "_blank", rel: "noopener noreferrer", text: p.ticker, onclick: e => e.stopPropagation() }),
+          el("span", { class: "pick-nm", text: p.name || "" }),
+          p.angle ? el("span", { class: "badge angle", text: p.angle }) : null),
+        el("div", { class: "pick-why", text: p.reason }),
+        el("div", { class: "pick-stats" },
+          p.y1 != null ? el("span", { class: "pill " + cls(p.y1) }, el("b", { text: "1Y" }), pct(p.y1, 0)) : null,
+          p.consensus ? el("span", { class: "badge " + ratingClass(p.consensus), text: p.consensus }) : null,
+          p.analysts ? el("span", { class: "muted small", text: p.analysts + " analysts" }) : null,
+          p.upside != null ? el("span", { class: "muted small", text: "PT upside " + pct(p.upside, 0) }) : null))));
+  }
+
   /* ---------- performance tab ---------- */
   function heat(v, col) {
     if (v == null) return "";
@@ -106,6 +126,7 @@
   function renderPerf(d) {
     const m = d.market || { rows: [] };
     const reasons = (d.reasons && d.reasons.items) || {};
+    const picks = (d.picks && d.picks.items) || {};
     const spy = m.rows.find(r => r.is_index) || {};
     const recap = $("#recap"); recap.replaceChildren(
       el("h2", { text: "Market recap" }),
@@ -118,7 +139,8 @@
     const tb = $("#perf tbody"); tb.replaceChildren();
     for (const r of m.rows) {
       const reasonText = reasons[r.ticker] || "No explanation available for this refresh.";
-      const reasonRow = el("tr", { class: "reason", hidden: true }, el("td", { colspan: 7, text: reasonText }));
+      const reasonRow = el("tr", { class: "reason", hidden: true },
+        el("td", { colspan: 7 }, el("p", { class: "why", text: reasonText }), picksBlock(picks[r.ticker])));
       const row = el("tr", {
         class: "row" + (r.is_index ? " index" : ""), tabindex: 0, "aria-expanded": "false",
         onclick: () => toggle(), onkeydown: e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); } },
@@ -203,7 +225,7 @@
           s.url ? el("a", { href: s.url, target: "_blank", rel: "noopener noreferrer", text: (s.source || "Source") + " ↗" }) : el("span", { text: s.source || "" }),
           el("span", { class: "muted", text: fmtDate(s.published) }))));
   }
-  const ratingClass = r => /sell|under/i.test(r) ? "sell" : /buy/i.test(r) ? "buy" : "hold";
+  function ratingClass(r) { return /sell|under/i.test(r) ? "sell" : /buy/i.test(r) ? "buy" : "hold"; }
 
   function renderStories(d) {
     const secs = (d.stories && d.stories.sectors) || {};
