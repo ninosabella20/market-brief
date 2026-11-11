@@ -1,7 +1,9 @@
 {
- "generated_at": "2026-11-11T06:08:23Z",
- "notices": [],
- "model": "gemini-3.6-flash",
+ "generated_at": "2026-11-11T06:54:57Z",
+ "notices": [
+  "Stories not refreshed for: Financials, Industrials, Real Estate (showing previous stories where available)."
+ ],
+ "model": "gemini-3.5-flash-lite",
  "market": {
   "rows": [
    {
@@ -165,44 +167,44 @@
   "intraday": false,
   "as_of_label": "Close Tue 10 Nov 2026",
   "missing": [],
-  "updated_at": "2026-11-11T06:08:26Z"
+  "updated_at": "2026-11-11T06:54:59Z"
  },
  "recap": {
-  "text": "The S&P 500 slipped 0.37% on Tuesday (bringing weekly losses to -0.59%) as a hotter-than-expected CPI inflation reading stoked fears of further Federal Reserve rate hikes and sent Treasury yields soaring. Technology served as the primary drag on the market, with XLK sinking 1.15% weighed down by a 5.5% plunge in Nvidia amid a CEO scandal and broader chip weakness. In contrast, Financials led the session higher as higher yields boosted banking margins, while defensive groups like Health Care and Consumer Staples saw steady rotation. Meanwhile, crude oil dropped to two-month lows on diplomatic optimism regarding Iran, though Energy equities managed a late-day technical rebound.",
-  "updated_at": "2026-11-11T06:09:09Z"
+  "text": "U.S. stocks declined on Tuesday, with the S&P 500 slipping -0.37% (-0.59% for the week) as hotter-than-expected CPI inflation data sparked renewed Federal Reserve rate hike fears and drove Treasury yields higher. Technology was the primary laggard, weighed down by rate sensitivity and a 5.5% plunge in Nvidia following a CEO scandal, while Financials (+0.52%) and defensive sectors like Health Care (+0.29%) and Consumer Staples (+0.15%) outperformed. Oil hovered near two-month lows following reports that Iran tensions were easing, though Energy managed a late-day gain of +0.44% despite remaining down -6.70% on the week.",
+  "updated_at": "2026-11-11T06:56:40Z"
  },
  "reasons": {
-  "updated_at": "2026-11-11T06:09:09Z",
+  "updated_at": "2026-11-11T06:56:40Z",
   "items": {
-   "SPY": "Fell 0.37% as hotter-than-expected inflation data reignited interest rate hike fears, driving Treasury yields higher and triggering heavy selling in mega-cap technology.",
-   "XLK": "Plunged 1.15% (extending its monthly slide to -15.03%) as Nvidia tumbled 5.5% amid a CEO scandal, alongside broader valuation pressure from surging bond yields.",
-   "XLC": "Gained 0.37% to cap a +6.23% weekly surge, buoyed by resilient ad-market sentiment following strong earnings reports like The Trade Desk.",
-   "XLY": "Edged up 0.03%, holding ground despite inflation worries as declining crude oil prices provided relief to consumer discretionary and travel-related spending.",
-   "XLP": "Advanced 0.15%, continuing its steady monthly climb (+9.11%) as investors rotated into classic defensive consumer staples amid macroeconomic uncertainty.",
-   "XLF": "Rallied 0.52% as the session's top gainer, capitalizing on soaring Treasury yields that expand net interest margins and profitability for major financial institutions.",
-   "XLV": "Rose 0.29%, sustaining strong month-to-date outperformance (+10.58%) as market participants sought refuge in steady, high-margin healthcare balance sheets.",
-   "XLI": "Slipped 0.09% as higher borrowing costs and inflation fears clouded the outlook for capital goods and cyclical manufacturing demand.",
-   "XLB": "Declined 0.17% tracking softer base metals prices and headwinds from rising interest rates on construction and industrial materials.",
-   "XLE": "Rose 0.44% on a late-afternoon rebound, even as underlying crude oil prices fell to two-month lows following reports that Middle East and Iran conflict risks are cooling.",
-   "XLU": "Eased 0.14% as soaring Treasury yields eroded the relative dividend appeal of bond-proxy utility equities.",
-   "XLRE": "Shed 0.13% under pressure from soaring yields following the hot CPI print, which increases financing costs for commercial and residential real estate."
+   "SPY": "Fell -0.37% as red-hot CPI inflation data triggered rate hike anxieties and pushed bond yields higher, with deep technology declines overshadowing resilience in defensive and financial sectors.",
+   "XLK": "Plunged -1.15% (and -15.03% on the month) under pressure from soaring yields following the hot inflation report and a 5.5% drop in Nvidia triggered by a CEO scandal.",
+   "XLC": "Gained +0.37% (+6.23% on the week), buoyed by earnings-driven strength in digital advertising names, such as Trade Desk jumping after beating Q3 revenue estimates.",
+   "XLY": "Edged up +0.03% (+3.17% on the week) as the benefit of plunging fuel and oil prices on household discretionary budgets helped offset broader interest rate worries.",
+   "XLP": "Rose +0.15% as investors rotated into low-beta, defensive consumer goods to shield portfolios from inflation and market turbulence.",
+   "XLF": "Advanced +0.52% to lead sector gains, benefiting directly from soaring Treasury yields and revived rate hike odds that expand bank net interest margins.",
+   "XLV": "Added +0.29% (+10.58% over the month) as healthcare's defensive characteristics and steady earnings attracted capital away from volatile growth sectors.",
+   "XLI": "Slipped -0.09% (-1.51% on the week) as rising borrowing costs and softer base metals prices stoked concern about capital spending and cyclical manufacturing.",
+   "XLB": "Dipped -0.17% amid pressure on base metal commodities and concerns that persistent inflation could dampen industrial raw material demand.",
+   "XLE": "Ticked up +0.44% in a late-afternoon bounce, though it remains down -6.70% on the week after crude tumbled to two-month lows on diplomatic optimism regarding Iran.",
+   "XLU": "Declined -0.14% as surging benchmark Treasury yields eroded the relative dividend yield appeal of traditional utility bond proxies.",
+   "XLRE": "Shed -0.13% as the hot CPI reading pushed financing costs higher, putting pressure on rate-sensitive property markets and real estate platforms like Opendoor."
   }
  },
  "stories": {
-  "updated_at": "2026-11-11T06:24:16Z",
+  "updated_at": "2026-11-11T07:07:34Z",
   "sectors": {
    "XLK": {
     "name": "Information Technology",
-    "updated_at": "2026-11-11T06:10:03Z",
+    "updated_at": "2026-11-11T06:57:36Z",
     "items": [
      {
-      "headline": "Nvidia Drops 6% as Allegations Linking CEO to $7.5B China Chip Shipments Trigger Export Control Scrutiny",
-      "company": "NVIDIA Corporation",
+      "headline": "Nvidia Shares Decline Amid Investigations Into Alleged $7.5 Billion Unsanctioned Chip Shipments and Export Control Risks",
+      "company": "Nvidia Corporation",
       "ticker": "NVDA",
       "country": "United States",
-      "profile": "NVIDIA Corporation is the world's leading designer of graphics processors and AI accelerator chips, based in Santa Clara, California.",
-      "what_happened": "Nvidia shares dropped 6% on Tuesday following reports that an alleged Chinese spy linked to CEO Jensen Huang facilitated $7.5 billion in China chip shipments. The controversy has revived bipartisan pressure on Capitol Hill, where lawmakers are demanding tighter semiconductor export controls as part of an upcoming defense spending package.",
-      "why_it_matters": "Heightened regulatory scrutiny and potential export restrictions threaten Nvidia's high-value China business and could trigger broader sales headwinds across the semiconductor supply chain.",
+      "profile": "Nvidia Corporation is an American technology company that ranks as the world's leading designer of graphics processing units and AI accelerator chips.",
+      "what_happened": "Nvidia stock fell 6% following reports linking an alleged Chinese spy to CEO Jensen Huang in connection with $7.5 billion in unauthorized China chip shipments, sparking an internal board investigation. The growing governance controversy erased $1.84 trillion from Nvidia's market value peak and prompted U.S. lawmakers to propose stricter semiconductor export controls in an upcoming defense spending package.",
+      "why_it_matters": "Escalating leadership uncertainties and potential tightening of federal export controls threaten Nvidia's growth trajectory and could restrict revenue from key international markets.",
       "url": "https://finance.yahoo.com/markets/article/nvidia-stock-drops-3-extending-decline-on-report-alleged-chinese-spy-linked-to-nvidia-ceo-aided-75-billion-in-china-chip-shipments-152654028.html",
       "source": "Yahoo Finance",
       "image": "https://d29szjachogqwa.cloudfront.net/images/2026-11/859d31a2-1dbe-4b20-8a71-48b8257e4042",
@@ -271,13 +273,13 @@
       }
      },
      {
-      "headline": "CoreWeave Handily Beats Earnings Expectations on Rapid AI Cloud Expansion",
+      "headline": "CoreWeave Exceeds Q3 Expectations Driven by Expanding AI Cloud Demand",
       "company": "CoreWeave, Inc.",
       "ticker": "CRWV",
       "country": "United States",
-      "profile": "CoreWeave, Inc. is a specialized cloud infrastructure provider delivering high-density GPU computing for AI applications, headquartered in Roseland, New Jersey.",
-      "what_happened": "CoreWeave handily beat analyst expectations in its latest earnings report as rapid infrastructure expansion paid off. The strong results sparked an overnight rally across AI technology stocks and lifted index futures.",
-      "why_it_matters": "Demonstrated revenue outperformance at specialized AI cloud operators confirms robust underlying enterprise demand for compute capacity, supporting continued sector-wide data center capital investment.",
+      "profile": "CoreWeave, Inc. is an American specialized cloud infrastructure provider that operates large-scale GPU computing networks for artificial intelligence applications.",
+      "what_happened": "CoreWeave reported quarterly financial results that handily beat analyst expectations, supported by rapid capacity expansion and strong demand for its AI cloud services. The stronger-than-expected operational performance provided a bullish signal for the AI hardware sector following a month of share price volatility.",
+      "why_it_matters": "The earnings beat demonstrates sustained enterprise spending on GPU cloud capacity, helping soothe broader market anxieties regarding an AI infrastructure demand slowdown.",
       "url": "https://finance.yahoo.com/m/0cd31936-82e3-3051-8fb2-6e33049f3cb0/coreweave-earnings-were.html",
       "source": "Barrons.com",
       "image": "https://media.zenfs.com/en/Barrons.com/fe43071d49e8421677618907413a18a2.jpg",
@@ -348,231 +350,232 @@
       }
      },
      {
-      "headline": "Micron Halts Construction of Taoyuan Plant Amid Worker Profit-Sharing Dispute",
-      "company": "Micron Technology, Inc.",
-      "ticker": "MU",
-      "country": "United States",
-      "profile": "Micron Technology, Inc. is a leading global manufacturer of DRAM and NAND memory chips, headquartered in Boise, Idaho.",
-      "what_happened": "Micron halted construction of its semiconductor plant in Taoyuan, Taiwan, due to an ongoing profit-sharing dispute with workers. The construction stoppage occurs even as AI server demand continues to consume all the memory chips the company can manufacture.",
-      "why_it_matters": "The fabrication delay is expected to limit incremental memory supply, potentially keeping DRAM availability tight and providing price support across the memory semiconductor market.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-stock-looks-dirt-cheap-192215463.html",
-      "source": "Barchart",
-      "image": "https://media.zenfs.com/en/barchart_com_477/4d9f304c2a4818261933d148e73c8efc.jpg",
-      "published": "2026-11-10",
+      "headline": "TSMC Authorizes Up to $1 Billion Investment in AI Developers OpenAI and Anthropic",
+      "company": "Taiwan Semiconductor Manufacturing Company",
+      "ticker": "TSM",
+      "country": "Taiwan",
+      "profile": "Taiwan Semiconductor Manufacturing Corporation is a Taiwanese company that is the world's largest contract semiconductor foundry.",
+      "what_happened": "TSMC approved a strategic investment plan of up to $1 billion to purchase equity stakes in leading AI model developers Anthropic and OpenAI. The initiative expands TSMC's commercial footprint beyond pure-play advanced chip manufacturing into upstream AI software ecosystems.",
+      "why_it_matters": "Direct financial ties to premier model developers strengthen TSMC's strategic position at the center of the global AI supply chain and help lock in long-term foundry demand.",
+      "url": "https://finance.yahoo.com/m/6f50a7a2-cf97-3b32-8695-87e6041ec26f/tsmc-approves-up-to-%241.html",
+      "source": "The Wall Street Journal",
+      "image": "https://media.zenfs.com/en/wsj.com/535dc2be234d40f7a767153898b02546.jpg",
+      "published": "2026-11-11",
       "related": [
-       "MU"
+       "ANTH.PVT",
+       "TSM",
+       "OPAI.PVT",
+       "GOOGM",
+       "TSM",
+       "AMD"
       ],
       "link_verified": true,
-      "symbol": "MU",
+      "symbol": "2330.TW",
       "growth": {
-       "w1": -15.2,
-       "y1": 186.27,
-       "y5": 887.75,
-       "as_of": "2026-11-10"
+       "w1": 5.97,
+       "y1": 63.48,
+       "y5": 295.21,
+       "as_of": "2026-11-11"
       },
       "facts": {
-       "name": "Micron Technology, Inc.",
-       "currency": "USD",
-       "price": 725.11,
-       "market_cap": 820406255616,
-       "country": "United States",
+       "name": "Taiwan Semiconductor Manufacturing Company Limited",
+       "currency": "TWD",
+       "price": 2395.0,
+       "market_cap": 62108024700928,
+       "country": "Taiwan",
        "industry": "Semiconductors",
-       "website": "https://www.micron.com",
-       "logo": "https://www.google.com/s2/favicons?domain=micron.com&sz=128",
-       "exchange": "NasdaqGS",
+       "website": "https://www.tsmc.com",
+       "logo": "https://www.google.com/s2/favicons?domain=tsmc.com&sz=128",
+       "exchange": "Taiwan",
        "partial": false,
        "consensus": {
         "rating": "Strong Buy",
-        "mean": 1.35,
-        "analysts": 45,
-        "target_mean": 1561.91,
-        "upside": 115.4,
+        "mean": 1.31,
+        "analysts": 35,
+        "target_mean": 3409.8,
+        "upside": 42.4,
         "breakdown": {
-         "buy": 45,
-         "hold": 4,
+         "buy": 34,
+         "hold": 1,
          "sell": 0
         }
        },
-       "ratings_ticker": "MU",
+       "ratings_ticker": "TSM",
        "ratings": [
         {
-         "firm": "Rosenblatt",
-         "grade": "Buy",
+         "firm": "Bernstein",
+         "grade": "Outperform",
          "rating": "buy",
          "action": "main",
-         "date": "2026-10-22",
-         "target": 1900.0
+         "date": "2026-11-04",
+         "target": 600.0
         },
         {
-         "firm": "Needham",
-         "grade": "Buy",
+         "firm": "Barclays",
+         "grade": "Overweight",
          "rating": "buy",
-         "action": "reit",
-         "date": "2026-10-22",
-         "target": 1650.0
+         "action": "main",
+         "date": "2026-10-16",
+         "target": 670.0
         },
         {
          "firm": "DA Davidson",
          "grade": "Buy",
          "rating": "buy",
          "action": "main",
-         "date": "2026-10-07",
-         "target": 3000.0
+         "date": "2026-10-16",
+         "target": 500.0
         }
        ]
       }
      },
      {
-      "headline": "IREN Reports Fiscal Q1 AI Cloud Revenue Surge of 182% QoQ to $200 Million",
-      "company": "IREN Limited",
-      "ticker": "IREN",
-      "country": "Australia",
-      "profile": "IREN Limited is a next-generation data center and AI cloud infrastructure provider, headquartered in Sydney, Australia.",
-      "what_happened": "IREN reported fiscal Q1 2027 earnings showing AI cloud revenue surged 182% quarter-over-quarter to $200 million. Despite the triple-digit sequential growth and a Buy rating initiation from JPMorgan, shares fell approximately 4% to around $21.",
-      "why_it_matters": "The massive sequential top-line jump demonstrates accelerating commercial workload migration to specialized AI data center providers, even as equity investors remain sensitive to execution risks.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/iren-stock-falls-even-jpmorgan-224457686.html",
-      "source": "TipRanks",
-      "image": "https://media.zenfs.com/en/tipranks_452/baa1f23059391e8707983f1d4677db5a.png",
-      "published": "2026-11-10",
+      "headline": "Microsoft Petitions U.S. Government to Halt Banning Chinese Optical Transceivers",
+      "company": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "country": "United States",
+      "profile": "Microsoft Corporation is an American multinational technology firm that is one of the world's largest software and cloud computing providers.",
+      "what_happened": "Microsoft urged the U.S. administration to drop planned import restrictions on Chinese data-center optical transceivers. The intervention prompted a rally in Chinese optical communications equities as market participants priced in reduced risks of immediate supply chain disruption.",
+      "why_it_matters": "Optical equipment is critical for enterprise data center connectivity, and restrictions could increase hardware procurement costs and delay cloud infrastructure buildouts for hyperscalers.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/market-chatter-microsoft-urges-trump-003216937.html",
+      "source": "MT Newswires",
+      "image": null,
+      "published": "2026-11-11",
       "related": [
-       "IREN",
-       "MSFT",
-       "MSF",
-       "4338",
-       "NVDA"
+       "MSFT"
       ],
       "link_verified": true,
-      "symbol": "IREN",
+      "symbol": "MSFT",
       "growth": {
-       "w1": -19.34,
-       "y1": -67.21,
-       "y5": null,
+       "w1": 2.34,
+       "y1": 5.37,
+       "y5": 61.17,
        "as_of": "2026-11-10"
       },
       "facts": {
-       "name": "IREN Limited",
+       "name": "Microsoft Corporation",
        "currency": "USD",
-       "price": 19.73,
-       "market_cap": 8372570624,
-       "country": "Australia",
-       "industry": "Capital Markets",
-       "website": "https://iren.com",
-       "logo": "https://www.google.com/s2/favicons?domain=iren.com&sz=128",
+       "price": 533.16,
+       "market_cap": 3959349575680,
+       "country": "United States",
+       "industry": "Software - Infrastructure",
+       "website": "https://www.microsoft.com",
+       "logo": "https://www.google.com/s2/favicons?domain=microsoft.com&sz=128",
        "exchange": "NasdaqGS",
        "partial": false,
        "consensus": {
-        "rating": "Buy",
-        "mean": 1.6,
-        "analysts": 19,
-        "target_mean": 56.69,
-        "upside": 187.3,
+        "rating": "Strong Buy",
+        "mean": 1.38,
+        "analysts": 54,
+        "target_mean": 636.12,
+        "upside": 19.3,
         "breakdown": {
-         "buy": 15,
+         "buy": 53,
          "hold": 5,
          "sell": 0
         }
        },
-       "ratings_ticker": "IREN",
+       "ratings_ticker": "MSFT",
        "ratings": [
+        {
+         "firm": "Bernstein",
+         "grade": "Outperform",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-10-29",
+         "target": 722.0
+        },
+        {
+         "firm": "RBC Capital",
+         "grade": "Outperform",
+         "rating": "buy",
+         "action": "reit",
+         "date": "2026-10-29",
+         "target": 640.0
+        },
+        {
+         "firm": "Citigroup",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-10-29",
+         "target": 680.0
+        }
+       ]
+      }
+     },
+     {
+      "headline": "Cloudflare Hires Christian Smith as Revenue President to Drive $5 Billion ARR Strategy",
+      "company": "Cloudflare, Inc.",
+      "ticker": "NET",
+      "country": "United States",
+      "profile": "Cloudflare, Inc. is an American cloud security and web infrastructure company providing content delivery and cybersecurity services globally.",
+      "what_happened": "Cloudflare appointed former Splunk and Cisco executive Christian Smith as President of Revenue to manage its worldwide commercial operations. Smith is tasked with accelerating enterprise sales and scaling business model transitions to help the company achieve its $5 billion annual recurring revenue target.",
+      "why_it_matters": "The executive appointment underlines Cloudflare's shift toward large enterprise clients to expand its high-margin recurring revenue base within competitive cloud and security markets.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/cloudflare-net-names-christian-smith-221005689.html",
+      "source": "Simply Wall St.",
+      "image": "https://media.zenfs.com/en/simply_wall_st__316/1483dc6f19a26cc4775cbcb0606c0b9d.jpg",
+      "published": "2026-11-10",
+      "related": [
+       "NET",
+       "CSCO"
+      ],
+      "link_verified": true,
+      "symbol": "NET",
+      "growth": {
+       "w1": 11.76,
+       "y1": 27.14,
+       "y5": 56.53,
+       "as_of": "2026-11-10"
+      },
+      "facts": {
+       "name": "Cloudflare, Inc.",
+       "currency": "USD",
+       "price": 305.8,
+       "market_cap": 109596344320,
+       "country": "United States",
+       "industry": "Software - Infrastructure",
+       "website": "https://www.cloudflare.com",
+       "logo": "https://www.google.com/s2/favicons?domain=cloudflare.com&sz=128",
+       "exchange": "NYSE",
+       "partial": false,
+       "consensus": {
+        "rating": "Buy",
+        "mean": 1.91,
+        "analysts": 31,
+        "target_mean": 341.23,
+        "upside": 11.6,
+        "breakdown": {
+         "buy": 24,
+         "hold": 8,
+         "sell": 2
+        }
+       },
+       "ratings_ticker": "NET",
+       "ratings": [
+        {
+         "firm": "Jefferies",
+         "grade": "Hold",
+         "rating": "hold",
+         "action": "main",
+         "date": "2026-11-07",
+         "target": 315.0
+        },
         {
          "firm": "JP Morgan",
          "grade": "Overweight",
          "rating": "buy",
          "action": "main",
-         "date": "2026-11-09",
-         "target": 55.0
+         "date": "2026-11-06",
+         "target": 375.0
         },
         {
-         "firm": "Macquarie",
-         "grade": "Outperform",
+         "firm": "Scotiabank",
+         "grade": "Sector Outperform",
          "rating": "buy",
          "action": "main",
-         "date": "2026-11-07",
-         "target": 55.0
-        },
-        {
-         "firm": "Jones Trading",
-         "grade": "Buy",
-         "rating": "buy",
-         "action": "up",
-         "date": "2026-11-07",
-         "target": 40.0
-        }
-       ]
-      }
-     },
-     {
-      "headline": "Rackspace Raises Full-Year Revenue Guidance Following Q3 Cloud Growth",
-      "company": "Rackspace Technology, Inc.",
-      "ticker": "RXT",
-      "country": "United States",
-      "profile": "Rackspace Technology, Inc. is a multicloud solutions and IT managed-services provider based in San Antonio, Texas.",
-      "what_happened": "Rackspace reported third-quarter revenue of $609 million and raised its full-year revenue forecast on the back of stronger Public Cloud consumption. The company maintained its full-year profitability outlook and detailed plans to expand its AI computing capacity through 2027.",
-      "why_it_matters": "Upward guidance revisions from enterprise cloud services providers highlight sustained operational adoption of public cloud and enterprise AI workloads.",
-      "url": "https://finance.yahoo.com/technology/articles/rackspace-technology-q3-earnings-call-191504783.html",
-      "source": "MarketBeat",
-      "image": "https://media.zenfs.com/en/marketbeat_955/74647176f11bf029bb1bcc923c168976.png_up.jpg",
-      "published": "2026-11-10",
-      "related": [
-       "RXT",
-       "PLTR"
-      ],
-      "link_verified": true,
-      "symbol": "RXT",
-      "growth": {
-       "w1": -0.19,
-       "y1": 122.41,
-       "y5": -81.34,
-       "as_of": "2026-11-10"
-      },
-      "facts": {
-       "name": "Rackspace Technology, Inc.",
-       "currency": "USD",
-       "price": 2.68,
-       "market_cap": 683059264,
-       "country": "United States",
-       "industry": "Software - Infrastructure",
-       "website": "https://www.rackspace.com",
-       "logo": "https://www.google.com/s2/favicons?domain=rackspace.com&sz=128",
-       "exchange": "NasdaqGS",
-       "partial": false,
-       "consensus": {
-        "rating": "Hold",
-        "mean": 3.0,
-        "analysts": 3,
-        "target_mean": 4.77,
-        "upside": 77.9,
-        "breakdown": {
-         "buy": 0,
-         "hold": 3,
-         "sell": 0
-        }
-       },
-       "ratings_ticker": "RXT",
-       "ratings": [
-        {
-         "firm": "RBC Capital",
-         "grade": "Sector Perform",
-         "rating": "hold",
-         "action": "main",
-         "date": "2026-06-17",
-         "target": 4.0
-        },
-        {
-         "firm": "BMO Capital",
-         "grade": "Market Perform",
-         "rating": "hold",
-         "action": "main",
-         "date": "2025-08-12",
-         "target": 1.4
-        },
-        {
-         "firm": "Raymond James",
-         "grade": "Market Perform",
-         "rating": "hold",
-         "action": "down",
-         "date": "2025-06-02",
-         "target": null
+         "date": "2026-11-06",
+         "target": 360.0
         }
        ]
       }
@@ -581,16 +584,16 @@
    },
    "XLC": {
     "name": "Communication Services",
-    "updated_at": "2026-11-11T06:11:07Z",
+    "updated_at": "2026-11-11T06:59:01Z",
     "items": [
      {
-      "headline": "Take-Two Stock Jumps 8% as Unprecedented GTA VI Preorders Offset Q2 Bookings Miss",
+      "headline": "Take-Two Q2 Bookings Miss Offset by 'Unprecedented' GTA VI Pre-orders",
       "company": "Take-Two Interactive Software, Inc.",
       "ticker": "TTWO",
-      "country": "United States",
-      "profile": "Take-Two Interactive Software is a major American video game publisher behind global blockbuster franchises including Grand Theft Auto and NBA 2K.",
-      "what_happened": "Take-Two reported fiscal Q2 2027 net bookings of $1.6 billion and revenue of $1.50 billion (missing estimates of $1.58 billion), with EPS of -$0.29 against a $0.97 estimate. Despite the quarterly headline miss, the stock surged over 8% as management reaffirmed full-year bookings guidance of $8.0 billion to $8.2 billion, supported by Grand Theft Auto VI preorders tracking far in excess of internal plans.",
-      "why_it_matters": "Historic preorder momentum for GTA VI confirms extraordinary consumer demand, reassuring investors that upcoming tentpole releases will drive long-term cash flow despite current quarterly softness.",
+      "country": "USA",
+      "profile": "Take-Two is a leading global developer and publisher of interactive entertainment, owning major franchises such as Grand Theft Auto, Red Dead Redemption, and NBA 2K.",
+      "what_happened": "The company reported Q2 FY2027 net bookings of $1.50 billion, missing the $1.58 billion estimate, and an EPS loss of $0.29. However, management maintained its full-year bookings guidance of $8.0 billion to $8.2 billion, reporting that pre-orders for Grand Theft Auto VI, scheduled for release next week, are tracking far above plan and delivering 'unprecedented' demand.",
+      "why_it_matters": "The launch of GTA VI is the most significant catalyst for the gaming sub-sector in years; the strength of pre-orders suggests the company can meet aggressive annual targets despite recent quarterly misses.",
       "url": "https://finance.yahoo.com/markets/stocks/articles/two-interactive-ttwo-stock-jumps-011026269.html",
       "source": "Simply Wall St.",
       "image": "https://media.zenfs.com/en/simply_wall_st__316/3e5dbd6bdc2a63cb8a1fd12f2463b64e.jpg",
@@ -659,13 +662,13 @@
       }
      },
      {
-      "headline": "Skydance Drops 9% Post-Merger on Warner Bros. Film Slump and Debt Despite Profit Beat",
+      "headline": "Skydance Shares Fall 9% as Warner Bros. Slump Overshadows $6 Billion Cost-Cut Plan",
       "company": "Skydance Media",
       "ticker": "SKYD",
-      "country": "United States",
-      "profile": "Skydance is an American entertainment and media powerhouse formed through the multi-studio combination of Skydance, Warner Bros., and Paramount.",
-      "what_happened": "In its first earnings release as the combined entity with Warner Bros. and Paramount, Skydance beat profit expectations but saw its shares sink 9% due to theatrical film underperformance and heavy balance-sheet debt. Management announced plans to eliminate $6 billion in costs following the Warner Bros. acquisition, though substantial integration expenses will precede the realization of savings.",
-      "why_it_matters": "The selloff highlights investor skepticism over high leverage and theatrical box-office vulnerability during large-scale media consolidations, even as aggressive cost-reduction programs are initiated.",
+      "country": "USA",
+      "profile": "Skydance is a major diversified media conglomerate that recently expanded significantly by acquiring Warner Bros. and Paramount.",
+      "what_happened": "In its first earnings report as a combined entity with Warner Bros., Skydance announced a plan to cut $6 billion in costs to address a heavy debt load. Despite beating profit expectations, the stock fell 9% as investors focused on a slump in the film division and downward revisions to analyst forecasts.",
+      "why_it_matters": "This integration is a landmark consolidation event in the media industry; the market's negative reaction highlights the intense pressure on legacy studios to prove the financial viability of merged operations amid high debt.",
       "url": "https://finance.yahoo.com/media-advertising/articles/skydance-sinks-9-warner-bros-160351339.html",
       "source": "24/7 Wall St.",
       "image": "https://media.zenfs.com/en/24_7_wall_st__718/8cb03555e27883737d6af5165b368474.jpg",
@@ -736,23 +739,172 @@
       }
      },
      {
-      "headline": "AST SpaceMobile Falls 8% on Q3 Miss and BofA Price Target Cut to $45 Over Rocket Risk",
+      "headline": "Charter Communications Surges 11% on $1.5 Billion Debt Tender Offer",
+      "company": "Charter Communications, Inc.",
+      "ticker": "CHTR",
+      "country": "USA",
+      "profile": "Charter is the second-largest cable operator in the United States, providing broadband and video services to over 32 million customers under the Spectrum brand.",
+      "what_happened": "Shares of Charter jumped 11% following the announcement of a tender offer to spend up to $1.5 billion buying back long-dated, low-coupon notes. The offer targets debt with maturities extending as far as 2062, representing a strategic move to optimize its capital structure.",
+      "why_it_matters": "Aggressive debt retirement in a high-interest-rate environment signals strong balance sheet management and cash flow confidence, setting a precedent for other highly leveraged cable and telecommunications providers.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/charter-soars-11-1-5-211808439.html",
+      "source": "TIKR",
+      "image": "https://media.zenfs.com/en/tikr_258/24f6b843efbc946a4a28352ffec18436",
+      "published": "2026-11-10",
+      "related": [
+       "CHTR",
+       "CMCSA",
+       "CABO"
+      ],
+      "link_verified": true,
+      "symbol": "CHTR",
+      "growth": {
+       "w1": 17.81,
+       "y1": -36.3,
+       "y5": -80.88,
+       "as_of": "2026-11-10"
+      },
+      "facts": {
+       "name": "Charter Communications, Inc.",
+       "currency": "USD",
+       "price": 134.06,
+       "market_cap": 24003651584,
+       "country": "United States",
+       "industry": "Telecom Services",
+       "website": "https://corporate.charter.com",
+       "logo": "https://www.google.com/s2/favicons?domain=corporate.charter.com&sz=128",
+       "exchange": "NasdaqGS",
+       "partial": false,
+       "consensus": {
+        "rating": "Hold",
+        "mean": 3.0,
+        "analysts": 18,
+        "target_mean": 170.44,
+        "upside": 27.1,
+        "breakdown": {
+         "buy": 5,
+         "hold": 10,
+         "sell": 6
+        }
+       },
+       "ratings_ticker": "CHTR",
+       "ratings": [
+        {
+         "firm": "Citigroup",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-11-10",
+         "target": 150.0
+        },
+        {
+         "firm": "TD Cowen",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-11-09",
+         "target": 345.0
+        },
+        {
+         "firm": "Wells Fargo",
+         "grade": "Underweight",
+         "rating": "sell",
+         "action": "main",
+         "date": "2026-11-09",
+         "target": 103.0
+        }
+       ]
+      }
+     },
+     {
+      "headline": "Meta Platforms Gains JPMorgan Backing on AI-Powered Ad Performance",
+      "company": "Meta Platforms, Inc.",
+      "ticker": "META",
+      "country": "USA",
+      "profile": "Meta is the world's dominant social media company, operating Facebook, Instagram, and WhatsApp, and is a primary driver of global digital advertising trends.",
+      "what_happened": "JPMorgan named Meta its preferred internet stock, citing the company's superior AI-powered advertising performance and expected growth in 'Family of Apps' ad revenue relative to traditional search competitors. The endorsement follows a period where Meta's AI investments have significantly improved ad ROI for marketers.",
+      "why_it_matters": "Meta's successful monetization of AI tools reinforces its competitive moat in the interactive media space, demonstrating that AI is a tangible revenue driver rather than just a cost center for the sector's largest players.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/meta-platforms-meta-wins-jpmorgan-061321646.html",
+      "source": "Simply Wall St.",
+      "image": "https://media.zenfs.com/en/simply_wall_st__316/e70faf69adb58a11417039c474d60f34.jpg",
+      "published": "2026-11-11",
+      "related": [
+       "META",
+       "JPM"
+      ],
+      "link_verified": true,
+      "symbol": "META",
+      "growth": {
+       "w1": 3.28,
+       "y1": 1.52,
+       "y5": 95.76,
+       "as_of": "2026-11-10"
+      },
+      "facts": {
+       "name": "Meta Platforms, Inc.",
+       "currency": "USD",
+       "price": 641.39,
+       "market_cap": 1639927119872,
+       "country": "United States",
+       "industry": "Internet Content & Information",
+       "website": "https://www.meta.com",
+       "logo": "https://www.google.com/s2/favicons?domain=meta.com&sz=128",
+       "exchange": "NasdaqGS",
+       "partial": false,
+       "consensus": {
+        "rating": "Strong Buy",
+        "mean": 1.41,
+        "analysts": 57,
+        "target_mean": 850.1,
+        "upside": 32.5,
+        "breakdown": {
+         "buy": 54,
+         "hold": 6,
+         "sell": 1
+        }
+       },
+       "ratings_ticker": "META",
+       "ratings": [
+        {
+         "firm": "UBS",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-10-22",
+         "target": 892.0
+        },
+        {
+         "firm": "Citigroup",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-10-22",
+         "target": 905.0
+        },
+        {
+         "firm": "DA Davidson",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-10-22",
+         "target": 800.0
+        }
+       ]
+      }
+     },
+     {
+      "headline": "AST SpaceMobile Revenue Triples as it Targets 45-Satellite Constellation",
       "company": "AST SpaceMobile, Inc.",
       "ticker": "ASTS",
-      "country": "United States",
-      "profile": "AST SpaceMobile is a Texas-based satellite telecommunications provider developing a space-based cellular broadband network for consumer mobile devices.",
-      "what_happened": "AST SpaceMobile shares dropped 8% following a third-quarter earnings miss and a Bank of America price target reduction to $45 from $80 citing launch vehicle risks. Despite the miss, quarterly revenue nearly tripled, and the company reiterated its goal to have 45 commercial satellites deployed in orbit by mid-2027.",
-      "why_it_matters": "Direct-to-cell satellite coverage represents a key strategic vector for global telecom connectivity, but execution and launch dependencies remain substantial risks for capital-intensive satellite operators.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/ast-spacemobile-sinks-8-q3-155315225.html",
-      "source": "TIKR",
-      "image": "https://media.zenfs.com/en/tikr_258/be5c17f4af6d2128ccd2274a103c627e",
+      "country": "USA",
+      "profile": "AST SpaceMobile is a telecommunications company building a space-based cellular broadband network designed to be accessible by standard mobile devices.",
+      "what_happened": "The company reported that its revenue nearly tripled in the most recent quarter as it scales its satellite infrastructure. AST SpaceMobile also confirmed plans to have 45 satellites in orbit by mid-2027 to provide expanded global cellular broadband coverage.",
+      "why_it_matters": "The rapid revenue growth and infrastructure deployment of space-based cellular services represent a disruptive shift for the wireless telecom industry, offering a solution for global connectivity gaps that traditional terrestrial networks cannot fill.",
+      "url": "https://finance.yahoo.com/technology/articles/ast-spacemobile-wants-45-satellites-171741999.html",
+      "source": "24/7 Wall St.",
+      "image": "https://media.zenfs.com/en/24_7_wall_st__718/dbdf742fca40154ae0c8e8e95f9d2fe2",
       "published": "2026-11-10",
       "related": [
        "ASTS",
-       "BAC",
-       "SPCX",
-       "4755.T",
-       "RKLB",
        "T"
       ],
       "link_verified": true,
@@ -814,186 +966,30 @@
         }
        ]
       }
-     },
-     {
-      "headline": "Criteo Partners With OpenAI Across 89 Countries to Pioneer Chatbot Advertising",
-      "company": "Criteo S.A.",
-      "ticker": "CRTO",
-      "country": "France",
-      "profile": "Criteo is a French ad-tech and commerce media specialist providing digital advertising and performance marketing solutions globally.",
-      "what_happened": "Criteo's chief announced that AI platforms are shifting toward advertising models to achieve profitability, disclosing an active partnership with OpenAI in 89 countries to develop advertising campaigns on AI chatbots.",
-      "why_it_matters": "Chatbot ad integration creates a major new monetization channel for the digital advertising ecosystem, establishing foundational infrastructure for monetizing generative AI search and conversational platforms.",
-      "url": "https://finance.yahoo.com/media-advertising/articles/many-ai-companies-adopt-advertising-022443967.html",
-      "source": "AFP",
-      "image": "https://media.zenfs.com/en/afp.com/5f714d39b184d6332a573a40d634a9cf.jpg",
-      "published": "2026-11-11",
-      "related": [
-       "CRTO",
-       "GOOGM",
-       "OPAI.PVT",
-       "META",
-       "SNAP"
-      ],
-      "link_verified": true,
-      "symbol": "CRTO",
-      "growth": {
-       "w1": 12.99,
-       "y1": -22.79,
-       "y5": -57.49,
-       "as_of": "2026-11-10"
-      },
-      "facts": {
-       "name": "Criteo S.A.",
-       "currency": "USD",
-       "price": 17.14,
-       "market_cap": 843535488,
-       "country": "France",
-       "industry": "Advertising Agencies",
-       "website": "https://www.criteo.com",
-       "logo": "https://www.google.com/s2/favicons?domain=criteo.com&sz=128",
-       "exchange": "NasdaqGS",
-       "partial": false,
-       "consensus": {
-        "rating": "Buy",
-        "mean": 2.27,
-        "analysts": 10,
-        "target_mean": 18.85,
-        "upside": 10.0,
-        "breakdown": {
-         "buy": 5,
-         "hold": 5,
-         "sell": 1
-        }
-       },
-       "ratings_ticker": "CRTO",
-       "ratings": [
-        {
-         "firm": "Morgan Stanley",
-         "grade": "Equal-Weight",
-         "rating": "hold",
-         "action": "main",
-         "date": "2026-11-10",
-         "target": 20.0
-        },
-        {
-         "firm": "Citigroup",
-         "grade": "Buy",
-         "rating": "buy",
-         "action": "main",
-         "date": "2026-11-05",
-         "target": 21.0
-        },
-        {
-         "firm": "Wells Fargo",
-         "grade": "Equal-Weight",
-         "rating": "hold",
-         "action": "main",
-         "date": "2026-11-05",
-         "target": 14.0
-        }
-       ]
-      }
-     },
-     {
-      "headline": "Verizon Selected to Build Major Private 5G Network Platform at Thames Freeport",
-      "company": "Verizon Communications Inc.",
-      "ticker": "VZ",
-      "country": "United States",
-      "profile": "Verizon Communications is one of the largest telecommunications and broadband connectivity providers in the world.",
-      "what_happened": "Verizon was awarded a mandate to deploy a major private 5G platform across Thames Freeport in Europe, one of the region's prominent logistics and trade hubs. The announcement arrived alongside renewed takeover speculation surrounding the company.",
-      "why_it_matters": "Securing international industrial private 5G deployments expands telecom carrier revenues into high-margin enterprise infrastructure outside traditional domestic retail cellular operations.",
-      "url": "https://finance.yahoo.com/technology/articles/verizon-communications-vz-lands-thames-181346745.html",
-      "source": "Simply Wall St.",
-      "image": "https://media.zenfs.com/en/simply_wall_st__316/4edd46307db99786f6bc09f625af9cd1.jpg",
-      "published": "2026-11-10",
-      "related": [
-       "VZ",
-       "SPCX"
-      ],
-      "link_verified": true,
-      "symbol": "VZ",
-      "growth": {
-       "w1": 2.37,
-       "y1": 16.21,
-       "y5": -11.96,
-       "as_of": "2026-11-10"
-      },
-      "facts": {
-       "name": "Verizon Communications Inc.",
-       "currency": "USD",
-       "price": 46.31,
-       "market_cap": 191936348160,
-       "country": "United States",
-       "industry": "Telecom Services",
-       "website": "https://www.verizon.com",
-       "logo": "https://www.google.com/s2/favicons?domain=verizon.com&sz=128",
-       "exchange": "NYSE",
-       "partial": false,
-       "consensus": {
-        "rating": "Buy",
-        "mean": 2.12,
-        "analysts": 22,
-        "target_mean": 50.65,
-        "upside": 9.4,
-        "breakdown": {
-         "buy": 12,
-         "hold": 12,
-         "sell": 0
-        }
-       },
-       "ratings_ticker": "VZ",
-       "ratings": [
-        {
-         "firm": "Freedom Broker",
-         "grade": "Buy",
-         "rating": "buy",
-         "action": "up",
-         "date": "2026-10-28",
-         "target": 55.0
-        },
-        {
-         "firm": "Citigroup",
-         "grade": "Buy",
-         "rating": "buy",
-         "action": "main",
-         "date": "2026-10-28",
-         "target": 53.0
-        },
-        {
-         "firm": "TD Cowen",
-         "grade": "Buy",
-         "rating": "buy",
-         "action": "main",
-         "date": "2026-10-27",
-         "target": 55.0
-        }
-       ]
-      }
      }
     ]
    },
    "XLY": {
     "name": "Consumer Discretionary",
-    "updated_at": "2026-11-11T06:12:27Z",
+    "updated_at": "2026-11-11T07:04:14Z",
     "items": [
      {
-      "headline": "McDonald's Names Uber Preferred Delivery Partner Across 14 Markets in Multi-Year Deal",
+      "headline": "McDonald's Expands Partnership with Uber Across 14 Global Markets",
       "company": "McDonald's Corporation",
       "ticker": "MCD",
       "country": "United States",
-      "profile": "McDonald's Corporation is the world's largest fast-food restaurant chain by revenue, operating and franchising tens of thousands of restaurants globally from Chicago, Illinois.",
-      "what_happened": "McDonald's expanded its delivery and loyalty agreement with Uber across 14 international markets, making Uber the preferred integrated delivery partner for orders placed inside the McDonald's app. The multi-year deal links the loyalty programs of both companies to support McDonald's McDelivery segment, which generates more than $20 billion in annual revenue.",
-      "why_it_matters": "The expanded partnership strengthens McDonald's high-margin digital ordering channel and loyalty integration while optimizing fulfillment economics for its multi-billion-dollar delivery business.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/uber-becomes-mcdonald-preferred-delivery-172710680.html",
-      "source": "TIKR",
-      "image": "https://media.zenfs.com/en/tikr_258/ecb1c888247c11e56af6090154a3bc85",
+      "profile": "McDonald's is the world's largest fast-food restaurant chain by revenue, operating and franchising restaurants globally from its headquarters in the United States.",
+      "what_happened": "McDonald's expanded its partnership with Uber across 14 global markets to boost delivery, digital ordering, and loyalty programs. Under the agreement, Uber becomes the preferred integrated delivery provider for McDonald's app orders within a McDelivery business generating over $20 billion annually.",
+      "why_it_matters": "The multi-year international tie-up deepens the integration between quick-service restaurants and third-party digital delivery platforms, driving incremental sales growth and enhancing customer convenience.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/mcdonalds-expands-uber-partnership-drive-182800462.html",
+      "source": "Zacks",
+      "image": "https://media.zenfs.com/en/zacks.com/11a6ac160f53cf251887b517179de2ba.jpg",
       "published": "2026-11-10",
       "related": [
-       "UBER",
        "MCD",
-       "DASH",
-       "CART",
-       "AMZN"
+       "UBER",
+       "WEN",
+       "QSR"
       ],
       "link_verified": true,
       "symbol": "MCD",
@@ -1056,20 +1052,96 @@
       }
      },
      {
-      "headline": "Tesla and SpaceX Form Special Committees to Study Potential Combination",
+      "headline": "Starbucks Targets 18% EPS Growth in Fiscal 2027 Despite Revenue Decline",
+      "company": "Starbucks Corporation",
+      "ticker": "SBUX",
+      "country": "United States",
+      "profile": "Starbucks is the world's largest specialty coffeehouse chain, headquartered in the United States, operating thousands of retail stores globally.",
+      "what_happened": "Starbucks targeted 18% EPS growth for fiscal 2027 despite anticipating a 1% revenue decline. The growth is expected to be backed by margin expansion, cost savings, and an additional fiscal week.",
+      "why_it_matters": "The guidance highlights a strategic focus on profitability and operational efficiency over top-line expansion in a challenging macro environment for consumer discretionary spending.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/sbux-deliver-18-eps-growth-182600985.html",
+      "source": "Zacks",
+      "image": "https://media.zenfs.com/en/zacks.com/99ba349c4eac0255aadbb1fbcc06cd96.jpg",
+      "published": "2026-11-10",
+      "related": [
+       "SBUX",
+       "MCD",
+       "BROS"
+      ],
+      "link_verified": true,
+      "symbol": "SBUX",
+      "growth": {
+       "w1": 4.94,
+       "y1": 29.96,
+       "y5": -2.91,
+       "as_of": "2026-11-10"
+      },
+      "facts": {
+       "name": "Starbucks Corporation",
+       "currency": "USD",
+       "price": 109.95,
+       "market_cap": 125353984000,
+       "country": "United States",
+       "industry": "Restaurants",
+       "website": "https://www.starbucks.com",
+       "logo": "https://www.google.com/s2/favicons?domain=starbucks.com&sz=128",
+       "exchange": "NasdaqGS",
+       "partial": false,
+       "consensus": {
+        "rating": "Buy",
+        "mean": 2.33,
+        "analysts": 30,
+        "target_mean": 111.07,
+        "upside": 1.0,
+        "breakdown": {
+         "buy": 15,
+         "hold": 18,
+         "sell": 3
+        }
+       },
+       "ratings_ticker": "SBUX",
+       "ratings": [
+        {
+         "firm": "UBS",
+         "grade": "Neutral",
+         "rating": "hold",
+         "action": "main",
+         "date": "2026-11-06",
+         "target": 110.0
+        },
+        {
+         "firm": "Citigroup",
+         "grade": "Neutral",
+         "rating": "hold",
+         "action": "main",
+         "date": "2026-11-02",
+         "target": 107.0
+        },
+        {
+         "firm": "Guggenheim",
+         "grade": "Neutral",
+         "rating": "hold",
+         "action": "main",
+         "date": "2026-11-02",
+         "target": 103.0
+        }
+       ]
+      }
+     },
+     {
+      "headline": "Tesla Adds Production Shift for Cybertruck Before Ending Line Next Year",
       "company": "Tesla, Inc.",
       "ticker": "TSLA",
       "country": "United States",
-      "profile": "Tesla, Inc. is the world's largest electric vehicle manufacturer and a leading clean energy company based in Austin, Texas.",
-      "what_happened": "Tesla and SpaceX have each formed special committees to study a potential combination of the two companies. The move was disclosed alongside a report titled 'Project Kepler' published by New York-based hedge fund Sargasso Capital Management advocating for a merger between the entities.",
-      "why_it_matters": "Any formal corporate tie-up between Tesla and SpaceX would represent a monumental transaction with major capital structure, governance, and valuation implications for Tesla shareholders.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/sargasso-capital-management-announces-project-180800626.html",
-      "source": "GlobeNewswire",
-      "image": null,
+      "profile": "Tesla is a leading global electric vehicle and clean energy manufacturer headquartered in the United States.",
+      "what_happened": "Tesla announced it will add an extra production shift to fulfill outstanding Cybertruck orders before dismantling the production line next year. CEO Elon Musk stated that the backlog is far larger than what Tesla can clear before production ends.",
+      "why_it_matters": "The operational shift underscores ongoing capacity management and production lifecycle adjustments within high-profile electric vehicle manufacturing lines.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-says-teslas-cybertruck-193006712.html",
+      "source": "Benzinga",
+      "image": "https://media.zenfs.com/en/benzinga_79/8e0a001a266ab06a56a04f417d791437.jpg",
       "published": "2026-11-10",
       "related": [
-       "TSLA",
-       "SPCX"
+       "TSLA"
       ],
       "link_verified": true,
       "symbol": "TSLA",
@@ -1132,13 +1204,13 @@
       }
      },
      {
-      "headline": "Online Travel Stocks Drop on Reports of OpenAI Acquiring Travel Platform Odessia",
+      "headline": "Online Travel Stocks Fall After OpenAI Acquires Odessia",
       "company": "Booking Holdings Inc.",
       "ticker": "BKNG",
       "country": "United States",
-      "profile": "Booking Holdings Inc. is the world's largest online travel agency and booking services provider by market value, headquartered in Norwalk, Connecticut.",
-      "what_happened": "Shares of Booking Holdings, Expedia, and Airbnb fell to session lows following reports that OpenAI acquired Odessia, an AI-powered travel planning platform. The acquisition triggered market concerns regarding direct competitive pressure from native artificial intelligence platforms in travel search and trip planning.",
-      "why_it_matters": "Direct entry into travel booking by generative AI platforms threatens the long-term customer acquisition funnel and fee structures of legacy online travel agencies.",
+      "profile": "Booking Holdings is a leading provider of online travel and related services, operating major platforms globally from its headquarters in the United States.",
+      "what_happened": "Shares of online travel providers including Booking Holdings, Expedia, and Airbnb fell following a report that OpenAI acquired Odessia, an AI-powered travel planning platform. The acquisition sparked investor concerns over rising competitive pressure from artificial intelligence in the travel industry.",
+      "why_it_matters": "The entry of major artificial intelligence players into travel planning threatens to disrupt traditional online travel agencies and reshape consumer booking behaviors.",
       "url": "https://finance.yahoo.com/technology/ai/articles/expedia-booking-airbnb-fall-openai-194000702.html",
       "source": "Investing.com",
       "image": null,
@@ -1208,175 +1280,25 @@
         }
        ]
       }
-     },
-     {
-      "headline": "Tesla Adds Shift to Clear Backlog Before Dismantling Cybertruck Line Next Year",
-      "company": "Tesla, Inc.",
-      "ticker": "TSLA",
-      "country": "United States",
-      "profile": "Tesla, Inc. is a leading American electric vehicle and clean energy manufacturer headquartered in Austin, Texas.",
-      "what_happened": "Tesla is adding an extra production shift to clear outstanding Cybertruck customer orders before dismantling the model's production line next year. CEO Elon Musk stated on X that the remaining backlog exceeds what the company can produce before output terminates.",
-      "why_it_matters": "Sunsetting the Cybertruck production line reflects a significant strategic pivot in Tesla's automotive portfolio, freeing manufacturing capacity and capital for higher-priority platforms.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/elon-musk-says-teslas-cybertruck-193006712.html",
-      "source": "Benzinga",
-      "image": "https://media.zenfs.com/en/benzinga_79/8e0a001a266ab06a56a04f417d791437.jpg",
-      "published": "2026-11-10",
-      "related": [
-       "TSLA"
-      ],
-      "link_verified": true,
-      "symbol": "TSLA",
-      "growth": {
-       "w1": -4.7,
-       "y1": -14.7,
-       "y5": 6.68,
-       "as_of": "2026-11-10"
-      },
-      "facts": {
-       "name": "Tesla, Inc.",
-       "currency": "USD",
-       "price": 379.78,
-       "market_cap": 1501178494976,
-       "country": "United States",
-       "industry": "Auto Manufacturers",
-       "website": "https://www.tesla.com",
-       "logo": "https://www.google.com/s2/favicons?domain=tesla.com&sz=128",
-       "exchange": "NasdaqGS",
-       "partial": false,
-       "consensus": {
-        "rating": "Buy",
-        "mean": 2.27,
-        "analysts": 40,
-        "target_mean": 412.48,
-        "upside": 8.6,
-        "breakdown": {
-         "buy": 21,
-         "hold": 21,
-         "sell": 2
-        }
-       },
-       "ratings_ticker": "TSLA",
-       "ratings": [
-        {
-         "firm": "GLJ Research",
-         "grade": "Sell",
-         "rating": "sell",
-         "action": "reit",
-         "date": "2026-11-05",
-         "target": 24.86
-        },
-        {
-         "firm": "Barclays",
-         "grade": "Overweight",
-         "rating": "buy",
-         "action": "up",
-         "date": "2026-10-26",
-         "target": 450.0
-        },
-        {
-         "firm": "UBS",
-         "grade": "Neutral",
-         "rating": "hold",
-         "action": "main",
-         "date": "2026-10-22",
-         "target": 425.0
-        }
-       ]
-      }
-     },
-     {
-      "headline": "Tesla Breaks Ground on $10 Billion Crystal Sun Solar Factory in Texas",
-      "company": "Tesla, Inc.",
-      "ticker": "TSLA",
-      "country": "United States",
-      "profile": "Tesla, Inc. is the leading American electric vehicle and sustainable energy company headquartered in Austin, Texas.",
-      "what_happened": "Tesla has commenced construction on Crystal Sun, a $10 billion solar manufacturing plant located near Houston, Texas. The facility is scheduled to achieve end-to-end domestic panel manufacturing from ingot to module by 2029.",
-      "why_it_matters": "The $10 billion commitment represents a major long-term capital expenditure that substantially scales Tesla's vertically integrated energy generation and storage business.",
-      "url": "https://finance.yahoo.com/energy/articles/terafab-chips-tesla-10-billion-013600345.html",
-      "source": "BeInCrypto",
-      "image": "https://media.zenfs.com/en/beincrypto_us_662/be66cc78c101d35c191b2ae4df42e3b9.jpg",
-      "published": "2026-11-11",
-      "related": [
-       "TSLA"
-      ],
-      "link_verified": true,
-      "symbol": "TSLA",
-      "growth": {
-       "w1": -4.7,
-       "y1": -14.7,
-       "y5": 6.68,
-       "as_of": "2026-11-10"
-      },
-      "facts": {
-       "name": "Tesla, Inc.",
-       "currency": "USD",
-       "price": 379.78,
-       "market_cap": 1501178494976,
-       "country": "United States",
-       "industry": "Auto Manufacturers",
-       "website": "https://www.tesla.com",
-       "logo": "https://www.google.com/s2/favicons?domain=tesla.com&sz=128",
-       "exchange": "NasdaqGS",
-       "partial": false,
-       "consensus": {
-        "rating": "Buy",
-        "mean": 2.27,
-        "analysts": 40,
-        "target_mean": 412.48,
-        "upside": 8.6,
-        "breakdown": {
-         "buy": 21,
-         "hold": 21,
-         "sell": 2
-        }
-       },
-       "ratings_ticker": "TSLA",
-       "ratings": [
-        {
-         "firm": "GLJ Research",
-         "grade": "Sell",
-         "rating": "sell",
-         "action": "reit",
-         "date": "2026-11-05",
-         "target": 24.86
-        },
-        {
-         "firm": "Barclays",
-         "grade": "Overweight",
-         "rating": "buy",
-         "action": "up",
-         "date": "2026-10-26",
-         "target": 450.0
-        },
-        {
-         "firm": "UBS",
-         "grade": "Neutral",
-         "rating": "hold",
-         "action": "main",
-         "date": "2026-10-22",
-         "target": 425.0
-        }
-       ]
-      }
      }
     ]
    },
    "XLP": {
     "name": "Consumer Staples",
-    "updated_at": "2026-11-11T06:13:16Z",
+    "updated_at": "2026-11-11T07:04:25Z",
     "items": [
      {
-      "headline": "Costco Declares $30 Special Dividend and Reauthorizes $4 Billion Buyback",
+      "headline": "Costco Wholesale Declares $30 Special Cash Dividend",
       "company": "Costco Wholesale Corporation",
       "ticker": "COST",
       "country": "United States",
-      "profile": "Costco Wholesale Corporation is a leading international membership warehouse club operator and one of the world's largest food and staples retailers, based in Issaquah, Washington.",
-      "what_happened": "Costco's board of directors declared a special cash dividend of $30 per common share, representing a total cash return of approximately $13 billion to shareholders. Additionally, the board reauthorized a $4 billion share repurchase program. The payout follows strong balance sheet liquidity and substantial accumulated cash reserves.",
-      "why_it_matters": "The massive capital return underscores Costco's exceptional cash flow generation and reinforces warehouse retail resilience. It delivers substantial near-term capital to shareholders while signaling continued confidence in retail traffic and profitability.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/costco-declares-special-dividend-reauthorizes-213435969.html",
-      "source": "MT Newswires",
-      "image": null,
-      "published": "2026-11-10",
+      "profile": "Costco operates a chain of membership-only big-box retail warehouse clubs, ranking as one of the largest global retailers and headquartered in the United States.",
+      "what_happened": "Costco Wholesale declared a $30 per share special cash dividend, signaling substantial excess cash reserves. The move follows reports of its capital deployment strategy alongside its regular operations.",
+      "why_it_matters": "A special cash dividend of this magnitude demonstrates robust cash flow generation and balance sheet strength within the consumer retail and staples-adjacent warehouse club space, rewarding long-term shareholders.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/costco-just-sent-shareholders-13-022357888.html",
+      "source": "24/7 Wall St.",
+      "image": "https://media.zenfs.com/en/24_7_wall_st__718/f0d0a93ad9a9626e0ce6bf1945cd028f.jpg",
+      "published": "2026-11-11",
       "related": [
        "COST"
       ],
@@ -1441,88 +1363,13 @@
       }
      },
      {
-      "headline": "PepsiCo Cuts 1,000 North American Roles in Operational Streamlining",
-      "company": "PepsiCo, Inc.",
-      "ticker": "PEP",
-      "country": "United States",
-      "profile": "PepsiCo, Inc. is a premier global food and beverage company headquartered in Purchase, New York, with a product portfolio including Pepsi, Gatorade, and Frito-Lay snacks.",
-      "what_happened": "PepsiCo announced plans to eliminate roughly 1,000 roles across its North American food and beverage organization during the week of November 9, 2026. The workforce reduction follows structural cost reduction actions initiated by CEO Ramon Laguarta to simplify operations and accelerate execution across business units. The cuts impact corporate and regional teams out of an estimated 125,000 U.S. workforce.",
-      "why_it_matters": "The layoffs highlight margin protection and efficiency drives across large-cap packaged foods as companies adjust cost structures to counter cooling consumer volumes and price sensitivity in mature North American markets.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/pepsico-cut-around-1-000-172000642.html",
-      "source": "Proactive",
-      "image": "https://media.zenfs.com/en/proactive_us_504/86f3408b6133c954c25054b7b2d854e7.jpg",
-      "published": "2026-11-10",
-      "related": [
-       "PEP"
-      ],
-      "link_verified": true,
-      "symbol": "PEP",
-      "growth": {
-       "w1": 4.62,
-       "y1": 0.69,
-       "y5": -12.45,
-       "as_of": "2026-11-10"
-      },
-      "facts": {
-       "name": "PepsiCo, Inc.",
-       "currency": "USD",
-       "price": 143.61,
-       "market_cap": 195703259136,
-       "country": "United States",
-       "industry": "Beverages - Non-Alcoholic",
-       "website": "https://www.pepsico.com",
-       "logo": "https://www.google.com/s2/favicons?domain=pepsico.com&sz=128",
-       "exchange": "NasdaqGS",
-       "partial": false,
-       "consensus": {
-        "rating": "Hold",
-        "mean": 2.71,
-        "analysts": 22,
-        "target_mean": 141.59,
-        "upside": -1.4,
-        "breakdown": {
-         "buy": 6,
-         "hold": 17,
-         "sell": 1
-        }
-       },
-       "ratings_ticker": "PEP",
-       "ratings": [
-        {
-         "firm": "Barclays",
-         "grade": "Equal-Weight",
-         "rating": "hold",
-         "action": "main",
-         "date": "2026-10-12",
-         "target": 126.0
-        },
-        {
-         "firm": "Citigroup",
-         "grade": "Neutral",
-         "rating": "hold",
-         "action": "main",
-         "date": "2026-10-09",
-         "target": 135.0
-        },
-        {
-         "firm": "JP Morgan",
-         "grade": "Neutral",
-         "rating": "hold",
-         "action": "main",
-         "date": "2026-10-09",
-         "target": 137.0
-        }
-       ]
-      }
-     },
-     {
-      "headline": "Colgate-Palmolive Raises Full-Year 2026 Outlook Alongside Third-Quarter Results",
+      "headline": "Colgate-Palmolive Pairs Raised 2026 Guidance with Q3 Update",
       "company": "Colgate-Palmolive Company",
       "ticker": "CL",
       "country": "United States",
-      "profile": "Colgate-Palmolive Company is a global consumer products leader headquartered in New York, producing oral care, personal care, home care, and pet nutrition products.",
-      "what_happened": "Colgate-Palmolive raised its full-year 2026 guidance alongside the release of its third-quarter financial results. The upgrade provides updated visibility on expected full-year net sales growth, operating margins, and earnings per share. The announcement followed an 11.12% increase in the company's share price over the preceding month.",
-      "why_it_matters": "Raising guidance signals ongoing pricing power and durable global category demand in essential personal care and oral care products, offering reassurance about steady organic revenue growth despite broad macro headwinds.",
+      "profile": "Colgate-Palmolive is a leading global consumer products company focused on oral care, personal care, home care, and pet nutrition, headquartered in the United States.",
+      "what_happened": "Colgate-Palmolive paired a raised 2026 financial outlook with fresh third-quarter numbers, providing updated visibility on expected net sales growth, margins, and earnings per share. This follows strong recent momentum that has driven the share price up 11.12% over the past month.",
+      "why_it_matters": "Raised full-year guidance and positive quarterly execution provide concrete fundamental validation for consumer staples valuations against a backdrop of steady demand and margin focus.",
       "url": "https://finance.yahoo.com/markets/stocks/articles/colgate-palmolive-cl-justify-price-043119612.html",
       "source": "Simply Wall St.",
       "image": "https://media.zenfs.com/en/simply_wall_st__316/ed11635753e667f41d58243fd2234aca.jpg",
@@ -1591,13 +1438,88 @@
       }
      },
      {
-      "headline": "Albertsons Names Andrew Murray as Chief Financial Officer",
+      "headline": "PepsiCo Plans 1,000 North American Job Cuts to Streamline Operations",
+      "company": "PepsiCo, Inc.",
+      "ticker": "PEP",
+      "country": "United States",
+      "profile": "PepsiCo is a multinational food, snack, and beverage corporation, ranking among the world's largest consumer packaged goods companies and headquartered in the United States.",
+      "what_happened": "PepsiCo plans to eliminate about 1,000 roles across its North American food and beverage business over the week beginning November 9. The job cuts form part of a broader corporate strategy to simplify operations, improve execution, and accelerate structural cost reductions.",
+      "why_it_matters": "Major headcount reductions by a sector bellwether highlight ongoing corporate efforts to protect operating margins and drive operational efficiency amid shifting cost and demand dynamics in North America.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/pepsico-north-america-ceo-shocks-210030092.html",
+      "source": "First for Money",
+      "image": "https://media.zenfs.com/en/first_for_money_323/d8f1a0b102012fd6b72188cb21f46201.jpg",
+      "published": "2026-11-10",
+      "related": [
+       "PEP"
+      ],
+      "link_verified": true,
+      "symbol": "PEP",
+      "growth": {
+       "w1": 4.62,
+       "y1": 0.69,
+       "y5": -12.45,
+       "as_of": "2026-11-10"
+      },
+      "facts": {
+       "name": "PepsiCo, Inc.",
+       "currency": "USD",
+       "price": 143.61,
+       "market_cap": 195703259136,
+       "country": "United States",
+       "industry": "Beverages - Non-Alcoholic",
+       "website": "https://www.pepsico.com",
+       "logo": "https://www.google.com/s2/favicons?domain=pepsico.com&sz=128",
+       "exchange": "NasdaqGS",
+       "partial": false,
+       "consensus": {
+        "rating": "Hold",
+        "mean": 2.71,
+        "analysts": 22,
+        "target_mean": 141.59,
+        "upside": -1.4,
+        "breakdown": {
+         "buy": 6,
+         "hold": 17,
+         "sell": 1
+        }
+       },
+       "ratings_ticker": "PEP",
+       "ratings": [
+        {
+         "firm": "Barclays",
+         "grade": "Equal-Weight",
+         "rating": "hold",
+         "action": "main",
+         "date": "2026-10-12",
+         "target": 126.0
+        },
+        {
+         "firm": "Citigroup",
+         "grade": "Neutral",
+         "rating": "hold",
+         "action": "main",
+         "date": "2026-10-09",
+         "target": 135.0
+        },
+        {
+         "firm": "JP Morgan",
+         "grade": "Neutral",
+         "rating": "hold",
+         "action": "main",
+         "date": "2026-10-09",
+         "target": 137.0
+        }
+       ]
+      }
+     },
+     {
+      "headline": "Albertsons Companies Appoints Andrew Murray as Chief Financial Officer",
       "company": "Albertsons Companies, Inc.",
       "ticker": "ACI",
       "country": "United States",
-      "profile": "Albertsons Companies, Inc. is one of the largest food and drug retailers in the United States, operating thousands of grocery stores under banners including Albertsons, Safeway, and Vons.",
-      "what_happened": "Albertsons announced the appointment of Andrew Murray as its new Chief Financial Officer, effective January 17, 2027. Murray will assume executive leadership over the grocer's financial reporting, balance sheet strategy, and investor relations.",
-      "why_it_matters": "C-suite leadership transitions at major supermarket chains are crucial for investors watching corporate strategy, operating margin execution, and capital allocation amidst intense competition from discount and warehouse grocers.",
+      "profile": "Albertsons Companies is one of the largest food and drug retailers in the United States, operating numerous supermarket and grocery banners nationwide.",
+      "what_happened": "Albertsons Companies announced that Andrew Murray will join the company as Chief Financial Officer, effective January 17, 2027. The leadership transition brings a new executive to oversee financial operations for the major grocery chain.",
+      "why_it_matters": "CFO transitions at major food retailers are material corporate events that can influence capital allocation, cost discipline, and strategic positioning within the competitive grocery subsector.",
       "url": "https://finance.yahoo.com/markets/stocks/articles/albertsons-companies-names-andrew-murray-210500986.html",
       "source": "Business Wire",
       "image": "https://media.zenfs.com/en/business-wire.com/191c5c0f3612039de01cc7bfbb746fb8.jpg",
@@ -1667,78 +1589,78 @@
       }
      },
      {
-      "headline": "Grocery Outlet Beats Market Expectations but Fails to Satisfy Investors",
-      "company": "Grocery Outlet Holding Corp.",
-      "ticker": "GO",
+      "headline": "Ferrara to Close Chicago Plant and Lay Off Over 150 Workers",
+      "company": "Ferrara Candy Company",
+      "ticker": "PEP",
       "country": "United States",
-      "profile": "Grocery Outlet Holding Corp. is an extreme-value grocery retailer based in Emeryville, California, offering heavily discounted brand-name food and consumables through an opportunistic buying model.",
-      "what_happened": "Grocery Outlet delivered financial results that exceeded analyst expectations for the period, sustaining a 2026 operational run that has outperformed conventional grocery competitors such as Kroger and Walmart. Despite the beat, the market reaction was muted as investors weighed the results against elevated expectations and past share performance.",
-      "why_it_matters": "The performance illustrates persistent consumer migration to discount and closeout grocers to stretch grocery budgets, although high valuation bars make it challenging for value grocers to consistently surprise to the upside.",
-      "url": "https://finance.yahoo.com/m/848f5485-2636-3d1e-b06f-921735da847f/this-discount-grocer-beat.html",
-      "source": "Barrons.com",
-      "image": "https://media.zenfs.com/en/Barrons.com/b1f73d4c91e0fdc1ed68d9289f448e37.jpg",
+      "profile": "Ferrara Candy Company is a major manufacturer and marketer of sugar confections and snacks, owned by Ferrero Group and headquartered in the United States.",
+      "what_happened": "Ferrara announced plans to shutter its Chicago plant and lay off more than 150 workers. The factory closure, expected in April 2027, comes as the maker of Laffy Taffy and Jelly Belly assesses market conditions and long-term innovation plans.",
+      "why_it_matters": "Plant rationalizations and workforce reductions within confectionery manufacturing illustrate ongoing industry-wide efforts to optimize production footprints and manage cost pressures.",
+      "url": "https://finance.yahoo.com/small-business/articles/ferrara-shutter-chicago-plant-impacting-205400034.html",
+      "source": "Food Dive",
+      "image": "https://media.zenfs.com/en/food_dive_848/48dfb9012d47d6aab45e86e3ff835308",
       "published": "2026-11-10",
       "related": [
-       "WMT",
-       "KR",
-       "GO"
+       "PEP",
+       "NESN.SW",
+       "DEO"
       ],
       "link_verified": true,
-      "symbol": "GO",
+      "symbol": "PEP",
       "growth": {
-       "w1": 9.7,
-       "y1": 20.97,
-       "y5": -46.08,
+       "w1": 4.62,
+       "y1": 0.69,
+       "y5": -12.45,
        "as_of": "2026-11-10"
       },
       "facts": {
-       "name": "Grocery Outlet Holding Corp.",
+       "name": "PepsiCo, Inc.",
        "currency": "USD",
-       "price": 14.02,
-       "market_cap": 1389164672,
+       "price": 143.61,
+       "market_cap": 195703259136,
        "country": "United States",
-       "industry": "Grocery Stores",
-       "website": "https://www.groceryoutlet.com",
-       "logo": "https://www.google.com/s2/favicons?domain=groceryoutlet.com&sz=128",
+       "industry": "Beverages - Non-Alcoholic",
+       "website": "https://www.pepsico.com",
+       "logo": "https://www.google.com/s2/favicons?domain=pepsico.com&sz=128",
        "exchange": "NasdaqGS",
        "partial": false,
        "consensus": {
         "rating": "Hold",
-        "mean": 3.0,
-        "analysts": 13,
-        "target_mean": 11.08,
-        "upside": -21.0,
+        "mean": 2.71,
+        "analysts": 22,
+        "target_mean": 141.59,
+        "upside": -1.4,
         "breakdown": {
-         "buy": 1,
-         "hold": 12,
+         "buy": 6,
+         "hold": 17,
          "sell": 1
         }
        },
-       "ratings_ticker": "GO",
+       "ratings_ticker": "PEP",
        "ratings": [
         {
-         "firm": "B of A Securities",
-         "grade": "Buy",
-         "rating": "buy",
-         "action": "up",
-         "date": "2026-09-30",
-         "target": 15.0
+         "firm": "Barclays",
+         "grade": "Equal-Weight",
+         "rating": "hold",
+         "action": "main",
+         "date": "2026-10-12",
+         "target": 126.0
         },
         {
-         "firm": "UBS",
+         "firm": "Citigroup",
          "grade": "Neutral",
          "rating": "hold",
          "action": "main",
-         "date": "2026-08-17",
-         "target": 11.5
+         "date": "2026-10-09",
+         "target": 135.0
         },
         {
-         "firm": "DA Davidson",
+         "firm": "JP Morgan",
          "grade": "Neutral",
          "rating": "hold",
          "action": "main",
-         "date": "2026-08-13",
-         "target": 12.0
+         "date": "2026-10-09",
+         "target": 137.0
         }
        ]
       }
@@ -2130,73 +2052,21 @@
        ]
       }
      }
-    ]
+    ],
+    "stale": true
    },
    "XLV": {
     "name": "Health Care",
-    "updated_at": "2026-11-11T06:20:10Z",
+    "updated_at": "2026-11-11T07:04:49Z",
     "items": [
      {
-      "headline": "Bayer Obtains World-First FDA Approval for Factor XIa Inhibitor Sunharbo",
-      "company": "Bayer AG",
-      "ticker": "BAYN.DE",
-      "country": "Germany",
-      "profile": "Bayer AG is a leading German multinational life sciences company with major global operations in pharmaceuticals and consumer health.",
-      "what_happened": "Bayer secured U.S. FDA approval for Sunharbo to reduce secondary stroke risk. Sunharbo is the first Factor XIa inhibitor approved anywhere in the world.",
-      "why_it_matters": "The approval validates a novel therapeutic class in stroke prevention, opening a broad commercial runway for Bayer's primary cardiovascular growth portfolio.",
-      "url": "https://finance.yahoo.com/healthcare/articles/bayer-wins-fda-approval-sunharbo-183900909.html",
-      "source": "Zacks",
-      "image": "https://media.zenfs.com/en/zacks.com/59a827b8514d5d6d47690daa5eb16f24.jpg",
-      "published": "2026-11-10",
-      "related": [
-       "BAYN.DE",
-       "BAYRY",
-       "REGN",
-       "JNJ"
-      ],
-      "link_verified": true,
-      "symbol": "BAYN.DE",
-      "growth": {
-       "w1": 13.19,
-       "y1": 117.31,
-       "y5": 11.57,
-       "as_of": "2026-11-09"
-      },
-      "facts": {
-       "name": "Bayer Aktiengesellschaft",
-       "currency": "EUR",
-       "price": 57.08,
-       "market_cap": 56076767232,
-       "country": "Germany",
-       "industry": "Drug Manufacturers - General",
-       "website": "https://www.bayer.com",
-       "logo": "https://www.google.com/s2/favicons?domain=bayer.com&sz=128",
-       "exchange": "XETRA",
-       "partial": false,
-       "consensus": {
-        "rating": "Buy",
-        "mean": 1.89,
-        "analysts": 18,
-        "target_mean": 60.11,
-        "upside": 5.3,
-        "breakdown": {
-         "buy": 13,
-         "hold": 4,
-         "sell": 1
-        }
-       },
-       "ratings_ticker": "BAYN.DE",
-       "ratings": []
-      }
-     },
-     {
-      "headline": "AbbVie Raises FY2026 Revenue Guidance to $67.8 Billion Following Strong Q3 Results",
+      "headline": "AbbVie Raises FY2026 Guidance and Reports Strong Q3 Results",
       "company": "AbbVie Inc.",
       "ticker": "ABBV",
       "country": "United States",
-      "profile": "AbbVie Inc. is a global biopharmaceutical leader headquartered in the U.S. specializing in immunology, oncology, and neuroscience therapies.",
-      "what_happened": "AbbVie raised its full-year 2026 revenue guidance to approximately $67.8 billion and lifted its dividend payout. The revision followed third-quarter financial results featuring $17.4 billion in sales and $4.2 billion in net income.",
-      "why_it_matters": "The upward guidance revision underscores sustained commercial strength in AbbVie's core therapeutic franchises, providing clear top-line momentum and valuation support.",
+      "profile": "AbbVie is a major global biopharmaceutical company specializing in immunology, oncology, and neuroscience, headquartered in the United States.",
+      "what_happened": "AbbVie reported third-quarter sales of US$17.4 billion and net income of US$4.2 billion. Driven by these strong results, the company raised its full-year 2026 revenue guidance to approximately US$67.8 billion and lifted its dividend.",
+      "why_it_matters": "Upgraded guidance and robust quarterly sales underscore sustained earnings momentum and strong cash flow generation for large-cap biopharma leaders.",
       "url": "https://finance.yahoo.com/markets/stocks/articles/abbvie-abbv-justify-valuation-raised-221252041.html",
       "source": "Simply Wall St.",
       "image": "https://media.zenfs.com/en/simply_wall_st__316/8bb05c0ff7538d04db7665c8b8ba3b25.jpg",
@@ -2265,13 +2135,13 @@
       }
      },
      {
-      "headline": "UnitedHealth Group to Cut 2027 Medicare Advantage Footprint across 140 Counties and Exit Wyoming",
-      "company": "UnitedHealth Group Incorporated",
+      "headline": "UnitedHealth Group to Scale Back Medicare Advantage and Exit Wyoming in 2027",
+      "company": "UnitedHealth Group Inc.",
       "ticker": "UNH",
       "country": "United States",
-      "profile": "UnitedHealth Group is the largest managed healthcare and health insurance company in the United States by market cap and revenue.",
-      "what_happened": "UnitedHealth Group announced it will discontinue UnitedHealthcare Medicare Advantage products across 140 counties for the 2027 plan year. The company will also fully exit Medicare coverage in Wyoming, discontinuing both Medicare Advantage and Medicare Part D plans and impacting roughly 390,000 members.",
-      "why_it_matters": "This aggressive exit highlights structural margin pressure in government-sponsored programs, signaling a strategic focus on underwriting profitability over membership volume.",
+      "profile": "UnitedHealth Group is the largest healthcare and managed care company in the United States, providing health insurance and healthcare services.",
+      "what_happened": "UnitedHealth Group announced plans to discontinue specific Medicare Advantage products across 140 counties for the 2027 plan year. The insurer will also fully withdraw both its Medicare Advantage and Medicare Part D plans from Wyoming, affecting approximately 390,000 members.",
+      "why_it_matters": "Strategic exits and footprint reductions in Medicare programs highlight ongoing margin pressures and disciplined product optimization across major health insurers.",
       "url": "https://finance.yahoo.com/healthcare/articles/unitedhealth-group-unh-drop-medicare-001646439.html",
       "source": "Simply Wall St.",
       "image": "https://media.zenfs.com/en/simply_wall_st__316/f5d9439a436ea1e7fc8df26186442a53.jpg",
@@ -2340,16 +2210,16 @@
       }
      },
      {
-      "headline": "Hims & Hers Shares Plummet After Lowering Full-Year Adjusted EBITDA Guidance",
+      "headline": "Hims & Hers Reports Q3 Revenue Surge Alongside Profit and Guidance Pressures",
       "company": "Hims & Hers Health, Inc.",
       "ticker": "HIMS",
       "country": "United States",
-      "profile": "Hims & Hers Health is a U.S.-based direct-to-consumer telehealth platform connecting consumers to licensed healthcare professionals and prescriptions.",
-      "what_happened": "Hims & Hers reduced its full-year 2026 adjusted EBITDA guidance to a range of $257 million to $277 million. While third-quarter revenue grew 49%, gross margin contracted sharply to 57% from 74% in the prior-year period alongside a quarter-over-quarter drop of 100,000 subscribers.",
-      "why_it_matters": "Significant margin compression and subscriber erosion signal rising operational headwinds, shaking investor confidence in the long-term profitability of the platform's unit economics.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/hims-hers-sinks-9-ebitda-145733149.html",
-      "source": "TIKR",
-      "image": "https://media.zenfs.com/en/tikr_258/f1dc2fa62cd5bc445bc467622027caa3",
+      "profile": "Hims & Hers is a digital telehealth platform offering direct-to-consumer health and wellness products, headquartered in the United States.",
+      "what_happened": "Hims & Hers grew Q3 revenue by 49% and expanded subscriber count to 2.79 million, though subscriber growth missed analyst estimates. Concurrently, the company cut its 2026 adjusted EBITDA guidance to $257 million–$277 million amid declining gross margins down to 57% and weaker cash generation.",
+      "why_it_matters": "The margin compression and guidance cut signal profitability challenges for direct-to-consumer digital healthcare models despite strong top-line demand.",
+      "url": "https://finance.yahoo.com/healthcare/articles/hims-hers-hims-needs-better-230747007.html",
+      "source": "TipRanks",
+      "image": "https://media.zenfs.com/en/tipranks_452/837983bd4ae6cb2809a7fba6405f47b8.png",
       "published": "2026-11-10",
       "related": [
        "HIMS",
@@ -2417,24 +2287,154 @@
       }
      },
      {
-      "headline": "Abbisko Therapeutics and Merck KGaA Win U.S. FDA Approval for PIMJETMI in TGCT",
-      "company": "Abbisko Therapeutics Co., Ltd.",
-      "ticker": "02256.HK",
-      "country": "China",
-      "profile": "Abbisko Therapeutics is a China-based clinical-stage biopharmaceutical company focused on discovering and developing targeted small-molecule oncology therapies.",
-      "what_happened": "The U.S. FDA granted approval for PIMJETMI (pimicotinib), a small-molecule CSF-1R inhibitor developed by Abbisko Therapeutics and licensed to Merck KGaA. The drug is approved as a systemic treatment for adult patients with symptomatic tenosynovial giant cell tumor (TGCT).",
-      "why_it_matters": "FDA approval transitions Abbisko's pipeline to commercial stage and triggers potential milestone and royalty revenue streams from its global partner Merck KGaA.",
-      "url": "https://finance.yahoo.com/healthcare/articles/pimjetmi-pimicotinib-developed-abbisko-therapeutics-040500936.html",
-      "source": "PR Newswire",
-      "image": "https://media.zenfs.com/en/prnewswire.com/4f7a4fccf4a6ae23f528495b9eceae7c.jpg",
+      "headline": "Merck Reports Positive Phase 2b MASH Trial Data for Efinopegdutide",
+      "company": "Merck & Co., Inc.",
+      "ticker": "MRK",
+      "country": "United States",
+      "profile": "Merck is a leading global healthcare company delivering prescription medicines, vaccines, and biologic therapies, headquartered in the United States.",
+      "what_happened": "Merck announced Phase 2b data demonstrating that its investigational GLP-1 and glucagon co-agonist efinopegdutide achieved statistically significant MASH resolution without worsening fibrosis. This pipeline milestone has driven fresh market optimism.",
+      "why_it_matters": "Positive mid-stage clinical results validate Merck's metabolic disease pipeline and strengthen its competitive positioning in the high-demand MASH therapeutic market.",
+      "url": "https://finance.yahoo.com/healthcare/articles/merck-mrk-could-7-undervalued-051334927.html",
+      "source": "Simply Wall St.",
+      "image": "https://media.zenfs.com/en/simply_wall_st__316/164823fea6cf718c45e1afaceb00b462.jpg",
       "published": "2026-11-11",
       "related": [
-       "2256.HK"
+       "MRK"
       ],
       "link_verified": true,
-      "symbol": null,
-      "growth": {},
-      "facts": {}
+      "symbol": "MRK",
+      "growth": {
+       "w1": 2.34,
+       "y1": 70.66,
+       "y5": 76.23,
+       "as_of": "2026-11-10"
+      },
+      "facts": {
+       "name": "Merck & Co., Inc.",
+       "currency": "USD",
+       "price": 148.05,
+       "market_cap": 364979617792,
+       "country": "United States",
+       "industry": "Drug Manufacturers - General",
+       "website": "https://www.merck.com",
+       "logo": "https://www.google.com/s2/favicons?domain=merck.com&sz=128",
+       "exchange": "NYSE",
+       "partial": false,
+       "consensus": {
+        "rating": "Buy",
+        "mean": 1.82,
+        "analysts": 26,
+        "target_mean": 161.53,
+        "upside": 9.1,
+        "breakdown": {
+         "buy": 19,
+         "hold": 9,
+         "sell": 0
+        }
+       },
+       "ratings_ticker": "MRK",
+       "ratings": [
+        {
+         "firm": "Freedom Broker",
+         "grade": "Hold",
+         "rating": "hold",
+         "action": "main",
+         "date": "2026-11-02",
+         "target": 140.0
+        },
+        {
+         "firm": "Cantor Fitzgerald",
+         "grade": "Neutral",
+         "rating": "hold",
+         "action": "main",
+         "date": "2026-11-02",
+         "target": 155.0
+        },
+        {
+         "firm": "JP Morgan",
+         "grade": "Overweight",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-10-30",
+         "target": 175.0
+        }
+       ]
+      }
+     },
+     {
+      "headline": "Pfizer Announces Positive Phase 3 ELREXFIO Trial Win and AI Research Expansion",
+      "company": "Pfizer Inc.",
+      "ticker": "PFE",
+      "country": "United States",
+      "profile": "Pfizer is a leading multinational pharmaceutical and biotechnology corporation headquartered in the United States.",
+      "what_happened": "Pfizer reported positive Phase 3 MagnetisMM-32 trial results evaluating ELREXFIO for relapsed or refractory multiple myeloma following anti-CD38 therapy and lenalidomide. Additionally, the company entered into a new R&D partnership to expand its artificial intelligence research push.",
+      "why_it_matters": "Late-stage clinical validation reinforces Pfizer's oncology portfolio, while investments in AI-driven R&D reflect broader sector efforts to accelerate drug discovery efficiency.",
+      "url": "https://finance.yahoo.com/healthcare/articles/pfizer-pfe-posts-phase-3-171354635.html",
+      "source": "Simply Wall St.",
+      "image": "https://media.zenfs.com/en/simply_wall_st__316/a865c39793ea528c9880a9220e62ff90.jpg",
+      "published": "2026-11-10",
+      "related": [
+       "PFE"
+      ],
+      "link_verified": true,
+      "symbol": "PFE",
+      "growth": {
+       "w1": -2.13,
+       "y1": 20.38,
+       "y5": -40.11,
+       "as_of": "2026-11-10"
+      },
+      "facts": {
+       "name": "Pfizer Inc.",
+       "currency": "USD",
+       "price": 29.36,
+       "market_cap": 167347716096,
+       "country": "United States",
+       "industry": "Drug Manufacturers - General",
+       "website": "https://www.pfizer.com",
+       "logo": "https://www.google.com/s2/favicons?domain=pfizer.com&sz=128",
+       "exchange": "NYSE",
+       "partial": false,
+       "consensus": {
+        "rating": "Buy",
+        "mean": 2.5,
+        "analysts": 26,
+        "target_mean": 30.26,
+        "upside": 3.1,
+        "breakdown": {
+         "buy": 9,
+         "hold": 17,
+         "sell": 2
+        }
+       },
+       "ratings_ticker": "PFE",
+       "ratings": [
+        {
+         "firm": "Freedom Broker",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-11-07",
+         "target": 34.0
+        },
+        {
+         "firm": "Guggenheim",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-11-05",
+         "target": 33.0
+        },
+        {
+         "firm": "UBS",
+         "grade": "Neutral",
+         "rating": "hold",
+         "action": "main",
+         "date": "2026-11-04",
+         "target": 30.0
+        }
+       ]
+      }
      }
     ]
    },
@@ -2824,26 +2824,30 @@
        ]
       }
      }
-    ]
+    ],
+    "stale": true
    },
    "XLB": {
     "name": "Materials",
-    "updated_at": "2026-11-11T06:21:13Z",
+    "updated_at": "2026-11-11T07:05:15Z",
     "items": [
      {
-      "headline": "Steel Dynamics Authorizes Additional $3.0 Billion Share Repurchase and Q4 Dividend",
+      "headline": "Steel Dynamics Authorizes $3 Billion Share Buyback",
       "company": "Steel Dynamics, Inc.",
       "ticker": "STLD",
       "country": "United States",
-      "profile": "Steel Dynamics, Inc. is a major American steel producer and metal recycler headquartered in Fort Wayne, Indiana.",
-      "what_happened": "Steel Dynamics announced that its board of directors authorized an additional $3.0 billion share repurchase program. The company also declared its fourth quarter 2026 cash dividend.",
-      "why_it_matters": "The substantial buyback expansion reflects strong cash flow generation and reinforces management's commitment to returning capital to shareholders amid fluctuating steel market conditions.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/steel-dynamics-announces-additional-3-213000342.html",
-      "source": "PR Newswire",
-      "image": "https://media.zenfs.com/en/prnewswire.com/c675b0c5eb42fa7ea4a9b85d48950108.jpg",
-      "published": "2026-11-09",
+      "profile": "Steel Dynamics is one of the largest domestic steel producers and metal recyclers in the United States, known for its sustainable electric arc furnace steelmaking operations.",
+      "what_happened": "Steel Dynamics announced a fresh $3.0 billion share repurchase authorization alongside its fourth-quarter 2026 cash dividend. The move reinforces the company's commitment to returning capital to shareholders while balancing strategic growth and financial flexibility.",
+      "why_it_matters": "A multi-billion dollar buyback program highlights robust free cash flow generation and strong balance sheet health in the North American steel sector, signaling management's confidence despite cyclical market fluctuations.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stld-boosts-shareholder-returns-3b-051400967.html",
+      "source": "Zacks",
+      "image": "https://media.zenfs.com/en/zacks.com/101afae18af5350335d8e582a1df5381.jpg",
+      "published": "2026-11-11",
       "related": [
-       "STLD"
+       "STLD",
+       "ESI",
+       "RS",
+       "WS"
       ],
       "link_verified": true,
       "symbol": "STLD",
@@ -2906,13 +2910,91 @@
       }
      },
      {
-      "headline": "Air Products Delivers 12% Adjusted EPS Growth in FY26 and Issues FY27 Guidance",
+      "headline": "Barrick Reports 41% Jump in Q3 Adjusted Earnings on Strong Gold Prices",
+      "company": "Barrick Gold Corporation",
+      "ticker": "B",
+      "country": "Canada",
+      "profile": "Barrick Gold is one of the world's largest gold and copper mining companies, operating major assets in multiple countries across the globe.",
+      "what_happened": "Barrick reported a 3.72% share price rise following a 41% jump in Q3 adjusted earnings. A realized gold price of $4,243 per ounce lifted quarterly revenue by 22% to $5.07 billion, helping to offset all-in sustaining costs that climbed to $1,911 an ounce.",
+      "why_it_matters": "The results demonstrate how high prevailing gold prices are translating into significant top-line expansion and earnings growth for senior miners, successfully absorbing inflationary pressures on operating costs.",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/barrick-mining-stocks-rise-3-185000204.html",
+      "source": "GuruFocus.com",
+      "image": null,
+      "published": "2026-11-09",
+      "related": [
+       "B",
+       "GC=F",
+       "HG=F",
+       "B"
+      ],
+      "link_verified": true,
+      "symbol": "B",
+      "growth": {
+       "w1": 7.13,
+       "y1": 14.05,
+       "y5": 93.99,
+       "as_of": "2026-11-10"
+      },
+      "facts": {
+       "name": "Barrick Mining Corporation",
+       "currency": "USD",
+       "price": 39.69,
+       "market_cap": 64640438272,
+       "country": "Canada",
+       "industry": "Gold",
+       "website": "https://www.barrick.com",
+       "logo": "https://www.google.com/s2/favicons?domain=barrick.com&sz=128",
+       "exchange": "NYSE",
+       "partial": false,
+       "consensus": {
+        "rating": "Buy",
+        "mean": 2.0,
+        "analysts": 15,
+        "target_mean": 49.45,
+        "upside": 24.6,
+        "breakdown": {
+         "buy": 16,
+         "hold": 6,
+         "sell": 1
+        }
+       },
+       "ratings_ticker": "B",
+       "ratings": [
+        {
+         "firm": "JP Morgan",
+         "grade": "Overweight",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-11-10",
+         "target": 53.0
+        },
+        {
+         "firm": "Freedom Broker",
+         "grade": "Hold",
+         "rating": "hold",
+         "action": "down",
+         "date": "2026-10-22",
+         "target": 46.0
+        },
+        {
+         "firm": "CIBC",
+         "grade": "Neutral",
+         "rating": "hold",
+         "action": "down",
+         "date": "2026-10-16",
+         "target": 49.0
+        }
+       ]
+      }
+     },
+     {
+      "headline": "Air Products Delivers Fiscal 2026 Sales and EPS Growth, Issues 2027 Guidance",
       "company": "Air Products and Chemicals, Inc.",
       "ticker": "APD",
       "country": "United States",
-      "profile": "Air Products and Chemicals, Inc. is a leading global supplier of industrial gases and related equipment headquartered in Allentown, Pennsylvania.",
-      "what_happened": "Air Products reported fiscal 2026 sales growth of 8% and adjusted EPS growth of 12%. For fiscal 2027, the company guided adjusted EPS to $14.15–$14.50 while noting helium and nonoperating headwinds.",
-      "why_it_matters": "The strong full-year performance highlights steady industrial gas demand, while conservative guidance reflects ongoing cost pressures and market friction in key gas subsegments.",
+      "profile": "Air Products is a major global supplier of industrial gases, serving customers in refining, chemical, metals, and manufacturing industries worldwide.",
+      "what_happened": "Air Products reported fiscal 2026 results featuring 8% sales growth and 12% adjusted EPS growth. Management issued fiscal 2027 EPS guidance of $14.15 to $14.50, factoring in ongoing helium and nonoperating headwinds.",
+      "why_it_matters": "As a bellwether for the industrial gas and specialty materials space, Air Products' solid execution and forward guidance provide insight into industrial demand trends and cost pressures heading into the next fiscal year.",
       "url": "https://finance.yahoo.com/markets/stocks/articles/air-products-chemicals-inc-apd-050817173.html",
       "source": "GuruFocus.com",
       "image": null,
@@ -2981,142 +3063,88 @@
       }
      },
      {
-      "headline": "Barrick Mining Q3 Adjusted Earnings Jump 41% on Higher Realized Gold Prices",
-      "company": "Barrick Gold Corporation",
-      "ticker": "GOLD",
-      "country": "Canada",
-      "profile": "Barrick Gold Corporation is one of the world's largest gold and copper mining companies, headquartered in Toronto, Canada.",
-      "what_happened": "Barrick reported a 41% surge in Q3 adjusted earnings as revenue rose 22% to $5.07 billion, supported by a realized gold price of $4,243 per ounce. All-in sustaining costs reached $1,911 per ounce during the quarter.",
-      "why_it_matters": "Record realized gold prices drove significant margin growth, offsetting elevated operating and sustaining cost pressure across global mining assets.",
-      "url": "https://finance.yahoo.com/markets/commodities/articles/barrick-mining-stocks-rise-3-185000204.html",
-      "source": "GuruFocus.com",
-      "image": null,
+      "headline": "Martin Marietta Posts Record Q3 Driven by Acquisitions",
+      "company": "Martin Marietta Materials, Inc.",
+      "ticker": "MLM",
+      "country": "United States",
+      "profile": "Martin Marietta Materials is a leading U.S. supplier of building materials, including aggregates, cement, ready mixed concrete, and asphalt.",
+      "what_happened": "Martin Marietta reported record third-quarter performance as robust contributions from recent acquisitions, notably Lhoist North America, offset softer organic aggregates shipments and higher energy costs. Management noted that legacy operational pressures are expected to continue into the fourth quarter.",
+      "why_it_matters": "The earnings highlights illustrate how aggregates producers are increasingly relying on strategic M&A to drive revenue growth while navigating subdued organic volumes and persistent inflation in energy inputs.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/5-revealing-analyst-questions-martin-021336169.html",
+      "source": "StockStory",
+      "image": "https://media.zenfs.com/en/stockstory_922/0ae2c58ecfac366dfe9f9a300970eb94.jpg",
       "published": "2026-11-09",
       "related": [
-       "B",
-       "GC=F",
-       "HG=F",
-       "B"
+       "MLM"
       ],
       "link_verified": true,
-      "symbol": "GOLD.TO",
+      "symbol": "MLM",
       "growth": {
-       "w1": 11.0,
-       "y1": -42.78,
-       "y5": -39.34,
+       "w1": -2.86,
+       "y1": -14.36,
+       "y5": 27.82,
        "as_of": "2026-11-10"
       },
       "facts": {
-       "name": "GoldMining Inc.",
-       "currency": "CAD",
-       "price": 1.11,
-       "market_cap": 239187344,
-       "country": "Canada",
-       "industry": "Gold",
-       "website": "https://www.goldmining.com",
-       "logo": "https://www.google.com/s2/favicons?domain=goldmining.com&sz=128",
-       "exchange": "Toronto",
-       "partial": false,
-       "consensus": {
-        "rating": "Strong Buy",
-        "mean": 1.0,
-        "analysts": 2,
-        "target_mean": 4.3,
-        "upside": 287.4,
-        "breakdown": {
-         "buy": 4,
-         "hold": 0,
-         "sell": 0
-        }
-       },
-       "ratings_ticker": "GOLD.TO",
-       "ratings": []
-      }
-     },
-     {
-      "headline": "Sherwin-Williams Posts Q3 EPS of $3.38 and Updates Full-Year 2026 EPS Guidance",
-      "company": "The Sherwin-Williams Company",
-      "ticker": "SHW",
-      "country": "United States",
-      "profile": "The Sherwin-Williams Company is a global leader in the manufacture and sale of paints, coatings, and related products headquartered in Cleveland, Ohio.",
-      "what_happened": "Sherwin-Williams reported Q3 diluted EPS of $3.38 and basic EPS of $3.41. The company updated its full-year diluted net income per share guidance to $10.92–$11.22 alongside mid-to-high single-digit sales growth expectations.",
-      "why_it_matters": "Updated guidance provides baseline visibility for architectural and industrial coatings demand as the company balances raw material cost trends with market pricing.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/earnings-guidance-reaffirmation-require-action-091347724.html",
-      "source": "Simply Wall St.",
-      "image": "https://media.zenfs.com/en/simply_wall_st__316/b2fb45807fb29ad6d3e7d7fdc76dec8c.jpg",
-      "published": "2026-11-07",
-      "related": [
-       "SHW",
-       "DIA"
-      ],
-      "link_verified": true,
-      "symbol": "SHW",
-      "growth": {
-       "w1": 4.25,
-       "y1": 3.73,
-       "y5": 9.47,
-       "as_of": "2026-11-10"
-      },
-      "facts": {
-       "name": "The Sherwin-Williams Company",
+       "name": "Martin Marietta Materials, Inc.",
        "currency": "USD",
-       "price": 355.34,
-       "market_cap": 85845901312,
+       "price": 528.21,
+       "market_cap": 37565497344,
        "country": "United States",
-       "industry": "Specialty Chemicals",
-       "website": "https://www.sherwin-williams.com",
-       "logo": "https://www.google.com/s2/favicons?domain=sherwin-williams.com&sz=128",
+       "industry": "Building Materials",
+       "website": "https://www.martinmarietta.com",
+       "logo": "https://www.google.com/s2/favicons?domain=martinmarietta.com&sz=128",
        "exchange": "NYSE",
        "partial": false,
        "consensus": {
         "rating": "Buy",
-        "mean": 2.07,
+        "mean": 1.75,
         "analysts": 24,
-        "target_mean": 374.25,
-        "upside": 5.3,
+        "target_mean": 634.62,
+        "upside": 20.1,
         "breakdown": {
-         "buy": 15,
-         "hold": 14,
+         "buy": 17,
+         "hold": 7,
          "sell": 0
         }
        },
-       "ratings_ticker": "SHW",
+       "ratings_ticker": "MLM",
        "ratings": [
         {
-         "firm": "RBC Capital",
-         "grade": "Outperform",
+         "firm": "B. Riley Securities",
+         "grade": "Buy",
          "rating": "buy",
          "action": "main",
-         "date": "2026-10-29",
-         "target": 383.0
+         "date": "2026-11-10",
+         "target": 615.0
         },
         {
          "firm": "Citigroup",
          "grade": "Buy",
          "rating": "buy",
          "action": "main",
-         "date": "2026-10-29",
-         "target": 370.0
+         "date": "2026-11-06",
+         "target": 641.0
         },
         {
-         "firm": "UBS",
-         "grade": "Neutral",
+         "firm": "RBC Capital",
+         "grade": "Sector Perform",
          "rating": "hold",
          "action": "main",
-         "date": "2026-10-28",
-         "target": 370.0
+         "date": "2026-11-06",
+         "target": 520.0
         }
        ]
       }
      },
      {
-      "headline": "Wheaton Precious Metals Misses Q3 Earnings Estimates Despite Strong Sales Volumes",
+      "headline": "Wheaton Precious Metals Misses Q3 Earnings Estimates",
       "company": "Wheaton Precious Metals Corp.",
       "ticker": "WPM",
       "country": "Canada",
-      "profile": "Wheaton Precious Metals Corp. is a prominent global precious metals streaming company headquartered in Vancouver, Canada.",
-      "what_happened": "Wheaton Precious Metals missed Q3 earnings estimates despite generating higher realized gold and silver prices. The company experienced increased sales volumes and stronger operating cash flow during the period.",
-      "why_it_matters": "The earnings miss underscores that underlying operational timing and cost structure shifts can temporarily dilute the financial benefits of favorable precious metal price environments.",
+      "profile": "Wheaton Precious Metals is one of the world's largest precious metals streaming companies, entering into purchase agreements with mines to acquire gold, silver, and other metals.",
+      "what_happened": "Wheaton Precious Metals reported its Q3 financial results, missing analyst earnings estimates despite achieving higher realized gold and silver prices, rising sales volumes, and stronger operating cash flow.",
+      "why_it_matters": "The earnings miss highlights a disconnect between soaring underlying commodity prices and bottom-line delivery within streaming models, which face specific cost or delivery timing variables.",
       "url": "https://finance.yahoo.com/markets/commodities/articles/wpm-earnings-miss-estimates-q3-160300496.html",
       "source": "Zacks",
       "image": "https://media.zenfs.com/en/zacks.com/af2c203047e7b874f43e67567e66fd2c.png",
@@ -3154,7 +3182,7 @@
         "rating": "Strong Buy",
         "mean": 1.31,
         "analysts": 7,
-        "target_mean": 238.65,
+        "target_mean": 238.63,
         "upside": 23.0,
         "breakdown": {
          "buy": 16,
@@ -3195,24 +3223,23 @@
    },
    "XLE": {
     "name": "Energy",
-    "updated_at": "2026-11-11T06:21:52Z",
+    "updated_at": "2026-11-11T07:05:26Z",
     "items": [
      {
-      "headline": "ConocoPhillips Reports Q3 2026 Earnings Beat and 10.7% Dividend Increase",
+      "headline": "ConocoPhillips Raises Quarterly Base Dividend by Over 10% Following Strong Q3 Results",
       "company": "ConocoPhillips",
       "ticker": "COP",
       "country": "United States",
-      "profile": "ConocoPhillips is one of the world's largest independent crude oil and natural gas exploration and production companies, headquartered in Houston, Texas.",
-      "what_happened": "ConocoPhillips reported Q3 2026 sales of $20.06 billion, up 29.2% year-over-year and beating analyst consensus. Non-GAAP earnings reached $3.27 per share, topping estimates by 7.3%. Supported by portfolio efficiency and strong free cash flow, the company also increased its quarterly dividend by 10.7%.",
-      "why_it_matters": "The strong top- and bottom-line outperformance demonstrates operational efficiency and robust cash flow generation, enabling enhanced capital returns to shareholders even amidst commodity price fluctuations.",
-      "url": "https://finance.yahoo.com/energy/articles/cop-q3-2026-deep-dive-141336870.html",
-      "source": "StockStory",
-      "image": "https://media.zenfs.com/en/stockstory_922/829196e3934a755efbff5c8db5d7cbf2.jpg",
-      "published": "2026-11-10",
+      "profile": "ConocoPhillips is one of the world's largest independent upstream oil and gas exploration and production companies, headquartered in Houston, Texas.",
+      "what_happened": "ConocoPhillips raised its quarterly base dividend by more than 10% to $0.93 per share following third-quarter net earnings of $4 billion. Revenue for the quarter rose 29.2% year-on-year to $20.06 billion, with non-GAAP profit reaching $3.27 per share, beating consensus estimates by 7.3%.",
+      "why_it_matters": "The dividend hike and strong earnings beat highlight the company's robust free cash flow generation and commitment to shareholder returns amid solid financial execution.",
+      "url": "https://finance.yahoo.com/energy/articles/energy-stock-just-raised-dividend-003004663.html",
+      "source": "Barchart",
+      "image": "https://media.zenfs.com/en/barchart_com_477/3bc9c6daf4247cae472f25d8b7cd0c18.jpg",
+      "published": "2026-11-11",
       "related": [
-       "COP",
        "CL=F",
-       "NG=F"
+       "COP"
       ],
       "link_verified": true,
       "symbol": "COP",
@@ -3275,13 +3302,151 @@
       }
      },
      {
-      "headline": "Diamondback Energy Hikes Base Dividend 7.3% Following 38% Q3 Revenue Surge",
+      "headline": "Woodside Energy Signs Long-Term LNG Supply Deal with QatarEnergy",
+      "company": "Woodside Energy Group Ltd",
+      "ticker": "WDS",
+      "country": "Australia",
+      "profile": "Woodside Energy is a major global petroleum and liquefied natural gas exploration and production company based in Perth, Australia.",
+      "what_happened": "Woodside Energy Group agreed to a long-term LNG supply deal with QatarEnergy. Under the agreement, QatarEnergy will purchase 3 million metric tons per year from Woodside.",
+      "why_it_matters": "This multi-million ton long-term offtake agreement secures significant future demand and revenue visibility for Woodside's large-scale LNG portfolio.",
+      "url": "https://finance.yahoo.com/energy/articles/woodside-energy-group-asx-wds-021735866.html",
+      "source": "Simply Wall St.",
+      "image": "https://media.zenfs.com/en/simply_wall_st__316/0450be450a8d596595ae11ee9462ccd2.jpg",
+      "published": "2026-11-11",
+      "related": [
+       "WDS",
+       "CL=F",
+       "WDS"
+      ],
+      "link_verified": true,
+      "symbol": "WDS.AX",
+      "growth": {
+       "w1": -5.07,
+       "y1": 16.38,
+       "y5": 40.39,
+       "as_of": "2026-11-11"
+      },
+      "facts": {
+       "name": "Woodside Energy Group Ltd",
+       "currency": "AUD",
+       "price": 30.9,
+       "market_cap": 58743992320,
+       "country": "Australia",
+       "industry": "Oil & Gas E&P",
+       "website": "https://www.woodside.com",
+       "logo": "https://www.google.com/s2/favicons?domain=woodside.com&sz=128",
+       "exchange": "ASX",
+       "partial": false,
+       "consensus": {
+        "rating": "Hold",
+        "mean": 2.57,
+        "analysts": 14,
+        "target_mean": 34.43,
+        "upside": 11.4,
+        "breakdown": {
+         "buy": 5,
+         "hold": 9,
+         "sell": 0
+        }
+       },
+       "ratings_ticker": "WDS",
+       "ratings": [
+        {
+         "firm": "Citigroup",
+         "grade": "Neutral",
+         "rating": "hold",
+         "action": "up",
+         "date": "2025-02-25",
+         "target": null
+        }
+       ]
+      }
+     },
+     {
+      "headline": "Chevron Farms Out 25% Stake in Namibia PEL 82 License to QatarEnergy",
+      "company": "Chevron Corporation",
+      "ticker": "CVX",
+      "country": "United States",
+      "profile": "Chevron is a leading multinational integrated energy corporation headquartered in San Ramon, California, with major global upstream and downstream operations.",
+      "what_happened": "Chevron agreed to farm out a 25% interest in its offshore Namibia PEL 82 exploration license in the Walvis Basin to QatarEnergy. Following the transaction, Chevron will remain the project operator with a 55% stake.",
+      "why_it_matters": "Bringing in a major strategic partner like QatarEnergy helps share exploration risk and capital expenditures for Chevron's high-potential offshore African acreage.",
+      "url": "https://finance.yahoo.com/energy/articles/chevron-cvx-brings-25-partner-130857000.html",
+      "source": "Simply Wall St.",
+      "image": "https://media.zenfs.com/en/simply_wall_st__316/1ea5b1d9f0560070bd8a3f6e95339b25.jpg",
+      "published": "2026-11-10",
+      "related": [
+       "CVX",
+       "GC=F",
+       "NG=F"
+      ],
+      "link_verified": true,
+      "symbol": "CVX",
+      "growth": {
+       "w1": -6.24,
+       "y1": 35.7,
+       "y5": 85.04,
+       "as_of": "2026-11-10"
+      },
+      "facts": {
+       "name": "Chevron Corporation",
+       "currency": "USD",
+       "price": 211.22,
+       "market_cap": 412143779840,
+       "country": "United States",
+       "industry": "Oil & Gas Integrated",
+       "website": "https://www.chevron.com",
+       "logo": "https://www.google.com/s2/favicons?domain=chevron.com&sz=128",
+       "exchange": "NYSE",
+       "partial": false,
+       "consensus": {
+        "rating": "Buy",
+        "mean": 1.62,
+        "analysts": 24,
+        "target_mean": 243.46,
+        "upside": 15.3,
+        "breakdown": {
+         "buy": 21,
+         "hold": 5,
+         "sell": 0
+        }
+       },
+       "ratings_ticker": "CVX",
+       "ratings": [
+        {
+         "firm": "Freedom Broker",
+         "grade": "Hold",
+         "rating": "hold",
+         "action": "up",
+         "date": "2026-11-06",
+         "target": 218.0
+        },
+        {
+         "firm": "UBS",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-11-02",
+         "target": 265.0
+        },
+        {
+         "firm": "Barclays",
+         "grade": "Equal-Weight",
+         "rating": "hold",
+         "action": "main",
+         "date": "2026-11-02",
+         "target": 244.0
+        }
+       ]
+      }
+     },
+     {
+      "headline": "Diamondback Energy Increases Quarterly Base Dividend by 7.3% After Q3 Revenue Jump",
       "company": "Diamondback Energy, Inc.",
       "ticker": "FANG",
       "country": "United States",
-      "profile": "Diamondback Energy is an independent oil and natural gas producer operating exclusively in the unconventional Permian Basin in West Texas.",
-      "what_happened": "Diamondback Energy reported a 38% year-over-year increase in third-quarter revenue to $5.43 billion. Generating strong free cash flow during the period, the company raised its quarterly base dividend by 7.3% to $1.18 per share.",
-      "why_it_matters": "The high revenue growth and increased payout highlight low-cost Permian asset productivity, reinforcing Diamondback's strong position in generating peer-leading cash returns.",
+      "profile": "Diamondback Energy is an independent oil and natural gas producer focused on the Permian Basin, headquartered in Midland, Texas.",
+      "what_happened": "Diamondback Energy raised its quarterly base dividend by 7.3% to $1.18 per share. The hike followed a third-quarter performance where revenue rose 38% to $5.43 billion alongside strong free cash flow generation.",
+      "why_it_matters": "The dividend increase underscores the resilience of the company's cash generation capabilities despite fluctuations in commodity pricing environments.",
       "url": "https://finance.yahoo.com/markets/stocks/articles/diamondback-just-hiked-dividend-over-003004795.html",
       "source": "Barchart",
       "image": "https://media.zenfs.com/en/barchart_com_477/ec14845660f7196c7b84e98377543779.jpg",
@@ -3352,13 +3517,13 @@
       }
      },
      {
-      "headline": "Canadian Natural Resources Beats Q3 Earnings on Record Thermal Output",
+      "headline": "Canadian Natural Resources Posts Q3 Earnings Beat Driven by Pricing and Thermal Output",
       "company": "Canadian Natural Resources Limited",
       "ticker": "CNQ",
       "country": "Canada",
-      "profile": "Canadian Natural Resources is Canada's largest independent crude oil and natural gas producer, headquartered in Calgary.",
-      "what_happened": "Canadian Natural Resources reported third-quarter earnings above analyst expectations, driven by favorable crude pricing realizations and record thermal production. Surging free cash flow during the quarter further bolstered capital returns to shareholders.",
-      "why_it_matters": "Record thermal output underscores the resilience of large-scale Canadian oil sands operations, providing predictable cash flow and mitigating operational volatility.",
+      "profile": "Canadian Natural Resources is a senior oil and natural gas production company headquartered in Calgary, Alberta, specializing in heavy oil and thermal operations.",
+      "what_happened": "Canadian Natural Resources beat third-quarter earnings estimates, driven by stronger oil pricing and record thermal output. The outperformance resulted in surging free cash flow that boosted shareholder returns.",
+      "why_it_matters": "Strong operational output coupled with favorable thermal performance highlights the company's ability to capitalize on pricing tailwinds to enhance investor cash returns.",
       "url": "https://finance.yahoo.com/energy/articles/cnq-q3-earnings-beat-strong-152800153.html",
       "source": "Zacks",
       "image": "https://media.zenfs.com/en/zacks.com/b722e658bf812e4a58e158c041871ac6.jpg",
@@ -3423,163 +3588,25 @@
         }
        ]
       }
-     },
-     {
-      "headline": "Woodside Energy Secures Long-Term 3 MTPA LNG Deal With QatarEnergy",
-      "company": "Woodside Energy Group Ltd",
-      "ticker": "WDS.AX",
-      "country": "Australia",
-      "profile": "Woodside Energy Group is Australia's largest independent hydrocarbon exploration and production company, primarily focused on liquefied natural gas.",
-      "what_happened": "Woodside Energy agreed to a long-term supply contract with QatarEnergy. Under the terms of the agreement, QatarEnergy will purchase 3 million metric tons of LNG per year from Woodside.",
-      "why_it_matters": "Securing long-term off-take commitments from major international energy buyers provides long-term cash flow visibility and validates Woodside's global LNG marketing strategy.",
-      "url": "https://finance.yahoo.com/energy/articles/woodside-energy-group-asx-wds-021735866.html",
-      "source": "Simply Wall St.",
-      "image": "https://media.zenfs.com/en/simply_wall_st__316/0450be450a8d596595ae11ee9462ccd2.jpg",
-      "published": "2026-11-11",
-      "related": [
-       "WDS",
-       "CL=F",
-       "WDS"
-      ],
-      "link_verified": true,
-      "symbol": "WDS.AX",
-      "growth": {
-       "w1": -5.07,
-       "y1": 16.38,
-       "y5": 40.39,
-       "as_of": "2026-11-11"
-      },
-      "facts": {
-       "name": "Woodside Energy Group Ltd",
-       "currency": "AUD",
-       "price": 30.9,
-       "market_cap": 58743992320,
-       "country": "Australia",
-       "industry": "Oil & Gas E&P",
-       "website": "https://www.woodside.com",
-       "logo": "https://www.google.com/s2/favicons?domain=woodside.com&sz=128",
-       "exchange": "ASX",
-       "partial": false,
-       "consensus": {
-        "rating": "Hold",
-        "mean": 2.57,
-        "analysts": 14,
-        "target_mean": 34.42,
-        "upside": 11.4,
-        "breakdown": {
-         "buy": 5,
-         "hold": 9,
-         "sell": 0
-        }
-       },
-       "ratings_ticker": "WDS",
-       "ratings": [
-        {
-         "firm": "Citigroup",
-         "grade": "Neutral",
-         "rating": "hold",
-         "action": "up",
-         "date": "2025-02-25",
-         "target": null
-        }
-       ]
-      }
-     },
-     {
-      "headline": "Chevron Farms Out 25% Stake in Namibia Offshore Exploration Block to QatarEnergy",
-      "company": "Chevron Corporation",
-      "ticker": "CVX",
-      "country": "United States",
-      "profile": "Chevron Corporation is a major global integrated energy company with extensive international upstream and downstream operations.",
-      "what_happened": "Chevron agreed to farm out a 25% interest in its offshore Namibia PEL 82 exploration license in the Walvis Basin to QatarEnergy. Chevron will retain operator status with a 55% stake, while Namcor E&P and Custos Energy keep 10% each.",
-      "why_it_matters": "Bringing in QatarEnergy allows Chevron to share capital risk and exploration costs while maintaining operational control in a high-potential frontier deepwater basin.",
-      "url": "https://finance.yahoo.com/energy/articles/chevron-cvx-brings-25-partner-130857000.html",
-      "source": "Simply Wall St.",
-      "image": "https://media.zenfs.com/en/simply_wall_st__316/1ea5b1d9f0560070bd8a3f6e95339b25.jpg",
-      "published": "2026-11-10",
-      "related": [
-       "CVX",
-       "GC=F",
-       "NG=F"
-      ],
-      "link_verified": true,
-      "symbol": "CVX",
-      "growth": {
-       "w1": -6.24,
-       "y1": 35.7,
-       "y5": 85.04,
-       "as_of": "2026-11-10"
-      },
-      "facts": {
-       "name": "Chevron Corporation",
-       "currency": "USD",
-       "price": 211.22,
-       "market_cap": 412143779840,
-       "country": "United States",
-       "industry": "Oil & Gas Integrated",
-       "website": "https://www.chevron.com",
-       "logo": "https://www.google.com/s2/favicons?domain=chevron.com&sz=128",
-       "exchange": "NYSE",
-       "partial": false,
-       "consensus": {
-        "rating": "Buy",
-        "mean": 1.62,
-        "analysts": 24,
-        "target_mean": 243.46,
-        "upside": 15.3,
-        "breakdown": {
-         "buy": 21,
-         "hold": 5,
-         "sell": 0
-        }
-       },
-       "ratings_ticker": "CVX",
-       "ratings": [
-        {
-         "firm": "Freedom Broker",
-         "grade": "Hold",
-         "rating": "hold",
-         "action": "up",
-         "date": "2026-11-06",
-         "target": 218.0
-        },
-        {
-         "firm": "UBS",
-         "grade": "Buy",
-         "rating": "buy",
-         "action": "main",
-         "date": "2026-11-02",
-         "target": 265.0
-        },
-        {
-         "firm": "Barclays",
-         "grade": "Equal-Weight",
-         "rating": "hold",
-         "action": "main",
-         "date": "2026-11-02",
-         "target": 244.0
-        }
-       ]
-      }
      }
     ]
    },
    "XLU": {
     "name": "Utilities",
-    "updated_at": "2026-11-11T06:22:33Z",
+    "updated_at": "2026-11-11T07:05:38Z",
     "items": [
      {
-      "headline": "Constellation Energy Posts Q3 EPS of $5.19 and Raises 2026 Earnings Guidance",
+      "headline": "Constellation Energy Reports Q3 2026 Earnings of $5.19 EPS",
       "company": "Constellation Energy Corporation",
       "ticker": "CEG",
       "country": "United States",
-      "profile": "Constellation Energy Corporation is a major American energy provider headquartered in Baltimore, Maryland, and the largest producer of carbon-free electricity in the United States.",
-      "what_happened": "Constellation Energy reported Q3 2026 earnings per share of $5.19, bringing trailing earnings to $12.66 per share with a reported net margin of 12.8%. The company raised its full-year 2026 earnings outlook, supported by long-term nuclear contracts extending into the 2040s and rising data-center power demand. CEO Joseph Dominguez noted that while grid operators previously overestimated immediate data center demand, the U.S. grid retains 6 to 7 years of untapped power capacity.",
-      "why_it_matters": "The guidance increase highlights long-term contract visibility and strong cash flow durability for nuclear power generators serving growing tech workloads.",
-      "url": "https://finance.yahoo.com/energy/articles/constellation-q3-earnings-call-highlights-185900032.html",
-      "source": "Zacks",
-      "image": "https://media.zenfs.com/en/zacks.com/0c5a17ecbd4e3cd91b9e9dd1f5da79af.png",
-      "published": "2026-11-10",
+      "profile": "Constellation Energy is the largest producer of carbon-free energy in the United States and a major competitive power supplier, headquartered in Baltimore, Maryland.",
+      "what_happened": "Constellation Energy reported Q3 2026 earnings per share of $5.19, bringing trailing earnings to $12.66 per share alongside a reported 12.8% net income margin. Concurrently, the company raised its 2026 earnings outlook, supported by long-term nuclear contracts, capacity expansion, and data-center demand.",
+      "why_it_matters": "Demonstrates strong financial performance and earnings visibility in the nuclear power subsector, validating the monetization potential of long-term carbon-free power contracts amid high AI-driven demand.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/constellation-energy-ceg-stock-cools-021550597.html",
+      "source": "Simply Wall St.",
+      "image": "https://media.zenfs.com/en/simply_wall_st__316/1c72c2c95e397f2f46f24b68b7b420ef.jpg",
+      "published": "2026-11-11",
       "related": [
        "CEG"
       ],
@@ -3644,163 +3671,13 @@
       }
      },
      {
-      "headline": "Entergy Reports Q3 Net Income of $940M, Raises Dividend and Guidance Floor",
-      "company": "Entergy Corporation",
-      "ticker": "ETR",
-      "country": "United States",
-      "profile": "Entergy Corporation is a major American electric utility holding company headquartered in New Orleans, Louisiana, serving power customers across the Deep South.",
-      "what_happened": "Entergy reported third-quarter 2026 revenue of $4,365.17 million and net income of $940.32 million, driven by summer weather and data center load ramp-ups. Management raised the low end of its full-year earnings guidance and increased its quarterly dividend payout. Additionally, Entergy New Orleans secured regulatory approval for a four-year extension of its formula rate plan through 2030.",
-      "why_it_matters": "Rapid industrial and data center load growth in Entergy's region provides a multi-year growth runway, supported by favorable regulatory rate structures.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/entergy-etr-tests-valuation-earnings-131035840.html",
-      "source": "Simply Wall St.",
-      "image": "https://media.zenfs.com/en/simply_wall_st__316/1c72c2c95e397f2f46f24b68b7b420ef.jpg",
-      "published": "2026-11-10",
-      "related": [
-       "ETR"
-      ],
-      "link_verified": true,
-      "symbol": "ETR",
-      "growth": {
-       "w1": 2.56,
-       "y1": 15.03,
-       "y5": 115.99,
-       "as_of": "2026-11-10"
-      },
-      "facts": {
-       "name": "Entergy Corporation",
-       "currency": "USD",
-       "price": 111.71,
-       "market_cap": 53378068480,
-       "country": "United States",
-       "industry": "Utilities - Regulated Electric",
-       "website": "https://www.entergy.com",
-       "logo": "https://www.google.com/s2/favicons?domain=entergy.com&sz=128",
-       "exchange": "NYSE",
-       "partial": false,
-       "consensus": {
-        "rating": "Buy",
-        "mean": 1.71,
-        "analysts": 21,
-        "target_mean": 120.38,
-        "upside": 7.8,
-        "breakdown": {
-         "buy": 18,
-         "hold": 5,
-         "sell": 1
-        }
-       },
-       "ratings_ticker": "ETR",
-       "ratings": [
-        {
-         "firm": "BTIG",
-         "grade": "Buy",
-         "rating": "buy",
-         "action": "main",
-         "date": "2026-11-03",
-         "target": 124.0
-        },
-        {
-         "firm": "HSBC",
-         "grade": "Buy",
-         "rating": "buy",
-         "action": "init",
-         "date": "2026-10-22",
-         "target": 123.5
-        },
-        {
-         "firm": "Morgan Stanley",
-         "grade": "Equal-Weight",
-         "rating": "hold",
-         "action": "main",
-         "date": "2026-10-21",
-         "target": 101.0
-        }
-       ]
-      }
-     },
-     {
-      "headline": "Southern Company Reports Q3 Adjusted EPS of $1.94 and Raises Full-Year Outlook",
-      "company": "The Southern Company",
-      "ticker": "SO",
-      "country": "United States",
-      "profile": "The Southern Company is a major American utility holding company headquartered in Atlanta, Georgia, serving over nine million customers across the Southeast.",
-      "what_happened": "Southern Company reported third-quarter 2026 adjusted earnings per share of $1.94. The utility expects to exceed its original full-year 2026 adjusted earnings guidance following strong Q3 performance. Results were driven by warmer summer weather, broad electricity consumption growth, and expanding demand from large customers such as AI data centers.",
-      "why_it_matters": "Accelerating power demand from large industrial customers strengthens earnings visibility and supports rate-base investment for regulated utilities.",
-      "url": "https://finance.yahoo.com/energy/articles/southern-said-q3-earnings-call-201418254.html",
-      "source": "MarketBeat",
-      "image": "https://media.zenfs.com/en/marketbeat_955/677087c4ad96535ecf7fc478b9c0fc15.png_up.jpg",
-      "published": "2026-11-08",
-      "related": [
-       "SO"
-      ],
-      "link_verified": true,
-      "symbol": "SO",
-      "growth": {
-       "w1": -0.11,
-       "y1": 3.18,
-       "y5": 46.65,
-       "as_of": "2026-11-10"
-      },
-      "facts": {
-       "name": "The Southern Company",
-       "currency": "USD",
-       "price": 93.65,
-       "market_cap": 109033046016,
-       "country": "United States",
-       "industry": "Utilities - Regulated Electric",
-       "website": "https://www.southerncompany.com",
-       "logo": "https://www.google.com/s2/favicons?domain=southerncompany.com&sz=128",
-       "exchange": "NYSE",
-       "partial": false,
-       "consensus": {
-        "rating": "Hold",
-        "mean": 2.57,
-        "analysts": 20,
-        "target_mean": 96.15,
-        "upside": 2.7,
-        "breakdown": {
-         "buy": 8,
-         "hold": 12,
-         "sell": 3
-        }
-       },
-       "ratings_ticker": "SO",
-       "ratings": [
-        {
-         "firm": "HSBC",
-         "grade": "Buy",
-         "rating": "buy",
-         "action": "init",
-         "date": "2026-10-22",
-         "target": 99.5
-        },
-        {
-         "firm": "Morgan Stanley",
-         "grade": "Underweight",
-         "rating": "sell",
-         "action": "main",
-         "date": "2026-10-21",
-         "target": 84.0
-        },
-        {
-         "firm": "Jefferies",
-         "grade": "Hold",
-         "rating": "hold",
-         "action": "main",
-         "date": "2026-10-20",
-         "target": 95.0
-        }
-       ]
-      }
-     },
-     {
-      "headline": "Duke Energy Florida Files Plans for 300 MW Solar Expansion Through 2028",
+      "headline": "Duke Energy Florida Files Plans for Four New Solar Sites",
       "company": "Duke Energy Corporation",
       "ticker": "DUK",
       "country": "United States",
-      "profile": "Duke Energy Corporation is one of the largest energy holding companies in the United States, headquartered in Charlotte, North Carolina.",
-      "what_happened": "Duke Energy Florida filed plans with the Florida Public Service Commission to construct four new solar energy sites by mid-2028. The proposed facilities will add 300 megawatts of clean energy generation capacity to the regional power grid. The project is projected to deliver approximately $1 billion in customer savings over the operational lifetimes of the sites.",
-      "why_it_matters": "The filing underscores how regulated utilities continue expanding rate-base solar capital deployment to lower generation costs while meeting customer demand.",
+      "profile": "Duke Energy is one of the largest electric power holding companies in the United States, providing regulated electricity and gas service to millions of customers, headquartered in Charlotte, North Carolina.",
+      "what_happened": "Duke Energy Florida filed plans with the Florida Public Service Commission to construct four new solar energy sites by mid-2028. The initiative will add 300 megawatts of clean energy to the grid and generate an estimated $1 billion in customer savings over their operational lifetimes.",
+      "why_it_matters": "Highlights ongoing utility capital deployment into renewable generation and regulatory filings aimed at long-term customer cost efficiencies.",
       "url": "https://finance.yahoo.com/energy/articles/duke-energy-florida-plans-4-192400236.html",
       "source": "PR Newswire",
       "image": "https://media.zenfs.com/en/prnewswire.com/2447c7214eaa482fcd6429dbb8af8de2.jpg",
@@ -3869,79 +3746,226 @@
       }
      },
      {
-      "headline": "Clearway Energy Reports Year-Over-Year Revenue Growth in Q3 but Misses EPS Expectations",
-      "company": "Clearway Energy, Inc.",
-      "ticker": "CWEN",
+      "headline": "Entergy Reports Q3 2026 Results and Secures New Orleans Rate Plan Extension",
+      "company": "Entergy Corporation",
+      "ticker": "ETR",
       "country": "United States",
-      "profile": "Clearway Energy, Inc. is a leading American clean energy infrastructure company headquartered in Princeton, New Jersey, operating renewable generation and energy storage assets.",
-      "what_happened": "Clearway Energy reported financial results for the third quarter of 2026, where earnings per share lagged Wall Street consensus estimates. However, the company achieved year-over-year revenue expansion across its operational portfolio. Details reflect mixed quarterly operational performance across its clean energy generation fleet.",
-      "why_it_matters": "The earnings lag reflects operational variability and margin pressures facing pure-play clean energy asset owners despite ongoing top-line expansion.",
-      "url": "https://finance.yahoo.com/energy/articles/clearway-energy-q3-earnings-lag-133000038.html",
-      "source": "Zacks",
-      "image": "https://media.zenfs.com/en/zacks.com/9f048cdad729fbddd2adf6ebe9dfc5c5.png",
+      "profile": "Entergy is a Fortune 500 electric power company engaged in electric power production and retail distribution operations, headquartered in New Orleans, Louisiana.",
+      "what_happened": "Entergy reported Q3 2026 revenue of $4,365.17 million and net income of $940.32 million, with higher EPS from continuing operations compared to the prior-year period. In addition, Entergy New Orleans secured regulatory approval for a four-year extension of its formula rate plan through 2030, while management also raised its quarterly dividend.",
+      "why_it_matters": "Provides insights into regional utility earnings growth, regulatory predictability via rate plan extensions, and enhanced cash returns to shareholders.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/learn-why-bull-case-entergy-141050356.html",
+      "source": "Simply Wall St.",
+      "image": "https://media.zenfs.com/en/simply_wall_st__316/1c72c2c95e397f2f46f24b68b7b420ef.jpg",
       "published": "2026-11-10",
       "related": [
-       "CWEN",
-       "SRE",
-       "NFG",
-       "ORA"
+       "ETR"
       ],
       "link_verified": true,
-      "symbol": "CWEN",
+      "symbol": "ETR",
       "growth": {
-       "w1": 0.64,
-       "y1": -1.76,
-       "y5": -6.35,
+       "w1": 2.56,
+       "y1": 15.03,
+       "y5": 115.99,
        "as_of": "2026-11-10"
       },
       "facts": {
-       "name": "Clearway Energy, Inc.",
+       "name": "Entergy Corporation",
        "currency": "USD",
-       "price": 34.65,
-       "market_cap": 7112773632,
+       "price": 111.71,
+       "market_cap": 53378068480,
        "country": "United States",
-       "industry": "Utilities - Renewable",
-       "website": "https://investor.clearwayenergy.com",
-       "logo": "https://www.google.com/s2/favicons?domain=investor.clearwayenergy.com&sz=128",
+       "industry": "Utilities - Regulated Electric",
+       "website": "https://www.entergy.com",
+       "logo": "https://www.google.com/s2/favicons?domain=entergy.com&sz=128",
        "exchange": "NYSE",
        "partial": false,
        "consensus": {
-        "rating": "Strong Buy",
-        "mean": 1.36,
-        "analysts": 14,
-        "target_mean": 40.0,
-        "upside": 15.4,
+        "rating": "Buy",
+        "mean": 1.71,
+        "analysts": 21,
+        "target_mean": 120.38,
+        "upside": 7.8,
         "breakdown": {
-         "buy": 13,
-         "hold": 1,
-         "sell": 0
+         "buy": 18,
+         "hold": 5,
+         "sell": 1
         }
        },
-       "ratings_ticker": "CWEN",
+       "ratings_ticker": "ETR",
        "ratings": [
         {
-         "firm": "UBS",
+         "firm": "BTIG",
          "grade": "Buy",
          "rating": "buy",
          "action": "main",
-         "date": "2026-10-21",
-         "target": 38.0
+         "date": "2026-11-03",
+         "target": 124.0
+        },
+        {
+         "firm": "HSBC",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "init",
+         "date": "2026-10-22",
+         "target": 123.5
         },
         {
          "firm": "Morgan Stanley",
-         "grade": "Overweight",
-         "rating": "buy",
+         "grade": "Equal-Weight",
+         "rating": "hold",
          "action": "main",
          "date": "2026-10-21",
-         "target": 52.0
-        },
+         "target": 101.0
+        }
+       ]
+      }
+     },
+     {
+      "headline": "Southern Company Expects to Exceed 2026 Guidance on Data Center Demand",
+      "company": "The Southern Company",
+      "ticker": "SO",
+      "country": "United States",
+      "profile": "Southern Company is one of the largest U.S. gas and electric utility holding companies, headquartered in Atlanta, Georgia.",
+      "what_happened": "Southern Company reported Q3 adjusted earnings per share of $1.94 and stated it expects to exceed its original 2026 adjusted earnings guidance. The outperformance was driven by warmer weather, growing electricity use, and rising demand from large customers including data centers.",
+      "why_it_matters": "Underscores how accelerating data center demand and commercial load growth are positively impacting major southeastern U.S. utility earnings forecasts.",
+      "url": "https://finance.yahoo.com/energy/articles/southern-said-q3-earnings-call-201418254.html",
+      "source": "MarketBeat",
+      "image": "https://media.zenfs.com/en/marketbeat_955/677087c4ad96535ecf7fc478b9c0fc15.png_up.jpg",
+      "published": "2026-11-08",
+      "related": [
+       "SO"
+      ],
+      "link_verified": true,
+      "symbol": "SO",
+      "growth": {
+       "w1": -0.11,
+       "y1": 3.18,
+       "y5": 46.65,
+       "as_of": "2026-11-10"
+      },
+      "facts": {
+       "name": "The Southern Company",
+       "currency": "USD",
+       "price": 93.65,
+       "market_cap": 109033046016,
+       "country": "United States",
+       "industry": "Utilities - Regulated Electric",
+       "website": "https://www.southerncompany.com",
+       "logo": "https://www.google.com/s2/favicons?domain=southerncompany.com&sz=128",
+       "exchange": "NYSE",
+       "partial": false,
+       "consensus": {
+        "rating": "Hold",
+        "mean": 2.57,
+        "analysts": 20,
+        "target_mean": 96.15,
+        "upside": 2.7,
+        "breakdown": {
+         "buy": 8,
+         "hold": 12,
+         "sell": 3
+        }
+       },
+       "ratings_ticker": "SO",
+       "ratings": [
         {
-         "firm": "Seaport Global",
+         "firm": "HSBC",
          "grade": "Buy",
          "rating": "buy",
+         "action": "init",
+         "date": "2026-10-22",
+         "target": 99.5
+        },
+        {
+         "firm": "Morgan Stanley",
+         "grade": "Underweight",
+         "rating": "sell",
          "action": "main",
-         "date": "2026-10-02",
-         "target": 40.0
+         "date": "2026-10-21",
+         "target": 84.0
+        },
+        {
+         "firm": "Jefferies",
+         "grade": "Hold",
+         "rating": "hold",
+         "action": "main",
+         "date": "2026-10-20",
+         "target": 95.0
+        }
+       ]
+      }
+     },
+     {
+      "headline": "ComEd and Argonne Lab Release Northern Illinois Severe Rainfall Study",
+      "company": "Exelon Corporation",
+      "ticker": "EXC",
+      "country": "United States",
+      "profile": "Exelon is a Fortune 500 utility company engaged in energy delivery through its major electric and gas distribution subsidiaries, headquartered in Chicago, Illinois.",
+      "what_happened": "Exelon subsidiary ComEd released a severe weather study conducted in partnership with the U.S. Department of Energy’s Argonne National Laboratory. The study analyzes regional weather patterns and projects that severe rainfall events in northern Illinois could nearly double over the next 15 years.",
+      "why_it_matters": "Brings attention to climate risk assessments and long-term infrastructure hardening requirements for regulated utilities facing changing weather patterns.",
+      "url": "https://finance.yahoo.com/energy/articles/comed-argonne-national-laboratory-release-165100379.html",
+      "source": "Business Wire",
+      "image": null,
+      "published": "2026-11-10",
+      "related": [
+       "EXC"
+      ],
+      "link_verified": true,
+      "symbol": "EXC",
+      "growth": {
+       "w1": 0.07,
+       "y1": 0.15,
+       "y5": 17.23,
+       "as_of": "2026-11-10"
+      },
+      "facts": {
+       "name": "Exelon Corporation",
+       "currency": "USD",
+       "price": 45.53,
+       "market_cap": 47118843904,
+       "country": "United States",
+       "industry": "Utilities - Regulated Electric",
+       "website": "https://www.exeloncorp.com",
+       "logo": "https://www.google.com/s2/favicons?domain=exeloncorp.com&sz=128",
+       "exchange": "NasdaqGS",
+       "partial": false,
+       "consensus": {
+        "rating": "Hold",
+        "mean": 2.73,
+        "analysts": 17,
+        "target_mean": 47.76,
+        "upside": 4.9,
+        "breakdown": {
+         "buy": 4,
+         "hold": 17,
+         "sell": 1
+        }
+       },
+       "ratings_ticker": "EXC",
+       "ratings": [
+        {
+         "firm": "HSBC",
+         "grade": "Hold",
+         "rating": "hold",
+         "action": "init",
+         "date": "2026-10-22",
+         "target": 44.0
+        },
+        {
+         "firm": "Morgan Stanley",
+         "grade": "Equal-Weight",
+         "rating": "hold",
+         "action": "main",
+         "date": "2026-10-21",
+         "target": 49.0
+        },
+        {
+         "firm": "JP Morgan",
+         "grade": "Neutral",
+         "rating": "hold",
+         "action": "main",
+         "date": "2026-10-19",
+         "target": 46.0
         }
        ]
       }
@@ -4327,8 +4351,399 @@
        ]
       }
      }
-    ]
+    ],
+    "stale": true
    }
+  }
+ },
+ "picks": {
+  "updated_at": "2026-11-11T07:08:34Z",
+  "items": {
+   "XLK": [
+    {
+     "ticker": "NVDA",
+     "name": "NVIDIA Corporation",
+     "angle": "Catalyst",
+     "reason": "Shares fell sharply after news of investigations into alleged $7.5 billion unsanctioned chip shipments, creating a major new regulatory risk catalyst.",
+     "y1": -15.15,
+     "w1": -18.29,
+     "consensus": "Strong Buy",
+     "analysts": 57,
+     "upside": 92.9
+    },
+    {
+     "ticker": "MU",
+     "name": "Micron Technology, Inc.",
+     "angle": "Value",
+     "reason": "Trades at an extremely low forward P/E of 3.5 despite a massive 1Y return of +186.3% and high analyst upside.",
+     "y1": 186.27,
+     "w1": -15.2,
+     "consensus": "Strong Buy",
+     "analysts": 45,
+     "upside": 115.4
+    },
+    {
+     "ticker": "2330.TW",
+     "name": "TAIWAN SEMICONDUCTOR MANUFACTUR",
+     "angle": "Catalyst",
+     "reason": "Authorized up to a $1 billion investment in AI developers OpenAI and Anthropic, highlighting aggressive strategic positioning in the AI ecosystem.",
+     "y1": 63.48,
+     "w1": 5.97,
+     "consensus": "Strong Buy",
+     "analysts": 35,
+     "upside": 42.4
+    }
+   ],
+   "XLC": [
+    {
+     "ticker": "TTWO",
+     "name": "Take-Two Interactive Software, ",
+     "angle": "Catalyst",
+     "reason": "Experienced a 1W surge of +15.2% as a Q2 bookings miss was offset by unprecedented GTA VI pre-orders.",
+     "y1": -4.02,
+     "w1": 15.21,
+     "consensus": "Strong Buy",
+     "analysts": 29,
+     "upside": 26.4
+    },
+    {
+     "ticker": "ASTS",
+     "name": "AST SpaceMobile, Inc.",
+     "angle": "Value",
+     "reason": "Offers a massive price target upside of +96.4% alongside news that quarterly revenue tripled as it targets a 45-satellite constellation.",
+     "y1": -50.96,
+     "w1": -9.31,
+     "consensus": "Hold",
+     "analysts": 12,
+     "upside": 96.4
+    },
+    {
+     "ticker": "CHTR",
+     "name": "Charter Communications, Inc.",
+     "angle": "Catalyst",
+     "reason": "Surged 17.8% over the week following a $1.5 billion debt tender offer announcement.",
+     "y1": -36.3,
+     "w1": 17.81,
+     "consensus": "Hold",
+     "analysts": 18,
+     "upside": 27.1
+    }
+   ],
+   "XLY": [
+    {
+     "ticker": "BKNG",
+     "name": "Booking Holdings Inc. Common St",
+     "angle": "Value",
+     "reason": "Trades at a modest forward P/E of 13.0 with a high average price target upside of +35.4%.",
+     "y1": -19.7,
+     "w1": 2.31,
+     "consensus": "Buy",
+     "analysts": 35,
+     "upside": 35.4
+    },
+    {
+     "ticker": "SBUX",
+     "name": "Starbucks Corporation",
+     "angle": "Momentum",
+     "reason": "Delivered a strong 1Y return of +30.0% and targets 18% EPS growth in fiscal 2027 despite a revenue decline.",
+     "y1": 29.96,
+     "w1": 4.94,
+     "consensus": "Buy",
+     "analysts": 30,
+     "upside": 1.0
+    },
+    {
+     "ticker": "MCD",
+     "name": "McDonald's Corporation",
+     "angle": "Catalyst",
+     "reason": "Expanded its global partnership with Uber across 14 markets, supporting its 1W return of +7.3%.",
+     "y1": -5.66,
+     "w1": 7.27,
+     "consensus": "Buy",
+     "analysts": 29,
+     "upside": 6.0
+    }
+   ],
+   "XLP": [
+    {
+     "ticker": "COST",
+     "name": "Costco Wholesale Corporation",
+     "angle": "Catalyst",
+     "reason": "Declared a special cash dividend of $30 while maintaining strong 1W momentum of +4.6%.",
+     "y1": 16.45,
+     "w1": 4.6,
+     "consensus": "Buy",
+     "analysts": 37,
+     "upside": 0.7
+    },
+    {
+     "ticker": "CL",
+     "name": "Colgate-Palmolive Company",
+     "angle": "Catalyst",
+     "reason": "Paired raised 2026 guidance with a solid Q3 update, driving positive 1W gains of +2.6%.",
+     "y1": 25.0,
+     "w1": 2.58,
+     "consensus": "Buy",
+     "analysts": 20,
+     "upside": 3.7
+    },
+    {
+     "ticker": "PEP",
+     "name": "Pepsico, Inc.",
+     "angle": "Catalyst",
+     "reason": "Announced plans for 1,000 North American job cuts to streamline operations, offering a fresh restructuring catalyst.",
+     "y1": 0.69,
+     "w1": 4.62,
+     "consensus": "Hold",
+     "analysts": 22,
+     "upside": -1.4
+    }
+   ],
+   "XLF": [
+    {
+     "ticker": "C",
+     "name": "Citigroup, Inc.",
+     "angle": "Catalyst",
+     "reason": "Boosted card investments as prime consumer spending rose 11%, supported by a strong 1Y return of +20.5%.",
+     "y1": 20.47,
+     "w1": -0.36,
+     "consensus": "Buy",
+     "analysts": 21,
+     "upside": 23.2
+    },
+    {
+     "ticker": "V",
+     "name": "Visa Inc.",
+     "angle": "Momentum",
+     "reason": "Expanded its Value-Added Services segment over 20% following 350 product launches, with a solid 1Y return of +26.3%.",
+     "y1": 26.33,
+     "w1": 0.61,
+     "consensus": "Strong Buy",
+     "analysts": 37,
+     "upside": 6.1
+    },
+    {
+     "ticker": "GS",
+     "name": "Goldman Sachs Group, Inc. (The)",
+     "angle": "Catalyst",
+     "reason": "Joined global banks to back a $270 million stablecoin consortium project called Faro.",
+     "y1": 14.17,
+     "w1": 1.57,
+     "consensus": "Buy",
+     "analysts": 21,
+     "upside": 13.2
+    }
+   ],
+   "XLV": [
+    {
+     "ticker": "ABBV",
+     "name": "AbbVie Inc.",
+     "angle": "Catalyst",
+     "reason": "Raised its FY2026 guidance and reported strong Q3 results, boosting investor confidence with a forward P/E of 18.1.",
+     "y1": 34.37,
+     "w1": 2.76,
+     "consensus": "Buy",
+     "analysts": 26,
+     "upside": 5.7
+    },
+    {
+     "ticker": "MRK",
+     "name": "Merck & Company, Inc.",
+     "angle": "Catalyst",
+     "reason": "Reported positive Phase 2b MASH trial data for efinopegdutide, bolstering its strong 1Y return of +70.7%.",
+     "y1": 70.66,
+     "w1": 2.34,
+     "consensus": "Buy",
+     "analysts": 26,
+     "upside": 9.1
+    },
+    {
+     "ticker": "PFE",
+     "name": "Pfizer, Inc.",
+     "angle": "Catalyst",
+     "reason": "Announced a positive Phase 3 ELREXFIO trial win and AI research expansion, trading at an attractive forward P/E of 10.0.",
+     "y1": 20.38,
+     "w1": -2.13,
+     "consensus": "Buy",
+     "analysts": 26,
+     "upside": 3.1
+    }
+   ],
+   "XLI": [
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar, Inc.",
+     "angle": "Catalyst",
+     "reason": "Inked a massive $3.4 billion gas generator supply deal with Anthropic for AI data centers.",
+     "y1": 2.4,
+     "w1": -6.31,
+     "consensus": "Buy",
+     "analysts": 26,
+     "upside": 40.9
+    },
+    {
+     "ticker": "RTX",
+     "name": "RTX Corporation",
+     "angle": "Quality",
+     "reason": "Reaffirmed its $97 billion FY26 revenue target backed by a massive $340 billion order backlog.",
+     "y1": 11.86,
+     "w1": -1.74,
+     "consensus": "Buy",
+     "analysts": 23,
+     "upside": 13.8
+    },
+    {
+     "ticker": "EMBJ3.SA",
+     "name": "EMBRAER     ON      NM",
+     "angle": "Catalyst",
+     "reason": "Raised its full-year outlook following a Q3 revenue beat, driving a 1W return of +6.8%.",
+     "y1": 23.29,
+     "w1": 6.81,
+     "consensus": "Buy",
+     "analysts": 5,
+     "upside": 9.6
+    }
+   ],
+   "XLB": [
+    {
+     "ticker": "B",
+     "name": "Barrick Mining Corporation",
+     "angle": "Catalyst",
+     "reason": "Reported a 41% jump in Q3 adjusted earnings driven by strong gold prices and a robust 1W gain of +7.1%.",
+     "y1": 14.05,
+     "w1": 7.13,
+     "consensus": "Buy",
+     "analysts": 15,
+     "upside": 24.6
+    },
+    {
+     "ticker": "STLD",
+     "name": "Steel Dynamics, Inc.",
+     "angle": "Catalyst",
+     "reason": "Authorized a massive $3 billion share buyback program alongside a forward P/E of just 11.0.",
+     "y1": 54.9,
+     "w1": -4.66,
+     "consensus": "Buy",
+     "analysts": 14,
+     "upside": 15.5
+    },
+    {
+     "ticker": "MLM",
+     "name": "Martin Marietta Materials, Inc.",
+     "angle": "Catalyst",
+     "reason": "Posted record Q3 financial results driven by strategic acquisitions, despite a 1W pullback of -2.9%.",
+     "y1": -14.36,
+     "w1": -2.86,
+     "consensus": "Buy",
+     "analysts": 24,
+     "upside": 20.1
+    }
+   ],
+   "XLE": [
+    {
+     "ticker": "COP",
+     "name": "ConocoPhillips",
+     "angle": "Catalyst",
+     "reason": "Raised its quarterly base dividend by over 10% following strong Q3 results.",
+     "y1": 53.68,
+     "w1": -6.1,
+     "consensus": "Buy",
+     "analysts": 27,
+     "upside": 12.3
+    },
+    {
+     "ticker": "FANG",
+     "name": "Diamondback Energy, Inc.",
+     "angle": "Catalyst",
+     "reason": "Increased its quarterly base dividend by 7.3% after reporting a Q3 revenue jump.",
+     "y1": 23.04,
+     "w1": -7.41,
+     "consensus": "Strong Buy",
+     "analysts": 30,
+     "upside": 33.9
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron Corporation",
+     "angle": "Catalyst",
+     "reason": "Farmed out a 25% stake in the Namibia PEL 82 license to QatarEnergy, signaling active portfolio management.",
+     "y1": 35.7,
+     "w1": -6.24,
+     "consensus": "Buy",
+     "analysts": 24,
+     "upside": 15.3
+    }
+   ],
+   "XLU": [
+    {
+     "ticker": "SO",
+     "name": "Southern Company (The)",
+     "angle": "Catalyst",
+     "reason": "Expects to exceed its 2026 guidance driven by surging data center power demand.",
+     "y1": 3.18,
+     "w1": -0.11,
+     "consensus": "Hold",
+     "analysts": 20,
+     "upside": 2.7
+    },
+    {
+     "ticker": "CEG",
+     "name": "Constellation Energy Corporatio",
+     "angle": "Value",
+     "reason": "Offers an appealing price target upside of +26.2% following recent Q3 2026 earnings of $5.19 EPS.",
+     "y1": -25.81,
+     "w1": 1.66,
+     "consensus": "Buy",
+     "analysts": 23,
+     "upside": 26.2
+    },
+    {
+     "ticker": "ETR",
+     "name": "Entergy Corporation",
+     "angle": "Catalyst",
+     "reason": "Reported Q3 2026 results and successfully secured a New Orleans rate plan extension.",
+     "y1": 15.03,
+     "w1": 2.56,
+     "consensus": "Buy",
+     "analysts": 21,
+     "upside": 7.8
+    }
+   ],
+   "XLRE": [
+    {
+     "ticker": "EQIX",
+     "name": "Equinix, Inc.",
+     "angle": "Catalyst",
+     "reason": "Issued €2.5 billion in green senior notes, supporting a strong 1Y return of +26.8% and +17.6% target upside.",
+     "y1": 26.79,
+     "w1": 3.51,
+     "consensus": "Strong Buy",
+     "analysts": 32,
+     "upside": 17.6
+    },
+    {
+     "ticker": "SPG",
+     "name": "Simon Property Group, Inc.",
+     "angle": "Catalyst",
+     "reason": "Raised its 2026 real estate FFO guidance and dividend, leading to a strong 1W gain of +5.6%.",
+     "y1": 28.17,
+     "w1": 5.58,
+     "consensus": "Buy",
+     "analysts": 19,
+     "upside": -0.9
+    },
+    {
+     "ticker": "O",
+     "name": "Realty Income Corporation",
+     "angle": "Catalyst",
+     "reason": "Increased its monthly dividend to $0.274 per share, bolstering income appeal alongside a +6.4% target upside.",
+     "y1": 5.6,
+     "w1": 3.55,
+     "consensus": "Hold",
+     "analysts": 21,
+     "upside": 6.4
+    }
+   ]
   }
  },
  "gemini_debug": {
@@ -4346,16 +4761,26 @@
    "gemini-flash-lite-latest"
   ],
   "errors": {
-   "gemini-3.8-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=6050s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:/",
-   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=6038s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:/"
+   "gemini-3.8-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=3790s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:/",
+   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=3778s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:/",
+   "gemini-3.6-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=3736s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:/",
+   "gemini-3.5-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=3724s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:/",
+   "gemini-2.5-flash": "404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a",
+   "gemini-flash-latest": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=3700s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:/",
+   "gemini-3-flash-preview": "no answer within 150s"
   },
   "ok_calls": {
-   "gemini-3.8-flash": 6,
-   "gemini-3.6-flash": 6
+   "gemini-3.8-flash": 1,
+   "gemini-3.6-flash": 1,
+   "gemini-3-flash-preview": 1,
+   "gemini-3.5-flash-lite": 10
   },
   "last_429": {
-   "gemini-3.8-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=6050s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quota exceeded for metr",
-   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=6038s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quota exceeded for metr"
+   "gemini-3.8-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=3790s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quota exceeded for metr",
+   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=3778s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quota exceeded for metr",
+   "gemini-3.6-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=3736s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quota exceeded for metr",
+   "gemini-3.5-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=3724s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quota exceeded for metr",
+   "gemini-flash-latest": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=3700s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quota exceeded for metr"
   },
   "probe": null,
   "flash_models_listed": [
