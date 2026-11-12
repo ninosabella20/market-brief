@@ -35,7 +35,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 55
     steps:
       - uses: actions/checkout@v5
 
@@ -58,14 +58,30 @@ jobs:
           FORCE_RUN: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.force) }}
         run: python scripts/build.py
 
+      # Runs AFTER the market data is built; can never block or break it.
+      # Weekly profiles + daily "this week" lines -> docs/geo.json
+      - name: Build docs/geo.json (geopolitics)
+        continue-on-error: true
+        timeout-minutes: 15
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          GEMINI_MIN_INTERVAL: ${{ vars.GEMINI_MIN_INTERVAL || '12' }}
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
+        run: |
+          # only after a real market build (skip-runs outside the 06:00-08:00 window don't touch geo)
+          if git diff --quiet -- docs/data.json; then echo "market build skipped; geo skipped too"; exit 0; fi
+          python scripts/geo.py
+
       - name: Commit data
         run: |
-          if git diff --quiet -- docs/data.json; then
+          if git diff --quiet -- docs/data.json docs/geo.json && [ -z "$(git status --porcelain docs/geo.json)" ]; then
             echo "No changes to commit"; exit 0
           fi
           git config user.name  "market-brief-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/data.json
+          if [ -f docs/geo.json ]; then git add docs/geo.json; fi
           git commit -m "Refresh data $(TZ=Europe/Madrid date '+%Y-%m-%d %H:%M %Z')"
           for i in 1 2 3; do
             git pull --rebase -X theirs origin main && git push origin HEAD:main && exit 0

@@ -168,3 +168,56 @@ tr.reason p.why { margin: 0; }
 .pick-stats { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .pick-stats .pill { font-size: 12px; padding: 1px 7px; background: var(--surface); }
 .badge.hz { background: rgba(var(--up), .14); color: var(--up-ink); text-transform: none; letter-spacing: 0; }
+
+/* geopolitics */
+.geo-intro h2 { font-size: 18px; }
+.geo-intro { margin-bottom: 12px; }
+.geo-list { display: grid; gap: 10px; }
+.geo-card { padding: 0; overflow: hidden; }
+.geo-home { padding: 14px 16px; margin-bottom: 18px; display: grid; gap: 10px; }
+.geo-head { display: flex; gap: 12px; align-items: center; }
+.geo-head h3 { font-size: 18px; display: flex; gap: 8px; align-items: center; }
+.geo-head p { margin: 0; }
+.flag { border-radius: 3px; box-shadow: 0 0 0 1px var(--border); object-fit: cover; flex: none; }
+.geo-row { width: 100%; display: flex; align-items: center; gap: 10px; padding: 12px 14px; border: 0; background: none;
+  color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.geo-row:hover .geo-name b { text-decoration: underline; text-underline-offset: 3px; }
+.geo-rank { font-weight: 800; color: var(--muted); min-width: 30px; font-variant-numeric: tabular-nums; }
+.geo-name { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+.geo-row .chev { color: var(--muted); font-size: 10px; transition: transform .15s; }
+.geo-card.open .geo-row .chev { transform: rotate(90deg); }
+.badge.warn { background: rgba(214, 140, 0, .16); color: #a86400; }
+:root[data-theme="dark"] .badge.warn { color: #ffbf47; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .badge.warn { color: #ffbf47; } }
+.geo-week { padding: 0 14px 12px 54px; font-size: 13.5px; }
+.geo-home .geo-week { padding: 0; }
+.geo-week .lbl, .geo-body .lbl, .geo-home .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 700; }
+.geo-links { display: inline-flex; gap: 8px; margin-left: 6px; flex-wrap: wrap; }
+.geo-links a { color: var(--accent); text-decoration: none; font-size: 12.5px; font-weight: 600; }
+.geo-body { border-top: 1px solid var(--border); padding: 12px 14px 14px; display: grid; gap: 12px; background: var(--surface-2); }
+p.self { margin: 2px 0 0; font-style: italic; }
+.sw { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.sw-col { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; }
+.sw-col ul { margin: 6px 0 0; padding-left: 18px; font-size: 13.5px; display: grid; gap: 4px; }
+.sw-col.good .lbl { color: var(--up-ink); }
+.sw-col.bad .lbl { color: var(--down-ink); }
+.impacts { display: grid; gap: 8px; }
+.impact { display: grid; grid-template-columns: 26px 1fr; gap: 8px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 10px; padding: 10px 12px; }
+.impact p { margin: 2px 0 0; font-size: 13.5px; }
+.imp-ico { width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; font-size: 12px; font-weight: 800; }
+.impact.up .imp-ico { background: rgba(var(--up), .16); color: var(--up-ink); }
+.impact.down .imp-ico { background: rgba(var(--down), .16); color: var(--down-ink); }
+.impact.mixed .imp-ico { background: rgba(214, 140, 0, .16); color: #b37400; }
+.imp-sec { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+.chip-s { font-size: 11.5px; border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; color: var(--muted); }
+@media (max-width: 560px) {
+  .sw { grid-template-columns: 1fr; }
+  .geo-week { padding-left: 14px; }
+}
+
+[hidden] { display: none !important; }
+
+.tabs button { white-space: nowrap; }
+.t-short { display: none; }
+@media (max-width: 560px) { .t-long { display: none; } .t-short { display: inline; } }

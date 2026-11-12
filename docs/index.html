@@ -21,8 +21,9 @@
     <button id="theme" class="icon-btn" type="button" aria-label="Toggle light/dark mode" title="Theme"></button>
   </div>
   <nav class="wrap tabs" role="tablist">
-    <button role="tab" id="tab-perf" aria-controls="panel-perf" aria-selected="true">Sector performance</button>
-    <button role="tab" id="tab-stories" aria-controls="panel-stories" aria-selected="false">Top stories</button>
+    <button role="tab" id="tab-perf" aria-controls="panel-perf" aria-selected="true"><span class="t-long">Sector performance</span><span class="t-short">Sectors</span></button>
+    <button role="tab" id="tab-stories" aria-controls="panel-stories" aria-selected="false"><span class="t-long">Top stories</span><span class="t-short">Stories</span></button>
+    <button role="tab" id="tab-geo" aria-controls="panel-geo" aria-selected="false">Geopolitics</button>
   </nav>
 </header>
 
@@ -50,6 +51,16 @@
     <div id="chips" class="chips" role="toolbar" aria-label="Filter by sector"></div>
     <div id="stories"></div>
     <p class="muted small foot">Stories: Yahoo Finance news, selected and summarised by Gemini. Price growth, consensus and analyst ratings: Yahoo Finance. Not investment advice.</p>
+  </section>
+  <section id="panel-geo" role="tabpanel" aria-labelledby="tab-geo" hidden>
+    <div class="geo-intro">
+      <h2>The world, seen from the US</h2>
+      <p class="muted small" id="geo-meta"></p>
+    </div>
+    <div id="geo-us"></div>
+    <div class="table-head"><h2>Top 10 players for the US economy</h2><span class="muted small">tap a country for its profile</span></div>
+    <div id="geo-list" class="geo-list"></div>
+    <p class="muted small foot" id="geo-foot">Ranking: US goods trade (US Census), holdings of US Treasuries (US Treasury), GDP (IMF) and a strategic-leverage weight. Profiles and "this week" lines: Gemini, from that data and recent Yahoo Finance headlines. "How they see themselves" is written from each country's own point of view. Flags: flag-icons (MIT).</p>
   </section>
 </main>
 <script src="app.js"></script>

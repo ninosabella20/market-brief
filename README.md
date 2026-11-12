@@ -46,6 +46,17 @@ builds the day's data; the other sees it's done and skips.
   - success = HTTP **204**. Turn on "notify on failure" in cron-job.org.
 - **When the token expires** cron-job.org starts failing with 401 (you get an email). Create a new token the same way and paste it into the job's header.
 
+## Geopolitics tab
+
+`scripts/geo.py` builds `docs/geo.json`. It runs as a separate workflow step **after** the market build, with `continue-on-error`, so it can never block the stock data, and it only runs when the market build actually ran.
+
+- **Players:** 10 countries/blocs in `PLAYERS` (China, Canada, Mexico, EU, Japan, Taiwan, UK, India, Saudi Arabia, Russia), plus a pinned US "Home base" card. Flags for reserves (South Korea `kr`, Germany `de`) are already in `docs/flags/`.
+- **Ranking:** `WEIGHTS` = US goods trade YTD (US Census API) 35, holdings of US Treasuries (US Treasury TIC table) 20, GDP (IMF DataMapper) 15, and a hand-set `strategic` leverage weight (0–1 per country) 30. If a data source fails, its numbers show as missing and a notice explains it; diagnostics are saved under `debug` in `geo.json`.
+- **Profiles (weekly):** rebuilt when older than 7 days (`PROFILE_MAX_AGE_DAYS`); 3 Gemini calls (4 countries per call). Each has: relation to the US, main lever, how the country sees itself, 4 strengths / 4 weaknesses from its own point of view, and 3 ways it could move the US economy over 5–10 years (upside / risk / either way, with affected sector ETFs).
+- **"This week" lines (daily):** 1 Gemini call, written only from real Yahoo headlines of the last 7 days (with links).
+- **News queries** must be short names ("China", "ECB", "OPEC"): Yahoo's news search matches names, not phrases. Avoid leaders' names, which go stale.
+- **Force a rebuild:** put `[geo]` in a code commit message (all profiles) or `[geo:cn,jp]` (only those).
+
 ## If Gemini changes
 
 **Model names change.** By default the script lists your available models (`GET /v1beta/models`) and picks the newest stable `gemini-<version>-flash` model (no `-preview`, `-exp` or `-lite`). If that model is out of free quota (429), retired (404) or doesn't answer within 150 s (`GEMINI_TIMEOUT`; a model that already answered gets one retry), it is skipped for the rest of the run. The script then falls back to the next stable flash, `gemini-flash-latest`, the preview flash models, and finally the flash-lite models.

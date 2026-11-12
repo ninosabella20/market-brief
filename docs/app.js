@@ -75,7 +75,7 @@
     store.set("tab", id);
   }
   for (const t of document.querySelectorAll('[role="tab"]')) t.addEventListener("click", () => showTab(t.id));
-  const hashTab = location.hash === "#stories" ? "tab-stories" : location.hash === "#sectors" ? "tab-perf" : null;
+  const hashTab = { "#stories": "tab-stories", "#sectors": "tab-perf", "#geo": "tab-geo" }[location.hash] || null;
   showTab(hashTab || store.get("tab") || "tab-perf");
 
   /* ---------- alerts ---------- */
@@ -251,6 +251,73 @@
     if (!show.length) out.append(el("div", { class: "card empty", text: "No stories yet — they appear after the first refresh with a Gemini key." }));
   }
 
+  /* ---------- geopolitics tab ---------- */
+  const REL_CLASS = { Ally: "buy", Partner: "hold", Competitor: "warn", Rival: "sell" };
+  const DIR = { positive: ["▲", "up", "Upside"], negative: ["▼", "down", "Risk"], mixed: ["◆", "mixed", "Could go either way"] };
+  const flag = (code, big) => el("img", { class: "flag" + (big ? " big" : ""), src: "flags/" + code + ".svg", alt: "", width: big ? 40 : 28, height: big ? 30 : 21 });
+  const usd = v => v == null ? null : (Math.abs(v) >= 1000 ? "$" + (v / 1000).toFixed(1) + "T" : "$" + Math.round(v) + "B");
+
+  function swCols(prof, name) {
+    return el("div", { class: "sw" },
+      el("div", { class: "sw-col good" }, el("span", { class: "lbl", text: "Strengths" }),
+        el("ul", null, (prof.strengths || []).map(x => el("li", { text: x })))),
+      el("div", { class: "sw-col bad" }, el("span", { class: "lbl", text: "Weaknesses" }),
+        el("ul", null, (prof.weaknesses || []).map(x => el("li", { text: x })))));
+  }
+  function weekLine(w) {
+    if (!w || !w.line) return null;
+    return el("div", { class: "geo-week" }, el("span", { class: "lbl", text: "This week" }), " ", w.line,
+      (w.links || []).length ? el("span", { class: "geo-links" }, w.links.map(l =>
+        el("a", { href: l.url, target: "_blank", rel: "noopener noreferrer", title: l.title, text: l.publisher + " ↗",
+          onclick: e => e.stopPropagation() }))) : null);
+  }
+  function renderGeo(g) {
+    const meta = $("#geo-meta");
+    if (!g || !g.players) { meta.textContent = "Geopolitics data not available yet."; return; }
+    const da = g.data_as_of || {};
+    meta.textContent = [g.profiles_updated_at && "Profiles updated " + fmtDate(g.profiles_updated_at),
+      g.week_updated_at && "this-week lines " + ago(g.week_updated_at),
+      da.trade && "trade " + da.trade, da.treasuries && "Treasuries " + da.treasuries, da.gdp && "GDP " + da.gdp]
+      .filter(Boolean).join(" · ");
+    const us = g.us;
+    $("#geo-us").replaceChildren(us && us.profile ? el("article", { class: "card geo-card geo-home" },
+      el("div", { class: "geo-head" }, flag("us", true),
+        el("div", null, el("h3", null, "United States ", el("span", { class: "badge hz", text: "Home base" })),
+          el("p", { class: "muted small", text: us.gdp_b ? "GDP " + usd(us.gdp_b) : "" }))),
+      el("p", { class: "self", text: us.profile.self_view }),
+      swCols(us.profile), weekLine(us.week)) : null);
+    const list = $("#geo-list"); list.replaceChildren();
+    for (const p of g.players) {
+      const pr = p.profile || {}, n = p.numbers || {};
+      const body = el("div", { class: "geo-body", hidden: true },
+        el("div", { class: "pills" }, [
+          ["US trade", usd(n.trade_b)], ["US balance", n.balance_b == null ? null : (n.balance_b >= 0 ? "+" : "−") + usd(Math.abs(n.balance_b))],
+          ["Holds Treasuries", usd(n.treasuries_b)], ["GDP", usd(n.gdp_b)]].filter(x => x[1]).map(([k, v]) =>
+          el("span", { class: "pill" }, el("b", { text: k }), v))),
+        pr.self_view ? el("div", null, el("span", { class: "lbl", text: "How " + p.name + " sees itself" }),
+          el("p", { class: "self", text: pr.self_view })) : null,
+        pr.strengths ? swCols(pr) : el("p", { class: "muted", text: "Profile not available yet." }),
+        (pr.impacts || []).length ? el("div", { class: "impacts" },
+          el("span", { class: "lbl", text: "What it means for the US · next 5–10 years" }),
+          pr.impacts.map(im => { const d = DIR[im.direction] || DIR.mixed; return el("div", { class: "impact " + d[1] },
+            el("span", { class: "imp-ico", title: d[2], text: d[0] }),
+            el("div", null, el("b", { text: im.title }), el("p", { text: im.detail }),
+              (im.sectors || []).length ? el("div", { class: "imp-sec" }, im.sectors.map(sx =>
+                el("span", { class: "chip-s", title: SHORT[sx] || sx, text: sx + " · " + (SHORT[sx] || "") }))) : null)); })) : null,
+        p.profile_as_of ? el("p", { class: "muted small", text: "Profile as of " + fmtDate(p.profile_as_of) }) : null);
+      const head = el("button", { class: "geo-row", type: "button", "aria-expanded": "false",
+        onclick: () => { const open = body.hidden; body.hidden = !open; head.setAttribute("aria-expanded", open); card.classList.toggle("open", open); } },
+        el("span", { class: "geo-rank", text: "#" + p.rank }), flag(p.code),
+        el("span", { class: "geo-name" }, el("b", { text: p.name }), pr.lever ? el("span", { class: "muted small", text: pr.lever }) : null),
+        pr.relation ? el("span", { class: "badge " + (REL_CLASS[pr.relation] || "hold"), text: pr.relation }) : null,
+        el("span", { class: "chev", text: "▶" }));
+      const card = el("article", { class: "card geo-card" }, head, weekLine(p.week), body);
+      list.append(card);
+    }
+    if ((g.notices || []).length) $("#alerts").append(el("div", { class: "alert", role: "status" },
+      el("strong", { text: "Geopolitics: " }), g.notices.join(" ")));
+  }
+
   /* ---------- load ---------- */
   async function load() {
     try {
@@ -260,6 +327,8 @@
       $("#stamp").textContent = "Updated " + fmtStamp(d.generated_at);
       $("#stamp").title = d.generated_at + (d.model ? " · " + d.model : "");
       renderAlerts(d); renderPerf(d); renderStories(d);
+      fetch("geo.json?t=" + Date.now(), { cache: "no-store" }).then(x => x.ok ? x.json() : null)
+        .then(renderGeo).catch(() => renderGeo(null));
       lastData = d;
       mq.addEventListener("change", () => renderPerf(lastData));
     } catch (e) {
