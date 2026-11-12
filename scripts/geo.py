@@ -414,9 +414,9 @@ def main() -> int:
         missing = [k for k, v in (("US Census trade", trade), ("US Treasury holdings", tic), ("IMF GDP", gdp)) if not v]
         if missing:
             out["notices"].append("Ranking data unavailable this week: " + ", ".join(missing) + ".")
-        if profiles and not only:
-            out["profiles_updated_at"] = iso(now_utc())
-        elif profiles and not prev.get("profiles_updated_at"):
+        # Only a full build resets the weekly clock; a partial test build ([geo:cn])
+        # leaves the others due, so the next run fills them in.
+        if profiles and not only and not [e for e in entries if e["code"] not in profiles]:
             out["profiles_updated_at"] = iso(now_utc())
         failed = [names[e["code"]] for e in entries if e["code"] not in profiles]
         if failed:
