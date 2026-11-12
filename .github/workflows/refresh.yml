@@ -37,7 +37,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 55
     steps:
+      # Always start from the LATEST main (not the commit that triggered the run):
+      # a queued run must never overwrite data committed by the run before it.
       - uses: actions/checkout@v5
+        with:
+          ref: main
 
       - uses: actions/setup-python@v6
         with:

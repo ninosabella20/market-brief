@@ -432,7 +432,14 @@ def main() -> int:
     if out.get("us"):
         out["us"]["gdp_b"] = num(gdp.get("values", {}).get("us"), 0) or out["us"].get("gdp_b")
 
-    if force or age_days >= PROFILE_MAX_AGE_DAYS:
+    # Self-healing: any player (or the US card) without a profile is rebuilt on the next
+    # run, whatever the weekly clock says - without resetting the clock.
+    missing_prof = {p["code"] for p in out["players"] if not p.get("profile")}
+    if not (out.get("us") or {}).get("profile"):
+        missing_prof.add("us")
+    if not force and age_days < PROFILE_MAX_AGE_DAYS and missing_prof:
+        only = missing_prof
+    if force or age_days >= PROFILE_MAX_AGE_DAYS or missing_prof:
         log.info("rebuilding geopolitics profiles (force=%s only=%s age=%.1fd)", force, only, age_days)
         entries = ([{"code": "us", "name": US["name"]}] if (not only or "us" in only) else []) + [
             r for r in ranked if not only or r["code"] in only]
