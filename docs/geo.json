@@ -1,0 +1,307 @@
+{
+ "notices": [
+  "Ranking data unavailable this week: US Census trade, IMF GDP.",
+  "'This week' lines not refreshed (Gemini time budget for this run used up)."
+ ],
+ "debug": {
+  "census": {
+   "2026-10": "error Expecting value: line 1 column 1 (char 0)",
+   "2026-09": "error Expecting value: line 1 column 1 (char 0)",
+   "2026-08": "error Expecting value: line 1 column 1 (char 0)",
+   "2026-07": "error Expecting value: line 1 column 1 (char 0)",
+   "2026-06": "error Expecting value: line 1 column 1 (char 0)",
+   "2026-05": "error Expecting value: line 1 column 1 (char 0)"
+  },
+  "tic": {
+   "slt_table5.txt": 200,
+   "parsed_names": 23,
+   "sample": [
+    [
+     "Country",
+     2026.0
+    ],
+    [
+     "Japan",
+     1068.3
+    ],
+    [
+     "United Kingdom",
+     1009.5
+    ],
+    [
+     "China, Mainland",
+     590.7
+    ]
+   ]
+  },
+  "imf": {
+   "status": 403,
+   "error": "Expecting value: line 1 column 1 (char 0)"
+  }
+ },
+ "players": [
+  {
+   "code": "eu",
+   "name": "European Union",
+   "score": 44.0,
+   "numbers": {
+    "us_exports_b": null,
+    "us_imports_b": null,
+    "trade_b": null,
+    "balance_b": null,
+    "treasuries_b": 1654.2,
+    "gdp_b": null
+   },
+   "rank": 1,
+   "profile": null,
+   "profile_as_of": null,
+   "week": null
+  },
+  {
+   "code": "cn",
+   "name": "China",
+   "score": 37.1,
+   "numbers": {
+    "us_exports_b": null,
+    "us_imports_b": null,
+    "trade_b": null,
+    "balance_b": null,
+    "treasuries_b": 590.7,
+    "gdp_b": null
+   },
+   "rank": 2,
+   "profile": {
+    "self_view": "We are an ascending civilizational power reclaiming our rightful global standing through state-guided technological self-reliance and comprehensive industrial modernization.",
+    "strengths": [
+     "Unrivaled comprehensive manufacturing ecosystem and high-capacity global supply networks.",
+     "Rapidly advancing domestic technology, renewable energy, and electric vehicle industries.",
+     "Strong centralized state capacity to mobilize strategic capital and resources.",
+     "Vast domestic consumer market offering significant long-term growth potential."
+    ],
+    "weaknesses": [
+     "Worsening demographic decline and shrinking productive workforce over coming decades.",
+     "Structural real estate downturn weighing on consumer confidence and balance sheets.",
+     "Tightening Western tech export controls constraining access to advanced semiconductors.",
+     "High local government debt levels constraining regional fiscal stimulus capacity."
+    ],
+    "relation": "Rival",
+    "lever": "Global manufacturing dominance and critical minerals",
+    "impacts": [
+     {
+      "title": "Advanced Technology Export Controls and Retaliation",
+      "detail": "Tighter restrictions on advanced AI hardware alongside illicit workarounds and Chinese counter-restrictions on critical minerals threaten US semiconductor revenues and raise manufacturing costs across high-tech sectors.",
+      "direction": "negative",
+      "sectors": [
+       "XLK",
+       "XLB",
+       "XLI"
+      ]
+     },
+     {
+      "title": "Reallocation of US Foreign Treasuries Holdings",
+      "detail": "Gradual diversification away from US Treasuries toward gold and bilateral trade settlements exerts upward pressure on long-term US yields, lifting corporate and consumer borrowing costs.",
+      "direction": "negative",
+      "sectors": [
+       "XLF",
+       "XLRE"
+      ]
+     },
+     {
+      "title": "Bilateral Market Access in Key Sectors",
+      "detail": "Expansion of approvals for Western pharmaceuticals and industrial products creates selective upside, while ongoing tariffs and supply-chain onshoring squeeze consumer discretionary and tech hardware margins.",
+      "direction": "mixed",
+      "sectors": [
+       "XLV",
+       "XLY",
+       "XLI"
+      ]
+     }
+    ]
+   },
+   "profile_as_of": "2026-11-12T20:51:18Z",
+   "week": null
+  },
+  {
+   "code": "jp",
+   "name": "Japan",
+   "score": 33.9,
+   "numbers": {
+    "us_exports_b": null,
+    "us_imports_b": null,
+    "trade_b": null,
+    "balance_b": null,
+    "treasuries_b": 1068.3,
+    "gdp_b": null
+   },
+   "rank": 3,
+   "profile": null,
+   "profile_as_of": null,
+   "week": null
+  },
+  {
+   "code": "tw",
+   "name": "Taiwan",
+   "score": 30.6,
+   "numbers": {
+    "us_exports_b": null,
+    "us_imports_b": null,
+    "trade_b": null,
+    "balance_b": null,
+    "treasuries_b": 298.4,
+    "gdp_b": null
+   },
+   "rank": 4,
+   "profile": null,
+   "profile_as_of": null,
+   "week": null
+  },
+  {
+   "code": "gb",
+   "name": "United Kingdom",
+   "score": 27.2,
+   "numbers": {
+    "us_exports_b": null,
+    "us_imports_b": null,
+    "trade_b": null,
+    "balance_b": null,
+    "treasuries_b": 1009.5,
+    "gdp_b": null
+   },
+   "rank": 5,
+   "profile": null,
+   "profile_as_of": null,
+   "week": null
+  },
+  {
+   "code": "ca",
+   "name": "Canada",
+   "score": 23.6,
+   "numbers": {
+    "us_exports_b": null,
+    "us_imports_b": null,
+    "trade_b": null,
+    "balance_b": null,
+    "treasuries_b": 464.6,
+    "gdp_b": null
+   },
+   "rank": 6,
+   "profile": null,
+   "profile_as_of": null,
+   "week": null
+  },
+  {
+   "code": "sa",
+   "name": "Saudi Arabia",
+   "score": 22.7,
+   "numbers": {
+    "us_exports_b": null,
+    "us_imports_b": null,
+    "trade_b": null,
+    "balance_b": null,
+    "treasuries_b": 141.2,
+    "gdp_b": null
+   },
+   "rank": 7,
+   "profile": null,
+   "profile_as_of": null,
+   "week": null
+  },
+  {
+   "code": "mx",
+   "name": "Mexico",
+   "score": 18.0,
+   "numbers": {
+    "us_exports_b": null,
+    "us_imports_b": null,
+    "trade_b": null,
+    "balance_b": null,
+    "treasuries_b": null,
+    "gdp_b": null
+   },
+   "rank": 8,
+   "profile": null,
+   "profile_as_of": null,
+   "week": null
+  },
+  {
+   "code": "ru",
+   "name": "Russia",
+   "score": 18.0,
+   "numbers": {
+    "us_exports_b": null,
+    "us_imports_b": null,
+    "trade_b": null,
+    "balance_b": null,
+    "treasuries_b": null,
+    "gdp_b": null
+   },
+   "rank": 9,
+   "profile": null,
+   "profile_as_of": null,
+   "week": null
+  },
+  {
+   "code": "in",
+   "name": "India",
+   "score": 17.7,
+   "numbers": {
+    "us_exports_b": null,
+    "us_imports_b": null,
+    "trade_b": null,
+    "balance_b": null,
+    "treasuries_b": 219.7,
+    "gdp_b": null
+   },
+   "rank": 10,
+   "profile": null,
+   "profile_as_of": null,
+   "week": null
+  }
+ ],
+ "us": {
+  "code": "us",
+  "name": "United States",
+  "profile": {
+   "self_view": "We remain the indispensable global superpower, driving frontier technological innovation and anchoring international financial stability through the dollar.",
+   "strengths": [
+    "Global reserve currency status ensuring unmatched financial flexibility and borrowing power.",
+    "World-leading innovation ecosystem in artificial intelligence, technology, and biotechnology.",
+    "Deep, highly liquid capital markets attracting continuous international investment flows.",
+    "Continental-scale energy independence and robust domestic resource endowments."
+   ],
+   "weaknesses": [
+    "Persistent fiscal deficits and elevated sovereign debt servicing burdens.",
+    "Acute political polarization threatening policy continuity and regulatory predictability.",
+    "Vulnerability to global supply chain disruptions for critical industrial inputs.",
+    "Deteriorating infrastructure alongside rising domestic entitlement spending pressures."
+   ]
+  },
+  "gdp_b": null,
+  "week": null
+ },
+ "data_as_of": {
+  "trade": null,
+  "treasuries": "2026-08",
+  "gdp": null
+ },
+ "weights": {
+  "trade": 35,
+  "treasuries": 20,
+  "gdp": 15,
+  "strategic": 30
+ },
+ "profiles_updated_at": "2026-11-12T20:51:18Z",
+ "generated_at": "2026-11-12T20:51:18Z",
+ "gemini": {
+  "ok_calls": {
+   "gemini-flash-latest": 1
+  },
+  "errors": {
+   "gemini-3.8-flash": "no answer within 150s",
+   "gemini-3.7-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+   "gemini-3.6-flash": "no answer within 150s",
+   "gemini-3.5-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+   "gemini-2.5-flash": "404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a"
+  }
+ }
+}
