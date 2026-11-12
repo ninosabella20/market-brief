@@ -32,6 +32,20 @@ GitHub disables scheduled workflows after 60 days with **no repository activity*
 
 You'll get an email from GitHub only if a run fails completely (no numbers and no stories). Partial failures show as notices on the site.
 
+## Reliable 06:05 trigger (cron-job.org)
+
+GitHub's own scheduler can start runs hours late or skip them, so a free external timer presses
+"Run workflow" every morning. The GitHub schedule stays on as a backup. Whichever run comes first
+builds the day's data; the other sees it's done and skips.
+
+- **Token:** a fine-grained GitHub token limited to *only* this repo with *Actions: Read and write*
+  (github.com/settings/personal-access-tokens). It is stored only in cron-job.org.
+- **cron-job.org job:** daily at 06:05 Europe/Madrid, `POST https://api.github.com/repos/ninosabella20/market-brief/actions/workflows/refresh.yml/dispatches`
+  - headers: `Authorization: Bearer <token>`, `Accept: application/vnd.github+json`, `X-GitHub-Api-Version: 2022-11-28`, `Content-Type: application/json`
+  - body: `{"ref":"main","inputs":{"force":"false"}}`. `force:false` makes the run respect the 06:00–08:00 window and skip if the day is already built, so retries can't burn Gemini quota.
+  - success = HTTP **204**. Turn on "notify on failure" in cron-job.org.
+- **When the token expires** cron-job.org starts failing with 401 (you get an email). Create a new token the same way and paste it into the job's header.
+
 ## If Gemini changes
 
 **Model names change.** By default the script lists your available models (`GET /v1beta/models`) and picks the newest stable `gemini-<version>-flash` model (no `-preview`, `-exp` or `-lite`). If that model is out of free quota (429), retired (404) or doesn't answer within 150 s (`GEMINI_TIMEOUT`; a model that already answered gets one retry), it is skipped for the rest of the run. The script then falls back to the next stable flash, `gemini-flash-latest`, the preview flash models, and finally the flash-lite models.
