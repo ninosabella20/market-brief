@@ -898,6 +898,9 @@ Companies may be listed anywhere in the world but must belong to this sector.
 NEWS ITEMS:
 {items}
 
+For "what_happened": numbers and facts about the event must come ONLY from the item. For strategy
+and cause you may use well-established background knowledge about the company, but never invent figures.
+
 Return ONLY a JSON array (no prose, no markdown). Each element:
 {{
  "id": <number of the news item used>,
@@ -906,7 +909,11 @@ Return ONLY a JSON array (no prose, no markdown). Each element:
  "ticker": "Yahoo Finance symbol of the primary listing incl. exchange suffix (e.g. AAPL, UCG.MI, 7203.T)",
  "country": "country of headquarters",
  "profile": "ONE sentence: what the company does, its size/rank in its industry, where it is from",
- "what_happened": "2-3 sentences with the key figures - use ONLY facts and numbers stated in the item",
+ "what_happened": {{
+   "strategy": "max 25 words: the strategy, plan or situation the company had in place going into this event",
+   "event": "max 25 words: what happened, with the key figures from the item",
+   "why": "max 25 words: why it happened - the cause or driver behind the event"
+ }},
  "why_it_matters": "1-2 sentences on why it matters to the sector and investors"
 }}"""
 
@@ -915,8 +922,13 @@ def clean_story(raw: dict) -> dict | None:
     if not isinstance(raw, dict):
         return None
     s = {k: (str(raw.get(k)).strip() if raw.get(k) is not None else "")
-         for k in ("headline", "company", "ticker", "country", "profile", "what_happened",
-                   "why_it_matters")}
+         for k in ("headline", "company", "ticker", "country", "profile", "why_it_matters")}
+    wh = raw.get("what_happened")
+    if isinstance(wh, dict):   # {"strategy", "event", "why"} bullets
+        s["what_happened"] = {k: str(wh.get(k) or "").strip()[:240] for k in ("strategy", "event", "why")
+                              if wh.get(k)}
+    else:
+        s["what_happened"] = str(wh or "").strip()
     if not s["headline"] or not s["company"]:
         return None
     try:

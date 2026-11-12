@@ -221,3 +221,5 @@ p.self { margin: 2px 0 0; font-style: italic; }
 .tabs button { white-space: nowrap; }
 .t-short { display: none; }
 @media (max-width: 560px) { .t-long { display: none; } .t-short { display: inline; } }
+ul.wh { margin: 2px 0 0; padding-left: 18px; font-size: 14px; display: grid; gap: 4px; }
+ul.wh b { font-weight: 700; }

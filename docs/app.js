@@ -194,6 +194,13 @@
     } else logo();
     return box;
   }
+  // "What happened" is {strategy, event, why} bullets (older data: a plain sentence)
+  function whatHappened(w) {
+    const lbl = el("span", { class: "lbl", text: "What happened" });
+    if (!w || typeof w === "string") return el("p", null, lbl, w || "");
+    const rows = [["Strategy", w.strategy], ["Event", w.event], ["Why", w.why]].filter(r => r[1]);
+    return el("div", null, lbl, el("ul", { class: "wh" }, rows.map(([k, v]) => el("li", null, el("b", { text: k + ": " }), v))));
+  }
   function storyCard(s, i) {
     const f = s.facts || {}, g = s.growth || {}, c = f.consensus || {};
     const sym = s.symbol || s.ticker;
@@ -207,7 +214,7 @@
         el("h3", { text: s.headline }),
         s.profile ? el("p", { class: "profile", text: s.profile }) : null,
         metaBits.length ? el("div", { class: "meta", text: metaBits.join(" · ") }) : null,
-        el("p", null, el("span", { class: "lbl", text: "What happened" }), s.what_happened),
+        whatHappened(s.what_happened),
         el("p", null, el("span", { class: "lbl", text: "Why it matters" }), s.why_it_matters),
         g.y1 != null || g.w1 != null ? el("div", null, el("span", { class: "lbl", text: "Share price" + (sym ? " · " + sym : "") }),
           el("div", { class: "pills" }, [["1W", g.w1], ["1Y", g.y1], ["5Y", g.y5]].map(([k, v]) =>
