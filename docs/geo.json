@@ -1,15 +1,10 @@
 {
  "notices": [
-  "Ranking data unavailable: US Census trade, World Bank GDP."
+  "Ranking data unavailable: US Census trade."
  ],
  "debug": {
   "census": {
-   "2026-10": "error Expecting value: line 1 column 1 (char 0)",
-   "2026-09": "error Expecting value: line 1 column 1 (char 0)",
-   "2026-08": "error Expecting value: line 1 column 1 (char 0)",
-   "2026-07": "error Expecting value: line 1 column 1 (char 0)",
-   "2026-06": "error Expecting value: line 1 column 1 (char 0)",
-   "2026-05": "error Expecting value: line 1 column 1 (char 0)"
+   "key": "MISSING (add repo secret CENSUS_API_KEY)"
   },
   "tic": {
    "slt_table5.txt": 200,
@@ -34,32 +29,38 @@
    ]
   },
   "worldbank": {
-   "error": "HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=60)"
+   "status": 200,
+   "found": 11
   }
  },
  "players": [
   {
    "code": "eu",
    "name": "European Union",
-   "score": 44.0,
+   "score": 54.4,
    "numbers": {
     "us_exports_b": null,
     "us_imports_b": null,
     "trade_b": null,
     "balance_b": null,
     "treasuries_b": 1654.2,
-    "gdp_b": null
+    "gdp_b": 21243.0
    },
    "rank": 1,
    "profile": null,
    "profile_as_of": null,
    "week": {
-    "line": "European equity markets pulled back from record highs as investors weighed earnings and oil prices.",
+    "line": "Tesla’s Full Self-Driving technology is nearing EU-wide approval, potentially expanding the market for the US automaker as European indexes pull back from record highs.",
     "links": [
      {
       "title": "Europe's STOXX 600 pulls back from record high as investors weigh earnings, oil prices",
       "url": "https://finance.yahoo.com/markets/world-indices/articles/europes-stoxx-600-hits-record-083533950.html",
       "publisher": "Reuters"
+     },
+     {
+      "title": "Tesla FSD Gains Ground in Europe: Is EU-Wide Approval Near?",
+      "url": "https://finance.yahoo.com/technology/ai/articles/tesla-fsd-gains-ground-europe-112700383.html",
+      "publisher": "Zacks"
      }
     ]
    }
@@ -67,14 +68,14 @@
   {
    "code": "cn",
    "name": "China",
-   "score": 37.1,
+   "score": 46.6,
    "numbers": {
     "us_exports_b": null,
     "us_imports_b": null,
     "trade_b": null,
     "balance_b": null,
     "treasuries_b": 590.7,
-    "gdp_b": null
+    "gdp_b": 19498.0
    },
    "rank": 2,
    "profile": {
@@ -128,17 +129,17 @@
    },
    "profile_as_of": "2026-11-12T20:51:18Z",
    "week": {
-    "line": "Beijing rejected Nvidia spy allegations as smears and warned the US against tech curbs amid rising tensions.",
+    "line": "Nvidia CEO Jensen Huang’s ousting and investigations into AI chip smuggling to China have triggered a selloff in tech stocks and signaled tighter US export regulations.",
     "links": [
      {
-      "title": "NVDA Stock Rout: Another Analyst Slashes Rating, Beijing Warns US Against Tech Curbs",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvda-stock-rout-another-analyst-091625222.html",
-      "publisher": "Stocktwits"
+      "title": "Super Micro sinks as DOJ probes possible China smuggling links to Nvidia fallout",
+      "url": "https://finance.yahoo.com/news/super-micro-sinks-doj-probes-174746367.html",
+      "publisher": "Investing.com"
      },
      {
-      "title": "NVDA Stock Slides Premarket: Beijing Reportedly Rejects Jensen Huang Spy Allegations As ‘Smears Against China'",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvda-stock-slides-premarket-beijing-091437044.html",
-      "publisher": "Stocktwits"
+      "title": "Jensen Huang's Nvidia ousting may signal shifting winds on China in Washington",
+      "url": "https://finance.yahoo.com/markets/article/jensen-huangs-nvidia-ousting-may-signal-shifting-winds-on-china-in-washington-164315699.html",
+      "publisher": "Yahoo Finance"
      }
     ]
    }
@@ -146,25 +147,30 @@
   {
    "code": "jp",
    "name": "Japan",
-   "score": 33.9,
+   "score": 36.1,
    "numbers": {
     "us_exports_b": null,
     "us_imports_b": null,
     "trade_b": null,
     "balance_b": null,
     "treasuries_b": 1068.3,
-    "gdp_b": null
+    "gdp_b": 4435.0
    },
    "rank": 3,
    "profile": null,
    "profile_as_of": null,
    "week": {
-    "line": "Hot US inflation pushed the Japanese yen close to 160, prompting warnings of potential currency intervention.",
+    "line": "Hot US inflation data has pushed the yen toward the 160 level, prompting Japanese officials to warn of market intervention to stabilize the currency.",
     "links": [
      {
       "title": "Hot US Inflation Drags the Yen Close to 160. Will Japan Step In Again?",
       "url": "https://finance.yahoo.com/markets/currencies/articles/hot-us-inflation-drags-yen-083554526.html",
       "publisher": "BeInCrypto"
+     },
+     {
+      "title": "Japan's Mimura reminds markets of intervention risks as yen nears 160",
+      "url": "https://finance.yahoo.com/markets/currencies/articles/japans-mimura-reminds-markets-intervention-082838056.html",
+      "publisher": "Reuters"
      }
     ]
    }
@@ -172,20 +178,20 @@
   {
    "code": "tw",
    "name": "Taiwan",
-   "score": 30.6,
+   "score": 31.0,
    "numbers": {
     "us_exports_b": null,
     "us_imports_b": null,
     "trade_b": null,
     "balance_b": null,
     "treasuries_b": 298.4,
-    "gdp_b": null
+    "gdp_b": 860.0
    },
    "rank": 4,
    "profile": null,
    "profile_as_of": null,
    "week": {
-    "line": "Nvidia leadership shake-up impacted tech stocks, causing TSMC shares to fall while boosting custom AI chip demand for Broadcom.",
+    "line": "The resignation of Nvidia’s Jensen Huang caused volatility for major US tech partners like TSMC and Broadcom, while Trump suggested Apple’s Tim Cook as a replacement.",
     "links": [
      {
       "title": "TSMC Stocks Fall 2.21% as NVIDIA Shake-Up Overshadows Record October Revenue",
@@ -193,9 +199,9 @@
       "publisher": "GuruFocus.com"
      },
      {
-      "title": "Broadcom Stocks Climb 4.54% as Custom AI Chips Gain Appeal After NVIDIA Shake-Up",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-stocks-climb-4-54-175645897.html",
-      "publisher": "GuruFocus.com"
+      "title": "Trump to Nvidia: Hire Tim Cook so “a Legend Replaces a Legend.” Bad Idea.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/trump-nvidia-hire-tim-cook-162828257.html",
+      "publisher": "TIKR"
      }
     ]
    }
@@ -203,26 +209,21 @@
   {
    "code": "gb",
    "name": "United Kingdom",
-   "score": 27.2,
+   "score": 29.2,
    "numbers": {
     "us_exports_b": null,
     "us_imports_b": null,
     "trade_b": null,
     "balance_b": null,
     "treasuries_b": 1009.5,
-    "gdp_b": null
+    "gdp_b": 4003.0
    },
    "rank": 5,
    "profile": null,
    "profile_as_of": null,
    "week": {
-    "line": "The Bank of England raised interest rates for the first time since 2023 as inflation forecasts remained high.",
+    "line": "The Bank of England raised interest rates for the first time since 2023, contributing to a tumble in European stocks and impacting global monetary sentiment.",
     "links": [
-     {
-      "title": "Will the Bank of England raise UK interest rates again in 2026?",
-      "url": "https://finance.yahoo.com/economy/policy/articles/uk-interest-rates-fall-2026-160348987.html",
-      "publisher": "Moneyweek"
-     },
      {
       "title": "European Stocks Tumble in Friday Trading; Bank of England Raises Rates for First Time Since 2023",
       "url": "https://finance.yahoo.com/markets/world-indices/articles/european-stocks-tumble-friday-trading-164554920.html",
@@ -234,21 +235,26 @@
   {
    "code": "ca",
    "name": "Canada",
-   "score": 23.6,
+   "score": 24.7,
    "numbers": {
     "us_exports_b": null,
     "us_imports_b": null,
     "trade_b": null,
     "balance_b": null,
     "treasuries_b": 464.6,
-    "gdp_b": null
+    "gdp_b": 2320.0
    },
    "rank": 6,
    "profile": null,
    "profile_as_of": null,
    "week": {
-    "line": "Freeport-McMoRan agreed to acquire a 51% stake in TDG Gold's Aurora West Property for C$110 million.",
+    "line": "US manufacturing stocks are preparing for potential tariff pressure, while Freeport-McMoRan expanded its Canadian presence with a C$110 million property interest acquisition.",
     "links": [
+     {
+      "title": "3 U.S. Manufacturing Stocks Built To Handle Canada Tariff Pressure",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-u-manufacturing-stocks-built-201532912.html",
+      "publisher": "Simply Wall St."
+     },
      {
       "title": "TDG Gold Corp. agrees to sell 51% interest in Aurora West Property to Freeport-McMoRan Mineral Properties Canada Inc. for C$110 million and to grant certain additional earn-in rights upon funding of C$80 million of expenditures and upon C$40 million cash payment",
       "url": "https://finance.yahoo.com/markets/commodities/articles/tdg-gold-corp-agrees-sell-183800100.html",
@@ -260,82 +266,30 @@
   {
    "code": "sa",
    "name": "Saudi Arabia",
-   "score": 22.7,
+   "score": 23.3,
    "numbers": {
     "us_exports_b": null,
     "us_imports_b": null,
     "trade_b": null,
     "balance_b": null,
     "treasuries_b": 141.2,
-    "gdp_b": null
+    "gdp_b": 1277.0
    },
    "rank": 7,
    "profile": null,
    "profile_as_of": null,
    "week": {
-    "line": "Oil prices rose following attacks on Saudi energy sites and Strait of Hormuz disruptions.",
+    "line": "Oil prices jumped $3 following attacks on Saudi energy sites, while Goldman Sachs led a $150 million private credit deal in the kingdom.",
     "links": [
      {
       "title": "Oil settles $3 higher on attacks on Saudi energy sites, Strait of Hormuz disruptions",
       "url": "https://finance.yahoo.com/energy/articles/oil-falls-over-1-easing-045152522.html",
       "publisher": "Reuters"
-     }
-    ]
-   }
-  },
-  {
-   "code": "mx",
-   "name": "Mexico",
-   "score": 18.0,
-   "numbers": {
-    "us_exports_b": null,
-    "us_imports_b": null,
-    "trade_b": null,
-    "balance_b": null,
-    "treasuries_b": null,
-    "gdp_b": null
-   },
-   "rank": 8,
-   "profile": null,
-   "profile_as_of": null,
-   "week": {
-    "line": "President Trump threatened to double tariffs on Mexico over migrant issues, while Mexico's truck exports surged.",
-    "links": [
-     {
-      "title": "Mexico truck exports soar 159% as production jumps 130% in October",
-      "url": "https://finance.yahoo.com/economy/articles/mexico-truck-exports-soar-159-190315121.html",
-      "publisher": "FreightWaves"
      },
      {
-      "title": "Trump threatens to double Mexico tariffs over alleged migrant influx",
-      "url": "https://finance.yahoo.com/economy/policy/articles/trump-threatens-double-mexico-tariffs-161314425.html",
-      "publisher": "FreightWaves"
-     }
-    ]
-   }
-  },
-  {
-   "code": "ru",
-   "name": "Russia",
-   "score": 18.0,
-   "numbers": {
-    "us_exports_b": null,
-    "us_imports_b": null,
-    "trade_b": null,
-    "balance_b": null,
-    "treasuries_b": null,
-    "gdp_b": null
-   },
-   "rank": 9,
-   "profile": null,
-   "profile_as_of": null,
-   "week": {
-    "line": "A senior U.S. soldier was arrested in the U.K. on allegations of spying for Russia.",
-    "links": [
-     {
-      "title": "Senior U.S. Soldier Is Arrested in U.K. Over Allegations of Spying for Russia",
-      "url": "https://finance.yahoo.com/m/4d2cb812-9b2c-360f-8b8f-587ddf2a98fe/senior-u.s.-soldier-is.html",
-      "publisher": "The Wall Street Journal"
+      "title": "Goldman Sachs, HSBC Strike Major Saudi Financing Deal",
+      "url": "https://finance.yahoo.com/economy/policy/articles/goldman-sachs-hsbc-strike-major-185922142.html",
+      "publisher": "GuruFocus.com"
      }
     ]
    }
@@ -343,25 +297,92 @@
   {
    "code": "in",
    "name": "India",
-   "score": 17.7,
+   "score": 19.6,
    "numbers": {
     "us_exports_b": null,
     "us_imports_b": null,
     "trade_b": null,
     "balance_b": null,
     "treasuries_b": 219.7,
-    "gdp_b": null
+    "gdp_b": 3956.0
    },
-   "rank": 10,
+   "rank": 8,
    "profile": null,
    "profile_as_of": null,
    "week": {
-    "line": "India banned lithium-ion battery black mass exports while expanding pharmaceutical and global capability center investments.",
+    "line": "US food giant Mars is expanding its footprint in India through a new Global Capability Center, while flight networks between the two nations continue to grow.",
     "links": [
      {
       "title": "AirTripMaker Expands US and Canada to India Flights Network with Economy, Premium Economy, Business and First Class and Strengthening Connections from the major USA or Canada Airports to Indian Cities",
       "url": "https://finance.yahoo.com/small-business/articles/airtripmaker-expands-us-canada-india-152400270.html",
       "publisher": "GlobeNewswire"
+     },
+     {
+      "title": "Mars Expands its Presence in India and Opens Global Capability Center in Collaboration with Genpact",
+      "url": "https://finance.yahoo.com/technology/ai/articles/mars-expands-presence-india-opens-132500247.html",
+      "publisher": "PR Newswire"
+     }
+    ]
+   }
+  },
+  {
+   "code": "ru",
+   "name": "Russia",
+   "score": 19.2,
+   "numbers": {
+    "us_exports_b": null,
+    "us_imports_b": null,
+    "trade_b": null,
+    "balance_b": null,
+    "treasuries_b": null,
+    "gdp_b": 2561.0
+   },
+   "rank": 9,
+   "profile": null,
+   "profile_as_of": null,
+   "week": {
+    "line": "Global oil prices fell on optimism for peace in Ukraine, while US defense contractor RTX saw increased focus following successful tests of its DeepStrike technology.",
+    "links": [
+     {
+      "title": "RTX (RTX) DeepStrike Test And DARPA Win Put Fresh Focus On Defense Tech",
+      "url": "https://finance.yahoo.com/technology/articles/rtx-rtx-deepstrike-test-darpa-151707817.html",
+      "publisher": "Simply Wall St."
+     },
+     {
+      "title": "Oil Prices Sink as Iran and Ukraine Peace Optimism Builds",
+      "url": "https://finance.yahoo.com/energy/articles/oil-prices-sink-iran-ukraine-063500894.html",
+      "publisher": "Oilprice.com"
+     }
+    ]
+   }
+  },
+  {
+   "code": "mx",
+   "name": "Mexico",
+   "score": 18.9,
+   "numbers": {
+    "us_exports_b": null,
+    "us_imports_b": null,
+    "trade_b": null,
+    "balance_b": null,
+    "treasuries_b": null,
+    "gdp_b": 1833.0
+   },
+   "rank": 10,
+   "profile": null,
+   "profile_as_of": null,
+   "week": {
+    "line": "President Trump has threatened to double tariffs on Mexico in response to migrant caravans, a move with significant implications for US trade and supply chains.",
+    "links": [
+     {
+      "title": "Trump threatens to double Mexico tariffs over alleged migrant influx",
+      "url": "https://finance.yahoo.com/economy/policy/articles/trump-threatens-double-mexico-tariffs-161314425.html",
+      "publisher": "FreightWaves"
+     },
+     {
+      "title": "Trump Threatens to Double Tariffs on Mexico Over Migrant Caravans",
+      "url": "https://finance.yahoo.com/economy/policy/articles/trump-threatens-double-tariffs-mexico-124031708.html",
+      "publisher": "MT Newswires"
      }
     ]
    }
@@ -385,19 +406,19 @@
     "Rising geopolitical tensions necessitating increased defense spending and security-focused trade restrictions."
    ]
   },
-  "gdp_b": null,
+  "gdp_b": 30770.0,
   "week": {
-   "line": "Treasury yields hit 5% amid an accelerating selloff, softer demand at the 30-year auction, and a wider-than-expected October budget deficit.",
+   "line": "Treasury yields soared to 5% following a weak 30-year auction and the resignation of Nvidia's CEO, while the White House maintained its aggressive tariff stance.",
    "links": [
-    {
-     "title": "Treasury Selloff Accelerates, European Bonds Follow Suit",
-     "url": "https://finance.yahoo.com/m/a93823d9-c279-3d72-917f-c3dd167fbb89/treasury-selloff-accelerates%2C.html",
-     "publisher": "The Wall Street Journal"
-    },
     {
      "title": "U.S. 30-Year Treasury Auction Shows Softer Demand",
      "url": "https://finance.yahoo.com/m/e9bc6f81-fc6f-3e02-b368-646c8e87a48f/u.s.-30-year-treasury-auction.html",
      "publisher": "The Wall Street Journal"
+    },
+    {
+     "title": "Update: US Equity Indexes Mixed After Nvidia CEO Resigns, Treasury Yields Soar",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-mixed-nvidia-185020214.html",
+     "publisher": "MT Newswires"
     }
    ]
   }
@@ -405,7 +426,7 @@
  "data_as_of": {
   "trade": null,
   "treasuries": "2026-08",
-  "gdp": null
+  "gdp": "World Bank 2025 (Taiwan approx.)"
  },
  "weights": {
   "trade": 35,
@@ -414,20 +435,19 @@
   "strategic": 30
  },
  "profiles_updated_at": "2026-11-12T21:15:51Z",
- "week_updated_at": "2026-11-12T21:46:47Z",
- "generated_at": "2026-11-12T21:46:47Z",
+ "week_updated_at": "2026-11-12T21:56:58Z",
+ "generated_at": "2026-11-12T21:56:58Z",
  "gemini": {
   "ok_calls": {
-   "gemini-3.5-flash-lite": 1
+   "gemini-3-flash-preview": 1
   },
   "errors": {
-   "gemini-3.8-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=37123s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
-   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=37099s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
-   "gemini-3.6-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=37087s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
-   "gemini-3.5-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=37042s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
+   "gemini-3.8-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=36420s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
+   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=36409s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
+   "gemini-3.6-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=36240s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
+   "gemini-3.5-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=36228s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
    "gemini-2.5-flash": "404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a",
-   "gemini-flash-latest": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=37018s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
-   "gemini-3-flash-preview": "no answer within 150s"
+   "gemini-flash-latest": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=36204s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:"
   }
  },
  "raw": {
@@ -447,6 +467,21 @@
     "ru": null
    }
   },
-  "gdp": {}
+  "gdp": {
+   "as_of": "World Bank 2025 (Taiwan approx.)",
+   "values": {
+    "cn": 19498.0393880426,
+    "ca": 2319.8997724259198,
+    "mx": 1832.64136477552,
+    "eu": 21243.2125701633,
+    "jp": 4435.16299997694,
+    "gb": 4002.5875418460096,
+    "in": 3956.0671157716297,
+    "sa": 1276.94293333333,
+    "ru": 2561.31016935874,
+    "us": 30769.7,
+    "tw": 860
+   }
+  }
  }
 }
