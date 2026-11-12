@@ -5,7 +5,7 @@ Runs as a separate step AFTER the market build (scripts/build.py), so it can
 never hold up or break the stock data. Two parts:
 
 * Profiles (weekly): top-10 players ranked by impact on the US economy using
-  free official data (US Census trade, US Treasury TIC holdings, IMF GDP) plus
+  free official data (US Census trade, US Treasury TIC holdings, World Bank GDP) plus
   a fixed strategic weight. Gemini writes each profile from that data and the
   last week's headlines: how the country sees its own strengths/weaknesses,
   and 3 ways it could move the US economy over 5-10 years.
@@ -33,7 +33,7 @@ from build import HTTP, MADRID, Gemini, iso, log, now_utc, num, parse_json  # no
 GEO_PATH = build.ROOT / "docs" / "geo.json"
 PROFILE_MAX_AGE_DAYS = 7
 BATCH = 4                      # countries per Gemini profile call
-GEO_BUDGET = 12 * 60           # seconds for this whole step
+GEO_BUDGET = 20 * 60           # seconds for this whole step
 SECTOR_CODES = [e for e, _ in build.SECTORS]
 
 # Ranking weights (sum 100). strategic = judgment of non-trade leverage
@@ -89,12 +89,14 @@ def census_trade() -> tuple[dict, dict]:
     dbg = {}
     base = "https://api.census.gov/data/timeseries/intltrade"
     for month in _months_back(6):
+        key = {"key": os.environ["CENSUS_API_KEY"]} if os.environ.get("CENSUS_API_KEY") else {}
         try:
             ex = HTTP.get(f"{base}/exports/hs", params={"get": "CTY_CODE,CTY_NAME,ALL_VAL_YR",
-                                                        "time": month}, timeout=60)
+                                                        "time": month, **key}, timeout=60, headers=UA)
             im = HTTP.get(f"{base}/imports/hs", params={"get": "CTY_CODE,CTY_NAME,GEN_VAL_YR",
-                                                        "time": month}, timeout=60)
-            dbg[month] = f"exports {ex.status_code}, imports {im.status_code}"
+                                                        "time": month, **key}, timeout=60, headers=UA)
+            dbg[month] = (f"exports {ex.status_code} {' '.join(ex.text.split())[:160]!r} | "
+                          f"imports {im.status_code} {' '.join(im.text.split())[:80]!r}")
             if ex.status_code != 200 or im.status_code != 200 or not ex.text.strip():
                 continue
             rows_ex, rows_im = ex.json()[1:], im.json()[1:]
@@ -141,7 +143,7 @@ def tic_holdings() -> tuple[dict, dict]:
         vals: dict[str, float] = {}
         for line in r.text.splitlines():
             m = re.match(r"^\s*([A-Za-z][A-Za-z ,.'()/-]*?)\s{2,}(-?[\d,]+\.?\d*)\b", line.replace("\t", "  "))
-            if m:
+            if m and m.group(1).strip().lower() not in ("country", "grand total", "total", "all other"):
                 name = m.group(1).strip()
                 try:
                     vals.setdefault(name, float(m.group(2).replace(",", "")))
@@ -163,28 +165,39 @@ def tic_holdings() -> tuple[dict, dict]:
     return {}, dbg
 
 
-def imf_gdp() -> tuple[dict, dict]:
-    """Nominal GDP, USD billions, from the IMF DataMapper (latest year <= this year)."""
+# Taiwan is not covered by the World Bank. Approximate nominal GDP in USD billions
+# (IMF estimate, ~2025); update yearly. Shown on the site as approximate.
+TAIWAN_GDP_APPROX_B = 860
+WB_CODES = {"cn": "CHN", "ca": "CAN", "mx": "MEX", "eu": "EUU", "jp": "JPN", "gb": "GBR",
+            "in": "IND", "sa": "SAU", "ru": "RUS", "us": "USA"}
+
+
+def world_bank_gdp() -> tuple[dict, dict]:
+    """Nominal GDP, USD billions, latest available year (World Bank)."""
     dbg = {}
-    codes = "/".join(p["imf"] for p in PLAYERS) + "/USA"
     try:
-        r = HTTP.get(f"https://www.imf.org/external/datamapper/api/v1/NGDPD/{codes}", timeout=60,
-                     headers=UA)
+        r = HTTP.get(f"https://api.worldbank.org/v2/country/{';'.join(WB_CODES.values())}"
+                     "/indicator/NY.GDP.MKTP.CD", params={"format": "json", "mrv": 3, "per_page": 200},
+                     timeout=60, headers=UA)
         dbg["status"] = r.status_code
-        data = r.json()["values"]["NGDPD"]
+        rows = r.json()[1] or []
     except Exception as e:  # noqa: BLE001
         dbg["error"] = str(e)[:200]
         return {}, dbg
-    year = str(now_utc().year)
-    out, used = {}, set()
-    for p in PLAYERS + [{"code": "us", "imf": "USA"}]:
-        series = data.get(p["imf"]) or {}
-        yrs = sorted(y for y in series if y <= year)
-        if yrs:
-            out[p["code"]] = series[yrs[-1]]
-            used.add(yrs[-1])
+    by_iso: dict[str, tuple[str, float]] = {}
+    for row in rows:
+        iso3, val, year = row.get("countryiso3code"), row.get("value"), row.get("date")
+        if val and (iso3 not in by_iso or year > by_iso[iso3][0]):
+            by_iso[iso3] = (year, val / 1e9)
+    out, years = {}, set()
+    for code, iso3 in WB_CODES.items():
+        if iso3 in by_iso:
+            out[code] = by_iso[iso3][1]
+            years.add(by_iso[iso3][0])
+    out["tw"] = TAIWAN_GDP_APPROX_B
     dbg["found"] = len(out)
-    return ({"as_of": "IMF " + "/".join(sorted(used)), "values": out} if out else {}), dbg
+    return ({"as_of": "World Bank " + "/".join(sorted(years)) + " (Taiwan approx.)", "values": out}
+            if len(out) > 1 else {}), dbg
 
 
 def rank_players(trade: dict, tic: dict, gdp: dict) -> list[dict]:
@@ -377,7 +390,15 @@ def main() -> int:
         news[p["code"]] = headlines(p["queries"])
     log.info("geo headlines: %s", {k: len(v) for k, v in news.items()})
 
-    # 1) Weekly profiles (+ ranking data)
+    # 1) Daily "this week" lines first (1 call), so they land even on a slow Gemini day
+    week, week_err = {}, None
+    try:
+        week = write_week(gem, news, names, today)
+    except Exception as e:  # noqa: BLE001
+        log.exception("week lines failed")
+        week_err = str(e)[:100]
+
+    # 2) Weekly profiles (+ ranking data)
     last = prev.get("profiles_updated_at")
     age_days = ((now_utc() - dt.datetime.fromisoformat(last.replace("Z", "+00:00"))).total_seconds()
                 / 86400) if last else 1e9
@@ -385,8 +406,8 @@ def main() -> int:
         log.info("rebuilding geopolitics profiles (force=%s only=%s age=%.1fd)", force, only, age_days)
         trade, dbg_t = census_trade()
         tic, dbg_h = tic_holdings()
-        gdp, dbg_g = imf_gdp()
-        out["debug"] = {"census": dbg_t, "tic": dbg_h, "imf": dbg_g}
+        gdp, dbg_g = world_bank_gdp()
+        out["debug"] = {"census": dbg_t, "tic": dbg_h, "worldbank": dbg_g}
         ranked = rank_players(trade, tic, gdp)
         prev_players = {p["code"]: p for p in prev.get("players", [])}
         entries = ([{"code": "us", "name": US["name"]}] if (not only or "us" in only) else []) + [
@@ -411,7 +432,7 @@ def main() -> int:
                          "gdp_b": num(gdp.get("values", {}).get("us"), 0), "week": (prev.get("us") or {}).get("week")}
         out["data_as_of"] = {"trade": trade.get("as_of"), "treasuries": tic.get("as_of"), "gdp": gdp.get("as_of")}
         out["weights"] = WEIGHTS
-        missing = [k for k, v in (("US Census trade", trade), ("US Treasury holdings", tic), ("IMF GDP", gdp)) if not v]
+        missing = [k for k, v in (("US Census trade", trade), ("US Treasury holdings", tic), ("World Bank GDP", gdp)) if not v]
         if missing:
             out["notices"].append("Ranking data unavailable this week: " + ", ".join(missing) + ".")
         # Only a full build resets the weekly clock; a partial test build ([geo:cn])
@@ -422,19 +443,16 @@ def main() -> int:
         if failed:
             out["notices"].append("Profiles not refreshed for: " + ", ".join(failed) + ".")
 
-    # 2) Daily "this week" lines
-    if out.get("players"):
-        try:
-            week = write_week(gem, news, names, today)
-            for p in out["players"]:
-                if p["code"] in week:
-                    p["week"] = week[p["code"]]
-            if out.get("us") and "us" in week:
-                out["us"]["week"] = week["us"]
-            out["week_updated_at"] = iso(now_utc())
-        except Exception as e:  # noqa: BLE001
-            log.exception("week lines failed")
-            out["notices"].append(f"'This week' lines not refreshed ({str(e)[:100]}).")
+    # 3) Attach this week's lines
+    for p in out.get("players") or []:
+        if p["code"] in week:
+            p["week"] = week[p["code"]]
+    if out.get("us") and "us" in week:
+        out["us"]["week"] = week["us"]
+    if week:
+        out["week_updated_at"] = iso(now_utc())
+    if week_err:
+        out["notices"].append(f"'This week' lines not refreshed ({week_err}).")
 
     out["generated_at"] = iso(now_utc())
     out["gemini"] = {"ok_calls": gem.ok, "errors": gem.errors}
