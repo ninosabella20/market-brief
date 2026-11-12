@@ -402,14 +402,31 @@ def main() -> int:
     last = prev.get("profiles_updated_at")
     age_days = ((now_utc() - dt.datetime.fromisoformat(last.replace("Z", "+00:00"))).total_seconds()
                 / 86400) if last else 1e9
+    # Ranking numbers: refreshed every run (no Gemini needed); a source that fails
+    # keeps its last good values.
+    raw_prev = prev.get("raw") or {}
+    trade, dbg_t = census_trade()
+    tic, dbg_h = tic_holdings()
+    gdp, dbg_g = world_bank_gdp()
+    out["debug"] = {"census": dbg_t, "tic": dbg_h, "worldbank": dbg_g}
+    trade, tic, gdp = trade or raw_prev.get("trade", {}), tic or raw_prev.get("tic", {}), gdp or raw_prev.get("gdp", {})
+    out["raw"] = {"trade": trade, "tic": tic, "gdp": gdp}
+    ranked = rank_players(trade, tic, gdp)
+    prev_players = {p["code"]: p for p in prev.get("players", [])}
+    out["data_as_of"] = {"trade": trade.get("as_of"), "treasuries": tic.get("as_of"), "gdp": gdp.get("as_of")}
+    out["weights"] = WEIGHTS
+    missing = [k for k, v in (("US Census trade", trade), ("US Treasury holdings", tic), ("World Bank GDP", gdp)) if not v]
+    if missing:
+        out["notices"].append("Ranking data unavailable: " + ", ".join(missing) + ".")
+    # keep existing profiles/lines attached to the (re-)ranked players
+    out["players"] = [{**r, "profile": prev_players.get(r["code"], {}).get("profile"),
+                       "profile_as_of": prev_players.get(r["code"], {}).get("profile_as_of"),
+                       "week": prev_players.get(r["code"], {}).get("week")} for r in ranked]
+    if out.get("us"):
+        out["us"]["gdp_b"] = num(gdp.get("values", {}).get("us"), 0) or out["us"].get("gdp_b")
+
     if force or age_days >= PROFILE_MAX_AGE_DAYS:
         log.info("rebuilding geopolitics profiles (force=%s only=%s age=%.1fd)", force, only, age_days)
-        trade, dbg_t = census_trade()
-        tic, dbg_h = tic_holdings()
-        gdp, dbg_g = world_bank_gdp()
-        out["debug"] = {"census": dbg_t, "tic": dbg_h, "worldbank": dbg_g}
-        ranked = rank_players(trade, tic, gdp)
-        prev_players = {p["code"]: p for p in prev.get("players", [])}
         entries = ([{"code": "us", "name": US["name"]}] if (not only or "us" in only) else []) + [
             r for r in ranked if not only or r["code"] in only]
         try:
@@ -430,11 +447,6 @@ def main() -> int:
         if "us" in profiles:
             out["us"] = {"code": "us", "name": US["name"], "profile": profiles["us"],
                          "gdp_b": num(gdp.get("values", {}).get("us"), 0), "week": (prev.get("us") or {}).get("week")}
-        out["data_as_of"] = {"trade": trade.get("as_of"), "treasuries": tic.get("as_of"), "gdp": gdp.get("as_of")}
-        out["weights"] = WEIGHTS
-        missing = [k for k, v in (("US Census trade", trade), ("US Treasury holdings", tic), ("World Bank GDP", gdp)) if not v]
-        if missing:
-            out["notices"].append("Ranking data unavailable this week: " + ", ".join(missing) + ".")
         # Only a full build resets the weekly clock; a partial test build ([geo:cn])
         # leaves the others due, so the next run fills them in.
         if profiles and not only and not [e for e in entries if e["code"] not in profiles]:
