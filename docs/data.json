@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T21:18:54Z",
+ "generated_at": "2026-11-12T21:29:54Z",
  "notices": [],
  "model": "gemini-3-flash-preview",
  "market": {
@@ -165,53 +165,54 @@
   "intraday": false,
   "as_of_label": "Close Thu 12 Nov 2026",
   "missing": [],
-  "updated_at": "2026-11-12T21:18:57Z"
+  "updated_at": "2026-11-12T21:29:57Z"
  },
  "recap": {
-  "text": "The S&P 500 fell 0.35% on Thursday as the shock resignation of Nvidia CEO Jensen Huang roiled the technology sector, though the index maintained a 3.29% gain for the week. Energy was the sole advancing sector (+1.50%) as crude oil prices jumped following President Trump’s comments questioning the need for an Iran deal. Broader markets were further pressured by rising bond yields and renewed rate hike expectations fueled by sticky inflation concerns.",
-  "updated_at": "2026-11-12T21:21:46Z"
+  "text": "The S&P 500 fell 0.35% on Thursday as the market was roiled by the shock resignation of Nvidia CEO Jensen Huang, which overshadowed positive momentum from the previous day's AI-driven rally. Energy was the sole advancing sector, rising 1.50% as crude oil prices jumped following President Trump's comments questioning the necessity of an Iran deal. Broader markets were further pressured by rising bond yields and concerns over sticky inflation, though the S&P 500 maintains a solid 3.29% gain for the week.",
+  "updated_at": "2026-11-12T21:37:48Z"
  },
  "reasons": {
-  "updated_at": "2026-11-12T21:21:46Z",
+  "updated_at": "2026-11-12T21:37:48Z",
   "items": {
-   "SPY": "The index slipped 0.35% as the exit of Nvidia's CEO and rising bond yields weighed on sentiment, overshadowing a significant rally in energy stocks.",
-   "XLK": "Information Technology fell 0.34% as markets reacted to Jensen Huang's resignation from Nvidia, though the sector remains the weekly leader at +7.01% due to prior AI momentum.",
-   "XLC": "Communication Services dropped 0.96%, leading the day's laggards alongside materials as the sector remains sensitive to shifts in growth expectations and tech-related volatility.",
-   "XLY": "Consumer Discretionary declined 0.44%, pressured by analyst downgrades for stocks like DraftKings and broader concerns regarding consumer demand and interest rates.",
-   "XLP": "Consumer Staples fell 0.43% as investors weighed industry headwinds and sticky inflation concerns against the sector's defensive characteristics.",
-   "XLF": "Financials lost 0.73% as rising bond yields were offset by specific analyst downgrades in the sector, including a cut for Carlyle.",
-   "XLV": "Health Care retreated 0.59% on the day, though it remains a top YTD performer (+21.34%) as investors balance growth risks with stable earnings.",
-   "XLI": "Industrials fell 0.89% as the sector reacted to rising energy costs and broader market volatility, despite a strong 4.29% performance over the last week.",
-   "XLB": "Materials was the worst performing sector, falling 1.30% following analyst downgrades for major firms like Vale and general pressure on base metals.",
-   "XLE": "Energy surged 1.50% as the only positive sector, boosted by jumping oil prices after President Trump suggested the U.S. does not need an Iran deal.",
-   "XLU": "Utilities remained nearly flat (-0.02%), outperforming the broader market as a defensive play despite the pressure that rising yields typically exert on the sector.",
-   "XLRE": "Real Estate declined 0.52% as the sector's sensitivity to interest rates made it vulnerable to rising bond yields and expectations of further rate hikes."
+   "SPY": "The index fell 0.35% on Thursday as the sudden exit of Nvidia's CEO and a spike in oil prices weighed on investor sentiment, despite a strong weekly performance of +3.29%.",
+   "XLK": "Information Technology slipped 0.34% as Nvidia shares fell following Jensen Huang's resignation, though the sector remains the YTD leader with a 20.70% return.",
+   "XLC": "Communication Services dropped 0.96%, underperforming the broader market as the tech-related sell-off and rising yields impacted growth-oriented stocks.",
+   "XLY": "Consumer Discretionary declined 0.44% as investors weighed the impact of rising energy costs on consumer spending power and higher interest rate expectations.",
+   "XLP": "Consumer Staples fell 0.43% amid general market weakness and industry headwinds, despite a strong monthly gain of 7.88%.",
+   "XLF": "Financials decreased 0.73% as the market reacted to rising bond yields and the potential for further rate hikes to combat sticky inflation.",
+   "XLV": "Health Care fell 0.59% on Thursday, though it remains one of the top YTD performers with a 21.34% return.",
+   "XLI": "Industrials dropped 0.89% as rising oil prices and broader equity volatility offset the sector's 4.29% weekly gain.",
+   "XLB": "Materials was the day's worst performer, falling 1.30% following analyst downgrades in the sector and sensitivity to rising costs.",
+   "XLE": "Energy was the only sector to gain, rising 1.50% as crude oil prices jumped after President Trump suggested the US does not need an Iran deal.",
+   "XLU": "Utilities remained nearly flat at -0.02%, serving as a defensive haven as investors moved away from more volatile sectors like technology and materials.",
+   "XLRE": "Real Estate declined 0.52% as rising bond yields and rate hike expectations pressured this interest-rate-sensitive sector."
   }
  },
  "stories": {
-  "updated_at": "2026-11-12T21:22:13Z",
+  "updated_at": "2026-11-12T21:38:32Z",
   "sectors": {
    "XLK": {
     "name": "Information Technology",
-    "updated_at": "2026-11-12T21:22:06Z",
+    "updated_at": "2026-11-12T21:38:25Z",
     "items": [
      {
-      "headline": "Nvidia CEO Jensen Huang Resigns Amid Security Concerns",
+      "headline": "Nvidia CEO Jensen Huang Resigns Amid Investigations; CFO Named Interim CEO",
       "company": "Nvidia",
       "ticker": "NVDA",
       "country": "USA",
-      "profile": "Nvidia is the world's leading designer of graphics processing units (GPUs) and AI accelerators, headquartered in Santa Clara, California.",
-      "why_it_matters": "As the primary driver of the AI era, Nvidia's leadership crisis creates massive volatility in the semiconductor sector and raises significant geopolitical and security concerns for its global partners.",
+      "profile": "Nvidia is the world's leading designer of AI chips and GPUs, ranking as a top-three global company by market capitalization, from the United States.",
+      "why_it_matters": "As the primary driver of the AI boom, Nvidia's leadership vacuum creates massive uncertainty for the entire technology sector and its global supply chain.",
       "what_happened": {
-       "strategy": "Dominating the global AI chip market through its Blackwell architecture and an extensive ecosystem of hardware and software partnerships.",
-       "event": "CEO Jensen Huang resigned following revelations of a relationship with a suspected Chinese spy, causing Nvidia to shed nearly $500 billion in value.",
-       "why": "The resignation followed a board investigation into personal conduct and potential security risks involving a foreign intelligence operative."
+       "strategy": "Dominating the AI accelerator market through its Blackwell platform and maintaining a leadership position in global data center infrastructure.",
+       "event": "CEO Jensen Huang resigned amid investigations into scandals; CFO Colette Kress became interim CEO as shares fell 4.3% on Thursday.",
+       "why": "The sudden departure followed mounting pressure from board investigations and reports regarding the CEO's conduct and potential links to a Chinese data center."
       },
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-set-lose-700-billion-141030285.html",
-      "source": "CBS News",
-      "image": "https://media.zenfs.com/en/cbs_news_897/e0663d54e6dd72ad7d713e288ce2d532.jpg",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/hub-suddenly-removed-nvidia-ceo-212617172.html",
+      "source": "TIKR",
+      "image": "https://media.zenfs.com/en/tikr_258/e8421636410f7526837dd19fb73cc14c",
       "published": "2026-11-12",
       "related": [
+       "CRWV",
        "NVDA"
       ],
       "link_verified": true,
@@ -275,16 +276,16 @@
       }
      },
      {
-      "headline": "Applied Materials Posts Record Q4 Revenue and Earnings",
+      "headline": "Applied Materials Reports Record Q4 Revenue and 92% EPS Growth",
       "company": "Applied Materials",
       "ticker": "AMAT",
       "country": "USA",
-      "profile": "Applied Materials is the global leader in materials engineering solutions used to produce virtually every new chip and advanced display.",
-      "why_it_matters": "Record results from the world's largest chip-equipment maker signal continued heavy capital expenditure by foundries, confirming the strength of the underlying semiconductor manufacturing cycle.",
+      "profile": "Applied Materials is the world's largest semiconductor equipment manufacturer by revenue, providing essential materials engineering solutions from its headquarters in the United States.",
+      "why_it_matters": "These record results confirm that the 'picks and shovels' of the AI industry continue to see unprecedented demand regardless of chipmaker leadership volatility.",
       "what_happened": {
-       "strategy": "Providing critical manufacturing equipment to semiconductor foundries as they scale production for AI and high-performance computing.",
-       "event": "The company reported record Q4 revenue of $10.41 billion (up 53% YoY) and record non-GAAP EPS of $4.16 (up 92% YoY).",
-       "why": "Growth was driven by surging demand for advanced semiconductor manufacturing equipment required for AI infrastructure and next-generation logic chips."
+       "strategy": "Providing essential materials engineering solutions to semiconductor manufacturers globally to support the transition to advanced AI-capable chip nodes.",
+       "event": "Reported record fiscal Q4 revenue of $10.41 billion (+53% YoY) and record non-GAAP EPS of $4.16 (+92% YoY), beating analyst targets.",
+       "why": "Performance was driven by surging demand for semiconductor services and equipment required to build the next generation of advanced AI chips."
       },
       "url": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-announces-fourth-quarter-210100253.html",
       "source": "GlobeNewswire",
@@ -354,16 +355,16 @@
       }
      },
      {
-      "headline": "Marvell Expands Board Ahead of $115 Billion AI Optical Deal",
+      "headline": "Marvell Expands Board Ahead of Massive $115 Billion AI Deal",
       "company": "Marvell Technology",
       "ticker": "MRVL",
       "country": "USA",
-      "profile": "Marvell Technology is a major producer of data infrastructure semiconductor solutions, specializing in storage, networking, and optical connectivity.",
-      "why_it_matters": "A deal of this magnitude would be one of the largest in semiconductor history, significantly consolidating the supply chain for AI data center interconnects.",
+      "profile": "Marvell Technology is a leading American fabless semiconductor firm specializing in high-performance data infrastructure and networking solutions for the global cloud market.",
+      "why_it_matters": "A deal of this magnitude would reshape the networking landscape and signals a massive consolidation or partnership phase in AI infrastructure.",
       "what_happened": {
-       "strategy": "Positioning itself as a key provider of optical networking and custom compute solutions for the rapidly growing AI data center market.",
-       "event": "The company expanded its board to 10 members in preparation for a major $115 billion deal in the optical networking space.",
-       "why": "The expansion scales governance capacity to execute a transformative acquisition aimed at consolidating the AI connectivity and optical infrastructure market."
+       "strategy": "Positioning itself as a key provider of optical networking and custom compute solutions for the rapidly expanding AI data center market.",
+       "event": "Expanded its board to 10 members in preparation for a major $115 billion AI deal in the optical networking space.",
+       "why": "The governance change aims to strengthen oversight as the company pursues a massive strategic transaction to scale its AI infrastructure business."
       },
       "url": "https://finance.yahoo.com/technology/ai/articles/marvell-makes-major-board-move-194450481.html",
       "source": "GuruFocus.com",
@@ -439,96 +440,16 @@
       }
      },
      {
-      "headline": "AMD Launches Zen 6 EPYC Processors Amid Competitor Turmoil",
-      "company": "Advanced Micro Devices",
-      "ticker": "AMD",
-      "country": "USA",
-      "profile": "AMD is a leading global semiconductor company that develops computer processors and related technologies for business and consumer markets.",
-      "why_it_matters": "AMD is successfully executing its product roadmap, positioning it to capture market share in the lucrative data center segment during a period of uncertainty for Nvidia.",
-      "what_happened": {
-       "strategy": "Challenging market leaders in the data center and AI sectors through its EPYC server processors and Instinct accelerators.",
-       "event": "AMD launched 6th Gen EPYC SP7 server processors with Zen 6 architecture and received a William Blair upgrade to Outperform.",
-       "why": "The launch targets agentic AI and high-performance workloads, while the upgrade reflects AMD's strengthening roadmap as its primary competitor faces leadership instability."
-      },
-      "url": "https://finance.yahoo.com/markets/stocks/articles/advanced-micro-devices-amd-stock-201601837.html",
-      "source": "Simply Wall St.",
-      "image": "https://media.zenfs.com/en/simply_wall_st__316/f1716bae095cc56d6b753ec29493a67a.jpg",
-      "published": "2026-11-12",
-      "related": [
-       "AMD",
-       "NVDA"
-      ],
-      "link_verified": true,
-      "symbol": "AMD",
-      "growth": {
-       "w1": 44.73,
-       "y1": 126.08,
-       "y5": 295.77,
-       "as_of": "2026-11-12"
-      },
-      "facts": {
-       "name": "Advanced Micro Devices, Inc.",
-       "currency": "USD",
-       "price": 585.3,
-       "market_cap": 959943081984,
-       "country": "United States",
-       "industry": "Semiconductors",
-       "website": "https://www.amd.com",
-       "logo": "https://www.google.com/s2/favicons?domain=amd.com&sz=128",
-       "exchange": "NasdaqGS",
-       "partial": false,
-       "consensus": {
-        "rating": "Strong Buy",
-        "mean": 1.4,
-        "analysts": 48,
-        "target_mean": 658.53,
-        "upside": 12.5,
-        "breakdown": {
-         "buy": 45,
-         "hold": 8,
-         "sell": 0
-        }
-       },
-       "ratings_ticker": "AMD",
-       "ratings": [
-        {
-         "firm": "B of A Securities",
-         "grade": "Buy",
-         "rating": "buy",
-         "action": "main",
-         "date": "2026-11-12",
-         "target": 700.0
-        },
-        {
-         "firm": "RBC Capital",
-         "grade": "Sector Perform",
-         "rating": "hold",
-         "action": "reit",
-         "date": "2026-11-12",
-         "target": 540.0
-        },
-        {
-         "firm": "William Blair",
-         "grade": "Outperform",
-         "rating": "buy",
-         "action": "up",
-         "date": "2026-11-12",
-         "target": null
-        }
-       ]
-      }
-     },
-     {
-      "headline": "Cisco Reports Q1 Earnings Beat and Sets Q2 Guidance",
+      "headline": "Cisco Beats Q1 Estimates on Strong AI Data Center Demand",
       "company": "Cisco Systems",
       "ticker": "CSCO",
       "country": "USA",
-      "profile": "Cisco Systems is the world's largest provider of networking hardware and software, based in San Jose, California.",
-      "why_it_matters": "As a bellwether for enterprise IT spending, Cisco's positive results and guidance suggest that corporate investment in networking and security remains resilient.",
+      "profile": "Cisco Systems is the world's largest networking hardware company, providing the foundational infrastructure for the internet and enterprise data centers from the United States.",
+      "why_it_matters": "Cisco's beat suggests that the AI investment cycle is broadening from chips to the underlying networking fabric that connects them.",
       "what_happened": {
-       "strategy": "Transitioning from hardware-centric sales to a recurring revenue model focused on software, security, and AI-enabled networking.",
-       "event": "Cisco reported fiscal Q1 adjusted earnings of $1.40 per share on rising revenue and provided guidance for the upcoming second quarter.",
-       "why": "Performance was bolstered by steady demand for enterprise networking infrastructure and the integration of AI capabilities across its product portfolio."
+       "strategy": "Pivoting toward AI-driven networking and security software to offset legacy hardware cycles and capture enterprise data center modernization spend.",
+       "event": "Reported fiscal Q1 adjusted earnings of $1.40 per share, exceeding analyst estimates due to robust demand for AI-related data center networking equipment.",
+       "why": "Enterprises and cloud providers are aggressively upgrading their networking stacks to handle the high-bandwidth requirements of generative AI applications."
       },
       "url": "https://finance.yahoo.com/markets/stocks/articles/cisco-systems-fiscal-q1-adjusted-211311637.html",
       "source": "MT Newswires",
@@ -594,6 +515,86 @@
          "action": "main",
          "date": "2026-09-22",
          "target": 125.0
+        }
+       ]
+      }
+     },
+     {
+      "headline": "AMD Launches 6th Gen EPYC Processors and Expands Quantum Partnership",
+      "company": "Advanced Micro Devices",
+      "ticker": "AMD",
+      "country": "USA",
+      "profile": "Advanced Micro Devices is a major American semiconductor company that ranks as a leading provider of high-performance CPUs and GPUs for data centers.",
+      "why_it_matters": "The Zen 6 launch and quantum expansion solidify AMD's position as the primary alternative to Nvidia and Intel in high-performance computing.",
+      "what_happened": {
+       "strategy": "Executing a multi-generational roadmap for its EPYC server processors to gain market share from Intel in the data center and AI markets.",
+       "event": "Launched 6th Gen EPYC SP7 server processors featuring Zen 6 architecture and expanded its quantum computing partnership with PsiQuantum.",
+       "why": "The launch targets agentic AI and high-performance computing workloads, while the quantum move aims to develop fault-tolerant infrastructure."
+      },
+      "url": "https://finance.yahoo.com/markets/stocks/articles/advanced-micro-devices-amd-stock-201601837.html",
+      "source": "Simply Wall St.",
+      "image": "https://media.zenfs.com/en/simply_wall_st__316/f1716bae095cc56d6b753ec29493a67a.jpg",
+      "published": "2026-11-12",
+      "related": [
+       "AMD",
+       "NVDA"
+      ],
+      "link_verified": true,
+      "symbol": "AMD",
+      "growth": {
+       "w1": 44.73,
+       "y1": 126.08,
+       "y5": 295.77,
+       "as_of": "2026-11-12"
+      },
+      "facts": {
+       "name": "Advanced Micro Devices, Inc.",
+       "currency": "USD",
+       "price": 585.3,
+       "market_cap": 959943081984,
+       "country": "United States",
+       "industry": "Semiconductors",
+       "website": "https://www.amd.com",
+       "logo": "https://www.google.com/s2/favicons?domain=amd.com&sz=128",
+       "exchange": "NasdaqGS",
+       "partial": false,
+       "consensus": {
+        "rating": "Strong Buy",
+        "mean": 1.4,
+        "analysts": 48,
+        "target_mean": 658.53,
+        "upside": 12.5,
+        "breakdown": {
+         "buy": 45,
+         "hold": 8,
+         "sell": 0
+        }
+       },
+       "ratings_ticker": "AMD",
+       "ratings": [
+        {
+         "firm": "B of A Securities",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-11-12",
+         "target": 700.0
+        },
+        {
+         "firm": "RBC Capital",
+         "grade": "Sector Perform",
+         "rating": "hold",
+         "action": "reit",
+         "date": "2026-11-12",
+         "target": 540.0
+        },
+        {
+         "firm": "William Blair",
+         "grade": "Outperform",
+         "rating": "buy",
+         "action": "up",
+         "date": "2026-11-12",
+         "target": null
         }
        ]
       }
@@ -4143,32 +4144,15 @@
   }
  },
  "picks": {
-  "updated_at": "2026-11-12T21:23:59Z",
+  "updated_at": "2026-11-12T21:40:59Z",
   "items": {
    "XLK": [
-    {
-     "ticker": "NVDA",
-     "name": "NVIDIA Corporation",
-     "angle": "Quality at a discount",
-     "horizon": "10+ years",
-     "reason": "Despite the CEO news, NVDA maintains a 63.7% profit margin and 105.9% revenue growth. The forward P/E of 10.4 is exceptionally low for its dominant AI market position.",
-     "y5": 446.86,
-     "y1": -14.25,
-     "roe": 117.2,
-     "margin": 63.7,
-     "fwd_pe": 10.4,
-     "pe": 21.0,
-     "div_yield": 0.58,
-     "off_high": -31.7,
-     "consensus": "Strong Buy",
-     "analysts": 56
-    },
     {
      "ticker": "MSFT",
      "name": "Microsoft Corporation",
      "angle": "Compounder",
      "horizon": "10+ years",
-     "reason": "Microsoft offers durable 41.2% margins and a 34.2% ROE. A forward P/E of 21.6 is a reasonable entry for a company with such a diversified, high-moat software ecosystem.",
+     "reason": "Dominant software ecosystem with 34.2% ROE and 41.2% margins; fwd P/E of 21.6 offers a reasonable entry for a high-quality moat.",
      "y5": 55.32,
      "y1": 2.32,
      "roe": 34.2,
@@ -4181,30 +4165,47 @@
      "analysts": 54
     },
     {
-     "ticker": "MU",
-     "name": "Micron Technology, Inc.",
-     "angle": "Quality at a discount",
-     "horizon": "5+ years",
-     "reason": "Micron is trading 36.4% below its 52-week high with a trailing P/E of 10.7. Its 88.3% ROE and 63.8% margins reflect massive scale in the essential memory market.",
-     "y5": 932.91,
-     "y1": 226.03,
-     "roe": 88.3,
-     "margin": 63.8,
-     "fwd_pe": 3.8,
-     "pe": 10.7,
-     "div_yield": 0.07,
-     "off_high": -36.4,
+     "ticker": "AVGO",
+     "name": "Broadcom Inc.",
+     "angle": "Long-term growth",
+     "horizon": "10+ years",
+     "reason": "Critical infrastructure player with 42.9% margins and 85.5% revenue growth; currently trading at a sensible 18.7 fwd P/E and 26.4% below its 52-week high.",
+     "y5": 546.92,
+     "y1": 2.57,
+     "roe": 44.2,
+     "margin": 42.9,
+     "fwd_pe": 18.7,
+     "pe": 46.5,
+     "div_yield": 0.75,
+     "off_high": -26.4,
      "consensus": "Strong Buy",
-     "analysts": 45
+     "analysts": 47
+    },
+    {
+     "ticker": "AMAT",
+     "name": "Applied Materials, Inc.",
+     "angle": "Quality at a discount",
+     "horizon": "10+ years",
+     "reason": "Essential semiconductor equipment provider with 41.1% ROE; trading at a significant 48.5% discount to its 52-week high despite record revenue and 20.4 fwd P/E.",
+     "y5": 142.92,
+     "y1": 65.11,
+     "roe": 41.1,
+     "margin": 30.1,
+     "fwd_pe": 20.4,
+     "pe": 32.9,
+     "div_yield": 0.54,
+     "off_high": -48.5,
+     "consensus": "Strong Buy",
+     "analysts": 36
     }
    ],
    "XLC": [
     {
      "ticker": "GOOGL",
      "name": "Alphabet Inc.",
-     "angle": "Quality at a discount",
+     "angle": "Compounder",
      "horizon": "10+ years",
-     "reason": "Alphabet's 50.0% profit margin and 44.3% ROE demonstrate an elite competitive advantage. Trading at 15.6x earnings and 26.9% off highs, it offers significant long-term value.",
+     "reason": "Unrivaled search dominance with 50.0% profit margins and 44.3% ROE; the 19.4 fwd P/E is attractive given its 26.9% distance from the 52-week high.",
      "y5": 100.9,
      "y1": 4.18,
      "roe": 44.3,
@@ -4221,7 +4222,7 @@
      "name": "Meta Platforms, Inc.",
      "angle": "Quality at a discount",
      "horizon": "10+ years",
-     "reason": "Meta combines 31.1% margins with 26.1% revenue growth. Today's price is attractive at 17.5x forward earnings, especially while sitting 20% below its 52-week high.",
+     "reason": "Massive network effect with 31.1% margins and 32.3% ROE; trading at a reasonable 17.5 fwd P/E while 20.0% below its annual high.",
      "y5": 82.94,
      "y1": 2.4,
      "roe": 32.3,
@@ -4234,21 +4235,21 @@
      "analysts": 57
     },
     {
-     "ticker": "TMUS",
-     "name": "T-Mobile US, Inc.",
+     "ticker": "NFLX",
+     "name": "Netflix, Inc.",
      "angle": "Long-term growth",
      "horizon": "5+ years",
-     "reason": "T-Mobile shows superior 19.4% ROE compared to peers and a strong 9.0% FCF yield. A forward P/E of 12.0 provides a margin of safety for this wireless leader.",
-     "y5": 44.65,
-     "y1": -19.58,
-     "roe": 19.4,
-     "margin": 12.0,
-     "fwd_pe": 12.0,
-     "pe": 16.5,
-     "div_yield": 2.72,
-     "off_high": -23.9,
-     "consensus": "Buy",
-     "analysts": 25
+     "reason": "Leading streaming scale with 53.5% ROE and 29.7% margins; the 16.6 fwd P/E provides a strong entry point after a 45.8% one-year price decline.",
+     "y5": -8.16,
+     "y1": -45.84,
+     "roe": 53.5,
+     "margin": 29.7,
+     "fwd_pe": 16.6,
+     "pe": 18.1,
+     "div_yield": 0.0,
+     "off_high": -46.3,
+     "consensus": null,
+     "analysts": 43
     }
    ],
    "XLY": [
@@ -4257,7 +4258,7 @@
      "name": "Amazon.com, Inc.",
      "angle": "Compounder",
      "horizon": "10+ years",
-     "reason": "Amazon's 27.4% ROE and 12.1% revenue growth highlight its retail and cloud dominance. A 21.6 P/E is a fair price for its massive scale and network effects.",
+     "reason": "Dominant e-commerce and cloud infrastructure with 27.4% ROE; fwd P/E of 24.5 is historically reasonable for its 12.1% revenue growth and scale advantages.",
      "y5": 51.73,
      "y1": 9.52,
      "roe": 27.4,
@@ -4274,7 +4275,7 @@
      "name": "Booking Holdings Inc. Common St",
      "angle": "Quality at a discount",
      "horizon": "10+ years",
-     "reason": "Booking maintains high 25.5% margins and a 6.3% FCF yield. Trading 27% off its high at a 13.2 forward P/E, it remains the premier global travel platform.",
+     "reason": "High-margin (25.5%) travel platform with a 13.2 fwd P/E; current price is 27.0% below its 52-week high, offering a significant margin of safety.",
      "y5": 64.38,
      "y1": -22.13,
      "roe": null,
@@ -4291,7 +4292,7 @@
      "name": "TJX Companies, Inc. (The)",
      "angle": "Compounder",
      "horizon": "10+ years",
-     "reason": "TJX delivers an incredible 62.2% ROE through its unique off-price model. Trading 20% below its high with a 23.7 forward P/E, it is a resilient retail compounder.",
+     "reason": "Resilient off-price retail model with an exceptional 62.2% ROE; trading at 23.7 fwd P/E and 20.0% below its 52-week high despite consistent consumer demand.",
      "y5": 97.65,
      "y1": -7.89,
      "roe": 62.2,
@@ -4301,16 +4302,33 @@
      "div_yield": 1.41,
      "off_high": -20.0,
      "consensus": "Buy",
-     "analysts": 34
+     "analysts": 20
     }
    ],
    "XLP": [
+    {
+     "ticker": "PG",
+     "name": "Procter & Gamble Company (The)",
+     "angle": "Dividend grower",
+     "horizon": "10+ years",
+     "reason": "Essential consumer brands driving 29.6% ROE and 18.2% margins; 2.6% dividend yield and 22.7 fwd P/E represent a stable, high-quality core holding.",
+     "y5": 14.65,
+     "y1": 13.53,
+     "roe": 29.6,
+     "margin": 18.2,
+     "fwd_pe": 22.7,
+     "pe": 25.3,
+     "div_yield": 2.6,
+     "off_high": -1.5,
+     "consensus": "Buy",
+     "analysts": 23
+    },
     {
      "ticker": "PEP",
      "name": "Pepsico, Inc.",
      "angle": "Dividend grower",
      "horizon": "10+ years",
-     "reason": "PepsiCo offers a high 52.2% ROE and a 4.1% dividend yield. Trading 17% off its high at 16.5x forward earnings, it is a classic defensive holding.",
+     "reason": "Strong snack and beverage portfolio with 52.2% ROE; trading at a 17.0% discount to its 52-week high with a compelling 4.1% dividend yield.",
      "y5": -12.54,
      "y1": -1.48,
      "roe": 52.2,
@@ -4344,7 +4362,7 @@
      "name": "Target Corporation",
      "angle": "Quality at a discount",
      "horizon": "5+ years",
-     "reason": "Target provides a solid 26.4% ROE and 4.7% FCF yield. Its 16.7 P/E is very reasonable for a retailer with consistent 5.3% revenue growth.",
+     "reason": "Efficient retail operations with 26.4% ROE and 5.3% revenue growth; the 16.8 fwd P/E is attractive for a company with a 2.9% dividend yield.",
      "y5": -38.12,
      "y1": 75.06,
      "roe": 26.4,
@@ -4363,7 +4381,7 @@
      "name": "Visa Inc.",
      "angle": "Compounder",
      "horizon": "10+ years",
-     "reason": "Visa's 51.2% profit margin and 63.5% ROE are nearly peerless. A forward P/E of 24.5 is a sensible price for this essential global payments network.",
+     "reason": "Unmatched global payments network with 51.2% profit margins and 63.5% ROE; fwd P/E of 24.5 is reasonable for its 13.2% revenue growth.",
      "y5": 98.18,
      "y1": 24.03,
      "roe": 63.5,
@@ -4376,11 +4394,28 @@
      "analysts": 37
     },
     {
+     "ticker": "MA",
+     "name": "Mastercard Incorporated",
+     "angle": "Compounder",
+     "horizon": "10+ years",
+     "reason": "Duopoly position in payments with an extraordinary 231.4% ROE and 46.7% margins; 28.2 fwd P/E is justified by consistent 14.0% revenue growth.",
+     "y5": 79.53,
+     "y1": 16.28,
+     "roe": 231.4,
+     "margin": 46.7,
+     "fwd_pe": 28.2,
+     "pe": 34.1,
+     "div_yield": 0.53,
+     "off_high": -4.3,
+     "consensus": "Strong Buy",
+     "analysts": 37
+    },
+    {
      "ticker": "JPM",
      "name": "JP Morgan Chase & Co.",
      "angle": "Compounder",
      "horizon": "10+ years",
-     "reason": "JPMorgan is the gold standard in banking with an 18.0% ROE and 34.6% margins. It trades at a modest 14.4 trailing P/E with a 1.9% dividend.",
+     "reason": "Fortress balance sheet with 34.6% margins and 18.0% ROE; trading at a modest 13.4 fwd P/E while leading the banking sector in AI integration.",
      "y5": 105.45,
      "y1": 6.99,
      "roe": 18.0,
@@ -4391,23 +4426,6 @@
      "off_high": -6.5,
      "consensus": "Buy",
      "analysts": 23
-    },
-    {
-     "ticker": "JPM",
-     "name": "JP Morgan Chase & Co.",
-     "angle": "Compounder",
-     "horizon": "10+ years",
-     "reason": "Berkshire offers a fortress balance sheet (17.0 debt/equity) and diversified cash flows. A 16.5 P/E is a reasonable entry for this ultimate long-term vehicle.",
-     "y5": 106.24,
-     "y1": 17.4,
-     "roe": 10.6,
-     "margin": 19.5,
-     "fwd_pe": 26.2,
-     "pe": 16.5,
-     "div_yield": 0.0,
-     "off_high": -1.2,
-     "consensus": "Buy",
-     "analysts": 23
     }
    ],
    "XLV": [
@@ -4416,7 +4434,7 @@
      "name": "Eli Lilly and Company",
      "angle": "Long-term growth",
      "horizon": "10+ years",
-     "reason": "Eli Lilly's 38.6% revenue growth and 86.0% ROE are driven by a massive pharmaceutical pipeline. The 28.2 forward P/E is justified by its growth trajectory.",
+     "reason": "Dominant position in metabolic health with 86.0% ROE and 38.6% revenue growth; 28.2 fwd P/E is attractive for its massive growth runway.",
      "y5": 449.69,
      "y1": 40.23,
      "roe": 86.0,
@@ -4433,7 +4451,7 @@
      "name": "UnitedHealth Group Incorporated",
      "angle": "Compounder",
      "horizon": "10+ years",
-     "reason": "UnitedHealth is a dominant healthcare leader with a 7.3% FCF yield. Trading 12.2% off its high at a 17.4 forward P/E, it offers durable quality.",
+     "reason": "Massive scale in healthcare services with 15.8% ROE; trading at 17.4 fwd P/E and 12.2% below its 52-week high despite its critical industry role.",
      "y5": -11.73,
      "y1": 19.49,
      "roe": 15.8,
@@ -4448,9 +4466,9 @@
     {
      "ticker": "PFE",
      "name": "Pfizer, Inc.",
-     "angle": "Quality at a discount",
+     "angle": "Dividend grower",
      "horizon": "5+ years",
-     "reason": "Pfizer trades at a deep discount with a 9.8 forward P/E and a 7.9% FCF yield. The 5.8% dividend yield provides excellent income while awaiting pipeline maturation.",
+     "reason": "Deep pipeline supported by Blackstone funding and 7.9% FCF yield; the 9.8 fwd P/E and 5.8% dividend yield offer a high margin of safety.",
      "y5": -42.03,
      "y1": 11.44,
      "roe": 4.5,
@@ -4469,7 +4487,7 @@
      "name": "Caterpillar, Inc.",
      "angle": "Quality at a discount",
      "horizon": "10+ years",
-     "reason": "Caterpillar is trading 43.6% below its 52-week high despite a 56.1% ROE. A 18.8 forward P/E is a great entry point for this industrial giant.",
+     "reason": "Global leader in construction equipment with 56.1% ROE; trading at a 43.6% discount to its 52-week high with a reasonable 18.8 fwd P/E.",
      "y5": 189.23,
      "y1": 5.63,
      "roe": 56.1,
@@ -4486,7 +4504,7 @@
      "name": "Lockheed Martin Corporation",
      "angle": "Compounder",
      "horizon": "10+ years",
-     "reason": "Lockheed Martin's 80.2% ROE and 4.0% FCF yield reflect its critical role in defense. A forward P/E of 18.1 is very reasonable for this moat.",
+     "reason": "Essential defense contractor with a massive 80.2% ROE and 4.0% FCF yield; currently priced at 18.1 fwd P/E and 12.7% below its high.",
      "y5": 78.17,
      "y1": 32.17,
      "roe": 80.2,
@@ -4503,7 +4521,7 @@
      "name": "Union Pacific Corporation",
      "angle": "Compounder",
      "horizon": "10+ years",
-     "reason": "Union Pacific's 28.9% margins and 38.7% ROE are protected by high barriers to entry. It trades at a fair 21.1 forward P/E with consistent growth.",
+     "reason": "Durable rail monopoly with 28.9% profit margins and 38.7% ROE; 21.1 fwd P/E is a fair price for its irreplaceable infrastructure assets.",
      "y5": 25.47,
      "y1": 36.08,
      "roe": 38.7,
@@ -4522,7 +4540,7 @@
      "name": "Linde plc",
      "angle": "Compounder",
      "horizon": "10+ years",
-     "reason": "Linde's 19.3% margins and 17.7% ROE come from essential industrial gases with high switching costs. It is a steady compounder with a 26.7 forward P/E.",
+     "reason": "Industrial gas leader with high switching costs, 19.3% margins, and 17.7% ROE; 26.7 fwd P/E reflects its consistent, high-quality earnings profile.",
      "y5": 55.03,
      "y1": 21.8,
      "roe": 17.7,
@@ -4539,7 +4557,7 @@
      "name": "BARRICK MINING CORPORATION",
      "angle": "Quality at a discount",
      "horizon": "5+ years",
-     "reason": "Barrick Mining reports a 30.3% margin and 27.0% ROE. Trading at 9.2x forward earnings and 27.1% off its high, it is a high-quality materials play.",
+     "reason": "Strong gold realizations driving 30.3% margins and 27.0% ROE; trading at a low 9.2 fwd P/E and 27.1% below its 52-week high.",
      "y5": 107.06,
      "y1": 3.13,
      "roe": 27.0,
@@ -4556,7 +4574,7 @@
      "name": "Newmont Corporation",
      "angle": "Quality at a discount",
      "horizon": "5+ years",
-     "reason": "Newmont offers a 34.7% profit margin and a strong 7.8% FCF yield. Its 11.2 forward P/E represents a significant discount for a leading gold producer.",
+     "reason": "World-class mining assets with 34.7% margins and 7.8% FCF yield; the 11.2 fwd P/E offers a compelling entry point for a sector leader.",
      "y5": 91.79,
      "y1": 21.03,
      "roe": 27.3,
@@ -4571,13 +4589,30 @@
    ],
    "XLE": [
     {
+     "ticker": "MPC",
+     "name": "Marathon Petroleum Corporation",
+     "angle": "Quality at a discount",
+     "horizon": "5+ years",
+     "reason": "Exceptional 60.5% ROE and 14.4% FCF yield in the refining sector; trading at a deep-value 6.7 fwd P/E and 16.4% below its high.",
+     "y5": 527.43,
+     "y1": 109.67,
+     "roe": 60.5,
+     "margin": 8.3,
+     "fwd_pe": 6.7,
+     "pe": 8.2,
+     "div_yield": 1.09,
+     "off_high": -16.4,
+     "consensus": "Buy",
+     "analysts": 17
+    },
+    {
      "ticker": "EOG",
      "name": "EOG Resources, Inc.",
      "angle": "Compounder",
      "horizon": "10+ years",
-     "reason": "High-efficiency shale producer with 25.8% ROE and 28.1% margins. Trading at a low 9.3 forward P/E with a 6.9% FCF yield.",
-     "y5": 64.06,
-     "y1": 43.08,
+     "reason": "Low-cost producer with 28.1% margins and 25.8% ROE; 9.3 fwd P/E is very attractive given its 42.7% revenue growth and strong balance sheet.",
+     "y5": 64.09,
+     "y1": 43.11,
      "roe": 25.8,
      "margin": 28.1,
      "fwd_pe": 9.3,
@@ -4588,28 +4623,11 @@
      "analysts": 29
     },
     {
-     "ticker": "COP",
-     "name": "ConocoPhillips",
-     "angle": "Compounder",
-     "horizon": "10+ years",
-     "reason": "Strong upstream portfolio with 17.7% ROE and 6.9% FCF yield. Priced attractively at 12.2 forward P/E with 29.3% revenue growth.",
-     "y5": 93.59,
-     "y1": 57.27,
-     "roe": 17.7,
-     "margin": 16.8,
-     "fwd_pe": 12.2,
-     "pe": 14.8,
-     "div_yield": 2.7,
-     "off_high": -9.2,
-     "consensus": "Buy",
-     "analysts": 27
-    },
-    {
      "ticker": "XOM",
      "name": "ExxonMobil Holdings Corporation",
      "angle": "Compounder",
      "horizon": "10+ years",
-     "reason": "ExxonMobil's 15.5% ROE and low 13.0 debt/equity ratio provide long-term stability. A 13.5 forward P/E is attractive for this integrated energy leader.",
+     "reason": "Integrated energy giant with 15.5% ROE and 32.6% revenue growth; 13.5 fwd P/E and 2.6% dividend yield provide a stable long-term entry.",
      "y5": 166.03,
      "y1": 43.74,
      "roe": 15.5,
@@ -4662,7 +4680,7 @@
      "name": "NextEra Energy, Inc.",
      "angle": "Compounder",
      "horizon": "10+ years",
-     "reason": "NextEra Energy's 40.4% profit margin and 14.1% ROE make it the premier utility. A 15.4 trailing P/E is a rare value for this renewable leader.",
+     "reason": "Leader in renewable energy with 40.4% profit margins; 19.5 fwd P/E is reasonable for its dominant market position and 13.6% discount from highs.",
      "y5": -1.18,
      "y1": -0.7,
      "roe": 14.1,
@@ -4679,7 +4697,7 @@
      "name": "Xcel Energy Inc.",
      "angle": "Compounder",
      "horizon": "10+ years",
-     "reason": "Xcel Energy maintains a consistent 11.4% ROE and 17.9% margins. A 17.8 forward P/E is a fair price for its regulated, low-risk growth profile.",
+     "reason": "Regulated utility with consistent 11.4% ROE and 17.9% margins; 17.8 fwd P/E and 2.9% dividend yield offer a reliable, low-volatility long-term holding.",
      "y5": 29.1,
      "y1": 0.97,
      "roe": 11.4,
@@ -4696,7 +4714,7 @@
      "name": "Duke Energy Corporation (Holdin",
      "angle": "Dividend grower",
      "horizon": "10+ years",
-     "reason": "Duke Energy offers a 3.4% dividend yield and 16.2% margins. Trading at 17.9x forward earnings, it provides stable income and regulated asset protection.",
+     "reason": "Large-scale regulated operations with 16.2% margins and 10.1% ROE; 3.4% dividend yield and 17.9 fwd P/E provide attractive income and stability.",
      "y5": 28.74,
      "y1": 3.79,
      "roe": 10.1,
@@ -4715,7 +4733,7 @@
      "name": "Simon Property Group, Inc.",
      "angle": "Quality at a discount",
      "horizon": "10+ years",
-     "reason": "Simon Property Group has an exceptional 125.2% ROE and 63.1% margins. A 16.9 trailing P/E is very attractive for this dominant retail REIT.",
+     "reason": "Premier retail assets with a massive 125.2% ROE and 63.1% margins; 3.9% dividend yield and 13.3% revenue growth support long-term value creation.",
      "y5": 41.75,
      "y1": 27.09,
      "roe": 125.2,
@@ -4732,24 +4750,7 @@
      "name": "American Tower Corporation (REI",
      "angle": "Compounder",
      "horizon": "10+ years",
-     "reason": "Prologis is the global leader in logistics real estate with 43.1% margins. Trading 16.2% off its high, it offers a 3.3% dividend and 4.5% FCF yield.",
-     "y5": -13.61,
-     "y1": 2.97,
-     "roe": 7.7,
-     "margin": 43.1,
-     "fwd_pe": 35.7,
-     "pe": 28.3,
-     "div_yield": 3.29,
-     "off_high": -16.2,
-     "consensus": "Buy",
-     "analysts": 14
-    },
-    {
-     "ticker": "AMT",
-     "name": "American Tower Corporation (REI",
-     "angle": "Dividend grower",
-     "horizon": "10+ years",
-     "reason": "American Tower's 33.0% ROE and 3.8% dividend yield are supported by essential communications infrastructure. It is a durable 10+ year infrastructure play.",
+     "reason": "Critical telecommunications infrastructure with 33.0% ROE and 30.1% margins; 3.8% dividend yield and 27.1 fwd P/E offer a solid entry for a moat-rich business.",
      "y5": -30.25,
      "y1": 3.51,
      "roe": 33.0,
@@ -4760,6 +4761,23 @@
      "off_high": -6.3,
      "consensus": "Buy",
      "analysts": 23
+    },
+    {
+     "ticker": "REI-UN.TO",
+     "name": "RIOCAN REAL EST UN",
+     "angle": "Quality at a discount",
+     "horizon": "10+ years",
+     "reason": "Dominant Canadian retail REIT with 39.4% margins and a 5.5% dividend yield; trading at a reasonable 13.2 fwd P/E.",
+     "y5": -6.32,
+     "y1": 12.47,
+     "roe": 6.9,
+     "margin": 39.4,
+     "fwd_pe": 13.2,
+     "pe": 12.5,
+     "div_yield": 5.46,
+     "off_high": -8.9,
+     "consensus": "Buy",
+     "analysts": 12
     }
    ]
   }
@@ -4779,21 +4797,20 @@
    "gemini-flash-lite-latest"
   ],
   "errors": {
-   "gemini-3.8-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=38454s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
-   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=38430s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
-   "gemini-3.6-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-   "gemini-3.5-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=38338s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
+   "gemini-3.8-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=37705s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
+   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=37693s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
+   "gemini-3.6-flash": "no answer within 150s",
+   "gemini-3.5-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=37497s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
    "gemini-2.5-flash": "404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a",
-   "gemini-flash-latest": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=38314s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:"
+   "gemini-flash-latest": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
   },
   "ok_calls": {
    "gemini-3-flash-preview": 3
   },
   "last_429": {
-   "gemini-3.8-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=38454s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quota exceeded for metr",
-   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=38430s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quota exceeded for metr",
-   "gemini-3.5-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=38338s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quota exceeded for metr",
-   "gemini-flash-latest": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=38314s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quota exceeded for metr"
+   "gemini-3.8-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=37705s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quota exceeded for metr",
+   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=37693s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quota exceeded for metr",
+   "gemini-3.5-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=37497s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. * Quota exceeded for metr"
   },
   "probe": null,
   "flash_models_listed": [

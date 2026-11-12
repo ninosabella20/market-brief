@@ -1,5 +1,7 @@
 {
- "notices": [],
+ "notices": [
+  "Ranking data unavailable: US Census trade, World Bank GDP."
+ ],
  "debug": {
   "census": {
    "2026-10": "error Expecting value: line 1 column 1 (char 0)",
@@ -11,12 +13,8 @@
   },
   "tic": {
    "slt_table5.txt": 200,
-   "parsed_names": 23,
+   "parsed_names": 20,
    "sample": [
-    [
-     "Country",
-     2026.0
-    ],
     [
      "Japan",
      1068.3
@@ -28,12 +26,15 @@
     [
      "China, Mainland",
      590.7
+    ],
+    [
+     "Belgium",
+     490.5
     ]
    ]
   },
-  "imf": {
-   "status": 403,
-   "error": "Expecting value: line 1 column 1 (char 0)"
+  "worldbank": {
+   "error": "HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=60)"
   }
  },
  "players": [
@@ -53,12 +54,12 @@
    "profile": null,
    "profile_as_of": null,
    "week": {
-    "line": "Nvidia turmoil pressures Wall Street pre-bell while European markets and tech stocks react to shifting economic conditions.",
+    "line": "European equity markets pulled back from record highs as investors weighed earnings and oil prices.",
     "links": [
      {
-      "title": "Nvidia Turmoil Pressures Wall Street Pre-Bell; Asia Off, Europe Up",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-turmoil-pressures-wall-street-110755138.html",
-      "publisher": "MT Newswires"
+      "title": "Europe's STOXX 600 pulls back from record high as investors weigh earnings, oil prices",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/europes-stoxx-600-hits-record-083533950.html",
+      "publisher": "Reuters"
      }
     ]
    }
@@ -127,17 +128,17 @@
    },
    "profile_as_of": "2026-11-12T20:51:18Z",
    "week": {
-    "line": "Nvidia fallout hits Chinese stocks and triggers scrutiny over chip exports, while US-China regulatory tensions loom large.",
+    "line": "Beijing rejected Nvidia spy allegations as smears and warned the US against tech curbs amid rising tensions.",
     "links": [
      {
-      "title": "Nvidia Fallout Hits Alibaba and Other China Stocks as Tighter Regulation Look Likely",
-      "url": "https://finance.yahoo.com/m/d70a213b-683f-3361-9d79-e62def5ed0ca/nvidia-fallout-hits-alibaba.html",
-      "publisher": "Barrons.com"
+      "title": "NVDA Stock Rout: Another Analyst Slashes Rating, Beijing Warns US Against Tech Curbs",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvda-stock-rout-another-analyst-091625222.html",
+      "publisher": "Stocktwits"
      },
      {
-      "title": "China's PLA-Linked University Reportedly Bought Nvidia's Powerful H200 AI Chips Despite US Export Blacklist — As Jensen Huang Faces Scrutiny",
-      "url": "https://finance.yahoo.com/technology/ai/articles/chinas-pla-linked-university-reportedly-193012031.html",
-      "publisher": "Benzinga"
+      "title": "NVDA Stock Slides Premarket: Beijing Reportedly Rejects Jensen Huang Spy Allegations As ‘Smears Against China'",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvda-stock-slides-premarket-beijing-091437044.html",
+      "publisher": "Stocktwits"
      }
     ]
    }
@@ -158,7 +159,7 @@
    "profile": null,
    "profile_as_of": null,
    "week": {
-    "line": "Hot US inflation drags the yen close to 160, prompting discussions on potential Japanese currency intervention.",
+    "line": "Hot US inflation pushed the Japanese yen close to 160, prompting warnings of potential currency intervention.",
     "links": [
      {
       "title": "Hot US Inflation Drags the Yen Close to 160. Will Japan Step In Again?",
@@ -184,7 +185,7 @@
    "profile": null,
    "profile_as_of": null,
    "week": {
-    "line": "Nvidia shake-up and CEO ousting weigh on TSMC while boosting alternative AI chipmakers like Broadcom.",
+    "line": "Nvidia leadership shake-up impacted tech stocks, causing TSMC shares to fall while boosting custom AI chip demand for Broadcom.",
     "links": [
      {
       "title": "TSMC Stocks Fall 2.21% as NVIDIA Shake-Up Overshadows Record October Revenue",
@@ -215,8 +216,13 @@
    "profile": null,
    "profile_as_of": null,
    "week": {
-    "line": "European stocks tumble and the Bank of England raises rates for the first time since 2023.",
+    "line": "The Bank of England raised interest rates for the first time since 2023 as inflation forecasts remained high.",
     "links": [
+     {
+      "title": "Will the Bank of England raise UK interest rates again in 2026?",
+      "url": "https://finance.yahoo.com/economy/policy/articles/uk-interest-rates-fall-2026-160348987.html",
+      "publisher": "Moneyweek"
+     },
      {
       "title": "European Stocks Tumble in Friday Trading; Bank of England Raises Rates for First Time Since 2023",
       "url": "https://finance.yahoo.com/markets/world-indices/articles/european-stocks-tumble-friday-trading-164554920.html",
@@ -241,12 +247,12 @@
    "profile": null,
    "profile_as_of": null,
    "week": {
-    "line": "US manufacturing stocks prepare to handle Canada tariff pressures amid ongoing trade dynamics.",
+    "line": "Freeport-McMoRan agreed to acquire a 51% stake in TDG Gold's Aurora West Property for C$110 million.",
     "links": [
      {
-      "title": "3 U.S. Manufacturing Stocks Built To Handle Canada Tariff Pressure",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/3-u-manufacturing-stocks-built-201532912.html",
-      "publisher": "Simply Wall St."
+      "title": "TDG Gold Corp. agrees to sell 51% interest in Aurora West Property to Freeport-McMoRan Mineral Properties Canada Inc. for C$110 million and to grant certain additional earn-in rights upon funding of C$80 million of expenditures and upon C$40 million cash payment",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/tdg-gold-corp-agrees-sell-183800100.html",
+      "publisher": "GlobeNewswire"
      }
     ]
    }
@@ -267,7 +273,7 @@
    "profile": null,
    "profile_as_of": null,
    "week": {
-    "line": "Oil settles higher following attacks on Saudi energy sites and Strait of Hormuz disruptions.",
+    "line": "Oil prices rose following attacks on Saudi energy sites and Strait of Hormuz disruptions.",
     "links": [
      {
       "title": "Oil settles $3 higher on attacks on Saudi energy sites, Strait of Hormuz disruptions",
@@ -293,8 +299,19 @@
    "profile": null,
    "profile_as_of": null,
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "President Trump threatened to double tariffs on Mexico over migrant issues, while Mexico's truck exports surged.",
+    "links": [
+     {
+      "title": "Mexico truck exports soar 159% as production jumps 130% in October",
+      "url": "https://finance.yahoo.com/economy/articles/mexico-truck-exports-soar-159-190315121.html",
+      "publisher": "FreightWaves"
+     },
+     {
+      "title": "Trump threatens to double Mexico tariffs over alleged migrant influx",
+      "url": "https://finance.yahoo.com/economy/policy/articles/trump-threatens-double-mexico-tariffs-161314425.html",
+      "publisher": "FreightWaves"
+     }
+    ]
    }
   },
   {
@@ -313,8 +330,14 @@
    "profile": null,
    "profile_as_of": null,
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "A senior U.S. soldier was arrested in the U.K. on allegations of spying for Russia.",
+    "links": [
+     {
+      "title": "Senior U.S. Soldier Is Arrested in U.K. Over Allegations of Spying for Russia",
+      "url": "https://finance.yahoo.com/m/4d2cb812-9b2c-360f-8b8f-587ddf2a98fe/senior-u.s.-soldier-is.html",
+      "publisher": "The Wall Street Journal"
+     }
+    ]
    }
   },
   {
@@ -333,7 +356,7 @@
    "profile": null,
    "profile_as_of": null,
    "week": {
-    "line": "AirTripMaker expands US and Canada to India flight networks, strengthening transatlantic and regional connectivity.",
+    "line": "India banned lithium-ion battery black mass exports while expanding pharmaceutical and global capability center investments.",
     "links": [
      {
       "title": "AirTripMaker Expands US and Canada to India Flights Network with Economy, Premium Economy, Business and First Class and Strengthening Connections from the major USA or Canada Airports to Indian Cities",
@@ -364,17 +387,17 @@
   },
   "gdp_b": null,
   "week": {
-   "line": "US equity indexes mixed, Treasury yields soar, and deficit widens following Nvidia CEO's resignation and accelerating Treasury selloffs.",
+   "line": "Treasury yields hit 5% amid an accelerating selloff, softer demand at the 30-year auction, and a wider-than-expected October budget deficit.",
    "links": [
     {
      "title": "Treasury Selloff Accelerates, European Bonds Follow Suit",
-     "url": "https://finance.yahoo.com/economy/policy/articles/treasury-yields-rise-european-bond-100200700.html",
+     "url": "https://finance.yahoo.com/m/a93823d9-c279-3d72-917f-c3dd167fbb89/treasury-selloff-accelerates%2C.html",
      "publisher": "The Wall Street Journal"
     },
     {
-     "title": "Update: US Equity Indexes Mixed After Nvidia CEO Resigns, Treasury Yields Soar",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-mixed-nvidia-185020214.html",
-     "publisher": "MT Newswires"
+     "title": "U.S. 30-Year Treasury Auction Shows Softer Demand",
+     "url": "https://finance.yahoo.com/m/e9bc6f81-fc6f-3e02-b368-646c8e87a48f/u.s.-30-year-treasury-auction.html",
+     "publisher": "The Wall Street Journal"
     }
    ]
   }
@@ -390,21 +413,40 @@
   "gdp": 15,
   "strategic": 30
  },
- "profiles_updated_at": "2026-11-12T20:51:18Z",
- "generated_at": "2026-11-12T21:29:35Z",
+ "profiles_updated_at": "2026-11-12T21:15:51Z",
+ "week_updated_at": "2026-11-12T21:46:47Z",
+ "generated_at": "2026-11-12T21:46:47Z",
  "gemini": {
   "ok_calls": {
    "gemini-3.5-flash-lite": 1
   },
   "errors": {
-   "gemini-3.8-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=38144s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
-   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=38035s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
-   "gemini-3.6-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=38023s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
-   "gemini-3.5-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=38011s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
+   "gemini-3.8-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=37123s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
+   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=37099s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
+   "gemini-3.6-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=37087s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
+   "gemini-3.5-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=37042s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
    "gemini-2.5-flash": "404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a",
-   "gemini-flash-latest": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=37987s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
+   "gemini-flash-latest": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=37018s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
    "gemini-3-flash-preview": "no answer within 150s"
   }
  },
- "week_updated_at": "2026-11-12T21:29:35Z"
+ "raw": {
+  "trade": {},
+  "tic": {
+   "as_of": "2026-08",
+   "values": {
+    "cn": 590.7,
+    "ca": 464.6,
+    "mx": null,
+    "eu": 1654.2,
+    "jp": 1068.3,
+    "tw": 298.4,
+    "gb": 1009.5,
+    "in": 219.7,
+    "sa": 141.2,
+    "ru": null
+   }
+  },
+  "gdp": {}
+ }
 }
