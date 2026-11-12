@@ -47,20 +47,66 @@
     "gdp_b": 21243.0
    },
    "rank": 1,
-   "profile": null,
-   "profile_as_of": null,
+   "profile": {
+    "self_view": "Europe views itself as a vital global anchor of democratic values, environmental leadership, and regulatory standards, striving to maintain strategic autonomy amidst great power competition.",
+    "strengths": [
+     "Deeply integrated single market with high purchasing power",
+     "Global leader in sustainability, green tech, and regulatory frameworks",
+     "World-class industrial base and advanced manufacturing sectors",
+     "Robust cybersecurity, AI infrastructure, and institutional stability"
+    ],
+    "weaknesses": [
+     "Vulnerability to energy supply shocks and low winter gas inventories",
+     "Lagging domestic venture capital and high-growth tech ecosystems",
+     "Complex multi-national governance slowing down decisive economic action",
+     "Geopolitical exposure to ongoing conflicts and shifting global trade patterns"
+    ],
+    "relation": "Ally",
+    "lever": "Massive consumer market and regulatory reach",
+    "impacts": [
+     {
+      "title": "Regulatory and Antitrust Friction on US Tech",
+      "detail": "Strict EU data privacy, digital market, and AI acts directly restrict US mega-cap technology monetization strategies, creating compliance costs and constraining profit margins for digital service providers.",
+      "direction": "negative",
+      "sectors": [
+       "XLK",
+       "XLC"
+      ]
+     },
+     {
+      "title": "Transatlantic Energy and Commodity Pressures",
+      "detail": "Tight European gas inventories and energy transition demands influence global LNG demand, driving domestic US energy pricing dynamics and impacting broader industrial input costs.",
+      "direction": "mixed",
+      "sectors": [
+       "XLE",
+       "XLI"
+      ]
+     },
+     {
+      "title": "Cross-Border Industrial and Financial Earnings",
+      "detail": "Multinational earnings exposure to European consumer demand and macroeconomic growth directly influences US corporate profitability, particularly in healthcare, finance, and industrial sectors.",
+      "direction": "mixed",
+      "sectors": [
+       "XLV",
+       "XLF",
+       "XLI"
+      ]
+     }
+    ]
+   },
+   "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Tesla’s Full Self-Driving technology is nearing EU-wide approval, potentially expanding the market for the US automaker as European indexes pull back from record highs.",
+    "line": "Europe entered winter with its lowest gas inventory of the 2020s, and the STOXX 600 pulled back from record highs.",
     "links": [
+     {
+      "title": "Europe Enters Winter With Its Lowest Gas Inventory of the 2020s",
+      "url": "https://finance.yahoo.com/energy/articles/europe-enters-winter-lowest-gas-210000714.html",
+      "publisher": "Oilprice.com"
+     },
      {
       "title": "Europe's STOXX 600 pulls back from record high as investors weigh earnings, oil prices",
       "url": "https://finance.yahoo.com/markets/world-indices/articles/europes-stoxx-600-hits-record-083533950.html",
       "publisher": "Reuters"
-     },
-     {
-      "title": "Tesla FSD Gains Ground in Europe: Is EU-Wide Approval Near?",
-      "url": "https://finance.yahoo.com/technology/ai/articles/tesla-fsd-gains-ground-europe-112700383.html",
-      "publisher": "Zacks"
      }
     ]
    }
@@ -129,17 +175,17 @@
    },
    "profile_as_of": "2026-11-12T20:51:18Z",
    "week": {
-    "line": "Nvidia CEO Jensen Huang’s ousting and investigations into AI chip smuggling to China have triggered a selloff in tech stocks and signaled tighter US export regulations.",
+    "line": "Nvidia CEO Jensen Huang's departure amid a China spy affair sparked fallout for Alibaba and other China stocks, heightening regulatory scrutiny.",
     "links": [
      {
-      "title": "Super Micro sinks as DOJ probes possible China smuggling links to Nvidia fallout",
-      "url": "https://finance.yahoo.com/news/super-micro-sinks-doj-probes-174746367.html",
-      "publisher": "Investing.com"
+      "title": "Nvidia CEO Huang quits after affair with suspected China spy",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-preparing-oust-ceo-jensen-002910155.html",
+      "publisher": "AFP"
      },
      {
-      "title": "Jensen Huang's Nvidia ousting may signal shifting winds on China in Washington",
-      "url": "https://finance.yahoo.com/markets/article/jensen-huangs-nvidia-ousting-may-signal-shifting-winds-on-china-in-washington-164315699.html",
-      "publisher": "Yahoo Finance"
+      "title": "Nvidia Fallout Hits Alibaba and Other China Stocks as Tighter Regulation Look Likely",
+      "url": "https://finance.yahoo.com/m/d70a213b-683f-3361-9d79-e62def5ed0ca/nvidia-fallout-hits-alibaba.html",
+      "publisher": "Barrons.com"
      }
     ]
    }
@@ -157,10 +203,53 @@
     "gdp_b": 4435.0
    },
    "rank": 3,
-   "profile": null,
-   "profile_as_of": null,
+   "profile": {
+    "self_view": "Japan sees itself as a cornerstone of stability in the Indo-Pacific, dedicated to technological excellence, regional security cooperation, and navigating demographic headwinds.",
+    "strengths": [
+     "Advanced technological capabilities and precision industrial machinery",
+     "Deep pools of domestic capital and massive foreign asset holdings",
+     "Strong strategic alliance anchoring regional security in Asia",
+     "High levels of social cohesion and institutional reliability"
+    ],
+    "weaknesses": [
+     "Severe demographic decline and shrinking domestic workforce",
+     "Heavy reliance on imported energy and raw materials",
+     "Persistent currency depreciation risks impacting import costs and purchasing power",
+     "Stonewall public debt burdens relative to overall economic size"
+    ],
+    "relation": "Ally",
+    "lever": "Major holdings of US Treasuries",
+    "impacts": [
+     {
+      "title": "Treasury Market Liquidity and Yield Spillovers",
+      "detail": "As a primary foreign holder of US government debt, shifts in Japanese monetary policy or currency intervention strategies can influence US benchmark yields and borrowing costs.",
+      "direction": "mixed",
+      "sectors": [
+       "XLF"
+      ]
+     },
+     {
+      "title": "Industrial Robotics and AI Integration",
+      "detail": "Collaborations between Japanese robotics firms and US AI infrastructure providers drive advanced automation efficiencies throughout North American supply chains and manufacturing.",
+      "direction": "positive",
+      "sectors": [
+       "XLK",
+       "XLI"
+      ]
+     },
+     {
+      "title": "Cross-Border Pharmaceutical and Healthcare Pathways",
+      "detail": "Harmonized regulatory frameworks between the US and Japan facilitate cross-border medical innovation and pharmaceutical market expansion, benefiting major healthcare equities.",
+      "direction": "positive",
+      "sectors": [
+       "XLV"
+      ]
+     }
+    ]
+   },
+   "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Hot US inflation data has pushed the yen toward the 160 level, prompting Japanese officials to warn of market intervention to stabilize the currency.",
+    "line": "Hot US inflation pushed the Japanese yen close to 160, with Japanese officials warning of potential currency intervention.",
     "links": [
      {
       "title": "Hot US Inflation Drags the Yen Close to 160. Will Japan Step In Again?",
@@ -188,20 +277,60 @@
     "gdp_b": 860.0
    },
    "rank": 4,
-   "profile": null,
-   "profile_as_of": null,
+   "profile": {
+    "self_view": "Taiwan sees itself as an indispensable high-tech powerhouse and a vibrant democracy defending its prosperity and security on the frontline of global geopolitics.",
+    "strengths": [
+     "Unrivaled dominance in advanced semiconductor fabrication and chip design",
+     "Highly skilled, dedicated engineering workforce and agile supply chain ecosystem",
+     "Robust export-driven economy centered on critical global electronics components",
+     "Strategic geographic positioning within vital Indo-Pacific trade routes"
+    ],
+    "weaknesses": [
+     "Profound geopolitical vulnerability and cross-strait security tensions",
+     "High dependence on imported energy, water, and raw materials",
+     "Extreme economic concentration in a single dominant industrial sector",
+     "Demographic pressures from low birth rates and an aging population"
+    ],
+    "relation": "Partner",
+    "lever": "Monopoly on advanced semiconductor manufacturing",
+    "impacts": [
+     {
+      "title": "Critical Semiconductor Supply Chain Dependency",
+      "detail": "Concentrated foundry production of leading-edge AI and consumer chips dictates hardware output for US technology giants, directly driving valuations in software, cloud, and hardware sectors.",
+      "direction": "mixed",
+      "sectors": [
+       "XLK",
+       "XLC"
+      ]
+     },
+     {
+      "title": "AI Infrastructure and Capital Expenditure Catalyst",
+      "detail": "Taiwanese foundry expansion and technological milestones dictate the pace at which US artificial intelligence infrastructure can scale, affecting capital expenditure returns for enterprise tech.",
+      "direction": "positive",
+      "sectors": [
+       "XLK",
+       "XLI"
+      ]
+     },
+     {
+      "title": "Geopolitical Shock Spillover to Financial Markets",
+      "detail": "Any escalation in regional security tensions creates immediate systemic risk premiums, driving volatility across US equity indexes and triggering safe-haven capital reallocations.",
+      "direction": "negative",
+      "sectors": [
+       "XLF",
+       "XLK"
+      ]
+     }
+    ]
+   },
+   "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "The resignation of Nvidia’s Jensen Huang caused volatility for major US tech partners like TSMC and Broadcom, while Trump suggested Apple’s Tim Cook as a replacement.",
+    "line": "Nvidia's leadership shake-up overshadowed record October revenue and caused TSMC stock to fall 2.21%.",
     "links": [
      {
       "title": "TSMC Stocks Fall 2.21% as NVIDIA Shake-Up Overshadows Record October Revenue",
       "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-stocks-fall-2-21-180251979.html",
       "publisher": "GuruFocus.com"
-     },
-     {
-      "title": "Trump to Nvidia: Hire Tim Cook so “a Legend Replaces a Legend.” Bad Idea.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/trump-nvidia-hire-tim-cook-162828257.html",
-      "publisher": "TIKR"
      }
     ]
    }
@@ -219,10 +348,54 @@
     "gdp_b": 4003.0
    },
    "rank": 5,
-   "profile": null,
-   "profile_as_of": null,
+   "profile": {
+    "self_view": "The United Kingdom views itself as a sovereign global financial and cultural hub, leveraging its historic alliances and soft power to shape international norms.",
+    "strengths": [
+     "World-leading global financial services and capital markets center in London",
+     "Preeminent soft power, cultural influence, and English-language dominance",
+     "Strong capabilities in scientific research, aerospace, and life sciences",
+     "Deep intelligence and security partnership with the United States"
+    ],
+    "weaknesses": [
+     "Persistent sluggish productivity growth and high domestic tax burdens",
+     "Vulnerability to stubborn inflationary pressures and interest rate friction",
+     "Post-Brexit trade frictions impacting European market access and labor supply",
+     "Aging domestic infrastructure requiring substantial public and private capital"
+    ],
+    "relation": "Ally",
+    "lever": "Deep financial integration and intelligence sharing",
+    "impacts": [
+     {
+      "title": "Transatlantic Financial Services and Capital Flows",
+      "detail": "London's status as a global financial conduit heavily influences US banking liquidity, cross-border M&A activity, and institutional investment flows between North America and Europe.",
+      "direction": "mixed",
+      "sectors": [
+       "XLF"
+      ]
+     },
+     {
+      "title": "Regulatory Friction on US Digital Platforms",
+      "detail": "UK technology taxation and digital market regulations impose compliance costs on major US communications and tech enterprises operating within the British market.",
+      "direction": "negative",
+      "sectors": [
+       "XLC",
+       "XLK"
+      ]
+     },
+     {
+      "title": "Energy and Pharmaceutical Market Integration",
+      "detail": "Joint Anglo-American ventures in life sciences and energy transition projects facilitate cross-border corporate earnings and technological sharing in healthcare and industrial sectors.",
+      "direction": "positive",
+      "sectors": [
+       "XLV",
+       "XLE"
+      ]
+     }
+    ]
+   },
+   "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "The Bank of England raised interest rates for the first time since 2023, contributing to a tumble in European stocks and impacting global monetary sentiment.",
+    "line": "European stocks tumbled in Friday trading as the Bank of England raised interest rates for the first time since 2023.",
     "links": [
      {
       "title": "European Stocks Tumble in Friday Trading; Bank of England Raises Rates for First Time Since 2023",
@@ -245,16 +418,57 @@
     "gdp_b": 2320.0
    },
    "rank": 6,
-   "profile": null,
-   "profile_as_of": null,
-   "week": {
-    "line": "US manufacturing stocks are preparing for potential tariff pressure, while Freeport-McMoRan expanded its Canadian presence with a C$110 million property interest acquisition.",
-    "links": [
+   "profile": {
+    "self_view": "Canada sees itself as a reliable, resource-rich sovereign neighbor and indispensable economic partner to the United States, balancing traditional ties with global trade ambitions.",
+    "strengths": [
+     "Vast reserves of critical minerals, oil, and clean freshwater.",
+     "Deeply integrated automotive and aerospace supply chains with the US.",
+     "Highly educated workforce and strong institutional governance.",
+     "Strategic geographic position spanning North American trade corridors."
+    ],
+    "weaknesses": [
+     "High economic dependence on US trade and demand cycles.",
+     "Persistent productivity growth lagging behind the United States.",
+     "Housing affordability crises dampening domestic consumer spending.",
+     "Vulnerability to US protectionist trade policies and tariff pressures."
+    ],
+    "relation": "Ally",
+    "lever": "Integrated manufacturing and energy supply chains",
+    "impacts": [
      {
-      "title": "3 U.S. Manufacturing Stocks Built To Handle Canada Tariff Pressure",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/3-u-manufacturing-stocks-built-201532912.html",
-      "publisher": "Simply Wall St."
+      "title": "Cross-Border Supply Chain Disruptions",
+      "detail": "Any shifts in trade policy or tariffs between the US and Canada directly impact manufacturing input costs, hitting automotive and industrial sectors hard.",
+      "direction": "negative",
+      "sectors": [
+       "XLI",
+       "XLB",
+       "XLY"
+      ]
      },
+     {
+      "title": "North American Energy Security",
+      "detail": "Canadian crude oil and electricity exports stabilize US domestic energy supply, keeping input costs manageable for American refiners and heavy industry.",
+      "direction": "positive",
+      "sectors": [
+       "XLE",
+       "XLU",
+       "XLB"
+      ]
+     },
+     {
+      "title": "Financial System Interconnectedness",
+      "detail": "Deep cross-border banking operations and capital flows tie Canadian credit conditions directly to US financial stability and monetary policy transmission.",
+      "direction": "mixed",
+      "sectors": [
+       "XLF"
+      ]
+     }
+    ]
+   },
+   "profile_as_of": "2026-11-12T23:22:05Z",
+   "week": {
+    "line": "Freeport-McMoRan Mineral Properties Canada agreed to acquire a 51% interest in TDG Gold's Aurora West Property for C$110 million.",
+    "links": [
      {
       "title": "TDG Gold Corp. agrees to sell 51% interest in Aurora West Property to Freeport-McMoRan Mineral Properties Canada Inc. for C$110 million and to grant certain additional earn-in rights upon funding of C$80 million of expenditures and upon C$40 million cash payment",
       "url": "https://finance.yahoo.com/markets/commodities/articles/tdg-gold-corp-agrees-sell-183800100.html",
@@ -276,20 +490,60 @@
     "gdp_b": 1277.0
    },
    "rank": 7,
-   "profile": null,
-   "profile_as_of": null,
+   "profile": {
+    "self_view": "Saudi Arabia views itself as the stabilizing anchor of global energy markets and the economic leader of the Arab and Islamic world, successfully executing its Vision 2030 modernization.",
+    "strengths": [
+     "World-class hydrocarbon reserves with unmatched low production costs.",
+     "Massive sovereign wealth capital deployed globally and domestically.",
+     "Pivotal geopolitical influence across the Middle East and OPEC+.",
+     "Accelerating diversification into tech, infrastructure, and green energy."
+    ],
+    "weaknesses": [
+     "Continued heavy reliance on petroleum revenues for government budgets.",
+     "Regional geopolitical volatility threatening foreign direct investment inflows.",
+     "Substantial demographic pressures requiring rapid private sector job creation.",
+     "Vulnerability of energy infrastructure to regional military attacks."
+    ],
+    "relation": "Partner",
+    "lever": "Global oil supply and energy pricing",
+    "impacts": [
+     {
+      "title": "Global Energy Price Volatility",
+      "detail": "OPEC+ output decisions and Middle Eastern security disruptions directly dictate global crude prices, influencing US inflation and consumer energy expenses.",
+      "direction": "mixed",
+      "sectors": [
+       "XLE",
+       "XLP",
+       "XLY"
+      ]
+     },
+     {
+      "title": "Sovereign Capital and Private Credit Flows",
+      "detail": "Saudi investments into US private credit, tech, and financial markets provide liquidity that supports American capital formation and asset valuations.",
+      "direction": "positive",
+      "sectors": [
+       "XLF",
+       "XLK"
+      ]
+     },
+     {
+      "title": "Defense Equipment Export Demand",
+      "detail": "Large-scale Saudi defense procurement provides sustained multi-billion-dollar revenue streams for major US aerospace and defense contractors.",
+      "direction": "positive",
+      "sectors": [
+       "XLI"
+      ]
+     }
+    ]
+   },
+   "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Oil prices jumped $3 following attacks on Saudi energy sites, while Goldman Sachs led a $150 million private credit deal in the kingdom.",
+    "line": "Attacks on Saudi energy sites and Strait of Hormuz disruptions drove oil prices up by $3.",
     "links": [
      {
       "title": "Oil settles $3 higher on attacks on Saudi energy sites, Strait of Hormuz disruptions",
       "url": "https://finance.yahoo.com/energy/articles/oil-falls-over-1-easing-045152522.html",
       "publisher": "Reuters"
-     },
-     {
-      "title": "Goldman Sachs, HSBC Strike Major Saudi Financing Deal",
-      "url": "https://finance.yahoo.com/economy/policy/articles/goldman-sachs-hsbc-strike-major-185922142.html",
-      "publisher": "GuruFocus.com"
      }
     ]
    }
@@ -307,20 +561,60 @@
     "gdp_b": 3956.0
    },
    "rank": 8,
-   "profile": null,
-   "profile_as_of": null,
-   "week": {
-    "line": "US food giant Mars is expanding its footprint in India through a new Global Capability Center, while flight networks between the two nations continue to grow.",
-    "links": [
+   "profile": {
+    "self_view": "India views itself as an emerging global superpower and the voice of the Global South, leveraging its massive demographic dividend and rapid digital transformation.",
+    "strengths": [
+     "World's largest and one of the youngest populations driving domestic demand.",
+     "Dominant global hub for software engineering, IT services, and pharmaceutical generics.",
+     "Strategic alignment with Western democracies to balance regional security challenges.",
+     "Rapidly expanding digital public infrastructure and physical manufacturing capacity."
+    ],
+    "weaknesses": [
+     "Per capita income levels remain low with substantial wealth inequality.",
+     "Bureaucratic friction and infrastructure bottlenecks hindering rapid industrial scaling.",
+     "High import dependence for critical energy supplies and raw materials.",
+     "Underemployment challenges for millions entering the workforce annually."
+    ],
+    "relation": "Partner",
+    "lever": "Massive labor force and tech outsourcing hub",
+    "impacts": [
      {
-      "title": "AirTripMaker Expands US and Canada to India Flights Network with Economy, Premium Economy, Business and First Class and Strengthening Connections from the major USA or Canada Airports to Indian Cities",
-      "url": "https://finance.yahoo.com/small-business/articles/airtripmaker-expands-us-canada-india-152400270.html",
-      "publisher": "GlobeNewswire"
+      "title": "Global IT and Engineering Outsourcing",
+      "detail": "Indian tech talent and service providers power backend operations for US financial and technology firms, altering corporate cost structures and margins.",
+      "direction": "positive",
+      "sectors": [
+       "XLK",
+       "XLF"
+      ]
      },
      {
-      "title": "Mars Expands its Presence in India and Opens Global Capability Center in Collaboration with Genpact",
-      "url": "https://finance.yahoo.com/technology/ai/articles/mars-expands-presence-india-opens-132500247.html",
-      "publisher": "PR Newswire"
+      "title": "Pharmaceutical Supply Chain Integration",
+      "detail": "Indian manufacturing of active pharmaceutical ingredients and generics underpins the US healthcare system's cost containment and drug availability.",
+      "direction": "positive",
+      "sectors": [
+       "XLV"
+      ]
+     },
+     {
+      "title": "Critical Mineral and Manufacturing Competition",
+      "detail": "Restrictions on critical mineral exports and aggressive industrial policies could disrupt supply chains for clean energy hardware entering the US market.",
+      "direction": "mixed",
+      "sectors": [
+       "XLB",
+       "XLE",
+       "XLI"
+      ]
+     }
+    ]
+   },
+   "profile_as_of": "2026-11-12T23:22:05Z",
+   "week": {
+    "line": "India banned lithium-ion battery black mass exports while showcasing pharmaceutical and green energy market opportunities.",
+    "links": [
+     {
+      "title": "India bans lithium-ion battery black mass exports",
+      "url": "https://finance.yahoo.com/economy/policy/articles/india-bans-lithium-ion-battery-165130734.html",
+      "publisher": "Just Auto"
      }
     ]
    }
@@ -338,20 +632,62 @@
     "gdp_b": 2561.0
    },
    "rank": 9,
-   "profile": null,
-   "profile_as_of": null,
-   "week": {
-    "line": "Global oil prices fell on optimism for peace in Ukraine, while US defense contractor RTX saw increased focus following successful tests of its DeepStrike technology.",
-    "links": [
+   "profile": {
+    "self_view": "Russia sees itself as an independent, sovereign center of a multipolar world, successfully defending its national interests against Western hegemony and economic sanctions.",
+    "strengths": [
+     "Vast reserves of oil, gas, wheat, and critical industrial metals.",
+     "Resilient military-industrial complex and advanced asymmetric warfare capabilities.",
+     "Strategic pivot to Asian economic partners to bypass Western isolation.",
+     "Highly centralized state control capable of sustaining long-term conflict."
+    ],
+    "weaknesses": [
+     "Heavy reliance on raw commodity exports with limited high-tech manufacturing depth.",
+     "Severe demographic decline and ongoing brain drain of skilled labor.",
+     "Comprehensive Western financial sanctions restricting capital market access.",
+     "Strained macroeconomic balance due to excessive military spending."
+    ],
+    "relation": "Rival",
+    "lever": "Commodity exports and cyber-strategic disruption",
+    "impacts": [
      {
-      "title": "RTX (RTX) DeepStrike Test And DARPA Win Put Fresh Focus On Defense Tech",
-      "url": "https://finance.yahoo.com/technology/articles/rtx-rtx-deepstrike-test-darpa-151707817.html",
-      "publisher": "Simply Wall St."
+      "title": "Commodity Market Shocks",
+      "detail": "Escalation in sanctions or export restrictions on Russian oil, fertilizers, and metals triggers global price spikes that feed US domestic inflation.",
+      "direction": "negative",
+      "sectors": [
+       "XLE",
+       "XLB",
+       "XLP"
+      ]
      },
      {
-      "title": "Oil Prices Sink as Iran and Ukraine Peace Optimism Builds",
-      "url": "https://finance.yahoo.com/energy/articles/oil-prices-sink-iran-ukraine-063500894.html",
-      "publisher": "Oilprice.com"
+      "title": "Cybersecurity and Critical Infrastructure Risks",
+      "detail": "Geopolitical friction heightens the threat of sophisticated state-sponsored cyberattacks against US financial networks, utilities, and corporate infrastructure.",
+      "direction": "negative",
+      "sectors": [
+       "XLK",
+       "XLF",
+       "XLU"
+      ]
+     },
+     {
+      "title": "Global Geopolitical Instability Premiums",
+      "detail": "Prolonged conflict in Eastern Europe sustains elevated defense spending in the West while creating ongoing volatility for international shipping and trade.",
+      "direction": "negative",
+      "sectors": [
+       "XLI",
+       "XLE"
+      ]
+     }
+    ]
+   },
+   "profile_as_of": "2026-11-12T23:22:05Z",
+   "week": {
+    "line": "Russia opened Bitcoin trading while its biggest exchange remained under US sanctions.",
+    "links": [
+     {
+      "title": "Russia Opens Bitcoin Trading, but Its Biggest Exchange Is Under US Sanctions",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/russia-opens-bitcoin-trading-biggest-145541388.html",
+      "publisher": "BeInCrypto"
      }
     ]
    }
@@ -369,20 +705,67 @@
     "gdp_b": 1833.0
    },
    "rank": 10,
-   "profile": null,
-   "profile_as_of": null,
+   "profile": {
+    "self_view": "Mexico views itself as an indispensable manufacturing and nearshoring powerhouse in North America, uniquely positioned to bridge Latin America and the United States despite persistent security, migration, and trade pressure.",
+    "strengths": [
+     "Unmatched geographic proximity to the massive United States consumer market.",
+     "Expanding industrial manufacturing base driven by accelerating nearshoring trends.",
+     "Competitive, skilled, and cost-effective labor force across multiple sectors.",
+     "Robust macroeconomic stability supported by sound central bank management."
+    ],
+    "weaknesses": [
+     "Vulnerability to sudden United States protectionist trade policies and tariff threats.",
+     "Persistent domestic security challenges impacting infrastructure and investment flows.",
+     "Fiscal pressures stemming from rising sovereign debt and state-owned enterprise liabilities.",
+     "Infrastructure bottlenecks in logistics, water, and reliable power generation."
+    ],
+    "relation": "Partner",
+    "lever": "Manufacturing supply chain integration and migration enforce",
+    "impacts": [
+     {
+      "title": "Supply Chain Disruption via Tariffs",
+      "detail": "Escalating trade tensions or doubled tariffs by the US would sharply raise input costs for American automakers and manufacturers, pressuring corporate margins and consumer prices.",
+      "direction": "negative",
+      "sectors": [
+       "XLI",
+       "XLY",
+       "XLP"
+      ]
+     },
+     {
+      "title": "Nearshoring Industrial Expansion",
+      "detail": "Relocation of manufacturing capacity from Asia to Mexico deepens cross-border supply integration, boosting capital goods shipments and lowering long-term production costs for US firms.",
+      "direction": "positive",
+      "sectors": [
+       "XLI",
+       "XLB",
+       "XLY"
+      ]
+     },
+     {
+      "title": "Cross-Border Infrastructure and Logistics",
+      "detail": "Strong growth in freight, logistics, and transport connectivity enhances commercial velocity between the nations, directly benefiting US transport operators and industrial suppliers.",
+      "direction": "positive",
+      "sectors": [
+       "XLI",
+       "XLY"
+      ]
+     }
+    ]
+   },
+   "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "President Trump has threatened to double tariffs on Mexico in response to migrant caravans, a move with significant implications for US trade and supply chains.",
+    "line": "President Trump threatened to double tariffs on Mexico over migrant issues, while truck exports and production surged in October.",
     "links": [
+     {
+      "title": "Mexico truck exports soar 159% as production jumps 130% in October",
+      "url": "https://finance.yahoo.com/economy/articles/mexico-truck-exports-soar-159-190315121.html",
+      "publisher": "FreightWaves"
+     },
      {
       "title": "Trump threatens to double Mexico tariffs over alleged migrant influx",
       "url": "https://finance.yahoo.com/economy/policy/articles/trump-threatens-double-mexico-tariffs-161314425.html",
       "publisher": "FreightWaves"
-     },
-     {
-      "title": "Trump Threatens to Double Tariffs on Mexico Over Migrant Caravans",
-      "url": "https://finance.yahoo.com/economy/policy/articles/trump-threatens-double-tariffs-mexico-124031708.html",
-      "publisher": "MT Newswires"
      }
     ]
    }
@@ -408,12 +791,12 @@
   },
   "gdp_b": 30770.0,
   "week": {
-   "line": "Treasury yields soared to 5% following a weak 30-year auction and the resignation of Nvidia's CEO, while the White House maintained its aggressive tariff stance.",
+   "line": "Nvidia CEO's resignation and leadership shake-up triggered US equity volatility and falling indices, while surging crude oil prices drove US Treasury yields to 5%.",
    "links": [
     {
-     "title": "U.S. 30-Year Treasury Auction Shows Softer Demand",
-     "url": "https://finance.yahoo.com/m/e9bc6f81-fc6f-3e02-b368-646c8e87a48f/u.s.-30-year-treasury-auction.html",
-     "publisher": "The Wall Street Journal"
+     "title": "Update: US Equity Indexes Fall, Nvidia Turmoil in Danger of Spreading While Surging Crude Oil Lifts Treasury Yields",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-fall-nvidia-220045241.html",
+     "publisher": "MT Newswires"
     },
     {
      "title": "Update: US Equity Indexes Mixed After Nvidia CEO Resigns, Treasury Yields Soar",
@@ -435,19 +818,20 @@
   "strategic": 30
  },
  "profiles_updated_at": "2026-11-12T21:15:51Z",
- "week_updated_at": "2026-11-12T21:56:58Z",
- "generated_at": "2026-11-12T21:56:58Z",
+ "week_updated_at": "2026-11-12T23:22:05Z",
+ "generated_at": "2026-11-12T23:22:05Z",
  "gemini": {
   "ok_calls": {
-   "gemini-3-flash-preview": 1
+   "gemini-3.5-flash-lite": 4
   },
   "errors": {
-   "gemini-3.8-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=36420s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
-   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=36409s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
-   "gemini-3.6-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=36240s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
-   "gemini-3.5-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=36228s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
+   "gemini-3.8-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=31261s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
+   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=31249s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
+   "gemini-3.6-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=31237s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
+   "gemini-3.5-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=31196s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
    "gemini-2.5-flash": "404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a",
-   "gemini-flash-latest": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=36204s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:"
+   "gemini-flash-latest": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=31172s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
+   "gemini-3-flash-preview": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=31160s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:"
   }
  },
  "raw": {
