@@ -12,6 +12,8 @@ on:
   push:
     branches: [main]
     paths: ["scripts/**", "requirements.txt", ".github/workflows/**"]
+  # Also started every day at 06:05 Madrid by cron-job.org through the API
+  # (inputs.force=false, so it respects the window); see README "Reliable 06:05 trigger".
   workflow_dispatch:
     inputs:
       force:
