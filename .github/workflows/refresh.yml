@@ -68,6 +68,7 @@ jobs:
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           GEMINI_MIN_INTERVAL: ${{ vars.GEMINI_MIN_INTERVAL || '12' }}
           COMMIT_MSG: ${{ github.event.head_commit.message }}
+          CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
         run: |
           # only after a real market build (skip-runs outside the 06:00-08:00 window don't touch geo)
           if git diff --quiet -- docs/data.json; then echo "market build skipped; geo skipped too"; exit 0; fi

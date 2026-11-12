@@ -86,7 +86,9 @@ def _months_back(n: int) -> list[str]:
 
 def census_trade() -> tuple[dict, dict]:
     """Year-to-date US goods exports to / imports from each partner (USD)."""
-    dbg = {}
+    dbg = {"key": "set" if os.environ.get("CENSUS_API_KEY") else "MISSING (add repo secret CENSUS_API_KEY)"}
+    if not os.environ.get("CENSUS_API_KEY"):
+        return {}, dbg   # the Census Data API requires a (free) key for every query
     base = "https://api.census.gov/data/timeseries/intltrade"
     for month in _months_back(6):
         key = {"key": os.environ["CENSUS_API_KEY"]} if os.environ.get("CENSUS_API_KEY") else {}
@@ -101,7 +103,7 @@ def census_trade() -> tuple[dict, dict]:
                 continue
             rows_ex, rows_im = ex.json()[1:], im.json()[1:]
         except Exception as e:  # noqa: BLE001
-            dbg[month] = f"error {e}"[:200]
+            dbg[month] = (dbg.get(month, "") + f" | error {e}")[:400]
             continue
 
         def tot(rows):
@@ -175,14 +177,19 @@ WB_CODES = {"cn": "CHN", "ca": "CAN", "mx": "MEX", "eu": "EUU", "jp": "JPN", "gb
 def world_bank_gdp() -> tuple[dict, dict]:
     """Nominal GDP, USD billions, latest available year (World Bank)."""
     dbg = {}
-    try:
-        r = HTTP.get(f"https://api.worldbank.org/v2/country/{';'.join(WB_CODES.values())}"
-                     "/indicator/NY.GDP.MKTP.CD", params={"format": "json", "mrv": 3, "per_page": 200},
-                     timeout=60, headers=UA)
-        dbg["status"] = r.status_code
-        rows = r.json()[1] or []
-    except Exception as e:  # noqa: BLE001
-        dbg["error"] = str(e)[:200]
+    rows = None
+    for attempt in range(3):   # the World Bank API is sometimes slow
+        try:
+            r = HTTP.get(f"https://api.worldbank.org/v2/country/{';'.join(WB_CODES.values())}"
+                         "/indicator/NY.GDP.MKTP.CD", params={"format": "json", "mrv": 3, "per_page": 200},
+                         timeout=120, headers=UA)
+            dbg["status"] = r.status_code
+            rows = r.json()[1] or []
+            break
+        except Exception as e:  # noqa: BLE001
+            dbg[f"error{attempt + 1}"] = str(e)[:160]
+            time.sleep(10)
+    if rows is None:
         return {}, dbg
     by_iso: dict[str, tuple[str, float]] = {}
     for row in rows:
