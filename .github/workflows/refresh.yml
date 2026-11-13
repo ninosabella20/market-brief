@@ -9,6 +9,10 @@ on:
     # not register the new schedule.
     - cron: "10,40 4,5 * * *"
   # Code/workflow changes trigger an immediate run (data-only commits don't).
+  # Commit-message tags for such pushes:
+  #   [full]          refresh stories for all 11 sectors (default: only XLK, to save quota)
+  #   [geo] / [geo:cn,jp]  force a rebuild of all / some geopolitics profiles
+  #   never [skip ci] when changing THIS file (GitHub may not register the schedule)
   push:
     branches: [main]
     paths: ["scripts/**", "requirements.txt", ".github/workflows/**"]
