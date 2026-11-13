@@ -1,10 +1,11 @@
 {
- "notices": [
-  "Ranking data unavailable: US Census trade."
- ],
+ "notices": [],
  "debug": {
   "census": {
-   "key": "MISSING (add repo secret CENSUS_API_KEY)"
+   "key": "set",
+   "2026-10": "exports 204 '' | imports 204 ''",
+   "2026-09": "exports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"ALL_VAL_YR\",\"time\"], [\"-\",\"TOTAL FOR ALL COUNTRIES\",\"1847530728674\",\"2026-09\"], [\"0003\",\"EUROPEAN UNION\",\"344184157103\",\"2026-09\"], [\"0' | imports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"GEN_VAL_YR\",\"time\"], [\"0003\",\"EUROPEAN UNION\",\"41980632'",
+   "rows": "249 export rows / 249 names"
   },
   "tic": {
    "slt_table5.txt": 200,
@@ -37,12 +38,12 @@
   {
    "code": "eu",
    "name": "European Union",
-   "score": 54.4,
+   "score": 88.7,
    "numbers": {
-    "us_exports_b": null,
-    "us_imports_b": null,
-    "trade_b": null,
-    "balance_b": null,
+    "us_exports_b": 344.2,
+    "us_imports_b": 419.8,
+    "trade_b": 764.0,
+    "balance_b": -75.6,
     "treasuries_b": 1654.2,
     "gdp_b": 21243.0
    },
@@ -103,12 +104,12 @@
   {
    "code": "cn",
    "name": "China",
-   "score": 46.6,
+   "score": 60.1,
    "numbers": {
-    "us_exports_b": null,
-    "us_imports_b": null,
-    "trade_b": null,
-    "balance_b": null,
+    "us_exports_b": 83.5,
+    "us_imports_b": 215.0,
+    "trade_b": 298.5,
+    "balance_b": -131.5,
     "treasuries_b": 590.7,
     "gdp_b": 19498.0
    },
@@ -164,17 +165,157 @@
    },
    "profile_as_of": "2026-11-12T20:51:18Z",
    "week": {
-    "line": "Nvidia CEO Jensen Huang resigned after affair allegations involving a suspected China spy, sparking widespread US tech sector turmoil.",
+    "line": "China AI stocks fell as Nvidia spy scandal fallout raised concerns about tighter U.S. chip export restrictions.",
     "links": [
      {
-      "title": "Nvidia CEO Huang quits after affair with suspected China spy",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-preparing-oust-ceo-jensen-002910155.html",
-      "publisher": "AFP"
+      "title": "China AI stocks tumble as Nvidia fallout fuels fears of tighter U.S. chip curbs",
+      "url": "https://finance.yahoo.com/technology/ai/articles/china-ai-stocks-tumble-nvidia-064035259.html",
+      "publisher": "Investing.com"
+     }
+    ]
+   }
+  },
+  {
+   "code": "mx",
+   "name": "Mexico",
+   "score": 53.9,
+   "numbers": {
+    "us_exports_b": 297.6,
+    "us_imports_b": 481.6,
+    "trade_b": 779.2,
+    "balance_b": -184.0,
+    "treasuries_b": null,
+    "gdp_b": 1833.0
+   },
+   "rank": 3,
+   "profile": {
+    "self_view": "Mexico views itself as an indispensable manufacturing and nearshoring powerhouse in North America, uniquely positioned to bridge Latin America and the United States despite persistent security, migration, and trade pressure.",
+    "strengths": [
+     "Unmatched geographic proximity to the massive United States consumer market.",
+     "Expanding industrial manufacturing base driven by accelerating nearshoring trends.",
+     "Competitive, skilled, and cost-effective labor force across multiple sectors.",
+     "Robust macroeconomic stability supported by sound central bank management."
+    ],
+    "weaknesses": [
+     "Vulnerability to sudden United States protectionist trade policies and tariff threats.",
+     "Persistent domestic security challenges impacting infrastructure and investment flows.",
+     "Fiscal pressures stemming from rising sovereign debt and state-owned enterprise liabilities.",
+     "Infrastructure bottlenecks in logistics, water, and reliable power generation."
+    ],
+    "relation": "Partner",
+    "lever": "Manufacturing supply chain integration and migration enforce",
+    "impacts": [
+     {
+      "title": "Supply Chain Disruption via Tariffs",
+      "detail": "Escalating trade tensions or doubled tariffs by the US would sharply raise input costs for American automakers and manufacturers, pressuring corporate margins and consumer prices.",
+      "direction": "negative",
+      "sectors": [
+       "XLI",
+       "XLY",
+       "XLP"
+      ]
      },
      {
-      "title": "Dan Ives Says 'Irreplaceable' Nvidia CEO Jensen Huang Is the 'Central Nervous System' of US Tech, Says Company Has No Succession Plan Amid China Spy Allegations",
-      "url": "https://finance.yahoo.com/technology/articles/dan-ives-says-irreplaceable-nvidia-013016364.html",
-      "publisher": "Benzinga"
+      "title": "Nearshoring Industrial Expansion",
+      "detail": "Relocation of manufacturing capacity from Asia to Mexico deepens cross-border supply integration, boosting capital goods shipments and lowering long-term production costs for US firms.",
+      "direction": "positive",
+      "sectors": [
+       "XLI",
+       "XLB",
+       "XLY"
+      ]
+     },
+     {
+      "title": "Cross-Border Infrastructure and Logistics",
+      "detail": "Strong growth in freight, logistics, and transport connectivity enhances commercial velocity between the nations, directly benefiting US transport operators and industrial suppliers.",
+      "direction": "positive",
+      "sectors": [
+       "XLI",
+       "XLY"
+      ]
+     }
+    ]
+   },
+   "profile_as_of": "2026-11-12T23:22:05Z",
+   "week": {
+    "line": "President Trump threatened to double tariffs on Mexico over an alleged migrant influx, creating trade friction.",
+    "links": [
+     {
+      "title": "Trump threatens to double Mexico tariffs over alleged migrant influx",
+      "url": "https://finance.yahoo.com/economy/policy/articles/trump-threatens-double-mexico-tariffs-161314425.html",
+      "publisher": "FreightWaves"
+     }
+    ]
+   }
+  },
+  {
+   "code": "ca",
+   "name": "Canada",
+   "score": 50.3,
+   "numbers": {
+    "us_exports_b": 264.0,
+    "us_imports_b": 304.6,
+    "trade_b": 568.6,
+    "balance_b": -40.5,
+    "treasuries_b": 464.6,
+    "gdp_b": 2320.0
+   },
+   "rank": 4,
+   "profile": {
+    "self_view": "Canada sees itself as a reliable, resource-rich sovereign neighbor and indispensable economic partner to the United States, balancing traditional ties with global trade ambitions.",
+    "strengths": [
+     "Vast reserves of critical minerals, oil, and clean freshwater.",
+     "Deeply integrated automotive and aerospace supply chains with the US.",
+     "Highly educated workforce and strong institutional governance.",
+     "Strategic geographic position spanning North American trade corridors."
+    ],
+    "weaknesses": [
+     "High economic dependence on US trade and demand cycles.",
+     "Persistent productivity growth lagging behind the United States.",
+     "Housing affordability crises dampening domestic consumer spending.",
+     "Vulnerability to US protectionist trade policies and tariff pressures."
+    ],
+    "relation": "Ally",
+    "lever": "Integrated manufacturing and energy supply chains",
+    "impacts": [
+     {
+      "title": "Cross-Border Supply Chain Disruptions",
+      "detail": "Any shifts in trade policy or tariffs between the US and Canada directly impact manufacturing input costs, hitting automotive and industrial sectors hard.",
+      "direction": "negative",
+      "sectors": [
+       "XLI",
+       "XLB",
+       "XLY"
+      ]
+     },
+     {
+      "title": "North American Energy Security",
+      "detail": "Canadian crude oil and electricity exports stabilize US domestic energy supply, keeping input costs manageable for American refiners and heavy industry.",
+      "direction": "positive",
+      "sectors": [
+       "XLE",
+       "XLU",
+       "XLB"
+      ]
+     },
+     {
+      "title": "Financial System Interconnectedness",
+      "detail": "Deep cross-border banking operations and capital flows tie Canadian credit conditions directly to US financial stability and monetary policy transmission.",
+      "direction": "mixed",
+      "sectors": [
+       "XLF"
+      ]
+     }
+    ]
+   },
+   "profile_as_of": "2026-11-12T23:22:05Z",
+   "week": {
+    "line": "Canada threatened to sue Stellantis over auto plant sales as President Trump's trade war shifts production south.",
+    "links": [
+     {
+      "title": "Canada threatens to sue Stellantis over auto plant sale as Trump’s trade war shifts production south",
+      "url": "https://finance.yahoo.com/economy/policy/articles/canada-threatens-sue-stellantis-over-232104370.html",
+      "publisher": "Associated Press"
      }
     ]
    }
@@ -182,16 +323,16 @@
   {
    "code": "jp",
    "name": "Japan",
-   "score": 36.1,
+   "score": 44.3,
    "numbers": {
-    "us_exports_b": null,
-    "us_imports_b": null,
-    "trade_b": null,
-    "balance_b": null,
+    "us_exports_b": 74.9,
+    "us_imports_b": 108.7,
+    "trade_b": 183.6,
+    "balance_b": -33.8,
     "treasuries_b": 1068.3,
     "gdp_b": 4435.0
    },
-   "rank": 3,
+   "rank": 5,
    "profile": {
     "self_view": "Japan sees itself as a cornerstone of stability in the Indo-Pacific, dedicated to technological excellence, regional security cooperation, and navigating demographic headwinds.",
     "strengths": [
@@ -238,16 +379,16 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "The US dollar approached a 19-month high on Fed rate hike bets as the Japanese yen breached 160 despite past Treasury interventions.",
+    "line": "The U.S. dollar rallied on rate hike expectations while the yen tested 160, drawing Japanese intervention warnings.",
     "links": [
      {
-      "title": "Dollar near 19-month high on Fed hike bets, yen tests 160",
-      "url": "https://finance.yahoo.com/markets/currencies/articles/dollar-near-19-month-high-020101127.html",
+      "title": "Limited US role in Japan intervention undermines deterrent as yen touches 160",
+      "url": "https://finance.yahoo.com/markets/currencies/articles/japans-finance-minister-vows-action-015118364.html",
       "publisher": "Reuters"
      },
      {
-      "title": "US Treasury bought yen in July; Fed made no solo FX interventions in Q3",
-      "url": "https://finance.yahoo.com/markets/currencies/articles/us-treasury-bought-yen-july-230307289.html",
+      "title": "Dollar set for best week in two months on rate hike wagers, yen tests 160",
+      "url": "https://finance.yahoo.com/markets/currencies/articles/dollar-near-19-month-high-020101127.html",
       "publisher": "Reuters"
      }
     ]
@@ -256,16 +397,16 @@
   {
    "code": "tw",
    "name": "Taiwan",
-   "score": 31.0,
+   "score": 42.7,
    "numbers": {
-    "us_exports_b": null,
-    "us_imports_b": null,
-    "trade_b": null,
-    "balance_b": null,
+    "us_exports_b": 44.2,
+    "us_imports_b": 215.3,
+    "trade_b": 259.5,
+    "balance_b": -171.1,
     "treasuries_b": 298.4,
     "gdp_b": 860.0
    },
-   "rank": 4,
+   "rank": 6,
    "profile": {
     "self_view": "Taiwan sees itself as an indispensable high-tech powerhouse and a vibrant democracy defending its prosperity and security on the frontline of global geopolitics.",
     "strengths": [
@@ -314,7 +455,7 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Shares of US-listed chipmakers TSMC and Broadcom reacted sharply to leadership turmoil at Nvidia.",
+    "line": "Nvidia executive turmoil dragged down TSMC shares while boosting U.S. chipmaker Broadcom on rising custom AI demand.",
     "links": [
      {
       "title": "TSMC Stocks Fall 2.21% as NVIDIA Shake-Up Overshadows Record October Revenue",
@@ -332,16 +473,16 @@
   {
    "code": "gb",
    "name": "United Kingdom",
-   "score": 29.2,
+   "score": 35.2,
    "numbers": {
-    "us_exports_b": null,
-    "us_imports_b": null,
-    "trade_b": null,
-    "balance_b": null,
+    "us_exports_b": 84.4,
+    "us_imports_b": 49.8,
+    "trade_b": 134.1,
+    "balance_b": 34.6,
     "treasuries_b": 1009.5,
     "gdp_b": 4003.0
    },
-   "rank": 5,
+   "rank": 7,
    "profile": {
     "self_view": "The United Kingdom views itself as a sovereign global financial and cultural hub, leveraging its historic alliances and soft power to shape international norms.",
     "strengths": [
@@ -394,162 +535,14 @@
    }
   },
   {
-   "code": "ca",
-   "name": "Canada",
-   "score": 24.7,
-   "numbers": {
-    "us_exports_b": null,
-    "us_imports_b": null,
-    "trade_b": null,
-    "balance_b": null,
-    "treasuries_b": 464.6,
-    "gdp_b": 2320.0
-   },
-   "rank": 6,
-   "profile": {
-    "self_view": "Canada sees itself as a reliable, resource-rich sovereign neighbor and indispensable economic partner to the United States, balancing traditional ties with global trade ambitions.",
-    "strengths": [
-     "Vast reserves of critical minerals, oil, and clean freshwater.",
-     "Deeply integrated automotive and aerospace supply chains with the US.",
-     "Highly educated workforce and strong institutional governance.",
-     "Strategic geographic position spanning North American trade corridors."
-    ],
-    "weaknesses": [
-     "High economic dependence on US trade and demand cycles.",
-     "Persistent productivity growth lagging behind the United States.",
-     "Housing affordability crises dampening domestic consumer spending.",
-     "Vulnerability to US protectionist trade policies and tariff pressures."
-    ],
-    "relation": "Ally",
-    "lever": "Integrated manufacturing and energy supply chains",
-    "impacts": [
-     {
-      "title": "Cross-Border Supply Chain Disruptions",
-      "detail": "Any shifts in trade policy or tariffs between the US and Canada directly impact manufacturing input costs, hitting automotive and industrial sectors hard.",
-      "direction": "negative",
-      "sectors": [
-       "XLI",
-       "XLB",
-       "XLY"
-      ]
-     },
-     {
-      "title": "North American Energy Security",
-      "detail": "Canadian crude oil and electricity exports stabilize US domestic energy supply, keeping input costs manageable for American refiners and heavy industry.",
-      "direction": "positive",
-      "sectors": [
-       "XLE",
-       "XLU",
-       "XLB"
-      ]
-     },
-     {
-      "title": "Financial System Interconnectedness",
-      "detail": "Deep cross-border banking operations and capital flows tie Canadian credit conditions directly to US financial stability and monetary policy transmission.",
-      "direction": "mixed",
-      "sectors": [
-       "XLF"
-      ]
-     }
-    ]
-   },
-   "profile_as_of": "2026-11-12T23:22:05Z",
-   "week": {
-    "line": "Canada threatened legal action against Stellantis over plant sales as US trade policies and tariffs shift auto manufacturing south.",
-    "links": [
-     {
-      "title": "Canada threatens to sue Stellantis over auto plant sale as Trump’s trade war shifts production south",
-      "url": "https://finance.yahoo.com/economy/policy/articles/canada-threatens-sue-stellantis-over-232104370.html",
-      "publisher": "Associated Press"
-     },
-     {
-      "title": "3 U.S. Manufacturing Stocks Built To Handle Canada Tariff Pressure",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/3-u-manufacturing-stocks-built-201532912.html",
-      "publisher": "Simply Wall St."
-     }
-    ]
-   }
-  },
-  {
-   "code": "sa",
-   "name": "Saudi Arabia",
-   "score": 23.3,
-   "numbers": {
-    "us_exports_b": null,
-    "us_imports_b": null,
-    "trade_b": null,
-    "balance_b": null,
-    "treasuries_b": 141.2,
-    "gdp_b": 1277.0
-   },
-   "rank": 7,
-   "profile": {
-    "self_view": "Saudi Arabia views itself as the stabilizing anchor of global energy markets and the economic leader of the Arab and Islamic world, successfully executing its Vision 2030 modernization.",
-    "strengths": [
-     "World-class hydrocarbon reserves with unmatched low production costs.",
-     "Massive sovereign wealth capital deployed globally and domestically.",
-     "Pivotal geopolitical influence across the Middle East and OPEC+.",
-     "Accelerating diversification into tech, infrastructure, and green energy."
-    ],
-    "weaknesses": [
-     "Continued heavy reliance on petroleum revenues for government budgets.",
-     "Regional geopolitical volatility threatening foreign direct investment inflows.",
-     "Substantial demographic pressures requiring rapid private sector job creation.",
-     "Vulnerability of energy infrastructure to regional military attacks."
-    ],
-    "relation": "Partner",
-    "lever": "Global oil supply and energy pricing",
-    "impacts": [
-     {
-      "title": "Global Energy Price Volatility",
-      "detail": "OPEC+ output decisions and Middle Eastern security disruptions directly dictate global crude prices, influencing US inflation and consumer energy expenses.",
-      "direction": "mixed",
-      "sectors": [
-       "XLE",
-       "XLP",
-       "XLY"
-      ]
-     },
-     {
-      "title": "Sovereign Capital and Private Credit Flows",
-      "detail": "Saudi investments into US private credit, tech, and financial markets provide liquidity that supports American capital formation and asset valuations.",
-      "direction": "positive",
-      "sectors": [
-       "XLF",
-       "XLK"
-      ]
-     },
-     {
-      "title": "Defense Equipment Export Demand",
-      "detail": "Large-scale Saudi defense procurement provides sustained multi-billion-dollar revenue streams for major US aerospace and defense contractors.",
-      "direction": "positive",
-      "sectors": [
-       "XLI"
-      ]
-     }
-    ]
-   },
-   "profile_as_of": "2026-11-12T23:22:05Z",
-   "week": {
-    "line": "Oil prices rose $3 following attacks on Saudi energy facilities and Strait of Hormuz disruptions, impacting energy markets.",
-    "links": [
-     {
-      "title": "Oil settles $3 higher on attacks on Saudi energy sites, Strait of Hormuz disruptions",
-      "url": "https://finance.yahoo.com/energy/articles/oil-falls-over-1-easing-045152522.html",
-      "publisher": "Reuters"
-     }
-    ]
-   }
-  },
-  {
    "code": "in",
    "name": "India",
-   "score": 19.6,
+   "score": 24.8,
    "numbers": {
-    "us_exports_b": null,
-    "us_imports_b": null,
-    "trade_b": null,
-    "balance_b": null,
+    "us_exports_b": 39.3,
+    "us_imports_b": 76.9,
+    "trade_b": 116.1,
+    "balance_b": -37.6,
     "treasuries_b": 219.7,
     "gdp_b": 3956.0
    },
@@ -607,18 +600,89 @@
    }
   },
   {
+   "code": "sa",
+   "name": "Saudi Arabia",
+   "score": 24.2,
+   "numbers": {
+    "us_exports_b": 12.5,
+    "us_imports_b": 7.2,
+    "trade_b": 19.7,
+    "balance_b": 5.2,
+    "treasuries_b": 141.2,
+    "gdp_b": 1277.0
+   },
+   "rank": 9,
+   "profile": {
+    "self_view": "Saudi Arabia views itself as the stabilizing anchor of global energy markets and the economic leader of the Arab and Islamic world, successfully executing its Vision 2030 modernization.",
+    "strengths": [
+     "World-class hydrocarbon reserves with unmatched low production costs.",
+     "Massive sovereign wealth capital deployed globally and domestically.",
+     "Pivotal geopolitical influence across the Middle East and OPEC+.",
+     "Accelerating diversification into tech, infrastructure, and green energy."
+    ],
+    "weaknesses": [
+     "Continued heavy reliance on petroleum revenues for government budgets.",
+     "Regional geopolitical volatility threatening foreign direct investment inflows.",
+     "Substantial demographic pressures requiring rapid private sector job creation.",
+     "Vulnerability of energy infrastructure to regional military attacks."
+    ],
+    "relation": "Partner",
+    "lever": "Global oil supply and energy pricing",
+    "impacts": [
+     {
+      "title": "Global Energy Price Volatility",
+      "detail": "OPEC+ output decisions and Middle Eastern security disruptions directly dictate global crude prices, influencing US inflation and consumer energy expenses.",
+      "direction": "mixed",
+      "sectors": [
+       "XLE",
+       "XLP",
+       "XLY"
+      ]
+     },
+     {
+      "title": "Sovereign Capital and Private Credit Flows",
+      "detail": "Saudi investments into US private credit, tech, and financial markets provide liquidity that supports American capital formation and asset valuations.",
+      "direction": "positive",
+      "sectors": [
+       "XLF",
+       "XLK"
+      ]
+     },
+     {
+      "title": "Defense Equipment Export Demand",
+      "detail": "Large-scale Saudi defense procurement provides sustained multi-billion-dollar revenue streams for major US aerospace and defense contractors.",
+      "direction": "positive",
+      "sectors": [
+       "XLI"
+      ]
+     }
+    ]
+   },
+   "profile_as_of": "2026-11-12T23:22:05Z",
+   "week": {
+    "line": "Crude oil prices surged $3 following attacks on Saudi energy sites and disruptions in the Strait of Hormuz.",
+    "links": [
+     {
+      "title": "Oil settles $3 higher on attacks on Saudi energy sites, Strait of Hormuz disruptions",
+      "url": "https://finance.yahoo.com/energy/articles/oil-falls-over-1-easing-045152522.html",
+      "publisher": "Reuters"
+     }
+    ]
+   }
+  },
+  {
    "code": "ru",
    "name": "Russia",
-   "score": 19.2,
+   "score": 19.4,
    "numbers": {
-    "us_exports_b": null,
-    "us_imports_b": null,
-    "trade_b": null,
-    "balance_b": null,
+    "us_exports_b": 0.5,
+    "us_imports_b": 2.4,
+    "trade_b": 2.9,
+    "balance_b": -2.0,
     "treasuries_b": null,
     "gdp_b": 2561.0
    },
-   "rank": 9,
+   "rank": 10,
    "profile": {
     "self_view": "Russia sees itself as an independent, sovereign center of a multipolar world, successfully defending its national interests against Western hegemony and economic sanctions.",
     "strengths": [
@@ -669,84 +733,17 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
-   }
-  },
-  {
-   "code": "mx",
-   "name": "Mexico",
-   "score": 18.9,
-   "numbers": {
-    "us_exports_b": null,
-    "us_imports_b": null,
-    "trade_b": null,
-    "balance_b": null,
-    "treasuries_b": null,
-    "gdp_b": 1833.0
-   },
-   "rank": 10,
-   "profile": {
-    "self_view": "Mexico views itself as an indispensable manufacturing and nearshoring powerhouse in North America, uniquely positioned to bridge Latin America and the United States despite persistent security, migration, and trade pressure.",
-    "strengths": [
-     "Unmatched geographic proximity to the massive United States consumer market.",
-     "Expanding industrial manufacturing base driven by accelerating nearshoring trends.",
-     "Competitive, skilled, and cost-effective labor force across multiple sectors.",
-     "Robust macroeconomic stability supported by sound central bank management."
-    ],
-    "weaknesses": [
-     "Vulnerability to sudden United States protectionist trade policies and tariff threats.",
-     "Persistent domestic security challenges impacting infrastructure and investment flows.",
-     "Fiscal pressures stemming from rising sovereign debt and state-owned enterprise liabilities.",
-     "Infrastructure bottlenecks in logistics, water, and reliable power generation."
-    ],
-    "relation": "Partner",
-    "lever": "Manufacturing supply chain integration and migration enforce",
-    "impacts": [
-     {
-      "title": "Supply Chain Disruption via Tariffs",
-      "detail": "Escalating trade tensions or doubled tariffs by the US would sharply raise input costs for American automakers and manufacturers, pressuring corporate margins and consumer prices.",
-      "direction": "negative",
-      "sectors": [
-       "XLI",
-       "XLY",
-       "XLP"
-      ]
-     },
-     {
-      "title": "Nearshoring Industrial Expansion",
-      "detail": "Relocation of manufacturing capacity from Asia to Mexico deepens cross-border supply integration, boosting capital goods shipments and lowering long-term production costs for US firms.",
-      "direction": "positive",
-      "sectors": [
-       "XLI",
-       "XLB",
-       "XLY"
-      ]
-     },
-     {
-      "title": "Cross-Border Infrastructure and Logistics",
-      "detail": "Strong growth in freight, logistics, and transport connectivity enhances commercial velocity between the nations, directly benefiting US transport operators and industrial suppliers.",
-      "direction": "positive",
-      "sectors": [
-       "XLI",
-       "XLY"
-      ]
-     }
-    ]
-   },
-   "profile_as_of": "2026-11-12T23:22:05Z",
-   "week": {
-    "line": "Trump threatened to double tariffs on Mexican imports over migrant caravans, escalating trade tension and supply chain risks for the US.",
+    "line": "Oil prices sank amid optimism for peace in Ukraine, while Russia opened Bitcoin trading on an exchange under U.S. sanctions.",
     "links": [
      {
-      "title": "Trump threatens to double Mexico tariffs over alleged migrant influx",
-      "url": "https://finance.yahoo.com/economy/policy/articles/trump-threatens-double-mexico-tariffs-161314425.html",
-      "publisher": "FreightWaves"
+      "title": "Oil Prices Sink as Iran and Ukraine Peace Optimism Builds",
+      "url": "https://finance.yahoo.com/energy/articles/oil-prices-sink-iran-ukraine-063500894.html",
+      "publisher": "Oilprice.com"
      },
      {
-      "title": "Trump Threatens to Double Tariffs on Mexico Over Migrant Caravans",
-      "url": "https://finance.yahoo.com/economy/policy/articles/trump-threatens-double-tariffs-mexico-124031708.html",
-      "publisher": "MT Newswires"
+      "title": "Russia Opens Bitcoin Trading, but Its Biggest Exchange Is Under US Sanctions",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/russia-opens-bitcoin-trading-biggest-145541388.html",
+      "publisher": "BeInCrypto"
      }
     ]
    }
@@ -772,23 +769,18 @@
   },
   "gdp_b": 30770.0,
   "week": {
-   "line": "US equity indexes fell as Nvidia turmoil threatened to spread and surging crude oil pushed up Treasury yields amid accelerating bond selloffs.",
+   "line": "U.S. stock indexes fell as Nvidia turmoil threatened tech markets and surging crude oil pushed Treasury yields higher.",
    "links": [
     {
      "title": "Update: US Equity Indexes Fall, Nvidia Turmoil in Danger of Spreading While Surging Crude Oil Lifts Treasury Yields",
      "url": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-fall-nvidia-220045241.html",
      "publisher": "MT Newswires"
-    },
-    {
-     "title": "Treasury Selloff Accelerates, European Bonds Follow Suit",
-     "url": "https://finance.yahoo.com/m/a93823d9-c279-3d72-917f-c3dd167fbb89/treasury-selloff-accelerates%2C.html",
-     "publisher": "The Wall Street Journal"
     }
    ]
   }
  },
  "data_as_of": {
-  "trade": null,
+  "trade": "Jan-Sep 2026",
   "treasuries": "2026-08",
   "gdp": "World Bank 2025 (Taiwan approx.)"
  },
@@ -799,19 +791,63 @@
   "strategic": 30
  },
  "profiles_updated_at": "2026-11-12T21:15:51Z",
- "week_updated_at": "2026-11-13T05:15:51Z",
- "generated_at": "2026-11-13T05:15:51Z",
+ "week_updated_at": "2026-11-13T09:08:10Z",
+ "generated_at": "2026-11-13T09:08:10Z",
  "gemini": {
   "ok_calls": {
    "gemini-3.6-flash": 1
   },
   "errors": {
-   "gemini-3.8-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=9950s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:/",
-   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=9938s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:/"
+   "gemini-3.8-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+   "gemini-3.7-flash": "no answer within 150s"
   }
  },
  "raw": {
-  "trade": {},
+  "trade": {
+   "as_of": "Jan-Sep 2026",
+   "values": {
+    "cn": {
+     "exports": 83516774979.0,
+     "imports": 215008592978.0
+    },
+    "ca": {
+     "exports": 264039032991.0,
+     "imports": 304564918147.0
+    },
+    "mx": {
+     "exports": 297567268136.0,
+     "imports": 481586248393.0
+    },
+    "eu": {
+     "exports": 344184157103.0,
+     "imports": 419806320158.0
+    },
+    "jp": {
+     "exports": 74902499049.0,
+     "imports": 108702924816.0
+    },
+    "tw": {
+     "exports": 44211452672.0,
+     "imports": 215331976377.0
+    },
+    "gb": {
+     "exports": 84375394244.0,
+     "imports": 49769823240.0
+    },
+    "in": {
+     "exports": 39259323232.0,
+     "imports": 76883878625.0
+    },
+    "sa": {
+     "exports": 12458670594.0,
+     "imports": 7234437118.0
+    },
+    "ru": {
+     "exports": 450734237.0,
+     "imports": 2411693555.0
+    }
+   }
+  },
   "tic": {
    "as_of": "2026-08",
    "values": {
