@@ -4,7 +4,7 @@
   "census": {
    "key": "set",
    "2026-10": "exports 204 '' | imports 204 ''",
-   "2026-09": "exports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"ALL_VAL_YR\",\"time\"], [\"-\",\"TOTAL FOR ALL COUNTRIES\",\"1847530728674\",\"2026-09\"], [\"0003\",\"EUROPEAN UNION\",\"344184157103\",\"2026-09\"], [\"0' | imports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"GEN_VAL_YR\",\"time\"], [\"0003\",\"EUROPEAN UNION\",\"41980632'",
+   "2026-09": "exports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"ALL_VAL_YR\",\"time\"], [\"-\",\"TOTAL FOR ALL COUNTRIES\",\"1847530728674\",\"2026-09\"], [\"0003\",\"EUROPEAN UNION\",\"344184157103\",\"2026-09\"], [\"0' | imports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"GEN_VAL_YR\",\"time\"], [\"0014\",\"PACIFIC RIM COUNTRIES\",\"8'",
    "rows": "249 export rows / 249 names"
   },
   "tic": {
@@ -97,8 +97,14 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "Soaring European LNG prices ahead of winter present potential export opportunities for U.S. natural gas suppliers.",
+    "links": [
+     {
+      "title": "LNG Prices Soar. These Exporters Could Benefit as Europe Faces a Tough Winter.",
+      "url": "https://finance.yahoo.com/m/5fef9226-3cb9-3b45-a586-360f6a74b7d9/lng-prices-soar.-these.html",
+      "publisher": "Barrons.com"
+     }
+    ]
    }
   },
   {
@@ -165,12 +171,17 @@
    },
    "profile_as_of": "2026-11-12T20:51:18Z",
    "week": {
-    "line": "China AI stocks fell as Nvidia spy scandal fallout raised concerns about tighter U.S. chip export restrictions.",
+    "line": "US Cabinet officials clashed over Nvidia's chip exports to China as the semiconductor giant faced a new $3.2 billion China business issue.",
     "links": [
      {
-      "title": "China AI stocks tumble as Nvidia fallout fuels fears of tighter U.S. chip curbs",
-      "url": "https://finance.yahoo.com/technology/ai/articles/china-ai-stocks-tumble-nvidia-064035259.html",
-      "publisher": "Investing.com"
+      "title": "Scott Bessent and Lutnick clash over Nvidia chips and China",
+      "url": "https://finance.yahoo.com/technology/ai/articles/scott-bessent-lutnick-clash-over-235529522.html",
+      "publisher": "TheStreet"
+     },
+     {
+      "title": "Nvidia faces new $3.2 billion China chip problem",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-faces-3-2-billion-182721287.html",
+      "publisher": "GuruFocus.com"
      }
     ]
    }
@@ -238,11 +249,11 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "President Trump threatened to double tariffs on Mexico over an alleged migrant influx, creating trade friction.",
+    "line": "Mexican truck exports jumped 159% in October alongside a 130% surge in production, bolstering North American automotive supply chain activity.",
     "links": [
      {
-      "title": "Trump threatens to double Mexico tariffs over alleged migrant influx",
-      "url": "https://finance.yahoo.com/economy/policy/articles/trump-threatens-double-mexico-tariffs-161314425.html",
+      "title": "Mexico truck exports soar 159% as production jumps 130% in October",
+      "url": "https://finance.yahoo.com/economy/articles/mexico-truck-exports-soar-159-190315121.html",
       "publisher": "FreightWaves"
      }
     ]
@@ -310,12 +321,12 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Canada threatened to sue Stellantis over auto plant sales as President Trump's trade war shifts production south.",
+    "line": "Canada declared automaker Stellantis in default on up to C$529 million of government financial assistance.",
     "links": [
      {
-      "title": "Canada threatens to sue Stellantis over auto plant sale as Trump’s trade war shifts production south",
-      "url": "https://finance.yahoo.com/economy/policy/articles/canada-threatens-sue-stellantis-over-232104370.html",
-      "publisher": "Associated Press"
+      "title": "Canada Declares Stellantis in Default on Up to C$529 Million of Aid",
+      "url": "https://finance.yahoo.com/economy/policy/articles/canada-declares-stellantis-default-c-184640554.html",
+      "publisher": "24/7 Wall St."
      }
     ]
    }
@@ -379,17 +390,17 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "The U.S. dollar rallied on rate hike expectations while the yen tested 160, drawing Japanese intervention warnings.",
+    "line": "GlobalFoundries broke ground on a new semiconductor manufacturing fab in Japan under a landmark joint U.S.-Japan chip initiative.",
     "links": [
      {
-      "title": "Limited US role in Japan intervention undermines deterrent as yen touches 160",
-      "url": "https://finance.yahoo.com/markets/currencies/articles/japans-finance-minister-vows-action-015118364.html",
-      "publisher": "Reuters"
+      "title": "GlobalFoundries Breaks Ground on New Semiconductor Fab Under US-Japan Initiative",
+      "url": "https://finance.yahoo.com/technology/articles/globalfoundries-breaks-ground-semiconductor-fab-200108633.html",
+      "publisher": "MT Newswires"
      },
      {
-      "title": "Dollar set for best week in two months on rate hike wagers, yen tests 160",
-      "url": "https://finance.yahoo.com/markets/currencies/articles/dollar-near-19-month-high-020101127.html",
-      "publisher": "Reuters"
+      "title": "GlobalFoundries breaks ground on first new semiconductor fab under landmark U.S.-Japan initiative",
+      "url": "https://finance.yahoo.com/technology/articles/globalfoundries-breaks-ground-first-semiconductor-163000087.html",
+      "publisher": "GlobeNewswire"
      }
     ]
    }
@@ -455,17 +466,17 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Nvidia executive turmoil dragged down TSMC shares while boosting U.S. chipmaker Broadcom on rising custom AI demand.",
+    "line": "US chip stocks slumped following reports of Nvidia CEO Jensen Huang's exit, even as TSMC reported record monthly revenue of NT$587 billion.",
     "links": [
      {
-      "title": "TSMC Stocks Fall 2.21% as NVIDIA Shake-Up Overshadows Record October Revenue",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-stocks-fall-2-21-180251979.html",
-      "publisher": "GuruFocus.com"
+      "title": "Nvidia stock slips as investors digest CEO exit, broader chip sell-off accelerates",
+      "url": "https://finance.yahoo.com/markets/article/nvidia-stock-slips-as-investors-digest-ceo-exit-rest-of-chip-sector-falls-144818245.html",
+      "publisher": "Yahoo Finance"
      },
      {
-      "title": "Broadcom Stocks Climb 4.54% as Custom AI Chips Gain Appeal After NVIDIA Shake-Up",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-stocks-climb-4-54-175645897.html",
-      "publisher": "GuruFocus.com"
+      "title": "TSMC Just Booked a Record NT$587 Billion Month. Nvidia’s November 17 Report Is the Next Test",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-just-booked-record-nt-153548103.html",
+      "publisher": "TIKR"
      }
     ]
    }
@@ -530,8 +541,14 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "A proposed UK tax on tech giants expected to cost £900 million could weigh on major US technology companies operating in the country.",
+    "links": [
+     {
+      "title": "Tax on tech giants ‘will cost Britain £900m’",
+      "url": "https://finance.yahoo.com/economy/policy/articles/tax-tech-giants-cost-britain-160252461.html",
+      "publisher": "The Telegraph"
+     }
+    ]
    }
   },
   {
@@ -595,8 +612,14 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "US staffing firm Kelly expanded its delivery operations in India with the opening of a new office.",
+    "links": [
+     {
+      "title": "Kelly Expands Delivery Center With New Office in India",
+      "url": "https://finance.yahoo.com/small-business/articles/kelly-expands-delivery-center-office-192824771.html",
+      "publisher": "MT Newswires"
+     }
+    ]
    }
   },
   {
@@ -660,7 +683,7 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Crude oil prices surged $3 following attacks on Saudi energy sites and disruptions in the Strait of Hormuz.",
+    "line": "Oil prices rose $3 following attacks on Saudi energy facilities and disruptions in the Strait of Hormuz, moving global energy markets.",
     "links": [
      {
       "title": "Oil settles $3 higher on attacks on Saudi energy sites, Strait of Hormuz disruptions",
@@ -733,17 +756,17 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Oil prices sank amid optimism for peace in Ukraine, while Russia opened Bitcoin trading on an exchange under U.S. sanctions.",
+    "line": "US congressional Democrats ordered Elon Musk to preserve records regarding Starlink access in Ukraine after new military service disruptions were reported.",
     "links": [
      {
-      "title": "Oil Prices Sink as Iran and Ukraine Peace Optimism Builds",
-      "url": "https://finance.yahoo.com/energy/articles/oil-prices-sink-iran-ukraine-063500894.html",
-      "publisher": "Oilprice.com"
+      "title": "Democrats Order Musk to Preserve Records Over Ukraine Starlink Access",
+      "url": "https://finance.yahoo.com/m/8d485bc4-69ba-3edf-9d55-d26a0b8df73f/democrats-order-musk-to.html",
+      "publisher": "The Wall Street Journal"
      },
      {
-      "title": "Russia Opens Bitcoin Trading, but Its Biggest Exchange Is Under US Sanctions",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/russia-opens-bitcoin-trading-biggest-145541388.html",
-      "publisher": "BeInCrypto"
+      "title": "Ukraine Says Its Military Starlink Is Disrupted Again, Hurting Defenses",
+      "url": "https://finance.yahoo.com/m/2bd09d42-182a-3520-bc76-780b1300f561/ukraine-says-its-military.html",
+      "publisher": "The Wall Street Journal"
      }
     ]
    }
@@ -769,12 +792,17 @@
   },
   "gdp_b": 30770.0,
   "week": {
-   "line": "U.S. stock indexes fell as Nvidia turmoil threatened tech markets and surging crude oil pushed Treasury yields higher.",
+   "line": "US Treasury yields rose to 5% amid renewed inflation concerns, driving tech sell-offs and lifting expectations for a Federal Reserve December interest rate hike.",
    "links": [
     {
-     "title": "Update: US Equity Indexes Fall, Nvidia Turmoil in Danger of Spreading While Surging Crude Oil Lifts Treasury Yields",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-fall-nvidia-220045241.html",
-     "publisher": "MT Newswires"
+     "title": "Treasury Yields Rise as Inflation Worries Come Back",
+     "url": "https://finance.yahoo.com/m/602ac64c-aec7-3b13-873f-d09cd2eddd97/treasury-yields-rise-as.html",
+     "publisher": "The Wall Street Journal"
+    },
+    {
+     "title": "AMD Sinks 9%, Marvell Down 5% as Chip Rally Reverses and Treasury Yields Hit 5%",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/amd-sinks-9-marvell-down-220540439.html",
+     "publisher": "TIKR"
     }
    ]
   }
@@ -791,15 +819,16 @@
   "strategic": 30
  },
  "profiles_updated_at": "2026-11-12T21:15:51Z",
- "week_updated_at": "2026-11-13T09:08:10Z",
- "generated_at": "2026-11-13T09:08:10Z",
+ "week_updated_at": "2026-11-14T05:31:56Z",
+ "generated_at": "2026-11-14T05:31:56Z",
  "gemini": {
   "ok_calls": {
-   "gemini-3.6-flash": 1
+   "gemini-3.5-flash": 1
   },
   "errors": {
-   "gemini-3.8-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-   "gemini-3.7-flash": "no answer within 150s"
+   "gemini-3.8-flash": "no answer within 150s",
+   "gemini-3.7-flash": "no answer within 150s",
+   "gemini-3.6-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=9104s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:/"
   }
  },
  "raw": {
