@@ -3,7 +3,7 @@
  "debug": {
   "census": {
    "key": "set",
-   "2026-10": "exports 204 '' | imports 204 ''",
+   "2026-10": " | error HTTPSConnectionPool(host='api.census.gov', port=443): Read timed out. (read timeout=60)",
    "2026-09": "exports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"ALL_VAL_YR\",\"time\"], [\"-\",\"TOTAL FOR ALL COUNTRIES\",\"1847530728674\",\"2026-09\"], [\"0003\",\"EUROPEAN UNION\",\"344184157103\",\"2026-09\"], [\"0' | imports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"GEN_VAL_YR\",\"time\"], [\"0014\",\"PACIFIC RIM COUNTRIES\",\"8'",
    "rows": "249 export rows / 249 names"
   },
@@ -97,8 +97,13 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Soaring European LNG prices ahead of winter present potential export opportunities for U.S. natural gas suppliers.",
+    "line": "Surging European LNG prices could benefit exporters, while Ford's CEO warned that the U.S. must be extremely careful regarding incoming Chinese electric vehicles.",
     "links": [
+     {
+      "title": "Ford CEO Jim Farley Says It's 'Too Late' to Save Europe From Chinese EVs, Warns the U.S. Must 'Be Extremely Careful' Before They Arrive Here",
+      "url": "https://finance.yahoo.com/technology/articles/ford-ceo-jim-farley-says-023022805.html",
+      "publisher": "Benzinga"
+     },
      {
       "title": "LNG Prices Soar. These Exporters Could Benefit as Europe Faces a Tough Winter.",
       "url": "https://finance.yahoo.com/m/5fef9226-3cb9-3b45-a586-360f6a74b7d9/lng-prices-soar.-these.html",
@@ -171,17 +176,17 @@
    },
    "profile_as_of": "2026-11-12T20:51:18Z",
    "week": {
-    "line": "US Cabinet officials clashed over Nvidia's chip exports to China as the semiconductor giant faced a new $3.2 billion China business issue.",
+    "line": "Super Micro Computer faces DOJ scrutiny over alleged server smuggling to China, while US agricultural exporters watch closely ahead of bilateral tariff talks.",
     "links": [
      {
-      "title": "Scott Bessent and Lutnick clash over Nvidia chips and China",
-      "url": "https://finance.yahoo.com/technology/ai/articles/scott-bessent-lutnick-clash-over-235529522.html",
-      "publisher": "TheStreet"
+      "title": "Super Micro Computer (SMCI) Under DOJ Scrutiny Over Alleged Server Smuggling To China",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/super-micro-computer-smci-under-190829678.html",
+      "publisher": "Simply Wall St."
      },
      {
-      "title": "Nvidia faces new $3.2 billion China chip problem",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-faces-3-2-billion-182721287.html",
-      "publisher": "GuruFocus.com"
+      "title": "3 US Agricultural Exporter Stocks Investors Are Watching Before China Tariff Talks",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/3-us-agricultural-exporter-stocks-130910521.html",
+      "publisher": "Simply Wall St."
      }
     ]
    }
@@ -249,14 +254,8 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Mexican truck exports jumped 159% in October alongside a 130% surge in production, bolstering North American automotive supply chain activity.",
-    "links": [
-     {
-      "title": "Mexico truck exports soar 159% as production jumps 130% in October",
-      "url": "https://finance.yahoo.com/economy/articles/mexico-truck-exports-soar-159-190315121.html",
-      "publisher": "FreightWaves"
-     }
-    ]
+    "line": "Quiet week for US-relevant news.",
+    "links": []
    }
   },
   {
@@ -321,14 +320,8 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Canada declared automaker Stellantis in default on up to C$529 million of government financial assistance.",
-    "links": [
-     {
-      "title": "Canada Declares Stellantis in Default on Up to C$529 Million of Aid",
-      "url": "https://finance.yahoo.com/economy/policy/articles/canada-declares-stellantis-default-c-184640554.html",
-      "publisher": "24/7 Wall St."
-     }
-    ]
+    "line": "Quiet week for US-relevant news.",
+    "links": []
    }
   },
   {
@@ -390,17 +383,17 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "GlobalFoundries broke ground on a new semiconductor manufacturing fab in Japan under a landmark joint U.S.-Japan chip initiative.",
+    "line": "The dollar headed for its best week in two months, while GlobalFoundries broke ground on a new semiconductor fabrication plant under a joint U.S.-Japan initiative.",
     "links": [
+     {
+      "title": "Dollar set for best week in two months, yen weakens toward 160",
+      "url": "https://finance.yahoo.com/markets/currencies/articles/dollar-near-19-month-high-020101127.html",
+      "publisher": "Reuters"
+     },
      {
       "title": "GlobalFoundries Breaks Ground on New Semiconductor Fab Under US-Japan Initiative",
       "url": "https://finance.yahoo.com/technology/articles/globalfoundries-breaks-ground-semiconductor-fab-200108633.html",
       "publisher": "MT Newswires"
-     },
-     {
-      "title": "GlobalFoundries breaks ground on first new semiconductor fab under landmark U.S.-Japan initiative",
-      "url": "https://finance.yahoo.com/technology/articles/globalfoundries-breaks-ground-first-semiconductor-163000087.html",
-      "publisher": "GlobeNewswire"
      }
     ]
    }
@@ -466,7 +459,7 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "US chip stocks slumped following reports of Nvidia CEO Jensen Huang's exit, even as TSMC reported record monthly revenue of NT$587 billion.",
+    "line": "Nvidia shares fell and broader chip stocks sold off following the ouster and exit of CEO Jensen Huang.",
     "links": [
      {
       "title": "Nvidia stock slips as investors digest CEO exit, broader chip sell-off accelerates",
@@ -474,9 +467,9 @@
       "publisher": "Yahoo Finance"
      },
      {
-      "title": "TSMC Just Booked a Record NT$587 Billion Month. Nvidia’s November 17 Report Is the Next Test",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-just-booked-record-nt-153548103.html",
-      "publisher": "TIKR"
+      "title": "'Nothing has changed': Why some Nvidia stock bulls aren't wavering after Jensen Huang ouster",
+      "url": "https://finance.yahoo.com/technology/article/nothing-has-changed-why-some-nvidia-stock-bulls-arent-wavering-after-jensen-huang-ouster-204522204.html",
+      "publisher": "Yahoo Finance"
      }
     ]
    }
@@ -541,14 +534,8 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "A proposed UK tax on tech giants expected to cost £900 million could weigh on major US technology companies operating in the country.",
-    "links": [
-     {
-      "title": "Tax on tech giants ‘will cost Britain £900m’",
-      "url": "https://finance.yahoo.com/economy/policy/articles/tax-tech-giants-cost-britain-160252461.html",
-      "publisher": "The Telegraph"
-     }
-    ]
+    "line": "Quiet week for US-relevant news.",
+    "links": []
    }
   },
   {
@@ -612,14 +599,8 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "US staffing firm Kelly expanded its delivery operations in India with the opening of a new office.",
-    "links": [
-     {
-      "title": "Kelly Expands Delivery Center With New Office in India",
-      "url": "https://finance.yahoo.com/small-business/articles/kelly-expands-delivery-center-office-192824771.html",
-      "publisher": "MT Newswires"
-     }
-    ]
+    "line": "Quiet week for US-relevant news.",
+    "links": []
    }
   },
   {
@@ -683,12 +664,17 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Oil prices rose $3 following attacks on Saudi energy facilities and disruptions in the Strait of Hormuz, moving global energy markets.",
+    "line": "Saudi Arabia continued increasing oil output toward pre-war levels, while Brent crude topped $90 per barrel, pressuring energy markets.",
     "links": [
      {
-      "title": "Oil settles $3 higher on attacks on Saudi energy sites, Strait of Hormuz disruptions",
-      "url": "https://finance.yahoo.com/energy/articles/oil-falls-over-1-easing-045152522.html",
-      "publisher": "Reuters"
+      "title": "Saudi Arabia Keeps Increasing Its Oil Production. OPEC+'s Output is Now Near Pre-Iran War Levels.",
+      "url": "https://finance.yahoo.com/energy/articles/saudi-arabia-keeps-increasing-oil-181311089.html",
+      "publisher": "International Business Times"
+     },
+     {
+      "title": "Midweek Oil Wrap: Brent Tops $90 A Barrel After Pulling Back Briefly, OPEC October Oil Output, Strategic Petroleum Reserve And More",
+      "url": "https://finance.yahoo.com/energy/articles/midweek-oil-wrap-brent-tops-055140191.html",
+      "publisher": "Stocktwits"
      }
     ]
    }
@@ -756,7 +742,7 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "US congressional Democrats ordered Elon Musk to preserve records regarding Starlink access in Ukraine after new military service disruptions were reported.",
+    "line": "Oil prices sank on Ukraine and Iran peace optimism, while congressional Democrats ordered Elon Musk to preserve records concerning Ukraine Starlink access.",
     "links": [
      {
       "title": "Democrats Order Musk to Preserve Records Over Ukraine Starlink Access",
@@ -764,9 +750,9 @@
       "publisher": "The Wall Street Journal"
      },
      {
-      "title": "Ukraine Says Its Military Starlink Is Disrupted Again, Hurting Defenses",
-      "url": "https://finance.yahoo.com/m/2bd09d42-182a-3520-bc76-780b1300f561/ukraine-says-its-military.html",
-      "publisher": "The Wall Street Journal"
+      "title": "Oil Prices Sink as Iran and Ukraine Peace Optimism Builds",
+      "url": "https://finance.yahoo.com/energy/articles/oil-prices-sink-iran-ukraine-063500894.html",
+      "publisher": "Oilprice.com"
      }
     ]
    }
@@ -792,17 +778,17 @@
   },
   "gdp_b": 30770.0,
   "week": {
-   "line": "US Treasury yields rose to 5% amid renewed inflation concerns, driving tech sell-offs and lifting expectations for a Federal Reserve December interest rate hike.",
+   "line": "Wall Street is monitoring troubling Treasury yield moves, while Bank of America maintained a cautious market outlook until yields and oil prices decline.",
    "links": [
     {
-     "title": "Treasury Yields Rise as Inflation Worries Come Back",
-     "url": "https://finance.yahoo.com/m/602ac64c-aec7-3b13-873f-d09cd2eddd97/treasury-yields-rise-as.html",
-     "publisher": "The Wall Street Journal"
+     "title": "Wall Street is watching a troubling move in Treasury yields",
+     "url": "https://finance.yahoo.com/economy/policy/articles/wall-street-watching-troubling-move-170300570.html",
+     "publisher": "TheStreet"
     },
     {
-     "title": "AMD Sinks 9%, Marvell Down 5% as Chip Rally Reverses and Treasury Yields Hit 5%",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/amd-sinks-9-marvell-down-220540439.html",
-     "publisher": "TIKR"
+     "title": "Bank of America’s Hartnett Maintains Cautious Market Outlook Until Treasury Yields and Oil Prices Decline",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/bank-america-hartnett-maintains-cautious-150804600.html",
+     "publisher": "InvestorsHub"
     }
    ]
   }
@@ -819,17 +805,13 @@
   "strategic": 30
  },
  "profiles_updated_at": "2026-11-12T21:15:51Z",
- "week_updated_at": "2026-11-14T05:31:56Z",
- "generated_at": "2026-11-14T05:31:56Z",
+ "week_updated_at": "2026-11-15T05:20:15Z",
+ "generated_at": "2026-11-15T05:20:15Z",
  "gemini": {
   "ok_calls": {
-   "gemini-3.5-flash": 1
+   "gemini-3.8-flash": 1
   },
-  "errors": {
-   "gemini-3.8-flash": "no answer within 150s",
-   "gemini-3.7-flash": "no answer within 150s",
-   "gemini-3.6-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=9104s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:/"
-  }
+  "errors": {}
  },
  "raw": {
   "trade": {
