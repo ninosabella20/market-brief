@@ -97,17 +97,12 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Surging European LNG prices could benefit exporters, while Ford's CEO warned that the U.S. must be extremely careful regarding incoming Chinese electric vehicles.",
+    "line": "Ford's CEO warned the US to be extremely careful regarding Chinese electric vehicles after stating Europe's EV market cannot be saved.",
     "links": [
      {
       "title": "Ford CEO Jim Farley Says It's 'Too Late' to Save Europe From Chinese EVs, Warns the U.S. Must 'Be Extremely Careful' Before They Arrive Here",
       "url": "https://finance.yahoo.com/technology/articles/ford-ceo-jim-farley-says-023022805.html",
       "publisher": "Benzinga"
-     },
-     {
-      "title": "LNG Prices Soar. These Exporters Could Benefit as Europe Faces a Tough Winter.",
-      "url": "https://finance.yahoo.com/m/5fef9226-3cb9-3b45-a586-360f6a74b7d9/lng-prices-soar.-these.html",
-      "publisher": "Barrons.com"
      }
     ]
    }
@@ -176,17 +171,17 @@
    },
    "profile_as_of": "2026-11-12T20:51:18Z",
    "week": {
-    "line": "Super Micro Computer faces DOJ scrutiny over alleged server smuggling to China, while US agricultural exporters watch closely ahead of bilateral tariff talks.",
+    "line": "Nvidia stock slid as Beijing warned the US against tech curbs and rejected spy allegations involving CEO Jensen Huang.",
     "links": [
      {
-      "title": "Super Micro Computer (SMCI) Under DOJ Scrutiny Over Alleged Server Smuggling To China",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/super-micro-computer-smci-under-190829678.html",
-      "publisher": "Simply Wall St."
+      "title": "NVDA Stock Rout: Another Analyst Slashes Rating, Beijing Warns US Against Tech Curbs",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvda-stock-rout-another-analyst-091625222.html",
+      "publisher": "Stocktwits"
      },
      {
-      "title": "3 US Agricultural Exporter Stocks Investors Are Watching Before China Tariff Talks",
-      "url": "https://finance.yahoo.com/markets/commodities/articles/3-us-agricultural-exporter-stocks-130910521.html",
-      "publisher": "Simply Wall St."
+      "title": "NVDA Stock Slides Premarket: Beijing Reportedly Rejects Jensen Huang Spy Allegations As ‘Smears Against China'",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvda-stock-slides-premarket-beijing-091437044.html",
+      "publisher": "Stocktwits"
      }
     ]
    }
@@ -254,8 +249,14 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "Texas cross-border truck traffic with Mexico increased under a new pilot program.",
+    "links": [
+     {
+      "title": "Borderlands Mexico: Texas cross-border traffic rises by 400 trucks through Saturday pilot",
+      "url": "https://finance.yahoo.com/economy/articles/borderlands-mexico-texas-cross-border-120000690.html",
+      "publisher": "FreightWaves"
+     }
+    ]
    }
   },
   {
@@ -383,17 +384,12 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "The dollar headed for its best week in two months, while GlobalFoundries broke ground on a new semiconductor fabrication plant under a joint U.S.-Japan initiative.",
+    "line": "Bank of Japan summary showed policymakers debated the need for faster interest rate hikes, a key driver for global market yields.",
     "links": [
      {
-      "title": "Dollar set for best week in two months, yen weakens toward 160",
-      "url": "https://finance.yahoo.com/markets/currencies/articles/dollar-near-19-month-high-020101127.html",
+      "title": "Bank of Japan debated need for faster rate hikes, October summary shows",
+      "url": "https://finance.yahoo.com/economy/policy/articles/bank-japan-debated-faster-rate-015410214.html",
       "publisher": "Reuters"
-     },
-     {
-      "title": "GlobalFoundries Breaks Ground on New Semiconductor Fab Under US-Japan Initiative",
-      "url": "https://finance.yahoo.com/technology/articles/globalfoundries-breaks-ground-semiconductor-fab-200108633.html",
-      "publisher": "MT Newswires"
      }
     ]
    }
@@ -459,7 +455,7 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Nvidia shares fell and broader chip stocks sold off following the ouster and exit of CEO Jensen Huang.",
+    "line": "Nvidia stock slipped alongside a broader chip sell-off as investors digested reports surrounding CEO Jensen Huang's exit.",
     "links": [
      {
       "title": "Nvidia stock slips as investors digest CEO exit, broader chip sell-off accelerates",
@@ -664,17 +660,12 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Saudi Arabia continued increasing oil output toward pre-war levels, while Brent crude topped $90 per barrel, pressuring energy markets.",
+    "line": "Oil prices settled $3 higher following attacks on Saudi energy sites and Strait of Hormuz disruptions.",
     "links": [
      {
-      "title": "Saudi Arabia Keeps Increasing Its Oil Production. OPEC+'s Output is Now Near Pre-Iran War Levels.",
-      "url": "https://finance.yahoo.com/energy/articles/saudi-arabia-keeps-increasing-oil-181311089.html",
-      "publisher": "International Business Times"
-     },
-     {
-      "title": "Midweek Oil Wrap: Brent Tops $90 A Barrel After Pulling Back Briefly, OPEC October Oil Output, Strategic Petroleum Reserve And More",
-      "url": "https://finance.yahoo.com/energy/articles/midweek-oil-wrap-brent-tops-055140191.html",
-      "publisher": "Stocktwits"
+      "title": "Oil settles $3 higher on attacks on Saudi energy sites, Strait of Hormuz disruptions",
+      "url": "https://finance.yahoo.com/energy/articles/oil-falls-over-1-easing-045152522.html",
+      "publisher": "Reuters"
      }
     ]
    }
@@ -742,7 +733,7 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Oil prices sank on Ukraine and Iran peace optimism, while congressional Democrats ordered Elon Musk to preserve records concerning Ukraine Starlink access.",
+    "line": "Oil prices fell on Ukraine peace optimism, while US Democrats ordered Elon Musk to preserve records concerning Ukraine Starlink access.",
     "links": [
      {
       "title": "Democrats Order Musk to Preserve Records Over Ukraine Starlink Access",
@@ -778,17 +769,17 @@
   },
   "gdp_b": 30770.0,
   "week": {
-   "line": "Wall Street is monitoring troubling Treasury yield moves, while Bank of America maintained a cautious market outlook until yields and oil prices decline.",
+   "line": "Federal Reserve Governor Waller advocated discussing a 50-basis-point rate hike at the December FOMC meeting as inflation threats and rate hike expectations climb.",
    "links": [
     {
-     "title": "Wall Street is watching a troubling move in Treasury yields",
-     "url": "https://finance.yahoo.com/economy/policy/articles/wall-street-watching-troubling-move-170300570.html",
-     "publisher": "TheStreet"
+     "title": "Federal Reserve Governor Waller Says 50-Basis Point Rate Hike Should Be Discussed at December FOMC Meeting",
+     "url": "https://finance.yahoo.com/economy/policy/articles/federal-governor-waller-says-50-112829028.html",
+     "publisher": "MT Newswires"
     },
     {
-     "title": "Bank of America’s Hartnett Maintains Cautious Market Outlook Until Treasury Yields and Oil Prices Decline",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/bank-america-hartnett-maintains-cautious-150804600.html",
-     "publisher": "InvestorsHub"
+     "title": "The Chances of a Federal Reserve December Rate Hike Are Climbing. Here’s What History Says About Stocks After the Fed Starts Raising Again.",
+     "url": "https://finance.yahoo.com/economy/policy/articles/chances-federal-december-rate-hike-202002404.html",
+     "publisher": "Motley Fool"
     }
    ]
   }
@@ -805,13 +796,16 @@
   "strategic": 30
  },
  "profiles_updated_at": "2026-11-12T21:15:51Z",
- "week_updated_at": "2026-11-15T05:20:15Z",
- "generated_at": "2026-11-15T05:20:15Z",
+ "week_updated_at": "2026-11-16T05:30:19Z",
+ "generated_at": "2026-11-16T05:30:19Z",
  "gemini": {
   "ok_calls": {
-   "gemini-3.8-flash": 1
+   "gemini-3.6-flash": 1
   },
-  "errors": {}
+  "errors": {
+   "gemini-3.8-flash": "no answer within 150s",
+   "gemini-3.7-flash": "no answer within 150s"
+  }
  },
  "raw": {
   "trade": {
