@@ -3,10 +3,8 @@
  "debug": {
   "census": {
    "key": "set",
-   "2026-10": " | error HTTPSConnectionPool(host='api.census.gov', port=443): Read timed out. (read timeout=60)",
-   "2026-09": " | error HTTPSConnectionPool(host='api.census.gov', port=443): Read timed out. (read timeout=60)",
-   "2026-08": " | error HTTPSConnectionPool(host='api.census.gov', port=443): Read timed out. (read timeout=60)",
-   "2026-07": "exports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"ALL_VAL_YR\",\"time\"], [\"-\",\"TOTAL FOR ALL COUNTRIES\",\"1434726529843\",\"2026-07\"], [\"0003\",\"EUROPEAN UNION\",\"265309247637\",\"2026-07\"], [\"0' | imports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"GEN_VAL_YR\",\"time\"], [\"0003\",\"EUROPEAN UNION\",\"31927587'",
+   "2026-10": "exports 204 '' | imports 204 ''",
+   "2026-09": "exports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"ALL_VAL_YR\",\"time\"], [\"-\",\"TOTAL FOR ALL COUNTRIES\",\"1847530728674\",\"2026-09\"], [\"0003\",\"EUROPEAN UNION\",\"344184157103\",\"2026-09\"], [\"0' | imports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"GEN_VAL_YR\",\"time\"], [\"0003\",\"EUROPEAN UNION\",\"41980632'",
    "rows": "249 export rows / 249 names"
   },
   "tic": {
@@ -32,20 +30,22 @@
    ]
   },
   "worldbank": {
-   "status": 200,
-   "found": 11
+   "status": 502,
+   "error1": "Expecting value: line 1 column 1 (char 0)",
+   "error2": "Expecting value: line 1 column 1 (char 0)",
+   "error3": "Expecting value: line 1 column 1 (char 0)"
   }
  },
  "players": [
   {
    "code": "eu",
    "name": "European Union",
-   "score": 89.1,
+   "score": 88.7,
    "numbers": {
-    "us_exports_b": 265.3,
-    "us_imports_b": 319.3,
-    "trade_b": 584.6,
-    "balance_b": -54.0,
+    "us_exports_b": 344.2,
+    "us_imports_b": 419.8,
+    "trade_b": 764.0,
+    "balance_b": -75.6,
     "treasuries_b": 1654.2,
     "gdp_b": 21243.0
    },
@@ -99,12 +99,12 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "The European Central Bank warned that the boom in AI shares could end in an abrupt repricing.",
+    "line": "US shippers are monitoring capacity and freight costs as Maersk and Hapag-Lloyd restore Asia-Europe Suez canal routes.",
     "links": [
      {
-      "title": "ECB warns AI share boom could end in 'abrupt repricing'",
-      "url": "https://finance.yahoo.com/technology/ai/articles/ecb-warns-ai-share-boom-151542974.html",
-      "publisher": "Euronews"
+      "title": "Maersk and Hapag-Lloyd restore Asia-Europe Suez routes as U.S. shippers watch capacity and costs",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/maersk-hapag-lloyd-restore-asia-174200617.html",
+      "publisher": "FreightWaves"
      }
     ]
    }
@@ -112,12 +112,12 @@
   {
    "code": "cn",
    "name": "China",
-   "score": 59.8,
+   "score": 60.1,
    "numbers": {
-    "us_exports_b": 65.2,
-    "us_imports_b": 156.4,
-    "trade_b": 221.6,
-    "balance_b": -91.2,
+    "us_exports_b": 83.5,
+    "us_imports_b": 215.0,
+    "trade_b": 298.5,
+    "balance_b": -131.5,
     "treasuries_b": 590.7,
     "gdp_b": 19498.0
    },
@@ -173,17 +173,17 @@
    },
    "profile_as_of": "2026-11-12T20:51:18Z",
    "week": {
-    "line": "US chip stocks slipped following new US trade restrictions aimed at curbing China's access to advanced artificial intelligence chips.",
+    "line": "Nvidia stopped shipping data center chips to China following new US restrictions, weighing on tech stocks and market optimism.",
     "links": [
      {
-      "title": "AMD, MU, SKHY, AVGO: Chip Stocks Ease Overnight After Selloff On New US Chip Restrictions Targeting China",
-      "url": "https://finance.yahoo.com/technology/articles/amd-mu-skhy-avgo-chip-040420540.html",
-      "publisher": "Stocktwits"
+      "title": "Asia tech shares turn mixed after Nvidia beat as China chip curbs cloud optimism",
+      "url": "https://finance.yahoo.com/technology/articles/asia-tech-shares-turn-mixed-032547363.html",
+      "publisher": "Investing.com"
      },
      {
-      "title": "US to curb China's access to AI chips as Trump heads to Asia",
-      "url": "https://finance.yahoo.com/news/us-curb-chinas-access-ai-220054158.html",
-      "publisher": "Reuters"
+      "title": "Nvidia No Longer Shipping Data Center Chips to China",
+      "url": "https://finance.yahoo.com/technology/articles/nvidia-no-longer-shipping-data-005531117.html",
+      "publisher": "MT Newswires"
      }
     ]
    }
@@ -193,10 +193,10 @@
    "name": "Mexico",
    "score": 53.9,
    "numbers": {
-    "us_exports_b": 229.8,
-    "us_imports_b": 358.7,
-    "trade_b": 588.5,
-    "balance_b": -128.9,
+    "us_exports_b": 297.6,
+    "us_imports_b": 481.6,
+    "trade_b": 779.2,
+    "balance_b": -184.0,
     "treasuries_b": null,
     "gdp_b": 1833.0
    },
@@ -251,19 +251,25 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "Canada and Mexico are seeking to renew the CUSMA trade agreement with the United States.",
+    "links": [
+     {
+      "title": "Canada, Mexico Seek CUSMA Renewal, Deepen Bileteral Partnership, Carney Says",
+      "url": "https://finance.yahoo.com/economy/policy/articles/canada-mexico-seek-cusma-renewal-152122547.html",
+      "publisher": "MT Newswires"
+     }
+    ]
    }
   },
   {
    "code": "ca",
    "name": "Canada",
-   "score": 50.8,
+   "score": 50.3,
    "numbers": {
-    "us_exports_b": 203.9,
-    "us_imports_b": 233.7,
-    "trade_b": 437.6,
-    "balance_b": -29.8,
+    "us_exports_b": 264.0,
+    "us_imports_b": 304.6,
+    "trade_b": 568.6,
+    "balance_b": -40.5,
     "treasuries_b": 464.6,
     "gdp_b": 2320.0
    },
@@ -317,19 +323,30 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "The US dollar slipped against the Canadian dollar, while Canada warned it could shift auto trade to China if US trade negotiations fail.",
+    "links": [
+     {
+      "title": "Mark Carney Warns Canada Could Turn to China for Autos if Trade Talks With Trump Administration Fail: ‘Not Leverage. But Action, Reaction’",
+      "url": "https://finance.yahoo.com/economy/policy/articles/mark-carney-warns-canada-could-213004721.html",
+      "publisher": "Benzinga"
+     },
+     {
+      "title": "The Greenback Weakens Slightly Against Canada's Loonie as Treasury Yields Edge Down",
+      "url": "https://finance.yahoo.com/markets/currencies/articles/greenback-weakens-slightly-against-canada-182644732.html",
+      "publisher": "MT Newswires"
+     }
+    ]
    }
   },
   {
    "code": "jp",
    "name": "Japan",
-   "score": 44.6,
+   "score": 44.3,
    "numbers": {
-    "us_exports_b": 58.1,
-    "us_imports_b": 84.5,
-    "trade_b": 142.6,
-    "balance_b": -26.5,
+    "us_exports_b": 74.9,
+    "us_imports_b": 108.7,
+    "trade_b": 183.6,
+    "balance_b": -33.8,
     "treasuries_b": 1068.3,
     "gdp_b": 4435.0
    },
@@ -380,12 +397,17 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Japan's economy contracted 0.1% in the third quarter, raising concerns for international ETF investors.",
+    "line": "US-listed AST SpaceMobile is developing a $1 billion venture in Japan, while Japanese chip demand drove record export growth.",
     "links": [
      {
-      "title": "Japan's Q3 GDP Shrinks 0.1%: A Blip or Warning for ETF Investors?",
-      "url": "https://finance.yahoo.com/economy/articles/japans-q3-gdp-shrinks-0-150200637.html",
-      "publisher": "Zacks"
+      "title": "Japan exports set record in October on strong chip-related demand",
+      "url": "https://finance.yahoo.com/economy/articles/japan-exports-set-record-october-002706139.html",
+      "publisher": "Reuters"
+     },
+     {
+      "title": "What Is AST SpaceMobile (ASTS) Building With Its $1 Billion Japan Venture?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ast-spacemobile-asts-building-1-031119939.html",
+      "publisher": "Simply Wall St."
      }
     ]
    }
@@ -395,10 +417,10 @@
    "name": "Taiwan",
    "score": 42.7,
    "numbers": {
-    "us_exports_b": 34.4,
-    "us_imports_b": 162.3,
-    "trade_b": 196.7,
-    "balance_b": -127.8,
+    "us_exports_b": 44.2,
+    "us_imports_b": 215.3,
+    "trade_b": 259.5,
+    "balance_b": -171.1,
     "treasuries_b": 298.4,
     "gdp_b": 860.0
    },
@@ -451,17 +473,17 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "TSMC shares fell as Jensen Huang's exit from Nvidia and AI debt fears rattled investors ahead of Nvidia earnings.",
+    "line": "TSMC stock fell after new US rules tightened checks on chip foundries, clouding the outlook for the AI buildout.",
     "links": [
      {
-      "title": "TSMC Slumps Nearly 6% as Jensen Huang’s Exit and AI Debt Fears Rattle Investors Ahead of Nvidia Earnings",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-slumps-nearly-6-jensen-203009869.html",
-      "publisher": "Benzinga Prediction Markets"
+      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Shares Tumble As Customer Shock Clouds AI Outlook",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/taiwan-semiconductor-manufacturing-nyse-tsm-031120579.html",
+      "publisher": "Simply Wall St."
      },
      {
-      "title": "Huang’s ‘trillion-dollar dinners’ with Taiwan chip bosses were Nvidia’s secret weapon. Now he’s out. Can he be replaced?",
-      "url": "https://finance.yahoo.com/technology/articles/huang-trillion-dollar-dinners-taiwan-230000506.html",
-      "publisher": "Moneywise"
+      "title": "TSMC Stocks Fall 4.26% as New US Rule Tightens Checks on Chip Foundries",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-stocks-fall-4-26-190103464.html",
+      "publisher": "GuruFocus.com"
      }
     ]
    }
@@ -469,12 +491,12 @@
   {
    "code": "gb",
    "name": "United Kingdom",
-   "score": 35.5,
+   "score": 35.2,
    "numbers": {
-    "us_exports_b": 67.4,
-    "us_imports_b": 38.6,
-    "trade_b": 106.0,
-    "balance_b": 28.8,
+    "us_exports_b": 84.4,
+    "us_imports_b": 49.8,
+    "trade_b": 134.1,
+    "balance_b": 34.6,
     "treasuries_b": 1009.5,
     "gdp_b": 4003.0
    },
@@ -526,30 +548,19 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "The Bank of England signaled potential interest rate hikes in 2027 amid forecasts of persistent long-term inflation.",
-    "links": [
-     {
-      "title": "Bank of England likely to raise rates further in 2027, Huw Pill says - FT",
-      "url": "https://finance.yahoo.com/economy/policy/articles/bank-england-likely-raise-rates-085406552.html",
-      "publisher": "Investing.com"
-     },
-     {
-      "title": "Bank of England blamed as inflation forecast to stay high into 2030s",
-      "url": "https://finance.yahoo.com/economy/policy/articles/bank-england-blamed-inflation-forecast-063000016.html",
-      "publisher": "The Telegraph"
-     }
-    ]
+    "line": "Quiet week for US-relevant news.",
+    "links": []
    }
   },
   {
    "code": "in",
    "name": "India",
-   "score": 24.9,
+   "score": 24.8,
    "numbers": {
-    "us_exports_b": 30.4,
-    "us_imports_b": 58.9,
-    "trade_b": 89.3,
-    "balance_b": -28.4,
+    "us_exports_b": 39.3,
+    "us_imports_b": 76.9,
+    "trade_b": 116.1,
+    "balance_b": -37.6,
     "treasuries_b": 219.7,
     "gdp_b": 3956.0
    },
@@ -609,12 +620,12 @@
   {
    "code": "sa",
    "name": "Saudi Arabia",
-   "score": 24.3,
+   "score": 24.2,
    "numbers": {
-    "us_exports_b": 10.1,
-    "us_imports_b": 5.8,
-    "trade_b": 15.9,
-    "balance_b": 4.4,
+    "us_exports_b": 12.5,
+    "us_imports_b": 7.2,
+    "trade_b": 19.7,
+    "balance_b": 5.2,
     "treasuries_b": 141.2,
     "gdp_b": 1277.0
    },
@@ -667,17 +678,17 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Oil prices rose $3 following attacks on Saudi energy sites, while US electric vehicle stocks declined.",
+    "line": "US EV maker Lucid fell 8% despite a $1.75 billion Saudi lifeline, while oil prices rose $3 following attacks on Saudi energy sites.",
     "links": [
-     {
-      "title": "Oil settles $3 higher on attacks on Saudi energy sites, Strait of Hormuz disruptions",
-      "url": "https://finance.yahoo.com/energy/articles/oil-falls-over-1-easing-045152522.html",
-      "publisher": "Reuters"
-     },
      {
       "title": "Lucid Sinks 8% Despite $1.75 Billion Saudi Lifeline; Tesla Falls 3%, Rivian Dips",
       "url": "https://finance.yahoo.com/markets/stocks/articles/lucid-sinks-8-despite-1-155747923.html",
       "publisher": "24/7 Wall St."
+     },
+     {
+      "title": "Oil settles $3 higher on attacks on Saudi energy sites, Strait of Hormuz disruptions",
+      "url": "https://finance.yahoo.com/energy/articles/oil-falls-over-1-easing-045152522.html",
+      "publisher": "Reuters"
      }
     ]
    }
@@ -687,10 +698,10 @@
    "name": "Russia",
    "score": 19.4,
    "numbers": {
-    "us_exports_b": 0.3,
-    "us_imports_b": 2.0,
-    "trade_b": 2.3,
-    "balance_b": -1.6,
+    "us_exports_b": 0.5,
+    "us_imports_b": 2.4,
+    "trade_b": 2.9,
+    "balance_b": -2.0,
     "treasuries_b": null,
     "gdp_b": 2561.0
    },
@@ -745,8 +756,19 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "US Democrats ordered Elon Musk to preserve records over SpaceX Starlink access in Ukraine after Starshield speeds were limited.",
+    "links": [
+     {
+      "title": "SpaceX (SPCX) Curbs Ukraine Starshield Speeds And Plans Falcon 9 Retirement",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-spcx-curbs-ukraine-starshield-001639902.html",
+      "publisher": "Simply Wall St."
+     },
+     {
+      "title": "Democrats Order Musk to Preserve Records Over Ukraine Starlink Access",
+      "url": "https://finance.yahoo.com/m/8d485bc4-69ba-3edf-9d55-d26a0b8df73f/democrats-order-musk-to.html",
+      "publisher": "The Wall Street Journal"
+     }
+    ]
    }
   }
  ],
@@ -770,23 +792,23 @@
   },
   "gdp_b": 30770.0,
   "week": {
-   "line": "US Treasury yields rose to 4.88%, pressuring dividend investors, while Treasury Secretary Scott Bessent issued a warning to Nvidia.",
+   "line": "US Treasury yields fell while Wall Street awaited Nvidia's earnings report, amid ongoing concerns over expanding national debt.",
    "links": [
     {
-     "title": "Treasury Yields Just Hit 4.88%, Changing the Math for Dividend Investors",
-     "url": "https://finance.yahoo.com/markets/options/articles/treasury-yields-just-hit-4-161722268.html",
-     "publisher": "24/7 Wall St."
+     "title": "Treasury Yields Fall as Wall Street Waits for Nvidia",
+     "url": "https://finance.yahoo.com/m/77268c55-f514-339e-a9b8-df7be8826603/treasury-yields-fall-as-wall.html",
+     "publisher": "The Wall Street Journal"
     },
     {
-     "title": "U.S. Treasury Secretary Scott Bessent Just Issued a Blistering Warning to Nvidia",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/u-treasury-secretary-scott-bessent-180001130.html",
-     "publisher": "Motley Fool"
+     "title": "The Government Spends About $5.5 Billion a Day More Than It Takes In. The Debt Has Doubled in 10 Years. Jaime Dimon This the Situation Could Get Much Worse.",
+     "url": "https://finance.yahoo.com/economy/policy/articles/government-spends-5-5-billion-203612865.html",
+     "publisher": "24/7 Wall St."
     }
    ]
   }
  },
  "data_as_of": {
-  "trade": "Jan-Jul 2026",
+  "trade": "Jan-Sep 2026",
   "treasuries": "2026-08",
   "gdp": "World Bank 2025 (Taiwan approx.)"
  },
@@ -797,60 +819,60 @@
   "strategic": 30
  },
  "profiles_updated_at": "2026-11-12T21:15:51Z",
- "week_updated_at": "2026-11-17T05:28:28Z",
- "generated_at": "2026-11-17T05:28:28Z",
+ "week_updated_at": "2026-11-18T05:25:32Z",
+ "generated_at": "2026-11-18T05:25:32Z",
  "gemini": {
   "ok_calls": {
    "gemini-3.6-flash": 1
   },
   "errors": {
-   "gemini-3.8-flash": "no answer within 150s",
+   "gemini-3.8-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
    "gemini-3.7-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
   }
  },
  "raw": {
   "trade": {
-   "as_of": "Jan-Jul 2026",
+   "as_of": "Jan-Sep 2026",
    "values": {
     "cn": {
-     "exports": 65172478536.0,
-     "imports": 156390183294.0
+     "exports": 83516774979.0,
+     "imports": 215008592978.0
     },
     "ca": {
-     "exports": 203886634357.0,
-     "imports": 233665409486.0
+     "exports": 264039032991.0,
+     "imports": 304564918147.0
     },
     "mx": {
-     "exports": 229816800536.0,
-     "imports": 358707000658.0
+     "exports": 297567268136.0,
+     "imports": 481586248393.0
     },
     "eu": {
-     "exports": 265309247637.0,
-     "imports": 319275870299.0
+     "exports": 344184157103.0,
+     "imports": 419806320158.0
     },
     "jp": {
-     "exports": 58067555261.0,
-     "imports": 84523764873.0
+     "exports": 74902499049.0,
+     "imports": 108702924816.0
     },
     "tw": {
-     "exports": 34433824804.0,
-     "imports": 162281879187.0
+     "exports": 44211452672.0,
+     "imports": 215331976377.0
     },
     "gb": {
-     "exports": 67355242597.0,
-     "imports": 38596975507.0
+     "exports": 84375394244.0,
+     "imports": 49769823240.0
     },
     "in": {
-     "exports": 30437949210.0,
-     "imports": 58876340225.0
+     "exports": 39259323232.0,
+     "imports": 76883878625.0
     },
     "sa": {
-     "exports": 10126363620.0,
-     "imports": 5750809701.0
+     "exports": 12458670594.0,
+     "imports": 7234437118.0
     },
     "ru": {
-     "exports": 346062215.0,
-     "imports": 1956090761.0
+     "exports": 450734237.0,
+     "imports": 2411693555.0
     }
    }
   },
