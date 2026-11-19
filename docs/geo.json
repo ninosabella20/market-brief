@@ -13,27 +13,25 @@
    "sample": [
     [
      "Japan",
-     1068.3
+     1063.1
     ],
     [
      "United Kingdom",
-     1009.5
+     985.8
     ],
     [
      "China, Mainland",
-     590.7
+     563.9
     ],
     [
      "Belgium",
-     490.5
+     507.9
     ]
    ]
   },
   "worldbank": {
-   "status": 502,
-   "error1": "Expecting value: line 1 column 1 (char 0)",
-   "error2": "Expecting value: line 1 column 1 (char 0)",
-   "error3": "Expecting value: line 1 column 1 (char 0)"
+   "status": 200,
+   "found": 11
   }
  },
  "players": [
@@ -46,7 +44,7 @@
     "us_imports_b": 419.8,
     "trade_b": 764.0,
     "balance_b": -75.6,
-    "treasuries_b": 1654.2,
+    "treasuries_b": 1629.7,
     "gdp_b": 21243.0
    },
    "rank": 1,
@@ -99,12 +97,12 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "US shippers are monitoring capacity and freight costs as Maersk and Hapag-Lloyd restore Asia-Europe Suez canal routes.",
+    "line": "Hedge funds are targeting a volatility trade favoring Europe over the US as S&P 500 options reprice, indicating shifting global market sentiment.",
     "links": [
      {
-      "title": "Maersk and Hapag-Lloyd restore Asia-Europe Suez routes as U.S. shippers watch capacity and costs",
-      "url": "https://finance.yahoo.com/markets/commodities/articles/maersk-hapag-lloyd-restore-asia-174200617.html",
-      "publisher": "FreightWaves"
+      "title": "Hedge funds eye Europe-over-US volatility trade as S&P 500 options reprice",
+      "url": "https://finance.yahoo.com/markets/options/articles/hedge-funds-eye-europe-over-173858750.html",
+      "publisher": "Investing.com"
      }
     ]
    }
@@ -112,13 +110,13 @@
   {
    "code": "cn",
    "name": "China",
-   "score": 60.1,
+   "score": 59.8,
    "numbers": {
     "us_exports_b": 83.5,
     "us_imports_b": 215.0,
     "trade_b": 298.5,
     "balance_b": -131.5,
-    "treasuries_b": 590.7,
+    "treasuries_b": 563.9,
     "gdp_b": 19498.0
    },
    "rank": 2,
@@ -173,17 +171,17 @@
    },
    "profile_as_of": "2026-11-12T20:51:18Z",
    "week": {
-    "line": "Nvidia stopped shipping data center chips to China following new US restrictions, weighing on tech stocks and market optimism.",
+    "line": "Trump suggested potential future sales of Blackwell chips to China, even as Washington hawks push for stricter controls on semiconductor technology.",
     "links": [
      {
-      "title": "Asia tech shares turn mixed after Nvidia beat as China chip curbs cloud optimism",
-      "url": "https://finance.yahoo.com/technology/articles/asia-tech-shares-turn-mixed-032547363.html",
-      "publisher": "Investing.com"
+      "title": "The Jensen Huang Saga Has Reinvigorated Washington’s China Hawks",
+      "url": "https://finance.yahoo.com/m/8c3e99f6-1969-3b67-b8f3-99a1ea464878/the-jensen-huang-saga-has.html",
+      "publisher": "The Wall Street Journal"
      },
      {
-      "title": "Nvidia No Longer Shipping Data Center Chips to China",
-      "url": "https://finance.yahoo.com/technology/articles/nvidia-no-longer-shipping-data-005531117.html",
-      "publisher": "MT Newswires"
+      "title": "Trump Suggests US Can Sell Blackwell Chips to China in Future",
+      "url": "https://finance.yahoo.com/technology/ai/articles/trump-suggests-us-sell-blackwell-013901504.html",
+      "publisher": "Bloomberg"
      }
     ]
    }
@@ -251,8 +249,13 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Canada and Mexico are seeking to renew the CUSMA trade agreement with the United States.",
+    "line": "Canada and Mexico are seeking CUSMA renewal, while a new advisory firm launched to help U.S. technology companies expand their operations in the Mexican market.",
     "links": [
+     {
+      "title": "Conecta Advisors Launches a New Kind of Advisory Firm to Help U.S. Technology Companies Grow in Mexico",
+      "url": "https://finance.yahoo.com/technology/articles/conecta-advisors-launches-kind-advisory-200100854.html",
+      "publisher": "Business Wire"
+     },
      {
       "title": "Canada, Mexico Seek CUSMA Renewal, Deepen Bileteral Partnership, Carney Says",
       "url": "https://finance.yahoo.com/economy/policy/articles/canada-mexico-seek-cusma-renewal-152122547.html",
@@ -264,13 +267,13 @@
   {
    "code": "ca",
    "name": "Canada",
-   "score": 50.3,
+   "score": 50.4,
    "numbers": {
     "us_exports_b": 264.0,
     "us_imports_b": 304.6,
     "trade_b": 568.6,
     "balance_b": -40.5,
-    "treasuries_b": 464.6,
+    "treasuries_b": 467.7,
     "gdp_b": 2320.0
    },
    "rank": 4,
@@ -323,16 +326,16 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "The US dollar slipped against the Canadian dollar, while Canada warned it could shift auto trade to China if US trade negotiations fail.",
+    "line": "US-based AI firm Anthropic filed for an IPO in Canada, while the US dollar reached a 20-month high against the loonie on building rate hike expectations.",
     "links": [
      {
-      "title": "Mark Carney Warns Canada Could Turn to China for Autos if Trade Talks With Trump Administration Fail: ‘Not Leverage. But Action, Reaction’",
-      "url": "https://finance.yahoo.com/economy/policy/articles/mark-carney-warns-canada-could-213004721.html",
-      "publisher": "Benzinga"
+      "title": "Anthropic, PBC Announces Filing of Final Prospectus in Canada in Connection with Initial Public Offering",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-pbc-announces-filing-final-192800903.html",
+      "publisher": "CNW Group"
      },
      {
-      "title": "The Greenback Weakens Slightly Against Canada's Loonie as Treasury Yields Edge Down",
-      "url": "https://finance.yahoo.com/markets/currencies/articles/greenback-weakens-slightly-against-canada-182644732.html",
+      "title": "US Dollar Strengthens to 20-Month High Against Canada's Loonie as Rate Hike Expectations Build",
+      "url": "https://finance.yahoo.com/markets/currencies/articles/us-dollar-strengthens-20-month-182630251.html",
       "publisher": "MT Newswires"
      }
     ]
@@ -341,13 +344,13 @@
   {
    "code": "jp",
    "name": "Japan",
-   "score": 44.3,
+   "score": 44.5,
    "numbers": {
     "us_exports_b": 74.9,
     "us_imports_b": 108.7,
     "trade_b": 183.6,
     "balance_b": -33.8,
-    "treasuries_b": 1068.3,
+    "treasuries_b": 1063.1,
     "gdp_b": 4435.0
    },
    "rank": 5,
@@ -397,17 +400,17 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "US-listed AST SpaceMobile is developing a $1 billion venture in Japan, while Japanese chip demand drove record export growth.",
+    "line": "Economists expect Bank of Japan rate hikes in December, while UBS downgraded Japanese equities citing uncertainty over global AI spending.",
     "links": [
      {
-      "title": "Japan exports set record in October on strong chip-related demand",
-      "url": "https://finance.yahoo.com/economy/articles/japan-exports-set-record-october-002706139.html",
-      "publisher": "Reuters"
+      "title": "Japan equities: UBS downgrades to Neutral amid AI spending uncertainty",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/japan-equities-ubs-downgrades-neutral-051747301.html",
+      "publisher": "Investing.com"
      },
      {
-      "title": "What Is AST SpaceMobile (ASTS) Building With Its $1 Billion Japan Venture?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/ast-spacemobile-asts-building-1-031119939.html",
-      "publisher": "Simply Wall St."
+      "title": "Bank of Japan to raise interest rates in December and again by end-March, economists say: Reuters poll",
+      "url": "https://finance.yahoo.com/economy/policy/articles/bank-japan-raise-interest-rates-221008650.html",
+      "publisher": "Reuters"
      }
     ]
    }
@@ -415,13 +418,13 @@
   {
    "code": "tw",
    "name": "Taiwan",
-   "score": 42.7,
+   "score": 42.6,
    "numbers": {
     "us_exports_b": 44.2,
     "us_imports_b": 215.3,
     "trade_b": 259.5,
     "balance_b": -171.1,
-    "treasuries_b": 298.4,
+    "treasuries_b": 290.9,
     "gdp_b": 860.0
    },
    "rank": 6,
@@ -473,17 +476,17 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "TSMC stock fell after new US rules tightened checks on chip foundries, clouding the outlook for the AI buildout.",
+    "line": "Bearish bets on Nvidia and Micron increased as TSMC reportedly set credit limits for AI customers, highlighting risks in the US-linked semiconductor supply chain.",
     "links": [
      {
-      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Shares Tumble As Customer Shock Clouds AI Outlook",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/taiwan-semiconductor-manufacturing-nyse-tsm-031120579.html",
-      "publisher": "Simply Wall St."
+      "title": "Nvidia, Micron and TSMC Face a Massive Wave of Bearish Bets",
+      "url": "https://finance.yahoo.com/markets/options/articles/nvidia-micron-tsmc-face-massive-191112704.html",
+      "publisher": "GuruFocus.com"
      },
      {
-      "title": "TSMC Stocks Fall 4.26% as New US Rule Tightens Checks on Chip Foundries",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-stocks-fall-4-26-190103464.html",
-      "publisher": "GuruFocus.com"
+      "title": "TSMC Is Reportedly Setting Credit Limits for AI Customers",
+      "url": "https://finance.yahoo.com/technology/ai/articles/tsmc-reportedly-setting-credit-limits-133700118.html",
+      "publisher": "24/7 Wall St."
      }
     ]
    }
@@ -491,13 +494,13 @@
   {
    "code": "gb",
    "name": "United Kingdom",
-   "score": 35.2,
+   "score": 35.1,
    "numbers": {
     "us_exports_b": 84.4,
     "us_imports_b": 49.8,
     "trade_b": 134.1,
     "balance_b": 34.6,
-    "treasuries_b": 1009.5,
+    "treasuries_b": 985.8,
     "gdp_b": 4003.0
    },
    "rank": 7,
@@ -548,20 +551,31 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "Rising UK inflation and Bank of England warnings of further rate hikes mirror the persistent inflationary pressures and hawkish monetary environment affecting US markets.",
+    "links": [
+     {
+      "title": "Bank of England warns of further interest rate rises",
+      "url": "https://finance.yahoo.com/economy/policy/articles/mortgage-borrowers-face-christmas-rate-134353892.html",
+      "publisher": "The Telegraph"
+     },
+     {
+      "title": "U.K. Inflation Rises as Energy Costs Keep Pressure on Bank of England",
+      "url": "https://finance.yahoo.com/m/a5733706-d092-31c5-8362-cb3ac4715d64/u.k.-inflation-rises-as.html",
+      "publisher": "The Wall Street Journal"
+     }
+    ]
    }
   },
   {
    "code": "in",
    "name": "India",
-   "score": 24.8,
+   "score": 24.9,
    "numbers": {
     "us_exports_b": 39.3,
     "us_imports_b": 76.9,
     "trade_b": 116.1,
     "balance_b": -37.6,
-    "treasuries_b": 219.7,
+    "treasuries_b": 228.2,
     "gdp_b": 3956.0
    },
    "rank": 8,
@@ -626,7 +640,7 @@
     "us_imports_b": 7.2,
     "trade_b": 19.7,
     "balance_b": 5.2,
-    "treasuries_b": 141.2,
+    "treasuries_b": 135.9,
     "gdp_b": 1277.0
    },
    "rank": 9,
@@ -678,17 +692,17 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "US EV maker Lucid fell 8% despite a $1.75 billion Saudi lifeline, while oil prices rose $3 following attacks on Saudi energy sites.",
+    "line": "Saudi Arabia’s wealth fund holds 80% of its U.S. portfolio in SpaceX and provided a $1.75 billion lifeline to Lucid despite the EV maker's cash burn.",
     "links": [
+     {
+      "title": "Saudi Arabia’s Wealth Fund Has 80% of Its U.S. Stock Portfolio in SpaceX",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/saudi-arabia-wealth-fund-80-174217985.html",
+      "publisher": "24/7 Wall St."
+     },
      {
       "title": "Lucid Sinks 8% Despite $1.75 Billion Saudi Lifeline; Tesla Falls 3%, Rivian Dips",
       "url": "https://finance.yahoo.com/markets/stocks/articles/lucid-sinks-8-despite-1-155747923.html",
       "publisher": "24/7 Wall St."
-     },
-     {
-      "title": "Oil settles $3 higher on attacks on Saudi energy sites, Strait of Hormuz disruptions",
-      "url": "https://finance.yahoo.com/energy/articles/oil-falls-over-1-easing-045152522.html",
-      "publisher": "Reuters"
      }
     ]
    }
@@ -756,17 +770,17 @@
    },
    "profile_as_of": "2026-11-12T23:22:05Z",
    "week": {
-    "line": "US Democrats ordered Elon Musk to preserve records over SpaceX Starlink access in Ukraine after Starshield speeds were limited.",
+    "line": "The U.S. entered a three-way nuclear rivalry with Russia and China, while defense contractor RTX successfully completed its third rocket test.",
     "links": [
      {
-      "title": "SpaceX (SPCX) Curbs Ukraine Starshield Speeds And Plans Falcon 9 Retirement",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-spcx-curbs-ukraine-starshield-001639902.html",
-      "publisher": "Simply Wall St."
+      "title": "U.S. Enters Unprecedented Three-Way Nuclear Rivalry With China and Russia",
+      "url": "https://finance.yahoo.com/m/9732711c-d685-3518-b011-a8452ae6492f/u.s.-enters-unprecedented.html",
+      "publisher": "The Wall Street Journal"
      },
      {
-      "title": "Democrats Order Musk to Preserve Records Over Ukraine Starlink Access",
-      "url": "https://finance.yahoo.com/m/8d485bc4-69ba-3edf-9d55-d26a0b8df73f/democrats-order-musk-to.html",
-      "publisher": "The Wall Street Journal"
+      "title": "How Investors Are Reacting To RTX (RTX) Third Rocket Test Success",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/investors-reacting-rtx-rtx-third-002310669.html",
+      "publisher": "Simply Wall St."
      }
     ]
    }
@@ -792,16 +806,16 @@
   },
   "gdp_b": 30770.0,
   "week": {
-   "line": "US Treasury yields fell while Wall Street awaited Nvidia's earnings report, amid ongoing concerns over expanding national debt.",
+   "line": "Traders see a 95% chance of a December Fed rate hike as Treasury yields tie their longest run above 5% since 2007.",
    "links": [
     {
-     "title": "Treasury Yields Fall as Wall Street Waits for Nvidia",
-     "url": "https://finance.yahoo.com/m/77268c55-f514-339e-a9b8-df7be8826603/treasury-yields-fall-as-wall.html",
-     "publisher": "The Wall Street Journal"
+     "title": "Two More Days Above 5% and Treasury Yields Tie 2007’s Run",
+     "url": "https://finance.yahoo.com/markets/currencies/articles/two-more-days-above-5-145214043.html",
+     "publisher": "24/7 Wall St."
     },
     {
-     "title": "The Government Spends About $5.5 Billion a Day More Than It Takes In. The Debt Has Doubled in 10 Years. Jaime Dimon This the Situation Could Get Much Worse.",
-     "url": "https://finance.yahoo.com/economy/policy/articles/government-spends-5-5-billion-203612865.html",
+     "title": "Traders Now See a 95% Chance the Fed Hikes Rates in December",
+     "url": "https://finance.yahoo.com/economy/policy/articles/traders-now-see-95-chance-140829501.html",
      "publisher": "24/7 Wall St."
     }
    ]
@@ -809,7 +823,7 @@
  },
  "data_as_of": {
   "trade": "Jan-Sep 2026",
-  "treasuries": "2026-08",
+  "treasuries": "2026-09",
   "gdp": "World Bank 2025 (Taiwan approx.)"
  },
  "weights": {
@@ -819,15 +833,19 @@
   "strategic": 30
  },
  "profiles_updated_at": "2026-11-12T21:15:51Z",
- "week_updated_at": "2026-11-18T05:25:32Z",
- "generated_at": "2026-11-18T05:25:32Z",
+ "week_updated_at": "2026-11-19T05:38:49Z",
+ "generated_at": "2026-11-19T05:38:49Z",
  "gemini": {
   "ok_calls": {
-   "gemini-3.6-flash": 1
+   "gemini-3-flash-preview": 1
   },
   "errors": {
-   "gemini-3.8-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-   "gemini-3.7-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+   "gemini-3.8-flash": "no answer within 150s",
+   "gemini-3.7-flash": "no answer within 150s",
+   "gemini-3.6-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+   "gemini-3.5-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+   "gemini-2.5-flash": "404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a",
+   "gemini-flash-latest": "no answer within 150s"
   }
  },
  "raw": {
@@ -877,17 +895,17 @@
    }
   },
   "tic": {
-   "as_of": "2026-08",
+   "as_of": "2026-09",
    "values": {
-    "cn": 590.7,
-    "ca": 464.6,
+    "cn": 563.9,
+    "ca": 467.7,
     "mx": null,
-    "eu": 1654.2,
-    "jp": 1068.3,
-    "tw": 298.4,
-    "gb": 1009.5,
-    "in": 219.7,
-    "sa": 141.2,
+    "eu": 1629.7,
+    "jp": 1063.1,
+    "tw": 290.9,
+    "gb": 985.8,
+    "in": 228.2,
+    "sa": 135.9,
     "ru": null
    }
   },
