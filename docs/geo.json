@@ -4,7 +4,7 @@
   "census": {
    "key": "set",
    "2026-10": "exports 204 '' | imports 204 ''",
-   "2026-09": "exports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"ALL_VAL_YR\",\"time\"], [\"-\",\"TOTAL FOR ALL COUNTRIES\",\"1847530728674\",\"2026-09\"], [\"0003\",\"EUROPEAN UNION\",\"344184157103\",\"2026-09\"], [\"0' | imports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"GEN_VAL_YR\",\"time\"], [\"0003\",\"EUROPEAN UNION\",\"41980632'",
+   "2026-09": "exports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"ALL_VAL_YR\",\"time\"], [\"-\",\"TOTAL FOR ALL COUNTRIES\",\"1847530728674\",\"2026-09\"], [\"0003\",\"EUROPEAN UNION\",\"344184157103\",\"2026-09\"], [\"0' | imports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"GEN_VAL_YR\",\"time\"], [\"0014\",\"PACIFIC RIM COUNTRIES\",\"8'",
    "rows": "249 export rows / 249 names"
   },
   "tic": {
@@ -96,8 +96,19 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "The ECB prepares for potential December rate action while pushing to make euro swaps more accessible globally.",
+    "links": [
+     {
+      "title": "ECB's Nagel: Will likely need to act in December but price expectations remain anchored",
+      "url": "https://finance.yahoo.com/economy/policy/articles/ecbs-nagel-likely-act-december-160126353.html",
+      "publisher": "Reuters"
+     },
+     {
+      "title": "ECB to make euro swaps more accessible in global push, Lagarde says",
+      "url": "https://finance.yahoo.com/economy/policy/articles/ecb-euro-swaps-more-accessible-091224773.html",
+      "publisher": "Reuters"
+     }
+    ]
    }
   },
   {
@@ -162,16 +173,16 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "US chipmakers Nvidia and AMD saw sharp stock declines following regulatory probes and short-seller scrutiny over China-related risks.",
+    "line": "Nvidia's China risk faces increased scrutiny as California opens a probe and TSMC pauses advanced chip shipments under new U.S. rules.",
     "links": [
+     {
+      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Pauses Advanced Chip Shipments To China",
+      "url": "https://finance.yahoo.com/technology/articles/taiwan-semiconductor-manufacturing-nyse-tsm-042528694.html",
+      "publisher": "Simply Wall St."
+     },
      {
       "title": "Nvidia Stock Keeps Falling As California Opens A Probe Into Its China Risk",
       "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-keeps-falling-california-214200884.html",
-      "publisher": "GuruFocus.com"
-     },
-     {
-      "title": "AMD Stocks Plunge 7.72% as Short Seller Questions China Firmware Ties",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/amd-stocks-plunge-7-72-214135649.html",
       "publisher": "GuruFocus.com"
      }
     ]
@@ -239,8 +250,14 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "New Mexico Community College and Sandia National Labs sign an MOU to expand technician career pathways and strengthen the economy.",
+    "links": [
+     {
+      "title": "New Mexico Community College and Sandia National Labs Sign MOU to Expand Technician Career Pathways and Strengthen New Mexico's Economy",
+      "url": "https://finance.yahoo.com/economy/policy/articles/mexico-community-college-sandia-national-211500519.html",
+      "publisher": "GlobeNewswire"
+     }
+    ]
    }
   },
   {
@@ -307,8 +324,14 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "Canada takes a next step forward on consumer-driven banking by designating the Financial Data Exchange for a standards role.",
+    "links": [
+     {
+      "title": "Canada Takes Next Step Forward on Consumer-Driven Banking in Designating Financial Data Exchange for Standards Role",
+      "url": "https://finance.yahoo.com/economy/policy/articles/canada-takes-next-step-forward-200700812.html",
+      "publisher": "GlobeNewswire"
+     }
+    ]
    }
   },
   {
@@ -373,17 +396,12 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Lower US Treasury yields and shifting Fed expectations stalled the dollar's rally against the yen as investors sought safe-haven assets.",
+    "line": "The U.S. dollar weakens as a Fed-fueled rally stalls, while lower U.S. yields help the yen amid rate-hike expectations.",
     "links": [
      {
       "title": "Dollar weaker as Fed-fueled rally stalls; lower US yields help yen",
       "url": "https://finance.yahoo.com/news/dollar-near-19-month-peak-015038270.html",
       "publisher": "Reuters"
-     },
-     {
-      "title": "Dollar set for 4-week win streak; yen jumps on safe-haven bid, hot inflation data",
-      "url": "https://finance.yahoo.com/markets/currencies/articles/asia-fx-struggles-dollar-holds-053324608.html",
-      "publisher": "Investing.com"
      }
     ]
    }
@@ -450,7 +468,7 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Major US chipmakers plunged led by Nvidia's 12% drop amid an AI market sell-off, while TSMC halted China chip shipments under new US rules.",
+    "line": "The AI trade melts down as Nvidia drops 12% and TSMC halts some China chip orders as a new U.S. rule kicks in.",
     "links": [
      {
       "title": "Nvidia drops 12%, Broadcom and AMD extend declines as the AI trade melts down",
@@ -525,8 +543,19 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "U.K. inflation rises as energy costs keep pressure on the Bank of England, which warns of further interest rate rises.",
+    "links": [
+     {
+      "title": "Bank of England warns of further interest rate rises",
+      "url": "https://finance.yahoo.com/economy/policy/articles/mortgage-borrowers-face-christmas-rate-134353892.html",
+      "publisher": "The Telegraph"
+     },
+     {
+      "title": "U.K. Inflation Rises as Energy Costs Keep Pressure on Bank of England",
+      "url": "https://finance.yahoo.com/m/a5733706-d092-31c5-8362-cb3ac4715d64/u.k.-inflation-rises-as.html",
+      "publisher": "The Wall Street Journal"
+     }
+    ]
    }
   },
   {
@@ -593,8 +622,14 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "India draws record foreign inflows as global AI stocks come under pressure.",
+    "links": [
+     {
+      "title": "India draws record foreign inflows as AI stocks come under pressure",
+      "url": "https://finance.yahoo.com/technology/ai/articles/india-draws-record-foreign-inflows-123000422.html",
+      "publisher": "Proactive"
+     }
+    ]
    }
   },
   {
@@ -661,8 +696,14 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "Saudi Arabia’s wealth fund maintains 80% of its U.S. stock portfolio in SpaceX.",
+    "links": [
+     {
+      "title": "Saudi Arabia’s Wealth Fund Has 80% of Its U.S. Stock Portfolio in SpaceX",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/saudi-arabia-wealth-fund-80-174217985.html",
+      "publisher": "24/7 Wall St."
+     }
+    ]
    }
   },
   {
@@ -753,7 +794,7 @@
   },
   "gdp_b": 30770.0,
   "week": {
-   "line": "The S&P 500 and Dow entered correction territory during a big-tech plunge, driving investors toward safe-haven US Treasuries and lowering yields.",
+   "line": "S&P 500 and Dow sink into correction territory as a major tech and AI trade sell-off leads to falling Treasury yields.",
    "links": [
     {
      "title": "Update: S&P 500, Dow Sink Into Correction Territory as Investors Seek Treasury Cover Amid Plunging Big-Tech",
@@ -780,15 +821,20 @@
   "strategic": 30
  },
  "profiles_updated_at": "2026-11-20T05:35:52Z",
- "week_updated_at": "2026-11-21T05:24:09Z",
- "generated_at": "2026-11-21T05:24:09Z",
+ "week_updated_at": "2026-11-21T10:22:33Z",
+ "generated_at": "2026-11-21T10:22:33Z",
  "gemini": {
   "ok_calls": {
-   "gemini-3.6-flash": 1
+   "gemini-3.5-flash-lite": 1
   },
   "errors": {
-   "gemini-3.8-flash": "no answer within 150s",
-   "gemini-3.7-flash": "no answer within 150s"
+   "gemini-3.8-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+   "gemini-3.7-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+   "gemini-3.6-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+   "gemini-3.5-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+   "gemini-2.5-flash": "404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a",
+   "gemini-flash-latest": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+   "gemini-3-flash-preview": "no answer within 150s"
   }
  },
  "raw": {
