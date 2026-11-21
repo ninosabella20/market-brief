@@ -122,9 +122,8 @@ def update_picks_history(hist: dict, data: dict, closes: dict) -> dict:
     return hist
 
 
-def performance(hist: dict, closes: dict) -> dict:
+def performance(hist: dict, closes: dict, current: set[str]) -> dict:
     bench = closes.get(BENCH)
-    today_day = hist.get("picks_day")
     rows = []
     for p in hist.get("positions", []):
         s = closes.get(p["ticker"])
@@ -140,7 +139,7 @@ def performance(hist: dict, closes: dict) -> dict:
         bret = (float(bench.iloc[-1]) / b_entry[1] - 1) * 100
         rows.append({**p, "price": round(float(since.iloc[-1]), 2), "price_date": since.index[-1].strftime("%Y-%m-%d"),
                      "ret": num(ret, 2), "bench_ret": num(bret, 2), "excess": num(ret - bret, 2),
-                     "active": p.get("last_picked") == today_day,
+                     "active": p["ticker"] in current,   # in the picks shown on the site right now
                      # both rebased to 100 at entry, for the comparison chart
                      "chart": series_out(since / p["entry_price"] * 100, 260),
                      "bench_chart": series_out(b_since / b_entry[1] * 100, 260)})
@@ -174,7 +173,8 @@ def main() -> int:
     except Exception:  # noqa: BLE001
         log.exception("holdings failed")
     hist = update_picks_history(hist, data, closes)
-    hist["performance"] = performance(hist, closes)
+    current = {p["ticker"] for v in ((data.get("picks") or {}).get("items") or {}).values() for p in v}
+    hist["performance"] = performance(hist, closes, current)
     hist["generated_at"] = iso(now_utc())
     PICKS_HIST.write_text(json.dumps(hist, separators=(",", ":")))
     log.info("tracker: %d holdings, %d tracked picks in %.0fs", len(hold),
