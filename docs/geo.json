@@ -30,7 +30,6 @@
    ]
   },
   "worldbank": {
-   "error1": "HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=120)",
    "status": 200,
    "found": 11
   }
@@ -163,17 +162,17 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "The US approved Nvidia and AMD AI chip sales to China, despite major stock plunges fueled by China-related risks.",
+    "line": "US chipmakers Nvidia and AMD saw sharp stock declines following regulatory probes and short-seller scrutiny over China-related risks.",
     "links": [
      {
-      "title": "AMD Just Plunged Almost 8%, Lost $67 Billion and Kept Falling After Hours. A Short Seller Says It Shares Nvidia’s China Risk",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/amd-just-plunged-almost-8-020702845.html",
-      "publisher": "24/7 Wall St."
+      "title": "Nvidia Stock Keeps Falling As California Opens A Probe Into Its China Risk",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-keeps-falling-california-214200884.html",
+      "publisher": "GuruFocus.com"
      },
      {
-      "title": "US Approved Nvidia, AMD AI Chip Sales to China",
-      "url": "https://finance.yahoo.com/technology/ai/articles/us-approved-nvidia-amd-ai-000557363.html",
-      "publisher": "MT Newswires"
+      "title": "AMD Stocks Plunge 7.72% as Short Seller Questions China Firmware Ties",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/amd-stocks-plunge-7-72-214135649.html",
+      "publisher": "GuruFocus.com"
      }
     ]
    }
@@ -308,19 +307,8 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Canada saw little US movement on tariff relief, while the US dollar nudged higher against the Canadian loonie.",
-    "links": [
-     {
-      "title": "Canada sees little US movement on tariff relief, sources say",
-      "url": "https://finance.yahoo.com/news/canada-sees-little-us-movement-220844750.html",
-      "publisher": "Reuters"
-     },
-     {
-      "title": "US Dollar Nudges Higher Against Canada's Loonie as 10-Year Yields Edge Down, Oil Prices Rise",
-      "url": "https://finance.yahoo.com/markets/currencies/articles/us-dollar-nudges-higher-against-182656192.html",
-      "publisher": "MT Newswires"
-     }
-    ]
+    "line": "Quiet week for US-relevant news.",
+    "links": []
    }
   },
   {
@@ -385,8 +373,19 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "Lower US Treasury yields and shifting Fed expectations stalled the dollar's rally against the yen as investors sought safe-haven assets.",
+    "links": [
+     {
+      "title": "Dollar weaker as Fed-fueled rally stalls; lower US yields help yen",
+      "url": "https://finance.yahoo.com/news/dollar-near-19-month-peak-015038270.html",
+      "publisher": "Reuters"
+     },
+     {
+      "title": "Dollar set for 4-week win streak; yen jumps on safe-haven bid, hot inflation data",
+      "url": "https://finance.yahoo.com/markets/currencies/articles/asia-fx-struggles-dollar-holds-053324608.html",
+      "publisher": "Investing.com"
+     }
+    ]
    }
   },
   {
@@ -451,17 +450,17 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Anthropic ranked among the world's most valuable public companies after its IPO, while Wall Street's AI selloff spread to Asian markets.",
+    "line": "Major US chipmakers plunged led by Nvidia's 12% drop amid an AI market sell-off, while TSMC halted China chip shipments under new US rules.",
     "links": [
      {
-      "title": "South Korea’s Stock Market and the Nikkei 225 Sink More Than 4% as the AI Selloff Spreads From Wall Street. Here’s How Much of a Target-Date Fund Is in Samsung, SK Hynix and TSMC",
-      "url": "https://finance.yahoo.com/markets/world-indices/articles/south-korea-stock-market-nikkei-035104660.html",
-      "publisher": "24/7 Wall St."
+      "title": "Nvidia drops 12%, Broadcom and AMD extend declines as the AI trade melts down",
+      "url": "https://finance.yahoo.com/markets/article/nvidia-amd-and-broadcom-lead-chip-stocks-lower-133658985.html",
+      "publisher": "Yahoo Finance"
      },
      {
-      "title": "Anthropic Joins World's Most Valuable Public Companies After IPO",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-joins-world-apos-most-005806406.html",
-      "publisher": "MT Newswires"
+      "title": "TSMC Is Halting Some China Chip Orders as a New U.S. Rule Kicks In",
+      "url": "https://finance.yahoo.com/technology/ai/articles/tsmc-halting-china-chip-orders-131332877.html",
+      "publisher": "24/7 Wall St."
      }
     ]
    }
@@ -754,17 +753,17 @@
   },
   "gdp_b": 30770.0,
   "week": {
-   "line": "A Federal Reserve official signaled more interest rate hikes as inflation remains too high, while Treasury yields fell on safe-haven demand.",
+   "line": "The S&P 500 and Dow entered correction territory during a big-tech plunge, driving investors toward safe-haven US Treasuries and lowering yields.",
    "links": [
     {
-     "title": "Federal Reserve Official Admits ‘Inflation Is Too High,’ Signals More Interest Rate Hikes Are Coming",
-     "url": "https://finance.yahoo.com/economy/policy/articles/federal-official-admits-inflation-too-234842092.html",
-     "publisher": "First for Money"
+     "title": "Update: S&P 500, Dow Sink Into Correction Territory as Investors Seek Treasury Cover Amid Plunging Big-Tech",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-sink-correction-214248905.html",
+     "publisher": "MT Newswires"
     },
     {
-     "title": "U.S. Treasury yields slip on safe-haven bid, 10-year posts four-day losing streak",
-     "url": "https://finance.yahoo.com/economy/policy/articles/u-treasury-yields-slip-safe-225927497.html",
-     "publisher": "Investing.com"
+     "title": "Treasury Yields Fall as Investors Seek Safe Havens",
+     "url": "https://finance.yahoo.com/m/6751884b-108e-37bf-89f8-1bbd1dec9153/treasury-yields-fall-as.html",
+     "publisher": "The Wall Street Journal"
     }
    ]
   }
@@ -781,11 +780,10 @@
   "strategic": 30
  },
  "profiles_updated_at": "2026-11-20T05:35:52Z",
- "week_updated_at": "2026-11-20T05:35:52Z",
- "generated_at": "2026-11-20T05:35:52Z",
+ "week_updated_at": "2026-11-21T05:24:09Z",
+ "generated_at": "2026-11-21T05:24:09Z",
  "gemini": {
   "ok_calls": {
-   "gemini-3.7-flash": 3,
    "gemini-3.6-flash": 1
   },
   "errors": {
