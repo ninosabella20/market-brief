@@ -75,7 +75,7 @@
     store.set("tab", id);
   }
   for (const t of document.querySelectorAll('[role="tab"]')) t.addEventListener("click", () => showTab(t.id));
-  const hashTab = { "#stories": "tab-stories", "#sectors": "tab-perf", "#geo": "tab-geo" }[location.hash] || null;
+  const hashTab = { "#stories": "tab-stories", "#sectors": "tab-perf", "#geo": "tab-geo", "#holdings": "tab-hold", "#picks": "tab-track" }[location.hash] || null;
   showTab(hashTab || store.get("tab") || "tab-perf");
 
   /* ---------- alerts ---------- */
@@ -325,6 +325,135 @@
       el("strong", { text: "Geopolitics: " }), g.notices.join(" ")));
   }
 
+  /* ---------- mini charts (inline SVG, no library) ---------- */
+  const SVGNS = "http://www.w3.org/2000/svg";
+  function svg(tag, attrs) { const n = document.createElementNS(SVGNS, tag); for (const [k, v] of Object.entries(attrs || {})) n.setAttribute(k, v); return n; }
+  // lines: [{v:[...], cls:"up"|"down"|"bench"}]; all lines share one y-scale
+  function chart(lines, { w = 300, h = 60, labels = false, base = null } = {}) {
+    const all = lines.flatMap(l => l.v).concat(base != null ? [base] : []);
+    const min = Math.min(...all), max = Math.max(...all), pad = (max - min) * 0.08 || 1;
+    const lo = min - pad, hi = max + pad, top = labels ? 14 : 2, bot = labels ? 14 : 2;
+    const y = v => top + (h - top - bot) * (1 - (v - lo) / (hi - lo));
+    const root = svg("svg", { viewBox: `0 0 ${w} ${h}`, class: "chart", preserveAspectRatio: "none", role: "img" });
+    if (base != null) root.append(svg("line", { x1: 0, x2: w, y1: y(base), y2: y(base), class: "base" }));
+    for (const l of lines) {
+      const n = l.v.length; if (n < 2) continue;
+      const pts = l.v.map((v, i) => `${(i / (n - 1) * w).toFixed(1)},${y(v).toFixed(1)}`);
+      if (l.fill) root.append(svg("polygon", { points: `0,${h - bot} ${pts.join(" ")} ${w},${h - bot}`, class: "area " + l.cls }));
+      root.append(svg("polyline", { points: pts.join(" "), class: "line " + l.cls, "vector-effect": "non-scaling-stroke" }));
+    }
+    return root;
+  }
+  const trendCls = v => (v.length > 1 && v[v.length - 1] >= v[0]) ? "up" : "down";
+  const chartWrap = (node, foot) => el("div", { class: "chart-wrap" }, node, foot || null);
+
+  /* ---------- AP's Holdings tab ---------- */
+  let holdData = null;
+  function renderHoldings(hd) {
+    holdData = hd || holdData;
+    const grid = $("#hold-grid"); if (!grid) return;
+    if (!holdData || !holdData.items) { $("#hold-meta").textContent = "Holdings data not available yet."; return; }
+    const items = holdData.items.filter(i => !i.error);
+    const key = $("#hold-sort").value;
+    items.sort((a, b) => key === "name" ? a.ticker.localeCompare(b.ticker)
+      : key === "off_high" ? (a.off_high ?? 0) - (b.off_high ?? 0) : (b[key] ?? -1e9) - (a[key] ?? -1e9));
+    const asof = items[0] && items[0].as_of;
+    $("#hold-meta").textContent = `${items.length} companies · prices as of ${fmtDate(asof)} close · updated ${ago(holdData.generated_at)}`;
+    grid.replaceChildren(...items.map(holdCard));
+  }
+  function holdCard(i) {
+    const v1 = (i.s1y || {}).v || [];
+    let range = "1y";
+    const big = el("div", { class: "hold-big", hidden: true });
+    const drawBig = () => {
+      const s = range === "1y" ? i.s1y : i.s5y; if (!s) return;
+      big.replaceChildren(
+        el("div", { class: "seg" }, ["1y", "5y"].map(r => el("button", { type: "button", "aria-pressed": String(range === r),
+          onclick: e => { e.stopPropagation(); range = r; drawBig(); }, text: r.toUpperCase() }))),
+        chartWrap(chart([{ v: s.v, cls: trendCls(s.v), fill: true }], { w: 600, h: 150, labels: true }),
+          el("div", { class: "chart-foot muted small" },
+            el("span", { text: fmtDate(s.start) }), el("span", { text: "low " + money(Math.min(...s.v), i.currency) + " · high " + money(Math.max(...s.v), i.currency) }),
+            el("span", { text: fmtDate(s.end) }))));
+    };
+    const card = el("article", { class: "card hold-card", tabindex: 0,
+      onclick: () => { big.hidden = !big.hidden; card.classList.toggle("open", !big.hidden); if (!big.hidden) drawBig(); },
+      onkeydown: e => { if (e.key === "Enter") card.click(); } },
+      el("div", { class: "hold-top" },
+        el("div", null, el("a", { class: "pick-tk", href: "https://finance.yahoo.com/quote/" + encodeURIComponent(i.ticker), target: "_blank",
+          rel: "noopener noreferrer", text: i.ticker, onclick: e => e.stopPropagation() }), el("div", { class: "muted small hold-nm", text: i.name })),
+        el("div", { class: "hold-px" }, el("b", { text: money(i.last, i.currency) }), el("span", { class: "small " + cls(i.day), text: pct(i.day, 2) }))),
+      chartWrap(chart([{ v: v1, cls: trendCls(v1), fill: true }], { w: 300, h: 56 })),
+      el("div", { class: "pills" }, [["1W", i.w1], ["YTD", i.ytd], ["1Y", i.y1], ["5Y", i.y5]].map(([k, v]) =>
+        el("span", { class: "pill " + cls(v) }, el("b", { text: k }), pct(v, 0)))),
+      el("div", { class: "hold-meta muted small" },
+        i.off_high != null ? el("span", { text: i.off_high > -1 ? "at 52-week high" : pct(i.off_high, 0) + " vs 52-week high" }) : null,
+        i.fwd_pe ? el("span", { text: "P/E " + Math.round(i.fwd_pe) }) : null,
+        i.consensus ? el("span", { class: "badge " + ratingClass(i.consensus), text: i.consensus }) : null),
+      big);
+    return card;
+  }
+  $("#hold-sort").addEventListener("change", () => renderHoldings());
+
+  /* ---------- Picks tracker tab ---------- */
+  let trackData = null, trackFilter = "all";
+  function renderTracker(h) {
+    trackData = h || trackData;
+    const list = $("#track-list"); if (!list) return;
+    const perf = trackData && trackData.performance;
+    if (!perf || !perf.rows || !perf.rows.length) { $("#track-summary").textContent = "No tracked picks yet."; return; }
+    const sm = perf.summary;
+    const stat = (label, value, sub, c) => el("div", { class: "card stat" }, el("span", { class: "lbl", text: label }),
+      el("b", { class: c || "", text: value }), el("span", { class: "muted small", text: sub }));
+    $("#track-summary").replaceChildren(
+      stat("Picks tracked", String(sm.count), `since ${fmtDate(sm.since)} · ${sm.active} in today's picks`),
+      stat("Average return", pct(sm.avg_ret, 1), `S&P 500 over the same days: ${pct(sm.avg_bench, 1)}`, cls(sm.avg_ret)),
+      stat("vs S&P 500", (sm.avg_excess >= 0 ? "+" : "−") + Math.abs(sm.avg_excess).toFixed(1) + " pts", "average out/under-performance", cls(sm.avg_excess)),
+      stat("Beating the S&P", `${sm.beating} / ${sm.count}`, Math.round(sm.beating / sm.count * 100) + "% of picks", sm.beating * 2 >= sm.count ? "up" : "down"));
+    const f = $("#track-filter");
+    f.replaceChildren(...[["all", "All"], ["active", "In today's picks"], ["dropped", "No longer picked"]].map(([k, label]) =>
+      el("button", { class: "chip", type: "button", "aria-pressed": String(trackFilter === k),
+        onclick: () => { trackFilter = k; renderTracker(); }, text: label })));
+    let rows = perf.rows.filter(r => trackFilter === "all" || (trackFilter === "active") === !!r.active);
+    const key = $("#track-sort").value;
+    rows.sort((a, b) => key === "excess" ? b.excess - a.excess : key === "-excess" ? a.excess - b.excess
+      : key === "newest" ? b.first_picked.localeCompare(a.first_picked) || b.excess - a.excess
+      : a.first_picked.localeCompare(b.first_picked) || b.excess - a.excess);
+    list.replaceChildren(...rows.map(trackRow));
+  }
+  // non-US listings (e.g. 2330.TW) are in local currency: show the number without a $ sign
+  const px = (v, t) => t.includes(".") ? Number(v).toLocaleString(undefined, { maximumFractionDigits: 2 }) : money(v);
+  function trackRow(r) {
+    const lines = [{ v: r.bench_chart.v, cls: "bench" }, { v: r.chart.v, cls: r.excess >= 0 ? "up" : "down" }];
+    const more = el("div", { class: "track-more", hidden: true },
+      r.reason ? el("p", { class: "pick-why", text: r.reason }) : null,
+      chartWrap(chart(lines, { w: 600, h: 140, labels: true, base: 100 }),
+        el("div", { class: "chart-foot muted small" }, el("span", { text: fmtDate(r.chart.start) }),
+          el("span", null, el("span", { class: "key " + (r.excess >= 0 ? "up" : "down") }), " " + r.ticker + "  ", el("span", { class: "key bench" }), " S&P 500 (both = 100 at entry)"),
+          el("span", { text: fmtDate(r.chart.end) }))),
+      el("p", { class: "muted small", text: `Picked ${r.times_picked} day${r.times_picked > 1 ? "s" : ""} so far · last picked ${fmtDate(r.last_picked)}` }));
+    const card = el("article", { class: "card track-row", tabindex: 0,
+      onclick: () => { more.hidden = !more.hidden; card.classList.toggle("open", !more.hidden); },
+      onkeydown: e => { if (e.key === "Enter") card.click(); } },
+      el("div", { class: "track-main" },
+        el("div", { class: "track-id" },
+          el("div", null, el("a", { class: "pick-tk", href: "https://finance.yahoo.com/quote/" + encodeURIComponent(r.ticker), target: "_blank",
+            rel: "noopener noreferrer", text: r.ticker, onclick: e => e.stopPropagation() }), " ", el("span", { class: "muted small", text: r.name || "" })),
+          el("div", { class: "track-tags" },
+            el("span", { class: "chip-s", text: SHORT[r.sector] || r.sector }),
+            r.horizon ? el("span", { class: "badge hz", text: "Hold " + r.horizon.replace("years", "yrs") }) : null,
+            r.active ? el("span", { class: "badge buy", text: "Still picked" }) : el("span", { class: "badge hold", text: "Dropped" }))),
+        el("div", { class: "track-spark" }, chart(lines, { w: 160, h: 40, base: 100 })),
+        el("div", { class: "track-nums" },
+          el("div", { class: "small muted", text: `${fmtDate(r.first_picked)} @ ${px(r.entry_price, r.ticker)} → ${px(r.price, r.ticker)}` }),
+          el("div", { class: "pills" },
+            el("span", { class: "pill " + cls(r.ret) }, el("b", { text: "Return" }), pct(r.ret, 1)),
+            el("span", { class: "pill" }, el("b", { text: "S&P" }), pct(r.bench_ret, 1)),
+            el("span", { class: "pill strong " + cls(r.excess) }, el("b", { text: "vs S&P" }), (r.excess >= 0 ? "+" : "−") + Math.abs(r.excess).toFixed(1) + " pts")))),
+      more);
+    return card;
+  }
+  $("#track-sort").addEventListener("change", () => renderTracker());
+
   /* ---------- load ---------- */
   async function load() {
     try {
@@ -336,6 +465,10 @@
       renderAlerts(d); renderPerf(d); renderStories(d);
       fetch("geo.json?t=" + Date.now(), { cache: "no-store" }).then(x => x.ok ? x.json() : null)
         .then(renderGeo).catch(() => renderGeo(null));
+      fetch("holdings.json?t=" + Date.now(), { cache: "no-store" }).then(x => x.ok ? x.json() : null)
+        .then(renderHoldings).catch(() => renderHoldings(null));
+      fetch("picks_history.json?t=" + Date.now(), { cache: "no-store" }).then(x => x.ok ? x.json() : null)
+        .then(renderTracker).catch(() => renderTracker(null));
       lastData = d;
       mq.addEventListener("change", () => renderPerf(lastData));
     } catch (e) {

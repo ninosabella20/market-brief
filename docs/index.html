@@ -23,7 +23,9 @@
   <nav class="wrap tabs" role="tablist">
     <button role="tab" id="tab-perf" aria-controls="panel-perf" aria-selected="true"><span class="t-long">Sector performance</span><span class="t-short">Sectors</span></button>
     <button role="tab" id="tab-stories" aria-controls="panel-stories" aria-selected="false"><span class="t-long">Top stories</span><span class="t-short">Stories</span></button>
-    <button role="tab" id="tab-geo" aria-controls="panel-geo" aria-selected="false">Geopolitics</button>
+    <button role="tab" id="tab-geo" aria-controls="panel-geo" aria-selected="false"><span class="t-long">Geopolitics</span><span class="t-short">Geo</span></button>
+    <button role="tab" id="tab-hold" aria-controls="panel-hold" aria-selected="false"><span class="t-long">AP's Holdings</span><span class="t-short">Holdings</span></button>
+    <button role="tab" id="tab-track" aria-controls="panel-track" aria-selected="false"><span class="t-long">Picks tracker</span><span class="t-short">Picks</span></button>
   </nav>
 </header>
 
@@ -61,6 +63,34 @@
     <div class="table-head"><h2>Top 10 players for the US economy</h2><span class="muted small">tap a country for its profile</span></div>
     <div id="geo-list" class="geo-list"></div>
     <p class="muted small foot" id="geo-foot">Ranking: US goods trade (US Census), holdings of US Treasuries (US Treasury), GDP (IMF) and a strategic-leverage weight. Profiles and "this week" lines: Gemini, from that data and recent Yahoo Finance headlines. "How they see themselves" is written from each country's own point of view. Flags: flag-icons (MIT).</p>
+  </section>
+  <section id="panel-hold" role="tabpanel" aria-labelledby="tab-hold" hidden>
+    <div class="table-head">
+      <h2>AP's Holdings</h2>
+      <label class="muted small sortby">Sort
+        <select id="hold-sort">
+          <option value="name">A–Z</option><option value="day">Day</option><option value="y1">1 year</option>
+          <option value="y5">5 years</option><option value="off_high">Furthest below 52-week high</option>
+        </select></label>
+    </div>
+    <p class="muted small" id="hold-meta"></p>
+    <div id="hold-grid" class="hold-grid"></div>
+    <p class="muted small foot">Prices: Yahoo Finance (price return, excl. dividends). Tap a card for a bigger chart. Edit the list in <code>holdings.txt</code> in the repo.</p>
+  </section>
+
+  <section id="panel-track" role="tabpanel" aria-labelledby="tab-track" hidden>
+    <div class="table-head"><h2>Long-term picks: how they've played out</h2></div>
+    <div id="track-summary" class="track-summary"></div>
+    <p class="muted small">Each pick is measured from the close before the morning it was first picked, against the S&amp;P 500 (SPY) over the same days. These are 5–10+ year ideas, so early results mostly reflect short-term market swings.</p>
+    <div class="track-controls">
+      <div class="chips" id="track-filter"></div>
+      <label class="muted small sortby">Sort
+        <select id="track-sort">
+          <option value="excess">Best vs S&amp;P</option><option value="-excess">Worst vs S&amp;P</option>
+          <option value="newest">Newest picks</option><option value="oldest">Oldest picks</option>
+        </select></label>
+    </div>
+    <div id="track-list" class="track-list"></div>
   </section>
 </main>
 <script src="app.js"></script>

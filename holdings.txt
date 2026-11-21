@@ -1,0 +1,31 @@
+# AP's Holdings: one ticker per line (Yahoo Finance symbols). Lines starting with # are ignored.
+# Edit this file on GitHub and commit; the next run picks it up.
+AAPL
+AMZN
+ASML
+AVGO
+BN
+CME
+COO
+COST
+CP
+CPRT
+DHR
+ETN
+GOOGL
+HD
+ISRG
+JPM
+MA
+MBGL
+MCO
+META
+MRK
+MSFT
+NVDA
+OTIS
+PGR
+PWR
+SCHD
+SPGI
+V

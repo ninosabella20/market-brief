@@ -32,6 +32,13 @@ GitHub disables scheduled workflows after 60 days with **no repository activity*
 
 You'll get an email from GitHub only if a run fails completely (no numbers and no stories). Partial failures show as notices on the site.
 
+## AP's Holdings and Picks tracker tabs
+
+`scripts/tracker.py` runs after the market and geopolitics steps (Yahoo prices only, **no Gemini calls**) and writes:
+
+- `docs/holdings.json`: every ticker in **`holdings.txt`** (one per line; edit it on GitHub and commit, and the change triggers a run) with price, Day/1W/YTD/1Y/5Y, distance from the 52-week high, P/E, consensus, a 1-year daily chart and a 5-year weekly chart.
+- `docs/picks_history.json`: every long-term pick is logged on the first day it appears, at the **close before that morning** (the price known when the pick was made). Each run measures its return since then against the S&P 500 (SPY) over the same days, and keeps whether it is still in today's picks. History was backfilled from the daily data commits back to Nov 11, 2026. Delete a position from this file to stop tracking it.
+
 ## Reliable 06:05 trigger (cron-job.org)
 
 GitHub's own scheduler can start runs hours late or skip them, so a free external timer presses

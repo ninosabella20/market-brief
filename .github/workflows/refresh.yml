@@ -15,7 +15,7 @@ on:
   #   never [skip ci] when changing THIS file (GitHub may not register the schedule)
   push:
     branches: [main]
-    paths: ["scripts/**", "requirements.txt", ".github/workflows/**"]
+    paths: ["scripts/**", "requirements.txt", ".github/workflows/**", "holdings.txt"]
   # Also started every day at 06:05 Madrid by cron-job.org through the API
   # (inputs.force=false, so it respects the window); see README "Reliable 06:05 trigger".
   workflow_dispatch:
@@ -82,15 +82,25 @@ jobs:
           if git diff --quiet -- docs/data.json; then echo "market build skipped; geo skipped too"; exit 0; fi
           python scripts/geo.py
 
+      # Holdings charts + long-term picks tracker (Yahoo prices only, no Gemini).
+      - name: Build docs/holdings.json + docs/picks_history.json
+        continue-on-error: true
+        timeout-minutes: 10
+        run: |
+          if git diff --quiet -- docs/data.json; then echo "market build skipped; tracker skipped too"; exit 0; fi
+          python scripts/tracker.py
+
       - name: Commit data
         run: |
-          if git diff --quiet -- docs/data.json docs/geo.json && [ -z "$(git status --porcelain docs/geo.json)" ]; then
+          if git diff --quiet -- docs/ && [ -z "$(git status --porcelain docs/)" ]; then
             echo "No changes to commit"; exit 0
           fi
           git config user.name  "market-brief-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/data.json
-          if [ -f docs/geo.json ]; then git add docs/geo.json; fi
+          for f in docs/geo.json docs/holdings.json docs/picks_history.json; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
           git commit -m "Refresh data $(TZ=Europe/Madrid date '+%Y-%m-%d %H:%M %Z')"
           for i in 1 2 3; do
             git pull --rebase -X theirs origin main && git push origin HEAD:main && exit 0
