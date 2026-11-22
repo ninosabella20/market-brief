@@ -4,7 +4,7 @@
   "census": {
    "key": "set",
    "2026-10": "exports 204 '' | imports 204 ''",
-   "2026-09": "exports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"ALL_VAL_YR\",\"time\"], [\"-\",\"TOTAL FOR ALL COUNTRIES\",\"1847530728674\",\"2026-09\"], [\"0003\",\"EUROPEAN UNION\",\"344184157103\",\"2026-09\"], [\"0' | imports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"GEN_VAL_YR\",\"time\"], [\"0014\",\"PACIFIC RIM COUNTRIES\",\"8'",
+   "2026-09": "exports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"ALL_VAL_YR\",\"time\"], [\"-\",\"TOTAL FOR ALL COUNTRIES\",\"1847530728674\",\"2026-09\"], [\"0003\",\"EUROPEAN UNION\",\"344184157103\",\"2026-09\"], [\"0' | imports 200 '[[\"CTY_CODE\",\"CTY_NAME\",\"GEN_VAL_YR\",\"time\"], [\"0003\",\"EUROPEAN UNION\",\"41980632'",
    "rows": "249 export rows / 249 names"
   },
   "tic": {
@@ -96,7 +96,7 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "The ECB prepares for potential December rate action while pushing to make euro swaps more accessible globally.",
+    "line": "ECB signals of a likely December rate move and efforts to increase euro swap accessibility influenced global financial sentiment amid ongoing Eurozone rate uncertainty.",
     "links": [
      {
       "title": "ECB's Nagel: Will likely need to act in December but price expectations remain anchored",
@@ -173,17 +173,17 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Nvidia's China risk faces increased scrutiny as California opens a probe and TSMC pauses advanced chip shipments under new U.S. rules.",
+    "line": "New US chip curbs and Nvidia jitters caused TSMC to halt advanced shipments to China, contributing to a significant tech sell-off impacting US-linked semiconductor stocks.",
     "links": [
+     {
+      "title": "TSMC Sinks 20% in a Week on Nvidia Jitters and New US Chip Curbs on China. Time to Buy?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-sinks-20-week-nvidia-100729822.html",
+      "publisher": "TIKR"
+     },
      {
       "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Pauses Advanced Chip Shipments To China",
       "url": "https://finance.yahoo.com/technology/articles/taiwan-semiconductor-manufacturing-nyse-tsm-042528694.html",
       "publisher": "Simply Wall St."
-     },
-     {
-      "title": "Nvidia Stock Keeps Falling As California Opens A Probe Into Its China Risk",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-keeps-falling-california-214200884.html",
-      "publisher": "GuruFocus.com"
      }
     ]
    }
@@ -250,11 +250,16 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "New Mexico Community College and Sandia National Labs sign an MOU to expand technician career pathways and strengthen the economy.",
+    "line": "Mexican medical providers are expanding specialized assessment services to attract more U.S. patients for stem cell therapies and hair transplants.",
     "links": [
      {
-      "title": "New Mexico Community College and Sandia National Labs Sign MOU to Expand Technician Career Pathways and Strengthen New Mexico's Economy",
-      "url": "https://finance.yahoo.com/economy/policy/articles/mexico-community-college-sandia-national-211500519.html",
+      "title": "Regenecell outlines assessment priorities for U.S. patients exploring stem cell therapy in Mexico",
+      "url": "https://finance.yahoo.com/healthcare/articles/regenecell-outlines-assessment-priorities-u-022100785.html",
+      "publisher": "GlobeNewswire"
+     },
+     {
+      "title": "Capilea Mexico Announces Personalized Assessment Process for U.S. Hair Transplant Patients",
+      "url": "https://finance.yahoo.com/healthcare/articles/capilea-mexico-announces-personalized-assessment-150000517.html",
       "publisher": "GlobeNewswire"
      }
     ]
@@ -324,12 +329,17 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Canada takes a next step forward on consumer-driven banking by designating the Financial Data Exchange for a standards role.",
+    "line": "Canadian financial firms launched new investment products targeting US equities, including a buffered ETF, amid broader market distributions.",
     "links": [
      {
-      "title": "Canada Takes Next Step Forward on Consumer-Driven Banking in Designating Financial Data Exchange for Standards Role",
-      "url": "https://finance.yahoo.com/economy/policy/articles/canada-takes-next-step-forward-200700812.html",
+      "title": "First Trust Portfolios Canada Announces Cap, Buffer and Dates of First Trust Vest U.S. Equity Buffer ETF – November",
+      "url": "https://finance.yahoo.com/markets/options/articles/first-trust-portfolios-canada-announces-005400196.html",
       "publisher": "GlobeNewswire"
+     },
+     {
+      "title": "Capital Group Canada Announces Cash Distribution for Capital Group Canada ETFs (CAPM, CAPW)",
+      "url": "https://finance.yahoo.com/news/capital-group-canada-announces-cash-220000554.html",
+      "publisher": "CNW Group"
      }
     ]
    }
@@ -396,11 +406,16 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "The U.S. dollar weakens as a Fed-fueled rally stalls, while lower U.S. yields help the yen amid rate-hike expectations.",
+    "line": "Rising Japanese inflation and rate hike expectations strengthened the yen, causing the US dollar rally to stall as Treasury yields fell.",
     "links": [
      {
       "title": "Dollar weaker as Fed-fueled rally stalls; lower US yields help yen",
       "url": "https://finance.yahoo.com/news/dollar-near-19-month-peak-015038270.html",
+      "publisher": "Reuters"
+     },
+     {
+      "title": "Japan's core inflation accelerates in October, cementing rate hike expectations",
+      "url": "https://finance.yahoo.com/economy/policy/articles/japans-core-inflation-accelerates-october-021629502.html",
       "publisher": "Reuters"
      }
     ]
@@ -468,17 +483,17 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "The AI trade melts down as Nvidia drops 12% and TSMC halts some China chip orders as a new U.S. rule kicks in.",
+    "line": "A massive sell-off in TSMC and Taiwanese tech, triggered by US chip curbs and Nvidia jitters, led to a significant meltdown in the global AI trade.",
     "links": [
+     {
+      "title": "TSMC Sinks 20% in a Week on Nvidia Jitters and New US Chip Curbs on China. Time to Buy?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-sinks-20-week-nvidia-100729822.html",
+      "publisher": "TIKR"
+     },
      {
       "title": "Nvidia drops 12%, Broadcom and AMD extend declines as the AI trade melts down",
       "url": "https://finance.yahoo.com/markets/article/nvidia-amd-and-broadcom-lead-chip-stocks-lower-133658985.html",
       "publisher": "Yahoo Finance"
-     },
-     {
-      "title": "TSMC Is Halting Some China Chip Orders as a New U.S. Rule Kicks In",
-      "url": "https://finance.yahoo.com/technology/ai/articles/tsmc-halting-china-chip-orders-131332877.html",
-      "publisher": "24/7 Wall St."
      }
     ]
    }
@@ -543,17 +558,17 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "U.K. inflation rises as energy costs keep pressure on the Bank of England, which warns of further interest rate rises.",
+    "line": "The Bank of England warned of further interest rate rises, while US-based Costco saw a surge in generator sales following emergency preparedness warnings.",
     "links": [
+     {
+      "title": "Britain and the Pentagon told people to get ready in October. Now Costco is selling out of generators, and billionaires have ‘apocalypse insurance’",
+      "url": "https://finance.yahoo.com/economy/articles/britain-pentagon-told-people-ready-160052193.html",
+      "publisher": "Fortune"
+     },
      {
       "title": "Bank of England warns of further interest rate rises",
       "url": "https://finance.yahoo.com/economy/policy/articles/mortgage-borrowers-face-christmas-rate-134353892.html",
       "publisher": "The Telegraph"
-     },
-     {
-      "title": "U.K. Inflation Rises as Energy Costs Keep Pressure on Bank of England",
-      "url": "https://finance.yahoo.com/m/a5733706-d092-31c5-8362-cb3ac4715d64/u.k.-inflation-rises-as.html",
-      "publisher": "The Wall Street Journal"
      }
     ]
    }
@@ -622,8 +637,13 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "India draws record foreign inflows as global AI stocks come under pressure.",
+    "line": "US-based Kroger is laying off American workers to move jobs to India, while the country sees record foreign inflows as global AI stocks face pressure.",
     "links": [
+     {
+      "title": "Kroger lays off American workers, moves jobs to India",
+      "url": "https://finance.yahoo.com/economy/policy/articles/kroger-lays-off-american-workers-003700589.html",
+      "publisher": "TheStreet"
+     },
      {
       "title": "India draws record foreign inflows as AI stocks come under pressure",
       "url": "https://finance.yahoo.com/technology/ai/articles/india-draws-record-foreign-inflows-123000422.html",
@@ -696,8 +716,13 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Saudi Arabia’s wealth fund maintains 80% of its U.S. stock portfolio in SpaceX.",
+    "line": "Saudi Arabia's sovereign wealth fund revealed a heavy concentration in SpaceX, while regional conflict with Iran shifts the landscape for Saudi investment flows.",
     "links": [
+     {
+      "title": "The world got used to endless Saudi cash. The Iran war ushered in a new reality",
+      "url": "https://finance.yahoo.com/economy/articles/world-got-used-endless-saudi-080000012.html",
+      "publisher": "Fortune"
+     },
      {
       "title": "Saudi Arabia’s Wealth Fund Has 80% of Its U.S. Stock Portfolio in SpaceX",
       "url": "https://finance.yahoo.com/markets/stocks/articles/saudi-arabia-wealth-fund-80-174217985.html",
@@ -769,8 +794,19 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "The US is reportedly pushing for a Russia-Ukraine peace deal by January while simultaneously floating NATO membership for Ukraine in recent diplomatic meetings.",
+    "links": [
+     {
+      "title": "Market Chatter: Trump Administration Pushing for Ukraine-Russia Peace Deal by January",
+      "url": "https://finance.yahoo.com/economy/policy/articles/market-chatter-trump-administration-pushing-171503942.html",
+      "publisher": "MT Newswires"
+     },
+     {
+      "title": "U.S. Has Floated NATO Membership for Ukraine in Recent Meetings",
+      "url": "https://finance.yahoo.com/m/ec428571-d223-32ca-8393-aaeffdfcd4c7/u.s.-has-floated-nato.html",
+      "publisher": "The Wall Street Journal"
+     }
+    ]
    }
   }
  ],
@@ -794,17 +830,17 @@
   },
   "gdp_b": 30770.0,
   "week": {
-   "line": "S&P 500 and Dow sink into correction territory as a major tech and AI trade sell-off leads to falling Treasury yields.",
+   "line": "US markets entered correction territory as a tech-led global rout sent the S&P 500 and Dow sinking, driving investors toward the safety of Treasury bonds.",
    "links": [
+    {
+     "title": "Tech leads global stocks rout, Treasury yields fall",
+     "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-shares-head-worst-week-014854250.html",
+     "publisher": "Reuters"
+    },
     {
      "title": "Update: S&P 500, Dow Sink Into Correction Territory as Investors Seek Treasury Cover Amid Plunging Big-Tech",
      "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-sink-correction-214248905.html",
      "publisher": "MT Newswires"
-    },
-    {
-     "title": "Treasury Yields Fall as Investors Seek Safe Havens",
-     "url": "https://finance.yahoo.com/m/6751884b-108e-37bf-89f8-1bbd1dec9153/treasury-yields-fall-as.html",
-     "publisher": "The Wall Street Journal"
     }
    ]
   }
@@ -821,20 +857,19 @@
   "strategic": 30
  },
  "profiles_updated_at": "2026-11-20T05:35:52Z",
- "week_updated_at": "2026-11-21T10:22:33Z",
- "generated_at": "2026-11-21T10:22:33Z",
+ "week_updated_at": "2026-11-22T05:18:33Z",
+ "generated_at": "2026-11-22T05:18:33Z",
  "gemini": {
   "ok_calls": {
-   "gemini-3.5-flash-lite": 1
+   "gemini-3-flash-preview": 1
   },
   "errors": {
    "gemini-3.8-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-   "gemini-3.7-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-   "gemini-3.6-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-   "gemini-3.5-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=9852s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:/",
+   "gemini-3.6-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=9840s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:/",
+   "gemini-3.5-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=9828s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:/",
    "gemini-2.5-flash": "404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a",
-   "gemini-flash-latest": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-   "gemini-3-flash-preview": "no answer within 150s"
+   "gemini-flash-latest": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=9804s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:/"
   }
  },
  "raw": {
