@@ -162,16 +162,11 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "China's push for domestic chips threatens Nvidia's market upside, while state intervention and stock rescues aim to mitigate a broader rout affecting the S&P 500.",
+    "line": "ByteDance's reported Azure deal puts Microsoft in the middle of US-China AI competition as China trails US AI labs by 12 hours.",
     "links": [
      {
-      "title": "China, Korea and Taiwan Rush Stock Rescues Before Monday: Can They Help the S&P 500?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/china-korea-taiwan-rush-stock-203323970.html",
-      "publisher": "BeInCrypto"
-     },
-     {
-      "title": "China Switched to Making Its Own Chips “At All Costs.” That Shrinks Nvidia’s China Upside",
-      "url": "https://finance.yahoo.com/technology/articles/china-switched-making-own-chips-142126742.html",
+      "title": "China Is “Only 12 Hours” Behind US AI Labs. ByteDance’s Reported Azure Deal Puts Microsoft in the Middle",
+      "url": "https://finance.yahoo.com/technology/ai/articles/china-only-12-hours-behind-213903111.html",
       "publisher": "TIKR"
      }
     ]
@@ -239,8 +234,14 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "Mexico introduced a new cruise entry law affecting American travelers.",
+    "links": [
+     {
+      "title": "Mexico introduces new cruise entry law affecting Americans",
+      "url": "https://finance.yahoo.com/economy/policy/articles/mexico-introduces-cruise-entry-law-191700217.html",
+      "publisher": "TheStreet"
+     }
+    ]
    }
   },
   {
@@ -307,8 +308,14 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "The US dollar rose to a 20-month peak against Canada's loonie.",
+    "links": [
+     {
+      "title": "US Dollar Edges up to 20-Month Peak Against Canada's Loonie",
+      "url": "https://finance.yahoo.com/markets/currencies/articles/us-dollar-edges-20-month-182104555.html",
+      "publisher": "MT Newswires"
+     }
+    ]
    }
   },
   {
@@ -373,17 +380,17 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Falling U.S. Treasury yields and a stalling Fed rally caused the U.S. dollar to retreat from a 19-month high against the yen.",
+    "line": "Jensen Huang's return to Nvidia influenced Asian markets, while Tokyo exchange executives expressed confidence in Japan's resilience if the AI trade cools.",
     "links": [
      {
-      "title": "Dollar edges off 19-month high after market rout; yen softens",
-      "url": "https://finance.yahoo.com/markets/currencies/articles/dollar-edges-off-19-month-041309314.html",
-      "publisher": "Reuters"
+      "title": "Taiwan Stocks Jump 9%, Beating Korea and Japan on Huang's Nvidia Return",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/taiwan-stocks-jump-9-beating-025412794.html",
+      "publisher": "BeInCrypto"
      },
      {
-      "title": "Dollar weaker as Fed-fueled rally stalls; lower US yields help yen",
-      "url": "https://finance.yahoo.com/news/dollar-near-19-month-peak-015038270.html",
-      "publisher": "Reuters"
+      "title": "Tokyo won’t fall as hard as Seoul or Taipei when the AI trade cools, says Japan Exchange Group CEO Hiromi Yamaji",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/tokyo-won-t-fall-hard-065141309.html",
+      "publisher": "Fortune"
      }
     ]
    }
@@ -450,17 +457,17 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Taiwan instituted a short-selling ban to halt an AI stock collapse, amidst regional market rescues intended to support global indices like the S&P 500.",
+    "line": "Jensen Huang's return as Nvidia CEO sparked a massive rally in Taiwanese chipmaker stocks, reviving the global AI trade following Wall Street's rebound.",
     "links": [
      {
-      "title": "China, Korea and Taiwan Rush Stock Rescues Before Monday: Can They Help the S&P 500?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/china-korea-taiwan-rush-stock-203323970.html",
-      "publisher": "BeInCrypto"
+      "title": "Asian stocks rally after Wall Street rebound as Jensen Huang returns as Nvidia’s CEO",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-rally-wall-street-033125464.html",
+      "publisher": "Associated Press"
      },
      {
-      "title": "Taiwan Announces Short-Selling Ban To Save Its AI Stock Market",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/taiwan-announces-short-selling-ban-104736140.html",
-      "publisher": "BeInCrypto"
+      "title": "Asia chipmaking stocks soar tracking Nvidia rally; S.Korea, Taiwan lead",
+      "url": "https://finance.yahoo.com/technology/ai/articles/asia-chipmaking-stocks-soar-tracking-021520376.html",
+      "publisher": "Investing.com"
      }
     ]
    }
@@ -525,8 +532,14 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "Emergency preparedness warnings from Britain and the Pentagon drove generator sales at US retailer Costco.",
+    "links": [
+     {
+      "title": "Britain and the Pentagon told people to get ready in October. Now Costco is selling out of generators, and billionaires have ‘apocalypse insurance’",
+      "url": "https://finance.yahoo.com/economy/articles/britain-pentagon-told-people-ready-160052193.html",
+      "publisher": "Fortune"
+     }
+    ]
    }
   },
   {
@@ -593,16 +606,16 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "U.S. supermarket chain Kroger laid off American workers and moved entire departments to India, following similar offshoring moves by Costco and Albertsons.",
+    "line": "US retailers Target and Best Buy sent thousands of American jobs to India, while US auto supplier Visteon expanded local manufacturing.",
     "links": [
      {
-      "title": "Costco and Albertsons moved jobs to India before Kroger",
-      "url": "https://finance.yahoo.com/small-business/articles/costco-albertsons-moved-jobs-india-010300826.html",
-      "publisher": "TheStreet"
+      "title": "Visteon Expands Local Manufacturing in India with New Automotive Cellular Module Production Line",
+      "url": "https://finance.yahoo.com/technology/articles/visteon-expands-local-manufacturing-india-040000964.html",
+      "publisher": "PR Newswire"
      },
      {
-      "title": "Kroger's layoffs send whole departments from the U.S. to India",
-      "url": "https://finance.yahoo.com/small-business/articles/krogers-layoffs-send-whole-departments-182703652.html",
+      "title": "Target and Best Buy sent thousands of American jobs to India",
+      "url": "https://finance.yahoo.com/economy/policy/articles/best-buy-target-sent-american-003700206.html",
       "publisher": "TheStreet"
      }
     ]
@@ -672,7 +685,7 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Saudi Arabia's sovereign wealth fund reportedly holds 80% of its U.S. stock portfolio in SpaceX.",
+    "line": "Saudi Arabia's wealth fund holds 80% of its US stock portfolio in SpaceX.",
     "links": [
      {
       "title": "Saudi Arabia’s Wealth Fund Has 80% of Its U.S. Stock Portfolio in SpaceX",
@@ -745,8 +758,19 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "Stock outlooks for US defense contractors Lockheed Martin and RTX came into focus amid ongoing regional security developments.",
+    "links": [
+     {
+      "title": "Is Lockheed Martin Stock Ready For A Delayed Jet Contract?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lockheed-martin-stock-ready-delayed-002938904.html",
+      "publisher": "Trefis"
+     },
+     {
+      "title": "How Much RTX Do You Really Get Through 3 ETFs?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/much-rtx-really-3-etfs-180923536.html",
+      "publisher": "Simply Wall St."
+     }
+    ]
    }
   }
  ],
@@ -770,17 +794,17 @@
   },
   "gdp_b": 30770.0,
   "week": {
-   "line": "Plunging big-tech stocks drove the S&P 500 and Dow into correction territory, leading a global stock rout while investors sought U.S. Treasury cover.",
+   "line": "Wall Street rallied and US Treasury yields rose after Jensen Huang returned as Nvidia CEO.",
    "links": [
     {
-     "title": "Tech leads global stocks rout, Treasury yields fall",
-     "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-shares-head-worst-week-014854250.html",
+     "title": "Wall Street soars on Huang's return to Nvidia, Treasury yields rise",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/us-futures-bounce-while-asia-234419517.html",
      "publisher": "Reuters"
     },
     {
-     "title": "Update: S&P 500, Dow Sink Into Correction Territory as Investors Seek Treasury Cover Amid Plunging Big-Tech",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-dow-sink-correction-214248905.html",
-     "publisher": "MT Newswires"
+     "title": "Treasury Yields Rise After Huang Returns as Nvidia CEO; European Bond Yields Slip",
+     "url": "https://finance.yahoo.com/m/120fbc18-9d87-3370-b29b-0362a4e21de2/treasury-yields-rise-after.html",
+     "publisher": "The Wall Street Journal"
     }
    ]
   }
@@ -797,15 +821,15 @@
   "strategic": 30
  },
  "profiles_updated_at": "2026-11-20T05:35:52Z",
- "week_updated_at": "2026-11-23T05:28:34Z",
- "generated_at": "2026-11-23T05:28:34Z",
+ "week_updated_at": "2026-11-24T05:26:13Z",
+ "generated_at": "2026-11-24T05:26:13Z",
  "gemini": {
   "ok_calls": {
    "gemini-3.6-flash": 1
   },
   "errors": {
-   "gemini-3.8-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-   "gemini-3.7-flash": "no answer within 150s"
+   "gemini-3.8-flash": "no answer within 150s",
+   "gemini-3.7-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
   }
  },
  "raw": {
