@@ -96,8 +96,14 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "Tesla's European sales surged 84%, providing a significant boost for the US electric vehicle maker.",
+    "links": [
+     {
+      "title": "Tesla’s Europe Sales Soar 84%",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-europe-sales-soar-84-145652232.html",
+      "publisher": "24/7 Wall St."
+     }
+    ]
    }
   },
   {
@@ -162,12 +168,12 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "ByteDance's reported Azure deal puts Microsoft in the middle of US-China AI competition as China trails US AI labs by 12 hours.",
+    "line": "A new tariff battle is shaping up, threatening the US-China trade truce.",
     "links": [
      {
-      "title": "China Is “Only 12 Hours” Behind US AI Labs. ByteDance’s Reported Azure Deal Puts Microsoft in the Middle",
-      "url": "https://finance.yahoo.com/technology/ai/articles/china-only-12-hours-behind-213903111.html",
-      "publisher": "TIKR"
+      "title": "The Next Tariff Fight Is Taking Shape. What It Means for the U.S.-China Truce.",
+      "url": "https://finance.yahoo.com/m/04c8f860-abb5-3fa8-adab-fa5eda38e594/the-next-tariff-fight-is.html",
+      "publisher": "Barrons.com"
      }
     ]
    }
@@ -234,14 +240,8 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Mexico introduced a new cruise entry law affecting American travelers.",
-    "links": [
-     {
-      "title": "Mexico introduces new cruise entry law affecting Americans",
-      "url": "https://finance.yahoo.com/economy/policy/articles/mexico-introduces-cruise-entry-law-191700217.html",
-      "publisher": "TheStreet"
-     }
-    ]
+    "line": "Quiet week for US-relevant news.",
+    "links": []
    }
   },
   {
@@ -308,14 +308,8 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "The US dollar rose to a 20-month peak against Canada's loonie.",
-    "links": [
-     {
-      "title": "US Dollar Edges up to 20-Month Peak Against Canada's Loonie",
-      "url": "https://finance.yahoo.com/markets/currencies/articles/us-dollar-edges-20-month-182104555.html",
-      "publisher": "MT Newswires"
-     }
-    ]
+    "line": "Quiet week for US-relevant news.",
+    "links": []
    }
   },
   {
@@ -380,17 +374,17 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Jensen Huang's return to Nvidia influenced Asian markets, while Tokyo exchange executives expressed confidence in Japan's resilience if the AI trade cools.",
+    "line": "Starbucks is exploring a multi-billion-dollar sale of its Japan business.",
     "links": [
      {
-      "title": "Taiwan Stocks Jump 9%, Beating Korea and Japan on Huang's Nvidia Return",
-      "url": "https://finance.yahoo.com/markets/world-indices/articles/taiwan-stocks-jump-9-beating-025412794.html",
-      "publisher": "BeInCrypto"
+      "title": "Starbucks weighs sale of Japan business worth several billion dollars - Bloomberg",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/starbucks-weighs-sale-japan-business-040718275.html",
+      "publisher": "Investing.com"
      },
      {
-      "title": "Tokyo won’t fall as hard as Seoul or Taipei when the AI trade cools, says Japan Exchange Group CEO Hiromi Yamaji",
-      "url": "https://finance.yahoo.com/markets/world-indices/articles/tokyo-won-t-fall-hard-065141309.html",
-      "publisher": "Fortune"
+      "title": "Starbucks Is Said to Engage Banks for Sale of Japan Business",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/starbucks-said-engage-banks-sale-031023709.html",
+      "publisher": "Bloomberg"
      }
     ]
    }
@@ -457,17 +451,17 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Jensen Huang's return as Nvidia CEO sparked a massive rally in Taiwanese chipmaker stocks, reviving the global AI trade following Wall Street's rebound.",
+    "line": "TSMC is being pushed toward a $22.6 billion Texas chip plant amid US tariff threats and new export curbs.",
     "links": [
      {
-      "title": "Asian stocks rally after Wall Street rebound as Jensen Huang returns as Nvidia’s CEO",
-      "url": "https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-rally-wall-street-033125464.html",
-      "publisher": "Associated Press"
+      "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Stock May Be Reasonable After New Export Curbs",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/taiwan-semiconductor-manufacturing-nyse-tsm-200904328.html",
+      "publisher": "Simply Wall St."
      },
      {
-      "title": "Asia chipmaking stocks soar tracking Nvidia rally; S.Korea, Taiwan lead",
-      "url": "https://finance.yahoo.com/technology/ai/articles/asia-chipmaking-stocks-soar-tracking-021520376.html",
-      "publisher": "Investing.com"
+      "title": "Trump Warns of “Paying 200 Percent on Chips” in Two Years. That Pushes TSMC Toward a $22.6 Billion Texas Plant",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/trump-warns-paying-200-percent-195922778.html",
+      "publisher": "TIKR"
      }
     ]
    }
@@ -532,14 +526,8 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Emergency preparedness warnings from Britain and the Pentagon drove generator sales at US retailer Costco.",
-    "links": [
-     {
-      "title": "Britain and the Pentagon told people to get ready in October. Now Costco is selling out of generators, and billionaires have ‘apocalypse insurance’",
-      "url": "https://finance.yahoo.com/economy/articles/britain-pentagon-told-people-ready-160052193.html",
-      "publisher": "Fortune"
-     }
-    ]
+    "line": "Quiet week for US-relevant news.",
+    "links": []
    }
   },
   {
@@ -606,19 +594,8 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "US retailers Target and Best Buy sent thousands of American jobs to India, while US auto supplier Visteon expanded local manufacturing.",
-    "links": [
-     {
-      "title": "Visteon Expands Local Manufacturing in India with New Automotive Cellular Module Production Line",
-      "url": "https://finance.yahoo.com/technology/articles/visteon-expands-local-manufacturing-india-040000964.html",
-      "publisher": "PR Newswire"
-     },
-     {
-      "title": "Target and Best Buy sent thousands of American jobs to India",
-      "url": "https://finance.yahoo.com/economy/policy/articles/best-buy-target-sent-american-003700206.html",
-      "publisher": "TheStreet"
-     }
-    ]
+    "line": "Quiet week for US-relevant news.",
+    "links": []
    }
   },
   {
@@ -685,14 +662,8 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Saudi Arabia's wealth fund holds 80% of its US stock portfolio in SpaceX.",
-    "links": [
-     {
-      "title": "Saudi Arabia’s Wealth Fund Has 80% of Its U.S. Stock Portfolio in SpaceX",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/saudi-arabia-wealth-fund-80-174217985.html",
-      "publisher": "24/7 Wall St."
-     }
-    ]
+    "line": "Quiet week for US-relevant news.",
+    "links": []
    }
   },
   {
@@ -758,19 +729,8 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Stock outlooks for US defense contractors Lockheed Martin and RTX came into focus amid ongoing regional security developments.",
-    "links": [
-     {
-      "title": "Is Lockheed Martin Stock Ready For A Delayed Jet Contract?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/lockheed-martin-stock-ready-delayed-002938904.html",
-      "publisher": "Trefis"
-     },
-     {
-      "title": "How Much RTX Do You Really Get Through 3 ETFs?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/much-rtx-really-3-etfs-180923536.html",
-      "publisher": "Simply Wall St."
-     }
-    ]
+    "line": "Quiet week for US-relevant news.",
+    "links": []
    }
   }
  ],
@@ -794,17 +754,12 @@
   },
   "gdp_b": 30770.0,
   "week": {
-   "line": "Wall Street rallied and US Treasury yields rose after Jensen Huang returned as Nvidia CEO.",
+   "line": "US stocks fell as AI concerns re-emerged and talks of fresh import tariffs weighed on major tech shares.",
    "links": [
     {
-     "title": "Wall Street soars on Huang's return to Nvidia, Treasury yields rise",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/us-futures-bounce-while-asia-234419517.html",
-     "publisher": "Reuters"
-    },
-    {
-     "title": "Treasury Yields Rise After Huang Returns as Nvidia CEO; European Bond Yields Slip",
-     "url": "https://finance.yahoo.com/m/120fbc18-9d87-3370-b29b-0362a4e21de2/treasury-yields-rise-after.html",
-     "publisher": "The Wall Street Journal"
+     "title": "S&P 500, Nasdaq End Lower As AI Jitters Resurface With Nvidia’s Governance Issues And Talks Of Fresh Import Tariffs  — NVDA, DELL, TSLA, TGTX In Focus",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-end-lower-001212497.html",
+     "publisher": "Stocktwits"
     }
    ]
   }
@@ -821,15 +776,15 @@
   "strategic": 30
  },
  "profiles_updated_at": "2026-11-20T05:35:52Z",
- "week_updated_at": "2026-11-24T05:26:13Z",
- "generated_at": "2026-11-24T05:26:13Z",
+ "week_updated_at": "2026-11-25T05:24:12Z",
+ "generated_at": "2026-11-25T05:24:12Z",
  "gemini": {
   "ok_calls": {
    "gemini-3.6-flash": 1
   },
   "errors": {
-   "gemini-3.8-flash": "no answer within 150s",
-   "gemini-3.7-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+   "gemini-3.8-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+   "gemini-3.7-flash": "no answer within 150s"
   }
  },
  "raw": {
