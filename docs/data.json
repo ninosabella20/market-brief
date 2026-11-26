@@ -1,8 +1,6 @@
 {
- "generated_at": "2026-11-26T05:01:19Z",
- "notices": [
-  "Stories not refreshed for: Real Estate (showing previous stories where available)."
- ],
+ "generated_at": "2026-11-26T14:32:53Z",
+ "notices": [],
  "model": "gemini-3-flash-preview",
  "market": {
   "rows": [
@@ -167,51 +165,51 @@
   "intraday": false,
   "as_of_label": "Close Wed 25 Nov 2026",
   "missing": [],
-  "updated_at": "2026-11-26T05:01:21Z"
+  "updated_at": "2026-11-26T14:32:57Z"
  },
  "recap": {
-  "text": "On Wednesday, November 25, 2026, the S&P 500 (SPY) slipped 0.29% to extend its weekly loss to 1.85%, staging a dramatic late-day recovery from deep morning lows triggered by hot PCE inflation data and new tariff proposals. The session was defined by an aggressive rotation out of AI and high-valuation growth stocks into value, cyclical, and defensive sectors. Materials (+2.07%), Real Estate (+0.92%), and Industrials (+0.83%) led the market rebound, while Information Technology (-0.83%) and Health Care (-0.56%) lagged. Meanwhile, Energy (+0.74%) drew support as crude oil rallied following reported Houthi attacks on a Saudi oil refinery.",
-  "updated_at": "2026-11-26T05:03:41Z"
+  "text": "The S&P 500 fell 0.29% on Wednesday as a dramatic late-day comeback nearly erased deep intraday losses triggered by hot PCE inflation data and new tariff proposals. Technology stocks led the decline with a 'Huangover' sell-off in AI and semiconductor names, while the broader market saw a rotation into value and defensive sectors. Energy and Materials outperformed as oil prices rose following a Houthi attack on a Saudi refinery and ongoing Middle East supply risks.",
+  "updated_at": "2026-11-26T14:40:09Z"
  },
  "reasons": {
-  "updated_at": "2026-11-26T05:03:41Z",
+  "updated_at": "2026-11-26T14:40:09Z",
   "items": {
-   "SPY": "SPY fell 0.29% on the day (down 1.85% for the week) as an afternoon rally fell just short of erasing steep losses sparked by hot PCE inflation data, tariff proposals, and an AI sell-off.",
-   "XLK": "XLK lost 0.83%—extending its monthly decline to 14.98%—pressured by Nvidia's 3.9% decline and regulatory and trade headwinds such as the MATCH Act hitting semiconductor toolmakers.",
-   "XLC": "XLC rose 0.89% as investors reallocated capital from hardware and semiconductor AI plays into diversified communication services and digital media.",
-   "XLY": "XLY slipped 0.20% (down 1.43% for the week) as hotter-than-expected PCE inflation and renewed tariff discussions weighed on consumer discretionary sentiment.",
-   "XLP": "XLP gained 0.46% as investors sought refuge in defensive consumer staples possessing strong pricing power to weather sticky inflation and equity volatility.",
-   "XLF": "XLF advanced 0.71% amid the broader rotation into value equities, supported by firm Treasury yields following hot inflation readings.",
-   "XLV": "XLV declined 0.56% on day-to-day profit taking, though it held onto a 1.39% weekly gain and an 18.66% YTD advance as a resilient defensive sector.",
-   "XLI": "XLI rose 0.83% as capital rotated into cyclical and industrial names during the Dow's major intraday comeback, shaking off initial tariff concerns.",
-   "XLB": "XLB led the market with a 2.07% jump, driven by strength in base metals and broad demand for inflation-hedging raw material producers.",
-   "XLE": "XLE climbed 0.74% as oil prices rallied following geopolitical supply threats, including a Houthi attack on a Saudi Arabian oil refinery.",
-   "XLU": "XLU added 0.48% as utility equities attracted defensive inflows and income-seeking demand amidst wild intraday volatility in benchmark tech stocks.",
-   "XLRE": "XLRE gained 0.92% as real estate names participated strongly in the late-session risk rebound, propelled by rallies across real estate operating and brokerage platforms."
+   "SPY": "Declined 0.29% as the market grappled with hot PCE inflation and new tariff proposals, though it recovered significantly from intraday lows by the close.",
+   "XLK": "Dropped 0.83% as the 'AI trade' lost momentum, with Nvidia sliding 3.9% and AMD plunging 9% amid a broader semiconductor sell-off.",
+   "XLC": "Gained 0.89% as the sector benefited from a recovery in communication services names during the late-day market rebound.",
+   "XLY": "Slipped 0.20% as investors weighed the impact of new tariffs on 14 countries against steady performance in major retailers like Walmart.",
+   "XLP": "Rose 0.46% as investors sought safety in consumer staples stocks built for 'sticky inflation' and rising market volatility.",
+   "XLF": "Advanced 0.71% driven by a value rotation and the broader market's recovery from its Tuesday and early Wednesday lows.",
+   "XLV": "Fell 0.56% despite individual rallies in names like Kardigan and OPKO Health, as the broader healthcare sector lagged the afternoon recovery.",
+   "XLI": "Increased 0.83% as industrial stocks participated in the Dow's 1,100-point intraday reversal and value-oriented rotation.",
+   "XLB": "Surged 2.07% as the top performer, boosted by advancing base metals and a rebound from previous sessions.",
+   "XLE": "Gained 0.74% as oil prices rose due to a Houthi attack on a Saudi refinery and supply threats in the Strait of Hormuz.",
+   "XLU": "Rose 0.48% as a defensive play amid volatility, supported by continued investor interest in nuclear energy stocks.",
+   "XLRE": "Climbed 0.92% following significant rallies in real estate stocks like Opendoor and Compass, which rose 11.8% and 9.3% respectively."
   }
  },
  "stories": {
-  "updated_at": "2026-11-26T05:26:23Z",
+  "updated_at": "2026-11-26T14:40:47Z",
   "sectors": {
    "XLK": {
     "name": "Information Technology",
-    "updated_at": "2026-11-26T05:05:11Z",
+    "updated_at": "2026-11-26T14:40:39Z",
     "items": [
      {
-      "headline": "Trump Administration Weighed Cold War-Era Law to Reinstate Nvidia CEO Jensen Huang",
+      "headline": "Jensen Huang returns as CEO amid S&P CreditWatch negative warning",
       "company": "Nvidia Corporation",
       "ticker": "NVDA",
-      "country": "United States",
-      "profile": "Nvidia Corporation is a Santa Clara, California-based semiconductor company that ranks as the world's leading designer of graphics and artificial intelligence processors.",
-      "why_it_matters": "Unprecedented government pressure on corporate leadership highlights Nvidia's systemic national security importance, while raising governance risks regarding executive independence and political intervention.",
+      "country": "USA",
+      "profile": "A leading designer of graphics processing units and AI accelerators, currently the dominant player in the global data center chip market.",
+      "why_it_matters": "As the sector's bellwether, Nvidia's governance turmoil and potential credit downgrade signal significant volatility and risk for the entire AI infrastructure investment thesis.",
       "what_happened": {
-       "strategy": "Nvidia pursued leadership continuity and rapid AI chip deployment amid heightened federal regulatory scrutiny and intense global competition in semiconductor technology.",
-       "event": "Senior Trump administration officials discussed using a Cold War-era law to pressure Nvidia's board into reinstating Jensen Huang as chief executive officer.",
-       "why": "U.S. officials sought Huang's leadership to secure domestic artificial intelligence dominance and stabilize the critical semiconductor industry following sudden leadership turmoil."
+       "strategy": "Maintaining market leadership through aggressive AI chip development while relying heavily on the vision and leadership of founder Jensen Huang.",
+       "event": "Huang resigned and returned as CEO within days; S&P Global Ratings subsequently placed Nvidia on CreditWatch with negative implications on November 25.",
+       "why": "The board's failure to name a successor and Huang's brief resignation sparked concerns regarding key-man risk and corporate governance."
       },
-      "url": "https://finance.yahoo.com/technology/articles/trump-admin-weighed-using-cold-032247551.html",
-      "source": "Investing.com",
-      "image": null,
+      "url": "https://finance.yahoo.com/technology/articles/jensen-huang-back-chief-nvidia-141659368.html",
+      "source": "Digital Trends",
+      "image": "https://media.zenfs.com/en/digital_trends_973/2b75767884f2d7c6ffa887a2d67a65bb.jpg",
       "published": "2026-11-26",
       "related": [
        "NVDA"
@@ -277,188 +275,185 @@
       }
      },
      {
-      "headline": "CBS Investigation Finds Nvidia Advanced AI Chips Reaching Chinese-Owned Firms via U.S. Entities",
-      "company": "Nvidia Corporation",
-      "ticker": "NVDA",
-      "country": "United States",
-      "profile": "Nvidia Corporation is a Santa Clara, California-based semiconductor giant that leads the global market in advanced graphics processing units and AI accelerators.",
-      "why_it_matters": "This circumvention loophole could provoke tighter enforcement, expanded export sanctions, or compliance penalties, threatening Nvidia's revenue and domestic AI customer oversight.",
+      "headline": "Oracle shares hit 52-week low as debt insurance costs reach record",
+      "company": "Oracle Corporation",
+      "ticker": "ORCL",
+      "country": "USA",
+      "profile": "A global leader in enterprise software and cloud infrastructure, increasingly focused on AI-driven cloud services and data management.",
+      "why_it_matters": "This suggests a major shift in investor sentiment from growth-at-all-costs to credit risk, potentially tightening capital availability for the broader AI buildout.",
       "what_happened": {
-       "strategy": "Nvidia aimed to comply with strict U.S. export controls while maximizing worldwide enterprise shipments of its high-performance AI computing hardware.",
-       "event": "A CBS News investigation revealed Nvidia's most advanced artificial intelligence chips are reaching Chinese-owned companies through U.S.-based businesses despite federal export restrictions.",
-       "why": "Chinese-backed entities utilized domestic U.S. corporate intermediaries to access high-end compute capacity without triggering direct cross-border shipment prohibitions."
+       "strategy": "Pivoting heavily toward AI cloud infrastructure, requiring massive capital expenditure and high levels of debt to compete with hyperscalers.",
+       "event": "Stock fell 47% in 2026, hitting a 52-week low as the cost of insuring its debt against default reached a record high.",
+       "why": "Investors are increasingly concerned about the sustainability of AI-related debt and the creditworthiness of major infrastructure providers like Oracle and CoreWeave."
       },
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-chips-reach-chinese-owned-031146505.html",
-      "source": "Investing.com",
-      "image": null,
+      "url": "https://finance.yahoo.com/markets/stocks/articles/oracle-down-47-2026-really-135019398.html",
+      "source": "TIKR",
+      "image": "https://media.zenfs.com/en/tikr_258/de53f012b636927eb2cc4626f958dc85",
       "published": "2026-11-26",
       "related": [
+       "ORCL",
        "NVDA",
-       "8005.HK"
+       "CRWV"
       ],
       "link_verified": true,
-      "symbol": "NVDA",
+      "symbol": "ORCL",
       "growth": {
-       "w1": -1.1,
-       "y1": -16.04,
-       "y5": 356.94,
+       "w1": -8.79,
+       "y1": -47.28,
+       "y5": 11.01,
        "as_of": "2026-11-25"
       },
       "facts": {
-       "name": "NVIDIA Corporation",
+       "name": "Oracle Corporation",
        "currency": "USD",
-       "price": 149.3,
-       "market_cap": 3605147156480,
+       "price": 103.88,
+       "market_cap": 323867508736,
+       "country": "United States",
+       "industry": "Software - Infrastructure",
+       "website": "https://www.oracle.com",
+       "logo": "https://www.google.com/s2/favicons?domain=oracle.com&sz=128",
+       "exchange": "NYSE",
+       "partial": false,
+       "consensus": {
+        "rating": "Strong Buy",
+        "mean": 1.5,
+        "analysts": 40,
+        "target_mean": 236.18,
+        "upside": 127.4,
+        "breakdown": {
+         "buy": 36,
+         "hold": 5,
+         "sell": 1
+        }
+       },
+       "ratings_ticker": "ORCL",
+       "ratings": [
+        {
+         "firm": "Stephens & Co.",
+         "grade": "Overweight",
+         "rating": "buy",
+         "action": "up",
+         "date": "2026-11-02",
+         "target": 213.0
+        },
+        {
+         "firm": "TD Cowen",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "reit",
+         "date": "2026-10-29",
+         "target": 240.0
+        },
+        {
+         "firm": "Oppenheimer",
+         "grade": "Outperform",
+         "rating": "buy",
+         "action": "reit",
+         "date": "2026-10-29",
+         "target": 275.0
+        }
+       ]
+      }
+     },
+     {
+      "headline": "Micron faces Taiwan labor risks as stock loses half its value",
+      "company": "Micron Technology, Inc.",
+      "ticker": "MU",
+      "country": "USA",
+      "profile": "One of the world's largest producers of memory and storage solutions, specializing in DRAM and NAND products for data centers and consumer electronics.",
+      "why_it_matters": "Labor instability in Taiwan adds geopolitical and operational risk to the semiconductor supply chain, specifically for critical high-bandwidth memory components used in AI.",
+      "what_happened": {
+       "strategy": "Investing $50 billion in Taiwan to expand production of high-bandwidth memory to meet surging AI demand.",
+       "event": "Shares have dropped 50.5% since June; meanwhile, stalled wage negotiations in Taiwan may force a redirection of future investments to Singapore.",
+       "why": "A combination of a bearish market reset for chip stocks and localized labor disputes is threatening Micron's long-term capacity expansion plans."
+      },
+      "url": "https://finance.yahoo.com/markets/stocks/articles/microns-50-billion-taiwan-investment-113553440.html",
+      "source": "GuruFocus.com",
+      "image": null,
+      "published": "2026-11-26",
+      "related": [
+       "MU"
+      ],
+      "link_verified": true,
+      "symbol": "MU",
+      "growth": {
+       "w1": -14.75,
+       "y1": 167.78,
+       "y5": 597.42,
+       "as_of": "2026-11-25"
+      },
+      "facts": {
+       "name": "Micron Technology, Inc.",
+       "currency": "USD",
+       "price": 601.25,
+       "market_cap": 682379247616,
        "country": "United States",
        "industry": "Semiconductors",
-       "website": "https://www.nvidia.com",
-       "logo": "https://www.google.com/s2/favicons?domain=nvidia.com&sz=128",
+       "website": "https://www.micron.com",
+       "logo": "https://www.google.com/s2/favicons?domain=micron.com&sz=128",
        "exchange": "NasdaqGS",
        "partial": false,
        "consensus": {
-        "rating": "Buy",
-        "mean": 1.67,
-        "analysts": 59,
-        "target_mean": 242.43,
-        "upside": 62.4,
+        "rating": "Strong Buy",
+        "mean": 1.37,
+        "analysts": 45,
+        "target_mean": 1529.69,
+        "upside": 154.4,
         "breakdown": {
-         "buy": 49,
-         "hold": 12,
-         "sell": 2
+         "buy": 44,
+         "hold": 5,
+         "sell": 0
         }
        },
-       "ratings_ticker": "NVDA",
+       "ratings_ticker": "MU",
        "ratings": [
         {
-         "firm": "Melius Research",
-         "grade": "Hold",
-         "rating": "hold",
-         "action": "down",
-         "date": "2026-11-12",
-         "target": 185.0
+         "firm": "Rosenblatt",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-10-22",
+         "target": 1900.0
+        },
+        {
+         "firm": "Needham",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "reit",
+         "date": "2026-10-22",
+         "target": 1650.0
         },
         {
          "firm": "DA Davidson",
          "grade": "Buy",
          "rating": "buy",
          "action": "main",
-         "date": "2026-11-12",
-         "target": 200.0
-        },
-        {
-         "firm": "Craig-Hallum",
-         "grade": "Hold",
-         "rating": "hold",
-         "action": "down",
-         "date": "2026-11-12",
-         "target": 180.0
+         "date": "2026-10-07",
+         "target": 3000.0
         }
        ]
       }
      },
      {
-      "headline": "Trump Threatens Steep Taxes on Tech Giants Constructing Data Centers Overseas",
-      "company": "Microsoft Corporation",
-      "ticker": "MSFT",
-      "country": "United States",
-      "profile": "Microsoft Corporation is a Redmond, Washington-based multinational technology company that ranks as one of the world's largest software and cloud computing providers.",
-      "why_it_matters": "Penalizing international infrastructure buildouts could inflate hyperscaler capex, disrupt global cloud expansion plans, and create severe tax friction for major software and cloud vendors.",
-      "what_happened": {
-       "strategy": "Microsoft aggressively expanded global cloud and AI data center capacity to meet international enterprise demand and comply with local data sovereignty regulations.",
-       "event": "President Trump threatened to impose steep tax penalties on U.S. technology companies building data centers overseas rather than within American borders.",
-       "why": "The administration seeks to mandate that massive AI infrastructure capital expenditures and computing power remain concentrated within the United States."
-      },
-      "url": "https://finance.yahoo.com/economy/policy/articles/trump-message-big-tech-firms-223005233.html",
-      "source": "Benzinga",
-      "image": "https://media.zenfs.com/en/benzinga_79/34e671b772252a8dcabd307fda2f1e68.jpg",
-      "published": "2026-11-25",
-      "related": [
-       "AMZN",
-       "GOOGN",
-       "MSFT"
-      ],
-      "link_verified": true,
-      "symbol": "MSFT",
-      "growth": {
-       "w1": -3.61,
-       "y1": 2.71,
-       "y5": 44.99,
-       "as_of": "2026-11-25"
-      },
-      "facts": {
-       "name": "Microsoft Corporation",
-       "currency": "USD",
-       "price": 489.93,
-       "market_cap": 3638315450368,
-       "country": "United States",
-       "industry": "Software - Infrastructure",
-       "website": "https://www.microsoft.com",
-       "logo": "https://www.google.com/s2/favicons?domain=microsoft.com&sz=128",
-       "exchange": "NasdaqGS",
-       "partial": false,
-       "consensus": {
-        "rating": "Strong Buy",
-        "mean": 1.34,
-        "analysts": 54,
-        "target_mean": 637.36,
-        "upside": 30.1,
-        "breakdown": {
-         "buy": 55,
-         "hold": 3,
-         "sell": 0
-        }
-       },
-       "ratings_ticker": "MSFT",
-       "ratings": [
-        {
-         "firm": "Bernstein",
-         "grade": "Outperform",
-         "rating": "buy",
-         "action": "main",
-         "date": "2026-10-29",
-         "target": 722.0
-        },
-        {
-         "firm": "RBC Capital",
-         "grade": "Outperform",
-         "rating": "buy",
-         "action": "reit",
-         "date": "2026-10-29",
-         "target": 640.0
-        },
-        {
-         "firm": "Citigroup",
-         "grade": "Buy",
-         "rating": "buy",
-         "action": "main",
-         "date": "2026-10-29",
-         "target": 680.0
-        }
-       ]
-      }
-     },
-     {
-      "headline": "U.S. Grants Tariff Exemptions for iPhones and Chips While Excluding Hardware Peripherals",
+      "headline": "Apple removes popular AI chatbot Talkie over safety concerns",
       "company": "Apple Inc.",
       "ticker": "AAPL",
-      "country": "United States",
-      "profile": "Apple Inc. is a Cupertino, California-based consumer electronics and software titan that ranks as the world's leading smartphone manufacturer by revenue.",
-      "why_it_matters": "While core iPhone revenues are shielded from duty increases, Apple's high-margin Wearables and accessories segment faces cost pressures and potential retail price hikes.",
+      "country": "USA",
+      "profile": "A global technology giant known for consumer electronics, software services, and its increasingly integrated artificial intelligence ecosystem.",
+      "why_it_matters": "This highlights the growing regulatory and reputational risks for platform owners as they are forced to police the rapidly expanding AI application market.",
       "what_happened": {
-       "strategy": "Apple sought to protect device gross margins and maintain intricate international manufacturing supply chains amid shifting U.S. trade policy and tariffs.",
-       "event": "New tariff exemption lists spared smartphones, chips, servers, and PCs, but excluded peripheral hardware including headphones, lithium-ion batteries, and printers.",
-       "why": "Policymakers prioritized protecting core consumer tech and computing infrastructure while using tariffs on accessories and components to incentivize domestic manufacturing reshoring."
+       "strategy": "Curating a secure and premium App Store environment while expanding its own AI capabilities and hosting third-party AI applications.",
+       "event": "Apple pulled the popular AI app Talkie from its store due to alarming safety concerns and vulnerability issues.",
+       "why": "The removal follows intensifying scrutiny of AI chatbot safety and the digital market's exposure to unregulated or harmful AI content."
       },
-      "url": "https://finance.yahoo.com/m/fed0ba1a-1835-3234-b475-4ad6bcc3e25d/chips-and-iphones-are-safe.html",
-      "source": "Barrons.com",
-      "image": "https://media.zenfs.com/en/Barrons.com/d4f22c400d9caef61982569a8455eb71.jpg_up.jpg",
-      "published": "2026-11-25",
+      "url": "https://finance.yahoo.com/technology/ai/articles/apple-pulls-popular-ai-app-141351113.html",
+      "source": "GuruFocus.com",
+      "image": "https://s.yimg.com/lo/mysterio/api/e3e604770a4fefd11f46c5b1beb0ba8020e02724128da708a15ef8bf96a33fc6/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fuserupload.gurufocus.com%2F2125888241889656832.png",
+      "published": "2026-11-26",
       "related": [
        "AAPL",
-       "MU",
-       "ASML",
-       "HPQ",
-       "SKHY"
+       "AIC32968-USD",
+       "0100.HK"
       ],
       "link_verified": true,
       "symbol": "AAPL",
@@ -521,80 +516,82 @@
       }
      },
      {
-      "headline": "Nvidia and Kioxia Partner to Scale GPU Memory to Petabytes Using SSDs",
-      "company": "Nvidia Corporation",
-      "ticker": "NVDA",
-      "country": "United States",
-      "profile": "Nvidia Corporation is a Santa Clara, California-based technology company that dominates the global market for artificial intelligence hardware and accelerated computing systems.",
-      "why_it_matters": "Unlocking petabyte-scale memory via flash storage eases reliance on costly HBM supply, potentially lowering AI server total cost of ownership and accelerating storage adoption in AI architectures.",
+      "headline": "Broadcom shares slide 37% from peak as UBS slashes price target",
+      "company": "Broadcom Inc.",
+      "ticker": "AVGO",
+      "country": "USA",
+      "profile": "A major designer and supplier of semiconductor and infrastructure software products, focusing on networking, broadband, and enterprise storage.",
+      "why_it_matters": "Broadcom's correction reflects a cooling of the AI hype cycle, forcing investors to focus on realistic valuation multiples rather than pure momentum.",
       "what_happened": {
-       "strategy": "Nvidia sought to overcome physical high-bandwidth memory limitations that constrain large AI model training and data-intensive inference workloads.",
-       "event": "Kioxia and Nvidia partnered to expand effective GPU memory capacity to petabyte scale by integrating Nvidia SCADA software with Kioxia solid-state drives.",
-       "why": "The collaboration addresses severe HBM capacity bottlenecks by leveraging flash storage tiers to handle exponentially growing enterprise AI data sets."
+       "strategy": "Leveraging its custom AI chip business and VMware acquisition to drive high-margin growth in the data center and cloud sectors.",
+       "event": "Shares fell 37.5% below their June high, prompting UBS to cut its price target from $470 to $425 on November 25.",
+       "why": "Despite strong earnings, the stock is suffering from a broader multiple reset as investors re-evaluate the valuation of AI-linked hardware companies."
       },
-      "url": "https://finance.yahoo.com/technology/ai/articles/kioxia-nvidia-collaborate-expand-effective-041900475.html",
-      "source": "Business Wire",
-      "image": "https://media.zenfs.com/en/business-wire.com/af587c7b612c48d37964fecc93acb6da.jpg",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ubs-425-target-says-broadcom-115123174.html",
+      "source": "TIKR",
+      "image": "https://media.zenfs.com/en/tikr_258/9ef7cc97677b8452c799d9682c387fe3",
       "published": "2026-11-26",
       "related": [
-       "NVDA"
+       "AVGO",
+       "UBS",
+       "GOOGN"
       ],
       "link_verified": true,
-      "symbol": "NVDA",
+      "symbol": "AVGO",
       "growth": {
-       "w1": -1.1,
-       "y1": -16.04,
-       "y5": 356.94,
+       "w1": -15.02,
+       "y1": -21.86,
+       "y5": 438.47,
        "as_of": "2026-11-25"
       },
       "facts": {
-       "name": "NVIDIA Corporation",
+       "name": "Broadcom Inc.",
        "currency": "USD",
-       "price": 149.3,
-       "market_cap": 3605147156480,
+       "price": 300.86,
+       "market_cap": 1436194177024,
        "country": "United States",
        "industry": "Semiconductors",
-       "website": "https://www.nvidia.com",
-       "logo": "https://www.google.com/s2/favicons?domain=nvidia.com&sz=128",
+       "website": "https://www.broadcom.com",
+       "logo": "https://www.google.com/s2/favicons?domain=broadcom.com&sz=128",
        "exchange": "NasdaqGS",
        "partial": false,
        "consensus": {
-        "rating": "Buy",
-        "mean": 1.67,
-        "analysts": 59,
-        "target_mean": 242.43,
-        "upside": 62.4,
+        "rating": "Strong Buy",
+        "mean": 1.28,
+        "analysts": 47,
+        "target_mean": 523.28,
+        "upside": 73.9,
         "breakdown": {
-         "buy": 49,
-         "hold": 12,
-         "sell": 2
+         "buy": 47,
+         "hold": 3,
+         "sell": 0
         }
        },
-       "ratings_ticker": "NVDA",
+       "ratings_ticker": "AVGO",
        "ratings": [
         {
-         "firm": "Melius Research",
-         "grade": "Hold",
-         "rating": "hold",
-         "action": "down",
-         "date": "2026-11-12",
-         "target": 185.0
+         "firm": "Rosenblatt",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "main",
+         "date": "2026-10-27",
+         "target": 600.0
         },
         {
          "firm": "DA Davidson",
          "grade": "Buy",
          "rating": "buy",
-         "action": "main",
-         "date": "2026-11-12",
-         "target": 200.0
+         "action": "up",
+         "date": "2026-10-27",
+         "target": 400.0
         },
         {
-         "firm": "Craig-Hallum",
-         "grade": "Hold",
-         "rating": "hold",
-         "action": "down",
-         "date": "2026-11-12",
-         "target": 180.0
+         "firm": "Tigress Financial",
+         "grade": "Buy",
+         "rating": "buy",
+         "action": "init",
+         "date": "2026-10-22",
+         "target": 600.0
         }
        ]
       }
@@ -4460,17 +4457,15 @@
    "gemini-flash-lite-latest"
   ],
   "errors": {
-   "gemini-3.8-flash": "no answer within 150s",
+   "gemini-3.8-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
    "gemini-3.7-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-   "gemini-3.6-flash": "no answer within 150s",
+   "gemini-3.6-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
    "gemini-3.5-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
    "gemini-2.5-flash": "404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a",
    "gemini-flash-latest": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
   },
   "ok_calls": {
-   "gemini-3.8-flash": 5,
-   "gemini-3.7-flash": 1,
-   "gemini-3-flash-preview": 5
+   "gemini-3-flash-preview": 2
   },
   "last_429": {},
   "probe": null,
