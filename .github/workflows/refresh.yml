@@ -82,8 +82,8 @@ jobs:
           if git diff --quiet -- docs/data.json; then echo "market build skipped; geo skipped too"; exit 0; fi
           python scripts/geo.py
 
-      # Holdings charts + long-term picks tracker (Yahoo prices only, no Gemini).
-      - name: Build docs/holdings.json + docs/picks_history.json
+      # AP's Holdings tab: charts and numbers (Yahoo prices only, no Gemini).
+      - name: Build docs/holdings.json
         continue-on-error: true
         timeout-minutes: 10
         run: |
@@ -98,7 +98,7 @@ jobs:
           git config user.name  "market-brief-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/data.json
-          for f in docs/geo.json docs/holdings.json docs/picks_history.json; do
+          for f in docs/geo.json docs/holdings.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           git commit -m "Refresh data $(TZ=Europe/Madrid date '+%Y-%m-%d %H:%M %Z')"

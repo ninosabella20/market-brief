@@ -6,9 +6,8 @@ A free, self-updating market dashboard: sector performance for the 11 GICS secto
 - **Data:** `scripts/build.py`, run by GitHub Actions (`.github/workflows/refresh.yml`).
   - Prices, returns, company facts, consensus and analyst ratings: **Yahoo Finance via yfinance** (no key).
   - News candidates: **Yahoo Finance news search** (no key): for each sector the ETF's top 10 holdings plus a few themed queries (e.g. "European banks"), last 4 days, with each article's description and picture.
-  - **Long-term picks** (tap a sector): 3 companies per sector chosen by Gemini for a buy-and-hold investor (minimum 5-year holds, ideally 10+): quality businesses at a reasonable price. Each pick has a horizon ("5+ years" / "10+ years"), an angle (Compounder, Quality at a discount, Dividend grower, Long-term growth) and a short reason. Candidates are the ETF's top holdings + that sector's story companies; Gemini only sees real Yahoo numbers (5Y/1Y return, ROE, margin, revenue growth, debt/equity, FCF and dividend yield, P/E, distance from 52-week high, consensus). Numbers shown come from Yahoo, not the model, and tickers outside the candidate list are dropped. Tune the philosophy in `PICKS_PROMPT`, the count with `PICKS_PER_SECTOR`, or turn picks off with `SKIP_PICKS=1`. Ideas to research, not advice.
   - Story selection and writing, company one-liners, market recap and "why it moved": **Google Gemini API free tier**, *without* Google Search grounding (grounding isn't in the free tier for new keys). Gemini only picks from the real articles it is given, so every link is real.
-- **Cost:** €0. Public repo + GitHub Pages + Actions minutes (free and unlimited for public repos) + Gemini free tier. Each run makes 13 Gemini calls (one per sector, one for explanations, one for AI picks), once a day. The free tier allows **20 requests per day per model** (measured Nov 2026; resets at midnight Pacific), so a daily run fits within one model, and other models act as a backup.
+- **Cost:** €0. Public repo + GitHub Pages + Actions minutes (free and unlimited for public repos) + Gemini free tier. Each run makes 12 Gemini calls (one per sector plus one for explanations) plus 1 for the geopolitics lines, once a day. The free tier allows **20 requests per day per model** (measured Nov 2026; resets at midnight Pacific), so a daily run fits within one model, and other models act as a backup.
 
 ## How it works
 
@@ -32,12 +31,11 @@ GitHub disables scheduled workflows after 60 days with **no repository activity*
 
 You'll get an email from GitHub only if a run fails completely (no numbers and no stories). Partial failures show as notices on the site.
 
-## AP's Holdings and Picks tracker tabs
+## AP's Holdings tab
 
 `scripts/tracker.py` runs after the market and geopolitics steps (Yahoo prices only, **no Gemini calls**) and writes:
 
 - `docs/holdings.json`: every ticker in **`holdings.txt`** (one per line; edit it on GitHub and commit, and the change triggers a run) with price, Day/1W/YTD/1Y/5Y, distance from the 52-week high, P/E, consensus, a 1-year daily chart and a 5-year weekly chart.
-- `docs/picks_history.json`: every long-term pick is logged on the first day it appears, at the **close before that morning** (the price known when the pick was made). Each run measures its return since then against the S&P 500 (SPY) over the same days, and keeps whether it is still in today's picks. History was backfilled from the daily data commits back to Nov 11, 2026. Delete a position from this file to stop tracking it.
 
 ## Reliable 06:05 trigger (cron-job.org)
 
