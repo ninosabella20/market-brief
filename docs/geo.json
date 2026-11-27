@@ -96,8 +96,19 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "European equities rose as Spain's Pablo Hernández de Cos was selected to lead the ECB amid easing tariff concerns.",
+    "links": [
+     {
+      "title": "European stocks end higher on easing tariff fears, ECB leadership continuity",
+      "url": "https://finance.yahoo.com/markets/world-indices/articles/european-stocks-end-higher-easing-174244569.html",
+      "publisher": "Reuters"
+     },
+     {
+      "title": "Spain's Pablo Hernandez de Cos to succeed Lagarde as ECB chief",
+      "url": "https://finance.yahoo.com/economy/policy/articles/spains-pablo-hernandez-cos-succeed-150844409.html",
+      "publisher": "AFP"
+     }
+    ]
    }
   },
   {
@@ -162,17 +173,12 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Boeing secured a 50-jet order from China despite tariff threats, while Chinese demand for Nvidia's AI chips remains strong despite US export curbs.",
+    "line": "Lam Research shares fell nearly 6% as exposure to China weighed on US chip toolmaker stocks.",
     "links": [
      {
-      "title": "US Chip Curbs Can't Shake China's Appetite For Nvidia. Another Chinese Firm Is Buying 5,000 Blackwell GPUs.",
-      "url": "https://finance.yahoo.com/technology/ai/articles/us-chip-curbs-cant-shake-123705270.html",
-      "publisher": "International Business Times"
-     },
-     {
-      "title": "Boeing Lands 50-Jet Chinese Order As Trump Threatens To Double Proposed Tariffs On Beijing",
-      "url": "https://finance.yahoo.com/economy/policy/articles/boeing-lands-50-jet-chinese-160844713.html",
-      "publisher": "International Business Times"
+      "title": "Lam Research Stocks Fall 5.68% as China Exposure Weighs on Chip Toolmakers",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lam-research-stocks-fall-5-183545721.html",
+      "publisher": "GuruFocus.com"
      }
     ]
    }
@@ -239,7 +245,7 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "S&P upgraded freight rail operator CPKC to A- based on diversified growth along the Mexico-US trade corridor.",
+    "line": "S&P upgraded CPKC's credit rating to A-, citing diversified growth along the critical Mexico-US trade corridor.",
     "links": [
      {
       "title": "S&P upgrades CPKC to A- on diversified growth, Mexico-US corridor",
@@ -313,8 +319,14 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "US Treasury yields fell while the dollar rose against the Canadian loonie amid trade pressure concerns.",
+    "links": [
+     {
+      "title": "US Dollar Rises Against Canada's Loonie, Treasury Yields Fall",
+      "url": "https://finance.yahoo.com/markets/currencies/articles/us-dollar-rises-against-canada-183016358.html",
+      "publisher": "MT Newswires"
+     }
+    ]
    }
   },
   {
@@ -379,7 +391,7 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "The US proposed new tariffs on Japan, while American coffee giant Starbucks considers selling its operations in its fourth-largest market.",
+    "line": "The US proposed new tariffs on Asian trade partners including Japan, while the dollar slipped during volatile trading.",
     "links": [
      {
       "title": "US proposes new tariffs on China, Japan, Taiwan and nations across Asia",
@@ -387,9 +399,9 @@
       "publisher": "IntelliNews"
      },
      {
-      "title": "Starbucks explores sale in Japan, its fourth-largest market",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/starbucks-explores-sale-japan-fourth-174800217.html",
-      "publisher": "Proactive"
+      "title": "Yen, Swiss franc gain as dollar slips in volatile AI-driven session",
+      "url": "https://finance.yahoo.com/markets/currencies/articles/dollar-takes-breather-ahead-us-012150961.html",
+      "publisher": "Reuters"
      }
     ]
    }
@@ -456,13 +468,8 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Taiwan Semiconductor Manufacturing may condition its $22.6 billion Texas plant on terms, while Micron's Taiwan expansion faces labor disputes.",
+    "line": "TSMC indicated its planned $22.6 billion Texas chip plant may be conditional, creating uncertainty for US semiconductor manufacturing expansion.",
     "links": [
-     {
-      "title": "Micron's $50 Billion Taiwan Investment Faces Fresh Labor Risk",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/microns-50-billion-taiwan-investment-113553440.html",
-      "publisher": "GuruFocus.com"
-     },
      {
       "title": "Taiwan Semiconductor Manufacturing (TSM) May Make Its $22.6 Billion Texas Plant Conditional",
       "url": "https://finance.yahoo.com/technology/articles/taiwan-semiconductor-manufacturing-tsm-may-111054914.html",
@@ -531,12 +538,17 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "JPMorgan CEO Jamie Dimon expressed frustration with Britain after the government raised taxes on the US banking giant's local operations.",
+    "line": "JPMorgan faced UK tax increases criticized by CEO Jamie Dimon, while the Bank of England warned of rising risks from AI-related borrowing.",
     "links": [
      {
       "title": "Jamie Dimon Loved Britain—Until It Raised Taxes on JPMorgan",
       "url": "https://finance.yahoo.com/m/1894eda5-8c04-3156-ac60-152e6305696f/jamie-dimon-loved.html",
       "publisher": "The Wall Street Journal"
+     },
+     {
+      "title": "Bank of England sees growing financial risks as AI borrowing surges",
+      "url": "https://finance.yahoo.com/economy/policy/articles/bank-england-sees-growing-financial-153906001.html",
+      "publisher": "Reuters"
      }
     ]
    }
@@ -605,17 +617,12 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "US grocery giant Kroger is cutting 3,000 jobs while expanding in India, as returning American buyers boost Indian export revenues.",
+    "line": "Amazon India achieved $27 billion in e-commerce exports with targets of $80 billion by 2030, driving international growth for the US retail giant.",
     "links": [
      {
-      "title": "Returning US buyers to lift India's shrimp export revenue by up to 12%",
-      "url": "https://finance.yahoo.com/economy/articles/returning-us-buyers-lift-indias-073629231.html",
-      "publisher": "IntelliNews"
-     },
-     {
-      "title": "What Should Investors Make Of Kroger (KR) Cutting 3,000 Jobs And Expanding In India?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/investors-kroger-kr-cutting-3-232031548.html",
-      "publisher": "Simply Wall St."
+      "title": "Amazon India e-commerce exports hit $27bn, eyes $80bn by 2030",
+      "url": "https://finance.yahoo.com/news/amazon-india-e-commerce-exports-102000366.html",
+      "publisher": "Retail Insight Network"
      }
     ]
    }
@@ -684,12 +691,12 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Oil prices rose following Houthi attacks on a Saudi refinery, raising supply concerns for US energy markets ahead of the upcoming OPEC+ decision.",
+    "line": "Chevron stock and crude oil prices rose after a claimed Houthi attack on a Saudi refinery sparked Middle East energy supply fears.",
     "links": [
      {
-      "title": "Oil Prices Rise as Traders Weigh Middle East Supply Risks, OPEC+ Meeting",
-      "url": "https://finance.yahoo.com/m/ab141d76-d994-36d3-be05-db4fccb04b63/oil-prices-rise-as-traders.html",
-      "publisher": "The Wall Street Journal"
+      "title": "Chevron Stocks Rise 1.06% as Brent Jumps 3.5% on Saudi Refinery Attack Claim",
+      "url": "https://finance.yahoo.com/energy/articles/chevron-stocks-rise-1-06-184046291.html",
+      "publisher": "GuruFocus.com"
      },
      {
       "title": "Oil prices rise after Houthis claim attack on Saudi refinery",
@@ -762,8 +769,19 @@
    },
    "profile_as_of": "2026-11-20T05:35:52Z",
    "week": {
-    "line": "Quiet week for US-relevant news.",
-    "links": []
+    "line": "US defense firm RTX landed a Navy contract for next-generation nuclear cruise missiles and was added to the Industrial Select Sector SPDR ETF.",
+    "links": [
+     {
+      "title": "RTX (RTX) Lands Next Generation Nuclear Cruise Missile Work For The Navy",
+      "url": "https://finance.yahoo.com/technology/articles/rtx-rtx-lands-next-generation-013117792.html",
+      "publisher": "Simply Wall St."
+     },
+     {
+      "title": "State Street Industrial Select Sector SPDR (XLI) Adds GE and RTX on Nov. 24",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/state-street-industrial-select-sector-110507358.html",
+      "publisher": "GuruFocus.com"
+     }
+    ]
    }
   }
  ],
@@ -787,17 +805,17 @@
   },
   "gdp_b": 30770.0,
   "week": {
-   "line": "Newly proposed Trump tariffs threaten to push US housing costs higher and increase the likelihood of the Fed maintaining elevated interest rates.",
+   "line": "Treasury yields fell while the US dollar rose against the loonie amid ongoing concerns over proposed US trade tariffs.",
    "links": [
     {
-     "title": "Newly proposed tariffs raise chances of the Fed keeping interest rates higher for longer",
-     "url": "https://finance.yahoo.com/economy/policy/article/newly-proposed-tariffs-raise-chances-of-the-fed-keeping-interest-rates-higher-for-longer-203942898.html",
-     "publisher": "Yahoo Finance"
+     "title": "US Dollar Rises Against Canada's Loonie, Treasury Yields Fall",
+     "url": "https://finance.yahoo.com/markets/currencies/articles/us-dollar-rises-against-canada-183016358.html",
+     "publisher": "MT Newswires"
     },
     {
-     "title": "Greg Stanton Says Trump's Tariffs Add Nearly $11,000 to New-Home Costs as Housing Market Cools: ‘Trump Is Piling On Another Tax’",
-     "url": "https://finance.yahoo.com/real-estate/articles/greg-stanton-says-trumps-tariffs-104510761.html",
-     "publisher": "Benzinga"
+     "title": "Trump tariffs put global trade back in the firing line",
+     "url": "https://finance.yahoo.com/economy/policy/articles/trump-tariffs-put-global-trade-164800192.html",
+     "publisher": "Proactive"
     }
    ]
   }
@@ -814,15 +832,15 @@
   "strategic": 30
  },
  "profiles_updated_at": "2026-11-20T05:35:52Z",
- "week_updated_at": "2026-11-26T14:45:10Z",
- "generated_at": "2026-11-26T14:45:10Z",
+ "week_updated_at": "2026-11-27T05:13:19Z",
+ "generated_at": "2026-11-27T05:13:19Z",
  "gemini": {
   "ok_calls": {
    "gemini-3.6-flash": 1
   },
   "errors": {
-   "gemini-3.8-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-   "gemini-3.7-flash": "503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+   "gemini-3.8-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=10075s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
+   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=10063s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:"
   }
  },
  "raw": {
