@@ -49,66 +49,57 @@
    },
    "rank": 1,
    "profile": {
-    "self_view": "The European Union views itself as the preeminent global regulatory power and champion of sustainable, rules-based multilateralism, balancing competitive pressures from the US and China.",
+    "self_view": "The European Union views itself as a rules-based global leader promoting multilateralism, sustainability standards, and economic stability through a unified single market.",
     "strengths": [
-     "Single market of 450 million consumers with formidable global purchasing power.",
-     "Global pioneer in setting regulatory, antitrust, and green transition standards worldwide.",
-     "Deep industrial engineering expertise and high-value export manufacturing base.",
-     "Strong social safety nets and institutional stability supporting societal resilience."
+     "High-income single market generating massive economic scale and strong consumer demand.",
+     "Global leadership in setting tech, environmental, and corporate regulatory standards.",
+     "Advanced manufacturing capabilities and highly skilled workforce in specialized industries.",
+     "Substantial international investment capital and $1.6T in US Treasury holdings."
     ],
     "weaknesses": [
-     "Structural energy cost disadvantages relative to the US and emerging competitors.",
-     "Lagging private investment and adoption in critical advanced technologies like AI.",
-     "Heavy demographic aging creating structural labor shortages and fiscal pressures.",
-     "Fragmented capital markets impeding cross-border scale for high-growth enterprises."
+     "Persistent inflation requiring restrictive monetary policy despite sluggish GDP growth.",
+     "Dependence on imported energy and raw materials creating high corporate cost pressures.",
+     "Fragmented capital markets hindering tech startup growth and corporate scaling.",
+     "Demographic aging placing long-term pressure on fiscal deficits and labor supply."
     ],
     "relation": "Ally",
-    "lever": "Regulatory power and massive Treasury holdings",
+    "lever": "Major export market and sovereign capital",
     "impacts": [
      {
-      "title": "Strict Tech Regulations Dampen US Digital Profits",
-      "detail": "Aggressive enforcement of EU digital antitrust and AI rules could increase compliance costs and limit monetization models for dominant US tech platforms operating across Europe.",
-      "direction": "negative",
+      "title": "Regulatory spillover onto US technology firms",
+      "detail": "Strict European digital market regulations increase compliance costs and litigation risks for US mega-cap tech companies, potentially weighing on global profit margins.",
+      "direction": "mixed",
       "sectors": [
        "XLK",
        "XLC"
       ]
      },
      {
-      "title": "European Defense and Energy Diversification",
-      "detail": "Expanded European defense spending and energy security initiatives sustain elevated export demand for US defense contractors, industrial machinery, and liquefied natural gas producers.",
-      "direction": "positive",
+      "title": "Bilateral trade policy tensions and tariffs",
+      "detail": "Potential reciprocal tariffs between the US and EU could disrupt trade flows, raising input costs for US manufacturers and depressing export demand for luxury and auto goods.",
+      "direction": "negative",
       "sectors": [
        "XLI",
-       "XLE"
+       "XLY",
+       "XLB"
       ]
      },
      {
-      "title": "European Capital Flows to US Assets",
-      "detail": "Shifts in European institutional asset allocations between local sovereign debt and US Treasuries directly influence US long-term borrowing costs, mortgage rates, and dollar liquidity.",
-      "direction": "mixed",
+      "title": "Sovereign debt demand and Treasury yield stability",
+      "detail": "EU institutional holdings of $1.6T in Treasuries remain crucial for absorbing US debt issuances, anchoring US interest rate dynamics and capital market liquidity.",
+      "direction": "positive",
       "sectors": [
        "XLF",
-       "XLRE"
+       "XLRE",
+       "XLU"
       ]
      }
     ]
    },
-   "profile_as_of": "2026-11-20T05:35:52Z",
+   "profile_as_of": "2026-11-28T05:31:51Z",
    "week": {
-    "line": "European equities rose as Spain's Pablo Hernández de Cos was selected to lead the ECB amid easing tariff concerns.",
-    "links": [
-     {
-      "title": "European stocks end higher on easing tariff fears, ECB leadership continuity",
-      "url": "https://finance.yahoo.com/markets/world-indices/articles/european-stocks-end-higher-easing-174244569.html",
-      "publisher": "Reuters"
-     },
-     {
-      "title": "Spain's Pablo Hernandez de Cos to succeed Lagarde as ECB chief",
-      "url": "https://finance.yahoo.com/economy/policy/articles/spains-pablo-hernandez-cos-succeed-150844409.html",
-      "publisher": "AFP"
-     }
-    ]
+    "line": "Quiet week for US-relevant news.",
+    "links": []
    }
   },
   {
@@ -125,60 +116,61 @@
    },
    "rank": 2,
    "profile": {
-    "self_view": "China views itself as an ascendant civilizational power rightfully reclaiming its central role in global affairs and technology through state-guided economic resilience.",
+    "self_view": "China views itself as a rising economic superpower committed to technological self-reliance, national rejuvenation, and establishing a multipolar global order.",
     "strengths": [
-     "World-leading manufacturing scale and deeply integrated industrial supply chain ecosystems.",
-     "Dominant global processing capacity in rare earths and clean technology hardware.",
-     "Massive domestic consumer base supported by focused state-led capital investment.",
-     "Growing engineering talent pool driving rapid domestic high-tech import substitution."
+     "Unmatched global dominance in industrial manufacturing capacity and supply chains.",
+     "Leading position in green energy technology, batteries, and electric vehicles.",
+     "Massive domestic market with expanding state-backed strategic technology investments.",
+     "Extensive trade networks and raw material processing dominance across emerging markets."
     ],
     "weaknesses": [
-     "Protracted property sector downturn depressing domestic consumption and municipal finances.",
-     "Rapidly aging population threatening long-term productivity and economic expansion.",
-     "Vulnerability to Western export controls on advanced semiconductors and manufacturing tools.",
-     "Elevated corporate and local government debt loads constraining fiscal maneuverability."
+     "Property market downturn and local debt burdens weighing on consumer confidence.",
+     "Western semiconductor export controls limiting domestic access to advanced technology.",
+     "Demographic decline straining long-term labor supply and national pension systems.",
+     "Slowing corporate margin growth alongside ongoing regulatory and fiscal constraints."
     ],
     "relation": "Rival",
-    "lever": "Critical manufacturing and mineral supply chains",
+    "lever": "Critical manufacturing and raw material supply",
     "impacts": [
      {
-      "title": "Technology Export Restrictions Curtail Chip Revenues",
-      "detail": "Tighter US export controls on advanced AI chips and equipment restrict revenue growth for American semiconductor firms, while accelerating China's domestic semiconductor self-sufficiency.",
-      "direction": "negative",
-      "sectors": [
-       "XLK"
-      ]
-     },
-     {
-      "title": "Critical Mineral Restrictions Threaten US Manufacturing",
-      "detail": "Chinese export controls on critical minerals and battery components risk creating supply bottlenecks, raising production costs for US industrial, aerospace, and electric vehicle makers.",
-      "direction": "negative",
-      "sectors": [
-       "XLB",
-       "XLI",
-       "XLY"
-      ]
-     },
-     {
-      "title": "Manufacturing Overcapacity Exports Global Disinflation",
-      "detail": "Chinese industrial overcapacity drives low-cost goods into global markets, dampening inflation for US consumers while compressing profit margins for competing domestic manufacturers.",
+      "title": "Semiconductor restrictions and tech supply chain shifts",
+      "detail": "US technology export curbs on advanced chips accelerate supply chain reorientation, boosting domestic semiconductor investments while temporarily choking revenues for chip exporters.",
       "direction": "mixed",
       "sectors": [
-       "XLY",
-       "XLP",
+       "XLK",
+       "XLI"
+      ]
+     },
+     {
+      "title": "Treasury holdings drawdown and US bond yields",
+      "detail": "Further reductions in China's $564B Treasury portfolio could put upward pressure on US long-term yields, raising borrowing costs across the economy.",
+      "direction": "negative",
+      "sectors": [
+       "XLF",
+       "XLRE",
+       "XLU"
+      ]
+     },
+     {
+      "title": "Industrial overcapacity dumping and commodity demand",
+      "detail": "Surplus Chinese manufacturing capacity depresses global prices for industrial goods, while China's energy demand swings drive volatility in global oil and raw material markets.",
+      "direction": "mixed",
+      "sectors": [
+       "XLE",
+       "XLB",
        "XLI"
       ]
      }
     ]
    },
-   "profile_as_of": "2026-11-20T05:35:52Z",
+   "profile_as_of": "2026-11-28T05:31:51Z",
    "week": {
-    "line": "Lam Research shares fell nearly 6% as exposure to China weighed on US chip toolmaker stocks.",
+    "line": "US crackdowns choked Nvidia chip supplies in China, driving market prices up to $3 million.",
     "links": [
      {
-      "title": "Lam Research Stocks Fall 5.68% as China Exposure Weighs on Chip Toolmakers",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/lam-research-stocks-fall-5-183545721.html",
-      "publisher": "GuruFocus.com"
+      "title": "Nvidia chips on sale for $3M in China — as Jensen Huang scandal and US crackdown chokes supply",
+      "url": "https://finance.yahoo.com/technology/ai/articles/chinese-ads-selling-banned-nvidia-211840476.html",
+      "publisher": "NY Post"
      }
     ]
    }
@@ -197,55 +189,56 @@
    },
    "rank": 3,
    "profile": {
-    "self_view": "Mexico views itself as a vital North American industrial powerhouse and bridge between developing markets and the US, capitalizing on nearshoring to modernize its economy.",
+    "self_view": "Mexico sees itself as an essential North American industrial engine, positioned to capture global supply chain reallocation into its expanding manufacturing footprint.",
     "strengths": [
-     "Geographic proximity and duty-free access to the world's largest consumer market.",
-     "Competitive labor costs paired with sophisticated automotive and aerospace manufacturing.",
-     "Comprehensive preferential trade integration under the robust USMCA framework.",
-     "Disciplined macroeconomic and central bank policies maintaining financial stability."
+     "Direct geographic proximity to US markets enabling rapid nearshoring supply integration.",
+     "Duty-free trade integration under USMCA covering over $779B in trade.",
+     "Competitive labor costs and deep manufacturing experience in industrial sectors.",
+     "Young population and growing domestic consumer market supporting broader economic expansion."
     ],
     "weaknesses": [
-     "Infrastructure deficits in electrical grid capacity, water distribution, and logistics.",
-     "Domestic security challenges and organized crime inflating business operating costs.",
-     "Heavy economic dependence on US economic cycles and consumer demand shifts.",
-     "Regulatory and policy uncertainty regarding state control over key sectors."
+     "Security concerns and organized crime disrupting transportation and logistical corridors.",
+     "Energy and water infrastructure bottlenecks constraining long-term nearshoring industrial capacity.",
+     "Vulnerability to potential US trade policy shifts and strict tariff enforcement.",
+     "Fiscal pressures surrounding real wage strategies and public sector spending growth."
     ],
     "relation": "Partner",
-    "lever": "Indispensable nearshoring hub for US manufacturing",
+    "lever": "Primary US nearshoring manufacturing hub",
     "impacts": [
      {
-      "title": "Nearshoring Accelerates US Industrial Supply Reshoring",
-      "detail": "Expanding manufacturing capacity in Mexico shortens supply chains for US automakers and capital goods producers, improving inventory turnover and shielding against transpacific logistics shocks.",
+      "title": "Supply chain nearshoring and transport efficiency",
+      "detail": "Manufacturing relocation to Mexico increases US supply chain resilience against geopolitical shocks, benefiting US industrial, transportation, and logistics companies.",
       "direction": "positive",
       "sectors": [
        "XLI",
+       "XLB",
        "XLY"
       ]
      },
      {
-      "title": "Trade Agreement Scrutiny Introduces Tariff Volatility",
-      "detail": "Upcoming USMCA scheduled reviews could trigger contentious negotiations over auto content rules and agricultural biotechnology, introducing tariff uncertainties for cross-border supply chains.",
-      "direction": "mixed",
+      "title": "Trade tariff compliance and transshipment scrutiny",
+      "detail": "US efforts to restrict Chinese transshipment through Mexico could trigger border friction or new tariffs, raising auto component and industrial supply costs.",
+      "direction": "negative",
       "sectors": [
-       "XLI",
        "XLY",
-       "XLP"
+       "XLI"
       ]
      },
      {
-      "title": "Mexican Energy Shortages Constrain Production Scale",
-      "detail": "Underinvestment in Mexico's electrical generation and transmission limits the expansion rate of factories, delaying planned nearshoring benefits for US multinational manufacturers.",
-      "direction": "negative",
+      "title": "Bilateral trade expansion and consumer cross-demand",
+      "detail": "Strong Mexican economic integration expands export markets for US agriculture, financial services, and energy, driving mutual North American commercial growth.",
+      "direction": "positive",
       "sectors": [
-       "XLU",
-       "XLI"
+       "XLK",
+       "XLF",
+       "XLP"
       ]
      }
     ]
    },
-   "profile_as_of": "2026-11-20T05:35:52Z",
+   "profile_as_of": "2026-11-28T05:31:51Z",
    "week": {
-    "line": "S&P upgraded CPKC's credit rating to A-, citing diversified growth along the critical Mexico-US trade corridor.",
+    "line": "S&P upgraded CPKC to A-, driven by growth along the Mexico-US freight corridor.",
     "links": [
      {
       "title": "S&P upgrades CPKC to A- on diversified growth, Mexico-US corridor",
@@ -269,64 +262,56 @@
    },
    "rank": 4,
    "profile": {
-    "self_view": "A resource-rich, progressive trading democracy balancing deep integration with North America while asserting energy sovereignty.",
+    "self_view": "Canada views itself as a stable, resource-rich middle power and indispensable Western partner committed to multilateralism, sustainable growth, and rules-based global trade.",
     "strengths": [
-     "World-class reserves of crude oil, natural gas, and critical clean-tech minerals.",
-     "Highly educated workforce supported by proactive, merit-based skilled immigration policies.",
-     "Stable banking system and predictable rule of law fostering long-term capital allocation.",
-     "Tariff-free access to North American consumer markets via existing trade treaties."
+     "Abundant natural resources including oil, natural gas, timber, and critical minerals.",
+     "Highly educated workforce with strong financial, technological, and research institutions.",
+     "Stable parliamentary democracy with deep, institutionalized integration into North American defense and trade.",
+     "Modern infrastructure supporting advanced forestry, agriculture, and manufacturing sectors."
     ],
     "weaknesses": [
-     "Heavy economic overreliance on US market demand and shifting cross-border trade policy.",
-     "Persistent interprovincial trade barriers and sluggish domestic productivity growth.",
-     "Severe infrastructure bottlenecks constraining oil and gas export market diversification.",
-     "High consumer debt burdens compounding economic sensitivity to prolonged elevated interest rates."
+     "Economic vulnerability to US trade policy shifts and global commodity price swings.",
+     "Persistent labor shortages and lagging national labor productivity growth across industrial sectors.",
+     "Severe housing affordability crisis straining domestic consumption and local economic stability.",
+     "High interprovincial trade barriers and regulatory friction hampering internal market efficiency."
     ],
     "relation": "Ally",
-    "lever": "Key crude oil and electricity exporter",
+    "lever": "Vital energy and cross-border industrial integration",
     "impacts": [
      {
-      "title": "North American Energy Grid and Pipeline Integration",
-      "detail": "Canadian heavy crude and electricity exports stabilize US refinery operations and regional power grids, mitigating fossil fuel inflation and supporting manufacturing cost competitiveness.",
-      "direction": "positive",
+      "title": "North American Energy and Critical Minerals Supply",
+      "detail": "Disruption or expansion in Canadian crude oil, uranium, or nickel exports directly impacts US utility costs, refining margins, and EV supply chain stability.",
+      "direction": "mixed",
       "sectors": [
        "XLE",
-       "XLU",
-       "XLI"
+       "XLB",
+       "XLU"
       ]
      },
      {
-      "title": "Bilateral Trade Friction and Tariff Pressures",
-      "detail": "US tariff enforcement or renegotiation friction on lumber, steel, autos, and agricultural goods could elevate input costs for US manufacturers and disrupt integrated supply chains.",
-      "direction": "mixed",
+      "title": "Integrated Automotive and Advanced Manufacturing Trade",
+      "detail": "Tight supply chain integration across the US-Canada border means cost changes or trade disputes in auto parts and steel immediately affect US manufacturing output.",
+      "direction": "positive",
       "sectors": [
        "XLI",
-       "XLB",
        "XLY"
       ]
      },
      {
-      "title": "Critical Mineral Supply for Advanced Tech",
-      "detail": "Canadian mining of nickel, lithium, and uranium offers US defense and energy sectors a secure, friendly alternative to Chinese-dominated processing lines.",
+      "title": "Financial Market Volatility and Cross-Border Capital Flows",
+      "detail": "Large institutional capital flows and Canadian pension fund investments in US equities and real estate directly influence domestic US market liquidity and asset prices.",
       "direction": "positive",
       "sectors": [
-       "XLB",
-       "XLE",
-       "XLK"
+       "XLF",
+       "XLRE"
       ]
      }
     ]
    },
-   "profile_as_of": "2026-11-20T05:35:52Z",
+   "profile_as_of": "2026-11-28T05:31:51Z",
    "week": {
-    "line": "US Treasury yields fell while the dollar rose against the Canadian loonie amid trade pressure concerns.",
-    "links": [
-     {
-      "title": "US Dollar Rises Against Canada's Loonie, Treasury Yields Fall",
-      "url": "https://finance.yahoo.com/markets/currencies/articles/us-dollar-rises-against-canada-183016358.html",
-      "publisher": "MT Newswires"
-     }
-    ]
+    "line": "Quiet week for US-relevant news.",
+    "links": []
    }
   },
   {
@@ -343,65 +328,66 @@
    },
    "rank": 5,
    "profile": {
-    "self_view": "A technologically advanced, stable democracy rebuilding domestic investment and defense posture amid historic monetary policy normalization.",
+    "self_view": "Japan sees itself as an indispensable technological innovator, cornerstone of Asia-Pacific regional security, and anchor of global economic stability navigating demographic pressures.",
     "strengths": [
-     "Global leadership in advanced manufacturing, precision robotics, and specialized semiconductor materials.",
-     "Massive net foreign asset position providing unparalleled global external financial security.",
-     "Deep political stability, high social cohesion, and exemplary public infrastructure networks.",
-     "Revitalizing corporate governance practices unlocking record shareholder cash returns and buybacks."
+     "World leader in advanced robotics, semiconductor equipment, automotive engineering, and precision machinery.",
+     "Deep capital reserves and status as the world's largest net creditor nation.",
+     "Highly skilled, cohesive workforce and strong institutional commitment to industrial innovation.",
+     "Premier strategic cornerstone for security and economic alignment in the Indo-Pacific region."
     ],
     "weaknesses": [
-     "Rapidly aging and shrinking demographic base straining labor pools and social security.",
-     "Vulnerability to global energy shocks due to near-total dependence on imported fossil fuels.",
-     "Extreme public debt overhang limiting fiscal maneuvering as domestic bond yields rise.",
-     "Yen exchange rate volatility complicating domestic corporate planning and consumer purchasing power."
+     "Acute demographic decline and severe aging population threatening long-term domestic economic consumption.",
+     "Heavy reliance on imported energy and raw materials vulnerable to geopolitical shocks.",
+     "High government debt-to-GDP ratio constraining national fiscal policy flexibility and spending options.",
+     "Slow corporate digital transformation and lingering productivity gaps in service sectors."
     ],
     "relation": "Ally",
-    "lever": "Largest foreign US Treasury holder",
+    "lever": "Largest foreign holder of US debt",
     "impacts": [
      {
-      "title": "BOJ Rate Hikes Spurring Capital Repatriation",
-      "detail": "Rising domestic bond yields encourage Japanese institutional investors to trim foreign bond holdings, potentially driving up US Treasury yields and tightening broader financial conditions.",
-      "direction": "negative",
+      "title": "US Treasury Market Stability and Yield Dynamics",
+      "detail": "Shifts in Bank of Japan monetary policy or Japanese institutional investor demand for US Treasuries can sharply drive US interest rates and borrowing costs.",
+      "direction": "mixed",
       "sectors": [
        "XLF",
        "XLRE",
-       "XLK"
+       "XLU"
       ]
      },
      {
-      "title": "Semiconductor Equipment and Automation Supply Dominance",
-      "detail": "Japanese suppliers of silicon wafers, lithography chemicals, and industrial robots remain critical inputs for expanding US domestic fabrication and advanced factory automation.",
+      "title": "AI Infrastructure and Semiconductor Capital Investments",
+      "detail": "Collaborative investments in AI data centers, advanced packaging, and semiconductor equipment enhance US tech sector supply chains and global AI leadership.",
       "direction": "positive",
       "sectors": [
        "XLK",
-       "XLI"
+       "XLC"
       ]
      },
      {
-      "title": "Expanded Bilateral Defense and Aerospace Collaboration",
-      "detail": "Japan's expanding defense spending boosts procurement orders for US aerospace contractors while anchoring Indo-Pacific maritime commercial stability.",
+      "title": "Global Supply Chain Integration in Advanced Manufacturing",
+      "detail": "Japanese supply chain disruptions or currency movements directly impact US automotive assembly, consumer electronics costs, and corporate profit margins.",
       "direction": "positive",
       "sectors": [
+       "XLY",
        "XLI",
        "XLK"
       ]
      }
     ]
    },
-   "profile_as_of": "2026-11-20T05:35:52Z",
+   "profile_as_of": "2026-11-28T05:31:51Z",
    "week": {
-    "line": "The US proposed new tariffs on Asian trade partners including Japan, while the dollar slipped during volatile trading.",
+    "line": "US tech giants Meta, Microsoft, and Anthropic are in talks to build AI data centers in Japan.",
     "links": [
      {
-      "title": "US proposes new tariffs on China, Japan, Taiwan and nations across Asia",
-      "url": "https://finance.yahoo.com/economy/policy/articles/us-proposes-tariffs-china-japan-040620540.html",
-      "publisher": "IntelliNews"
+      "title": "Meta, Anthropic in Talks to Build AI Data Centers in Japan",
+      "url": "https://finance.yahoo.com/technology/ai/articles/meta-anthropic-talks-build-ai-170949948.html",
+      "publisher": "GuruFocus.com"
      },
      {
-      "title": "Yen, Swiss franc gain as dollar slips in volatile AI-driven session",
-      "url": "https://finance.yahoo.com/markets/currencies/articles/dollar-takes-breather-ahead-us-012150961.html",
-      "publisher": "Reuters"
+      "title": "Anthropic, Meta and Microsoft Join AI Data Center Talks in Japan",
+      "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-meta-microsoft-join-ai-143801446.html",
+      "publisher": "GuruFocus.com"
      }
     ]
    }
@@ -420,60 +406,66 @@
    },
    "rank": 6,
    "profile": {
-    "self_view": "An indispensable global technology hub and vibrant democracy maintaining economic resilience despite persistent geopolitical intimidation.",
+    "self_view": "Taiwan views itself as a vibrant democratic society and an indispensable global technological powerhouse whose semiconductor dominance guarantees its international security and geopolitical relevance.",
     "strengths": [
-     "Near-monopolistic global market share in advanced sub-5nm semiconductor foundries and packaging.",
-     "Dense, hyper-efficient hardware supply chain ecosystem enabling rapid innovation and commercialization.",
-     "Substantial foreign exchange reserves shielding domestic currency and banking from external shocks.",
-     "World-class technical talent base deeply integrated into global artificial intelligence architectures."
+     "Unrivaled dominance in advanced semiconductor foundry manufacturing and cutting-edge chip packaging capabilities.",
+     "Comprehensive, highly integrated technology ecosystem and world-class hardware engineering talent pool.",
+     "Robust foreign exchange reserves providing strong macroeconomic resilience against external financial shocks.",
+     "Strategic central position in driving the global artificial intelligence infrastructure boom."
     ],
     "weaknesses": [
-     "Existential vulnerability to Chinese military blockade, invasion, or hybrid gray-zone aggression.",
-     "High dependence on imported liquefied natural gas and coal for domestic power generation.",
-     "Severe geopolitical limits on formal bilateral and multilateral diplomatic and trade agreements.",
-     "Domestic infrastructure constraints in water, green power supply, and specialized engineering labor."
+     "Constant existential threat of cross-strait military tension, blockades, or geopolitical coercion from China.",
+     "Extreme geographic concentration of crucial global semiconductor production facilities on a single island.",
+     "Vulnerability to regional energy, water, and power infrastructure constraints during peak industrial output.",
+     "Heavy economic exposure to global tech cycles and potential international trade protectionism."
     ],
     "relation": "Partner",
-    "lever": "Dominance in leading-edge semiconductor manufacturing",
+    "lever": "Near-monopoly on advanced semiconductor manufacturing",
     "impacts": [
      {
-      "title": "Cross-Strait Conflict Halting Advanced Semiconductors",
-      "detail": "Any military escalation or blockade halting Taiwanese silicon exports would paralyze US artificial intelligence, consumer electronics, and automotive manufacturing, triggering an immediate global tech slump.",
+      "title": "Vulnerability of US Tech Supply Chains",
+      "detail": "Any blockade or disruption of Taiwanese chip fabricators would freeze US tech production, severely impacting hardware, AI development, and broader economic output.",
       "direction": "negative",
       "sectors": [
        "XLK",
        "XLC",
-       "XLI"
+       "XLY"
       ]
      },
      {
-      "title": "AI Hardware Scaling and Advanced Packaging Delivery",
-      "detail": "Taiwanese foundries successfully scaling advanced packaging and next-generation nodes directly fuel productivity gains and earnings expansion for US megacap hyperscalers and chip designers.",
+      "title": "Onshoring Advanced Semiconductor Manufacturing Capacity",
+      "detail": "TSMC's expansion into US manufacturing facilities mitigates supply chain risks while boosting domestic capital investment and high-tech manufacturing employment.",
       "direction": "positive",
       "sectors": [
        "XLK",
-       "XLC"
+       "XLI"
       ]
      },
      {
-      "title": "Foundry Diversification Bolstering US Domestic Manufacturing",
-      "detail": "Investments by Taiwanese fabricators in Arizona facilities reduce single-point failure risks, though high construction and labor costs moderate gross margin returns.",
-      "direction": "mixed",
+      "title": "Spillover Effects on US Financial Markets",
+      "detail": "Escalating geopolitical tensions in the Taiwan Strait would trigger severe market volatility, sharp risk-off asset reallocations, and flight to Treasuries.",
+      "direction": "negative",
       "sectors": [
+       "XLF",
        "XLK",
-       "XLI"
+       "XLY"
       ]
      }
     ]
    },
-   "profile_as_of": "2026-11-20T05:35:52Z",
+   "profile_as_of": "2026-11-28T05:31:51Z",
    "week": {
-    "line": "TSMC indicated its planned $22.6 billion Texas chip plant may be conditional, creating uncertainty for US semiconductor manufacturing expansion.",
+    "line": "Proposed US tariffs spared semiconductor chips, boosting TSMC shares and benefiting US tech companies like Apple.",
     "links": [
      {
-      "title": "Taiwan Semiconductor Manufacturing (TSM) May Make Its $22.6 Billion Texas Plant Conditional",
-      "url": "https://finance.yahoo.com/technology/articles/taiwan-semiconductor-manufacturing-tsm-may-111054914.html",
-      "publisher": "Simply Wall St."
+      "title": "TSMC Stocks Climb 1.84% as U.S. Tariff Proposal Leaves Chips Off the List",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-stocks-climb-1-84-194609822.html",
+      "publisher": "GuruFocus.com"
+     },
+     {
+      "title": "Trump’s New Tariffs Hit Taiwan but Spare Its Chips. That’s Good News for TSMC and Apple",
+      "url": "https://finance.yahoo.com/economy/policy/articles/trump-tariffs-hit-taiwan-spare-134036384.html",
+      "publisher": "TIKR"
      }
     ]
    }
@@ -492,63 +484,58 @@
    },
    "rank": 7,
    "profile": {
-    "self_view": "A globally connected commercial, financial, and diplomatic power navigating European realignment through innovation, defense, and capital services.",
+    "self_view": "The United Kingdom views itself as a global financial titan, diplomatic heavyweight, and innovation leader committed to international security and rules-based international commerce.",
     "strengths": [
-     "London's preeminent financial ecosystem, legal framework, and international foreign exchange infrastructure.",
-     "Top-tier global research universities driving leadership in artificial intelligence and life sciences.",
-     "Permanent UN Security Council seat and leading NATO military expeditionary capabilities.",
-     "Robust corporate governance standards attracting sovereign and private equity international capital."
+     "World-class financial, legal, and professional service sector centered in the City of London.",
+     "Global leadership in higher education, scientific research, artificial intelligence, and life sciences.",
+     "Powerful soft power projection, deep military intelligence alliances, and global diplomatic reach.",
+     "Dynamic capital markets attracting extensive foreign direct investment and institutional funding."
     ],
     "weaknesses": [
-     "Persistent structural productivity stagnation and sluggish real wage growth since 2008.",
-     "High public sector debt limiting budgetary flexibility amid rising government borrowing costs.",
-     "Post-Brexit non-tariff trade barriers increasing frictional costs with major European trading partners.",
-     "Vulnerability to sticky services inflation and volatile household retail energy expenses."
+     "Persistent economic headwinds and friction from post-Brexit trade arrangements with European neighbors.",
+     "Sluggish domestic labor productivity growth and chronic underinvestment in regional physical infrastructure.",
+     "High public debt burdens and policy pressures balancing tax revenue against financial competitiveness.",
+     "Vulnerability to high mortgage interest rates impacting household spending and domestic demand."
     ],
     "relation": "Ally",
-    "lever": "Premier global financial and legal hub",
+    "lever": "Major global financial center and investor",
     "impacts": [
      {
-      "title": "Transatlantic Capital Liquidity and Deal Flow",
-      "detail": "London's deep financial markets facilitate US banking liquidity, private equity deployment, and international cross-border listings, reinforcing US institutional wealth expansion.",
+      "title": "Transatlantic Financial System and Capital Markets",
+      "detail": "Changes in UK banking regulations, financial capital flows, or cross-border banking liquidity directly impact liquidity and capital availability for major US institutions.",
       "direction": "positive",
+      "sectors": [
+       "XLF"
+      ]
+     },
+     {
+      "title": "US Corporate Tax and Investment Allocations",
+      "detail": "Diverging corporate tax regimes or financial regulation in London affect where multinational firms allocate investment capital, headquarters, and financial operations.",
+      "direction": "mixed",
       "sectors": [
        "XLF",
        "XLK"
       ]
      },
      {
-      "title": "AUKUS and Aerospace Defense Co-Development",
-      "detail": "Bilateral intelligence sharing and defense procurement initiatives drive sustained contract revenues for US aerospace and defense contractors, strengthening interoperability.",
+      "title": "Defense, Aerospace, and Tech Innovation Partnerships",
+      "detail": "Joint defense technology initiatives, AI research collaboration, and aerospace industrial projects strengthen technological capabilities and commercial exports for US firms.",
       "direction": "positive",
       "sectors": [
        "XLI",
        "XLK"
       ]
-     },
-     {
-      "title": "Biotech Collaboration and Clinical Trial Integration",
-      "detail": "Collaboration between British life-sciences hubs and US pharmaceutical giants accelerates drug discovery and genomic research, though regulatory divergence creates compliance friction.",
-      "direction": "mixed",
-      "sectors": [
-       "XLV"
-      ]
      }
     ]
    },
-   "profile_as_of": "2026-11-20T05:35:52Z",
+   "profile_as_of": "2026-11-28T05:31:51Z",
    "week": {
-    "line": "JPMorgan faced UK tax increases criticized by CEO Jamie Dimon, while the Bank of England warned of rising risks from AI-related borrowing.",
+    "line": "Higher UK taxes impacted US banking giant JPMorgan, drawing criticism from CEO Jamie Dimon.",
     "links": [
      {
       "title": "Jamie Dimon Loved Britain—Until It Raised Taxes on JPMorgan",
       "url": "https://finance.yahoo.com/m/1894eda5-8c04-3156-ac60-152e6305696f/jamie-dimon-loved.html",
       "publisher": "The Wall Street Journal"
-     },
-     {
-      "title": "Bank of England sees growing financial risks as AI borrowing surges",
-      "url": "https://finance.yahoo.com/economy/policy/articles/bank-england-sees-growing-financial-153906001.html",
-      "publisher": "Reuters"
      }
     ]
    }
@@ -567,62 +554,66 @@
    },
    "rank": 8,
    "profile": {
-    "self_view": "India views itself as a rising global economic powerhouse and strategic bridge between the Global South and the West, maintaining strategic autonomy while fostering rapid growth.",
+    "self_view": "India views itself as an emerging global superpower and indispensable economic bridge connecting the Global South with Western tech ecosystems.",
     "strengths": [
-     "Rapidly growing consumer market powered by a young, skilled demographic.",
-     "Major global hub for technology services, software engineering, and digital talent.",
-     "Expanding manufacturing ecosystem benefiting from global supply chain diversification.",
-     "Strong macroeconomic stability with vast foreign exchange reserves and domestic demand."
+     "Large, young, and rapidly expanding tech-savvy workforce driving economic growth.",
+     "Fast-growing domestic consumer market attracting global corporate investment and trade expansion.",
+     "Established world leadership in IT services, digital infrastructure, and global capability centers.",
+     "Strategic geopolitical position attracting global supply chain diversification away from China."
     ],
     "weaknesses": [
-     "Infrastructure deficits and complex regulatory bureaucracy hindering business expansion.",
-     "High import dependence on energy sources, leaving economy vulnerable to commodity shocks.",
-     "Underemployment and income inequality across massive rural and urban populations.",
-     "Trade protectionism and high tariff barriers straining international commercial agreements."
+     "Infrastructure bottlenecks and logistics inefficiencies straining rapid urban and industrial growth.",
+     "Persistent bureaucratic complexity and regulatory uncertainty hindering foreign direct investment.",
+     "High youth unemployment alongside persistent skilled labor shortages across emerging sectors.",
+     "Vulnerability to extreme weather events impacting agricultural output and rural demand."
     ],
     "relation": "Partner",
-    "lever": "Key tech supply chain alternative hub",
+    "lever": "Alternative manufacturing and tech services hub",
     "impacts": [
      {
-      "title": "Supply chain diversification away from China",
-      "detail": "India's expanding electronics and pharmaceutical manufacturing capabilities offer US tech and industrial firms a vital alternative base, reducing supply chain concentration risks.",
+      "title": "Alternative Manufacturing and Supply Chain Hub",
+      "detail": "As US firms shift manufacturing from China, India offers low-cost production capacity, boosting US corporate supply chain resilience and expanding market share.",
       "direction": "positive",
       "sectors": [
-       "XLK",
        "XLI",
-       "XLV"
-      ]
-     },
-     {
-      "title": "Expansion of consumer market for US tech",
-      "detail": "Growing middle-class demand in India drives long-term revenue growth for US software, hardware, digital services, and consumer brand multinationals.",
-      "direction": "positive",
-      "sectors": [
        "XLK",
-       "XLC",
        "XLY"
       ]
      },
      {
-      "title": "Protectionist tariffs and trade friction",
-      "detail": "Persistent trade disputes over tariffs, digital data regulations, and agricultural access could restrict US corporate profitability and market penetration in South Asia.",
-      "direction": "negative",
+      "title": "Global Tech Talent and IT Integration",
+      "detail": "India's massive engineering talent pool powers US tech software R&D and services exports, reducing corporate costs while risking domestic tech wage pressures.",
+      "direction": "mixed",
       "sectors": [
        "XLK",
+       "XLC"
+      ]
+     },
+     {
+      "title": "Bilateral Trade Deal and Market Access",
+      "detail": "Finalizing a broad US-India trade agreement lowers tariffs for US capital goods, agriculture, and services exported to India's burgeoning middle class.",
+      "direction": "positive",
+      "sectors": [
        "XLP",
-       "XLI"
+       "XLI",
+       "XLF"
       ]
      }
     ]
    },
-   "profile_as_of": "2026-11-20T05:35:52Z",
+   "profile_as_of": "2026-11-28T05:31:51Z",
    "week": {
-    "line": "Amazon India achieved $27 billion in e-commerce exports with targets of $80 billion by 2030, driving international growth for the US retail giant.",
+    "line": "A trade deal between India and the US is nearing completion, according to an Indian minister.",
     "links": [
      {
-      "title": "Amazon India e-commerce exports hit $27bn, eyes $80bn by 2030",
-      "url": "https://finance.yahoo.com/news/amazon-india-e-commerce-exports-102000366.html",
-      "publisher": "Retail Insight Network"
+      "title": "India-US trade deal nearing completion, minister says",
+      "url": "https://finance.yahoo.com/economy/policy/articles/india-us-trade-deal-nearing-195922762.html",
+      "publisher": "NY Post"
+     },
+     {
+      "title": "India-US trade deal is nearing completion, minister says",
+      "url": "https://finance.yahoo.com/economy/policy/articles/india-us-trade-deal-nearing-052632979.html",
+      "publisher": "Reuters"
      }
     ]
    }
@@ -641,67 +632,62 @@
    },
    "rank": 9,
    "profile": {
-    "self_view": "Saudi Arabia sees itself as the preeminent leader of the Arab world, executing Vision 2030 to transform into a diversified global economic hub and investment power.",
+    "self_view": "Saudi Arabia sees itself as the indispensable leader of the Arab world and global energy markets executing a transformative modernization strategy.",
     "strengths": [
-     "Vast sovereign wealth capital financing massive domestic infrastructure and global investments.",
-     "Lowest oil extraction costs globally alongside unmatched spare production capacity.",
-     "Strategic geographic position linking Asia, Europe, and Africa for trade and logistics.",
-     "Active economic transformation program fostering tech, tourism, and industrial diversification."
+     "World-leading low-cost oil reserves and dominant swing producer status within OPEC+.",
+     "Massive sovereign wealth funding large-scale Vision 2030 economic diversification projects.",
+     "Strategic geographic location controlling critical maritime trade routes and regional logistics.",
+     "Strong financial reserves and low national debt providing fiscal stability during volatility."
     ],
     "weaknesses": [
-     "Heavy economic reliance on volatile global oil market revenues for fiscal spending.",
-     "Regional security threats from non-state actors destabilizing commercial and capital assets.",
-     "Domestic workforce skill gaps requiring continued reliance on foreign technical labor.",
-     "Water scarcity challenges posing long-term operational risks for agriculture and urban growth."
+     "Heavy economic fiscal dependence on volatile global crude oil export revenues.",
+     "Regional security vulnerabilities from ongoing drone and missile attacks on infrastructure.",
+     "Rising fiscal deficit risks driven by ambitious megaproject spending and commitments.",
+     "Strains within OPEC+ alliance over production quotas and member market share."
     ],
     "relation": "Partner",
-    "lever": "Dominant influence over energy prices",
+    "lever": "Swing oil producer influencing energy prices",
     "impacts": [
      {
-      "title": "OPEC+ supply policy driving energy inflation",
-      "detail": "Saudi production cuts intended to support oil prices can raise US fuel costs, feeding broader inflationary pressures and squeezing US consumer spending.",
-      "direction": "negative",
+      "title": "Oil Price Volatility and Inflation Dynamics",
+      "detail": "OPEC+ output decisions directly impact global oil prices, influencing US inflation expectations, consumer spending power, and energy sector profitability.",
+      "direction": "mixed",
       "sectors": [
        "XLE",
-       "XLY",
-       "XLI"
+       "XLU",
+       "XLY"
       ]
      },
      {
-      "title": "PIF capital deployment in US markets",
-      "detail": "Heavy investments from the Saudi Public Investment Fund provide significant equity capital for US tech, aerospace, and commercial growth sectors.",
+      "title": "Sovereign Wealth Capital Allocation in US",
+      "detail": "Saudi Public Investment Fund investments into US tech, sports, and infrastructure provide capital liquidity while creating geopolitical governance sensitivities.",
       "direction": "positive",
       "sectors": [
-       "XLK",
        "XLF",
-       "XLI"
+       "XLK",
+       "XLC"
       ]
      },
      {
-      "title": "Defense and industrial procurement contracts",
-      "detail": "Saudi Arabia's defense modernization and mega-project construction fuel lucrative long-term export orders for US defense contractors, capital goods, and financial services.",
-      "direction": "positive",
+      "title": "Middle East Security Disruptions to Shipping",
+      "detail": "Security threats near the Red Sea and Arabian Gulf risk driving up global freight costs and supply chain delays for US importers.",
+      "direction": "negative",
       "sectors": [
        "XLI",
-       "XLF",
-       "XLK"
+       "XLE",
+       "XLB"
       ]
      }
     ]
    },
-   "profile_as_of": "2026-11-20T05:35:52Z",
+   "profile_as_of": "2026-11-28T05:31:51Z",
    "week": {
-    "line": "Chevron stock and crude oil prices rose after a claimed Houthi attack on a Saudi refinery sparked Middle East energy supply fears.",
+    "line": "Chevron shares rose as Brent crude jumped 3.5% following claims of a Saudi refinery attack.",
     "links": [
      {
       "title": "Chevron Stocks Rise 1.06% as Brent Jumps 3.5% on Saudi Refinery Attack Claim",
       "url": "https://finance.yahoo.com/energy/articles/chevron-stocks-rise-1-06-184046291.html",
       "publisher": "GuruFocus.com"
-     },
-     {
-      "title": "Oil prices rise after Houthis claim attack on Saudi refinery",
-      "url": "https://finance.yahoo.com/energy/articles/oil-prices-fall-supply-glut-015829699.html",
-      "publisher": "Reuters"
      }
     ]
    }
@@ -720,68 +706,56 @@
    },
    "rank": 10,
    "profile": {
-    "self_view": "Russia views itself as an indispensable sovereign empire resisting Western hegemony while forging a multipolar global order centered on Eurasian trade and security.",
+    "self_view": "Russia sees itself as a sovereign Eurasian great power resisting Western hegemony and leading the shift toward a multipolar world order.",
     "strengths": [
-     "Massive reserves of critical natural resources including energy, metals, and agricultural goods.",
-     "Proven resilience in reorienting trade networks toward major Asian and Middle Eastern markets.",
-     "Advanced defense, nuclear, and aerospace technology supported by specialized state research.",
-     "Low public debt levels providing fiscal space to fund sovereign military and state priorities."
+     "Vast natural resource wealth spanning oil, natural gas, metals, and agricultural commodities.",
+     "Significant military capacity and large defense-industrial manufacturing footprint powering output.",
+     "Strong trade reorientation toward China, India, and non-Western international partners.",
+     "High state control over key strategic economic sectors ensuring regime stability."
     ],
     "weaknesses": [
-     "Severe structural demographic decline reducing the national domestic labor pool long-term.",
-     "High vulnerability to Western economic sanctions, tech export controls, and capital isolation.",
-     "Over-reliance on military spending driving high inflation and domestic budget deficits.",
-     "Deepening technological isolation restricting modernization across non-defense industrial sectors."
+     "Severe Western economic sanctions limiting access to Western capital and technologies.",
+     "Demographic decline compounded by war casualties and significant skilled labor emigration.",
+     "Over-reliance on military spending, creating inflation and domestic economic distortions.",
+     "High inflation and tight monetary policy constraining private sector growth outside defense."
     ],
     "relation": "Rival",
     "lever": "Global commodity and energy supply disruption",
     "impacts": [
      {
-      "title": "Persistent global commodity price volatility",
-      "detail": "Sanctions, supply disruptions, or export bans on Russian energy, fertilizer, and critical metals drive price spikes in global industrial supply chains.",
+      "title": "Commodity Supply Shocks and Input Costs",
+      "detail": "Sanctions and Russian export restrictions on key commodities like enriched uranium, fertilizer, and palladium elevate input costs for US manufacturers and utilities.",
       "direction": "negative",
       "sectors": [
-       "XLE",
        "XLB",
-       "XLP"
+       "XLE",
+       "XLU"
       ]
      },
      {
-      "title": "Increased US defense spending mandates",
-      "detail": "Protracted geopolitical friction in Europe forces higher US defense budget allocations, boosting revenue for domestic defense manufacturers and aerospace companies.",
+      "title": "Global Energy Market Volatility and Sanctions",
+      "detail": "Russian oil rerouting and shadow fleet activity complicate global crude price dynamics, impacting US energy production margins and global transport costs.",
+      "direction": "mixed",
+      "sectors": [
+       "XLE",
+       "XLI"
+      ]
+     },
+     {
+      "title": "Elevated US Defense and Security Spending",
+      "detail": "Persistent security tensions in Europe drive sustained high US defense spending and NATO procurements, benefiting domestic aerospace and defense contractors.",
       "direction": "positive",
       "sectors": [
        "XLI",
        "XLK"
       ]
-     },
-     {
-      "title": "Cyber threats to US critical infrastructure",
-      "detail": "State-sponsored cyber warfare targets US financial networks, energy grids, and corporate databases, elevating enterprise cybersecurity expenditure and operational risk.",
-      "direction": "negative",
-      "sectors": [
-       "XLK",
-       "XLU",
-       "XLF"
-      ]
      }
     ]
    },
-   "profile_as_of": "2026-11-20T05:35:52Z",
+   "profile_as_of": "2026-11-28T05:31:51Z",
    "week": {
-    "line": "US defense firm RTX landed a Navy contract for next-generation nuclear cruise missiles and was added to the Industrial Select Sector SPDR ETF.",
-    "links": [
-     {
-      "title": "RTX (RTX) Lands Next Generation Nuclear Cruise Missile Work For The Navy",
-      "url": "https://finance.yahoo.com/technology/articles/rtx-rtx-lands-next-generation-013117792.html",
-      "publisher": "Simply Wall St."
-     },
-     {
-      "title": "State Street Industrial Select Sector SPDR (XLI) Adds GE and RTX on Nov. 24",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/state-street-industrial-select-sector-110507358.html",
-      "publisher": "GuruFocus.com"
-     }
-    ]
+    "line": "Quiet week for US-relevant news.",
+    "links": []
    }
   }
  ],
@@ -789,33 +763,33 @@
   "code": "us",
   "name": "United States",
   "profile": {
-   "self_view": "The United States views itself as the indispensable global leader in technological innovation, capital markets, and security architecture, while navigating domestic political and economic transitions.",
+   "self_view": "The United States sees itself as the preeminent global superpower, driving worldwide innovation, financial architecture, and economic stability.",
    "strengths": [
-    "Global reserve currency issuer with unmatched depth and liquidity in capital markets.",
-    "Global leadership in artificial intelligence, software, and advanced technological innovation.",
-    "Net energy independence anchored by abundant domestic oil and natural gas production.",
-    "Dynamic demographic profile and flexible labor markets compared to other advanced economies."
+    "World-leading technology innovation ecosystem and deep financial capital markets.",
+    "Global reserve currency status providing unparalleled sovereign borrowing flexibility.",
+    "Abundant domestic energy resources and resilient consumer purchasing power.",
+    "Strong institutional framework supporting intellectual property and entrepreneurship."
    ],
    "weaknesses": [
-    "Rising national debt burdens and persistent fiscal deficits straining long-term stability.",
-    "Deep domestic political polarization complicating long-term economic and industrial policy.",
-    "Vulnerability to critical foreign supply chain disruptions in hardware and minerals.",
-    "Persistent inflation risks and elevated borrowing costs weighing on consumer sentiment."
+    "Elevated national debt levels and persistent fiscal deficits straining long-term sustainability.",
+    "Intense political polarization hindering cohesive long-term economic and fiscal policy.",
+    "Vulnerability to global supply chain shocks and high domestic cost structures.",
+    "Persistent trade deficits and potential inflationary pressures from trade barriers."
    ]
   },
   "gdp_b": 30770.0,
   "week": {
-   "line": "Treasury yields fell while the US dollar rose against the loonie amid ongoing concerns over proposed US trade tariffs.",
+   "line": "US equities rallied led by technology and consumer discretionary sectors, while long-end Treasury yields reached 5.29%.",
    "links": [
     {
-     "title": "US Dollar Rises Against Canada's Loonie, Treasury Yields Fall",
-     "url": "https://finance.yahoo.com/markets/currencies/articles/us-dollar-rises-against-canada-183016358.html",
-     "publisher": "MT Newswires"
+     "title": "Nasdaq Leads Market Rebound as Treasury Yields Hit 5.29% at the Long End",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-leads-market-rebound-treasury-195242969.html",
+     "publisher": "GuruFocus.com"
     },
     {
-     "title": "Trump tariffs put global trade back in the firing line",
-     "url": "https://finance.yahoo.com/economy/policy/articles/trump-tariffs-put-global-trade-164800192.html",
-     "publisher": "Proactive"
+     "title": "Update: US Equity Indexes Jump With Treasury Yields as Consumer Discretionary, Technology Top Sector Charts",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-jump-treasury-182226162.html",
+     "publisher": "MT Newswires"
     }
    ]
   }
@@ -831,16 +805,16 @@
   "gdp": 15,
   "strategic": 30
  },
- "profiles_updated_at": "2026-11-20T05:35:52Z",
- "week_updated_at": "2026-11-27T05:13:19Z",
- "generated_at": "2026-11-27T05:13:19Z",
+ "profiles_updated_at": "2026-11-28T05:31:51Z",
+ "week_updated_at": "2026-11-28T05:31:51Z",
+ "generated_at": "2026-11-28T05:31:51Z",
  "gemini": {
   "ok_calls": {
-   "gemini-3.6-flash": 1
+   "gemini-3.6-flash": 4
   },
   "errors": {
-   "gemini-3.8-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=10075s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:",
-   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=10063s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:"
+   "gemini-3.8-flash": "no answer within 150s",
+   "gemini-3.7-flash": "429 quota=GenerateRequestsPerDayPerProjectPerModel-FreeTier limit=20 retry=9132s msg=You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https:/"
   }
  },
  "raw": {
